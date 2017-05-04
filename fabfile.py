@@ -19,7 +19,8 @@ def checkout(prod=False):
     run("mkdir %s" % dirname)
     with cd(dirname):
         with hide('running', 'stdout'):
-            run("git clone https://github.com/pybay/pybay.git")
+            clone_args = '' if prod else ' -b staging'
+            run("git clone https://github.com/pybay/pybay.git%s" % clone_args)
     return dirname
 
 def virtualenv(checkout):

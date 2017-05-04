@@ -36,7 +36,7 @@ disk. Eg:
 Install fabric. Then use the `fab` command to run the deploy
 task. You'll need the ssh login password for this.
 
-    $ pip install fabric
+    $ pip install fabric3
     $ fab deploy
     [pyconsf.com] Executing task 'deploy'
     Start with a git checkout.
@@ -44,9 +44,9 @@ task. You'll need the ssh login password for this.
     ... much output...
     Successfully completed
 
-By default the deploy task deploys to staging.pyconsf.com. To deploy
-to production (same server but virtualhost pyconsf.com) run it with
-the prod target as an argument.
+By default the deploy task deploys to staging.pyconsf.com using pybay's
+staging branch.  To deploy master branch to production (same server but
+virtualhost pyconsf.com) run it with the prod target as an argument.
 
     $ fab deploy:prod
     [pyconsf.com] Executing task 'deploy'
