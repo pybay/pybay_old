@@ -29,7 +29,7 @@ disk. Eg:
 
     $ cd ~/workspace/pybay/ENV/lib/python3.6/site-packages/
     $ rm -rf symposion
-    $ ln -s /Users/sfranklin/workspace/symposion/symposion .
+    $ ln -s ~/workspace/symposion/symposion .
 
 ## Deploying
 
