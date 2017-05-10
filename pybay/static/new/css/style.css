@@ -38,8 +38,11 @@
     height: 100%;
 }
 
+h1 {
+    color: #32648e;
+}
 .blue-header{
-    color: #428bca;
+    color: #32648e;
 }
 /* SPONSOR PAGE PRICING TABLE */
 
