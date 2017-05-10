@@ -90,6 +90,7 @@
 					    .data(people)
 					    .transition()
 					    .duration(1000)
+					    .style({'fill': '#32648E'})
 					    .attr("width", function(d) {return xscale1(d); });
 
 	var transitext = d3.select('#bars')

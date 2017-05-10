@@ -89,6 +89,7 @@
 					    .data(people2)
 					    .transition()
 					    .duration(1000)
+					    .style({'fill': '#32648E'})
 					    .attr("width", function(d) {return xscale2(d); });
 
 	var transitext2 = d3.select('#bars')
@@ -97,4 +98,4 @@
 						.enter()
 						.append('text')
 						.attr({'x':function(d) {return xscale2(d)-30; },'y':function(d,i){ return yscale2(i)+35; }})
-						.text(function(d){ return d; }).style({'fill':'#fff','font-size':'14px'});
+						.text(function(d){ return d; }).style({'fill':'#fff','font-size':'13px'});
