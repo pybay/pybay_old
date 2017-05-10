@@ -67,7 +67,7 @@ h1 {
 .pricely-label {
     display: block;
     font-size: 18px;
-    color: #ffffff;
+    color: #000;
     font-weight: 400;
     letter-spacing: 1px;
     margin: 0 auto 10px;
@@ -87,14 +87,14 @@ h1 {
     display: inline-block;
     font-size: 20px;
     font-weight: 400;
-    color: #ffffff;
+    color: #000;
     position: absolute;
     top: 7px;
 }
 .pricely-amount {
     display: inline-block;
     font-size: 20px;
-    color: #ffffff;
+    color: #000;
     font-weight: 400;
     line-height: 5px;
     padding: 0 0 0 17px;
@@ -141,7 +141,7 @@ h1 {
         background: #f5f5f5;
     }
     /*Additional row colums */
-    .pricely-pro li li.list-group-item:nth-last-child(-n+7) {
+    .pricely-pro li li.list-group-item:nth-last-child(-n+6) {
         background: #fef8eb;
     }
     .pricely-pro li.pricely-first-heading li.list-group-item {
