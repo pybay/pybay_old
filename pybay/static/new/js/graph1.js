@@ -2,7 +2,6 @@
 	var label2= ['','Student','Individual Contributer','Contributes to Open Source', 'Open to Job Opportunities', 'Working Professional', 'Leadership Experience', 'Presented at Conferences','Presented at Conferences'];
 
 	var people2 = [36,145,111,141,394,145,123,58];
-
 	//////////////////////
 	// Graph 2
 	//////////////////////
