@@ -93,8 +93,7 @@
 				    <li>
                                         <a class="inner-link" href="{% url 'pybay_faq' %}">FAQ</a>
                                     </li>
-				    <li>
-                                        <a class="inner-link" href="{% url 'pybay_tickets' %}">Tickets</a>
+				    <li> <a class="inner-link" href="{% url 'pybay_tickets' %}">Tickets</a>
                                     </li>
 				    <li>
                                         <a class="inner-link" href="http://www.pybay.com/blog" target="_blank">Blog</a>
@@ -272,5 +271,11 @@
         <script src="{% static 'new/js/scripts.js'%}"></script>
         <script src="https://d3js.org/d3.v4.min.js"></script>
         <script src="{% static 'new/js/chart3.js' %}"></script>
+
+    {% block footerjs %}
+
+    {% endblock footerjs %}
+
+
     </body>
 </html>

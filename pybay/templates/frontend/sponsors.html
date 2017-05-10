@@ -206,7 +206,7 @@
                                         <span class="glyphicon glyphicon-ok"></span>
                                         <span class="feature-hide">Additionals</span>
                                     </li>
-                                    <li class="list-group-item">
+                                    <li class="list-group-item" data-toggle="tooltip-lounge" data-placement="right" title="hello world">
                                         <span class="feature-hide"></span>
                                         <span>Lounge + $3000</span>
 
@@ -451,7 +451,23 @@
                     </div>
                 </div>
        </section>
+
+
+
 {% endblock subscribe %}
+
+{% block footerjs %}
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+      $(function () {
+        $('[data-toggle="tooltip-lounge"]').tooltip();
+      })
+    });
+
+
+  </script>
+{% endblock footerjs %}
 
 
 
