@@ -1,16 +1,9 @@
-$(document).ready(function() { 
+$(document).ready(function() {
 
 	"use strict";
 
     /************** Nav Scripts **************/
 
-    $(window).scroll(function() {
-        if ($(window).scrollTop() > 1) {
-            $('nav').addClass('sticky-nav');
-        } else {
-            $('nav').removeClass('sticky-nav');
-        }
-    });
 
     $('a').click(function() {
         if ($(this).attr('href') === '#') {
@@ -246,9 +239,9 @@ $(document).ready(function() {
         return false;
     });
 
-}); 
+});
 
-$(window).load(function() { 
+$(window).load(function() {
 
 	"use strict";
 
@@ -338,7 +331,7 @@ $(window).load(function() {
     }, 10);
 
 
-}); 
+});
 
 //Call For Propositions Form
 $(document).ready(function() {

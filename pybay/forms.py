@@ -18,9 +18,7 @@ class CallForProposalForm(forms.Form):
     last_name = forms.CharField(label='Last Name', max_length=100)
     email = forms.EmailField(label='Email')
     website = forms.URLField(label='Website', required=False)
-    phone = forms.RegexField(regex=r'^\+?1?\d{9,15}$')
-    phone.error_messages['invalid'] = ("Phone number must be entered in "
-        "the format: '+999999999'. Up to 15 digits allowed.")
+    phone = forms.CharField(label='Phone', max_length=20)
     category = forms.ChoiceField(choices=TalkProposal.CATEGORY_CHOICES)
     audience_level = forms.ChoiceField(choices=TalkProposal.AUDIENCE_LEVELS)
     speaker_bio = forms.CharField(widget=forms.Textarea)
@@ -39,7 +37,7 @@ class CallForProposalForm(forms.Form):
         PrependedText('last_name', '<i class="glyphicon glyphicon-user"></i>',placeholder='Last Name'),
         PrependedText('email', '<i class="glyphicon glyphicon-envelope"></i>',placeholder='   Email'),
         PrependedText('website', '<i class="glyphicon glyphicon-globe"></i>',placeholder='  Website'),
-        PrependedText('phone', '<i class="glyphicon glyphicon-earphone"></i>',placeholder='+90 999 99 999'),
+        PrependedText('phone', '<i class="glyphicon glyphicon-earphone"></i>',placeholder='415-555-1234'),
         'category',
         'audience_level',
         PrependedText('speaker_bio', '<i class="glyphicon glyphicon-pencil"></i>',placeholder='Speaker Bio'),
