@@ -2,11 +2,66 @@
 {% load static %}
 
 {% block content %}
-<section class="code_of_conduct">
+<a id="top"></a>
+<section class="topics duplicatable-content">
     <div class="container">
         <div class="row">
+            <div class="col-md-6 col-sm-6">
+                <h1><strong>Ticket Types</strong></h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-6">
+                <div class="topic">
+                    <i class="pe-7s-like2 icon-large"></i>
+                    <h3 class="blue-header"><strong>Corporate Ticket</strong></h3>
+                    <p class="lead">
+                         We love companies that support employes' continual education. &nbsp;Therefore, if your company sends &gt;20% of the engineering team OR &gt;10 developers to PyBay with the corporate rate, we'll feature your company's logo among the Fans of Python.</p>
+
+                </div>
+            </div>
+        <div class="col-md-6 col-sm-6">
+            <div class="topic">
+                <i class="pe-7s-user icon-large"></i>
+                <h3 class="blue-header"><strong>Individual Ticket<strong></h3>
+                <p class="lead">Your employer is not reimbursing your ticket? &nbsp;On a tight budget or in-between jobs? &nbsp;A student? We've got you covered with individual tickets. However, please get your ticket ASAP - prices go up as the allotted tickets at each price tier sell out.</p>
+
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 col-md-4">
+                <div class="topic">
+                    <i class="pe-7s-tools icon-large"></i>
+                    <h3 class="blue-header"><strong>Pre-Conference Workshop Only</strong></h3>
+                    <p class="lead">Want to add to your conference by deep diving with some of the top educators in the python ecosystems? &nbsp;Or skip the conference and just take the pre-conference workshops? &nbsp;Tickets for full-day a half-day work shops are available on an a la carte bases.</p>
+
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-4">
+                <div class="topic">
+                    <i class="pe-7s-timer icon-large"></i>
+                    <h3 class="blue-header"><strong>One-day ticket</strong></h3>
+                    <p class="lead">Have too much going on but still want to join in on the fun to geek out with other Pythonistas and attend some talks? &nbsp; Come on Saturday or Sunday, your call. &nbsp;Make it happen.</p>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-4">
+                <div class="topic">
+                    <i class="pe-7s-cash icon-large"></i>
+                    <h3 class="blue-header"><strong>Work-trade Ticket</strong></h3>
+                    <p class="lead">Want trade your talents in for a discount? We have 20 work-trade slots during the conference where you pay only 1/3 the lowest price, and we have roles handling pre-conference tasks where we will comp your ticket. &nbsp;See what help we need and apply away!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <div class="container">
+        <div class="row">
+        <p></p>
             <div class="col-md-10 col-md-offset-1">
-                <h1><strong><i>Tickets</i></strong></h1>
+                <h1 class="tickets"><strong>Tickets</strong></h1>
 
                 <!-- place this where you want the widget to appear -->
                 <tito-widget event="sf-python/pybay-2017"></tito-widget>
@@ -17,6 +72,56 @@
             </div>
         </div>
     </div>
+
+<!--Conference Venue Starts -->
+<section class="duplicatable-content visitor-info">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1><strong>Conference Venue&nbsp;</strong></h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-6">
+                <div class="info-box">
+                    <img alt="Venue" src="img/air.jpg">
+                    <h3>Main Conference Venue</h3>
+                    <p>
+                        <strong>UCSF Mission Bay Conference Center</strong><br>
+                        1500 Owens Street,&nbsp;<br>
+                        San Francisco, CA 94158<br><br>
+                    <a href="#">See Map</a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+                <div class="info-box">
+                    <img alt="Venue" src="img/air.jpg">
+                    <h3>Pre-conference Workshop Venue</h3>
+                    <p>
+                        TBD
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
+<!--Conference Venue Ends -->
 {% endblock content %}
 
+{% block subscribe %}
+
+{% endblock subscribe %}
+{% block pythonfans %}
+<section>
+    <div style="margin-bottom: 100px;" class="row">
+        <div class="col-sm-12 text-center">
+            <h1>Proudly Sponsored By</h1>
+        </div>
+        <div class="col-sm-8"></div>
+        <div class="col-sm-12 text-center">
+            <p>Interested in becoming a sponsor? <a href={% url 'pybay_sponsors' %}>Check out our Options</a></p>
+        </div>
+    </div>
+</section>
+{% endblock pythonfans %}

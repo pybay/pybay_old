@@ -8,7 +8,7 @@
 	//////////////////////
 
 	//color
-	var colors = ['#0000b4'];
+	var colors = ['#FBBE3B'];
 
 	var grid1 = d3.range(25).map(function(i){
 		return {'x1':0,'y1':0,'x2':0,'y2':120};

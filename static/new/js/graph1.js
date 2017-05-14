@@ -1,5 +1,5 @@
 //data
-	var label2= ['','Student','Individual Contributer','Contributes to Open Source', 'Open to Job Opportunities', 'Working Professional', 'Leadership Experience', 'Presented at Conferences','Presented at Conferences'];
+	var label2= ['','Student','Individual Contributer','Contributes to Open Source', 'Open to Job Opportunities', 'Working Professional', 'Leadership Experience', 'Presented at Conferences','Publish Tech Blogs or Books'];
 
 	var people2 = [36,145,111,141,394,145,123,58];
 	//////////////////////
@@ -7,7 +7,7 @@
 	//////////////////////
 
 	//color
-	var colors2 = ['#0000b4'];
+	var colors2 = ['#32648E'];
 
 	var grid2 = d3.range(25).map(function(i){
 		return {'x1':0,'y1':0,'x2':0,'y2':320};
@@ -63,7 +63,7 @@
 			.tickValues(d3.range(17));
 
 	var y_xis2 = canvas2.append('g')
-					  .attr("transform", "translate(150,0)")
+					  .attr("transform", "translate(150,-6)")
 					  .attr('id','yAxis2')
 					  .call(yAxis2);
 
