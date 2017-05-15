@@ -37,7 +37,7 @@
 
 	var grids1 = canvas1.append('g')
 					  .attr('id','grid1')
-					  .attr('transform','translate(150,10)')
+					  .attr('transform','translate(200,10)')
 					  .selectAll('line')
 					  .data(grid1)
 					  .enter()
@@ -64,17 +64,17 @@
 			.tickValues(d3.range(17));
 
 	var y_xis1 = canvas1.append('g')
-					  .attr("transform", "translate(150,0)")
+					  .attr("transform", "translate(200,0)")
 					  .attr('id','yAxis1')
 					  .call(yAxis1);
 
 	var x_xis1 = canvas1.append('g')
-					  .attr("transform", "translate(150,120)")
+					  .attr("transform", "translate(200,120)")
 					  .attr('id','xAxis1')
 					  .call(xAxis1);
 
 	var chart1 = canvas1.append('g')
-						.attr("transform", "translate(150,0)")
+						.attr("transform", "translate(200,0)")
 						.attr('id','bars')
 						.selectAll('rect')
 						.data(people)

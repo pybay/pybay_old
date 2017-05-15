@@ -62,15 +62,18 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4 offset-4">
-                <h3><center>Participant's Background</center></h3>
+            <div class="col-md-12 offset-3">
+                <p align ="right">*Data from 500+ registered guest at PyBay 2016</p>
+                <h4><center>Participant's Background</center></h4>
                  <div id="barchart1" width="500" height="300"></div>
+
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6 offset-3">
+            <div class="col-md-12 offset-4">
                 <div>
-                    <h3><center>Participant's Skills and Interest</center></h3>
+
+                    <h4><center>Participant's Skills & Interest</center></h4>
                     <div id="barchart2" width="500" height="300"></div>
 
                 </div>
@@ -319,8 +322,10 @@
         </div>
     </div><!--container -->
 </section>
-<!-- Sponsor Contact Starts -->
- <a id="register" class="in-page-link"></a>
+{% endblock content %}
+
+{% block subscribe %}
+<a id="register" class="in-page-link"></a>
 
             <section class="image-with-text background-dark preserve-3d">
 
@@ -344,9 +349,7 @@
                     </div>
                 </div>
        </section>
-<!-- Sponsor Contact Ends-->
-{% endblock content %}
-
+{% endblock subscribe %}
 {% block scripts %}
     <script src="{% static 'new/js/d3.v3.min.js' %}"></script>
     <script src="{% static 'new/js/graph1.js' %}"></script>
