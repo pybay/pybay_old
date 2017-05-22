@@ -10,7 +10,7 @@
             <h1>All Speakers</h1>
         </div>
     </div><!-- /.col-md-12 -->
-
+    
     {% for speaker in speakers %}
       <div class="col-md-6">
         <img src="{% thumbnail speaker.photo '300x300' %}" alt="{{ speaker.name }}">

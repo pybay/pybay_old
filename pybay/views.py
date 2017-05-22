@@ -52,8 +52,7 @@ def pybay_speakers_list(request):
         result__status='accepted')
     speakers = []
     for proposal in accepted_proposals:
-        speakers.append(proposal.speaker)
-        speakers += proposal.additional_speakers.all()
+        speakers += list(proposal.speakers())
 
     speakers = list(set(speakers))  # filters duplicate speakers
     speakers = filter(lambda s: s.photo, speakers)  # filters speakers without photo
