@@ -44,7 +44,7 @@ class CallForProposalForm(forms.Form):
         'audience_level',
         PrependedText('speaker_bio', '<i class="glyphicon glyphicon-pencil"></i>',placeholder='Speaker Bio'),
         PrependedText('talk_title', '<i class="glyphicon glyphicon-pencil"></i>',placeholder='Talk Title'),
-        PrependedText('description', '<i class="glyphicon glyphicon-pencil"></i>',placeholder='A brief description of your talk.\nPlease limit the descrtiption to 400 characters'),
+        PrependedText('description', '<i class="glyphicon glyphicon-pencil"></i>',placeholder='A brief description of your presentation to be displayed in the conference schedule.\nPlease limit the descrtiption to 400 characters\n'),
         PrependedText('abstract', '<i class="glyphicon glyphicon-pencil"></i>', placeholder='A more detailed summary of your of your talk.'),
         PrependedText('what_will_attendees_learn', '<i class="glyphicon glyphicon-pencil"></i>', placeholder='This is for the reviewers, the info here will not be published'),
         PrependedText('speaker_and_talk_history', '<i class="glyphicon glyphicon-pencil"></i>', placeholder='Anything else we should know about you and your speaking experience. Will you have a co-presenter?'),
