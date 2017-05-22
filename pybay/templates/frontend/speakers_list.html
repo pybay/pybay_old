@@ -1,0 +1,23 @@
+{% extends 'frontend/base.html' %}
+{% load static %}
+{% load thumbnail %}
+
+{% block content %}
+<section>
+  <div class="container">
+    <div class="col-md-12 no-padding clearfix">
+        <div class="page-header pull-left">
+            <h1>All Speakers</h1>
+        </div>
+    </div><!-- /.col-md-12 -->
+
+    {% for speaker in speakers %}
+      <div class="col-md-6">
+        <img src="{% thumbnail speaker.photo '256x256' %}" alt="{{ speaker.name }}">
+        <h2>{{ speaker.name }}</h2>
+        <span>{{ speaker.biography|truncatechars:"300" }}</span>
+      </div>
+    {% endfor %}
+  </div><!--container -->
+</section>
+{% endblock content %}

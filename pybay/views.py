@@ -3,6 +3,7 @@ from django.shortcuts import render
 from .forms import CallForProposalForm
 from pybay.faqs.models import Faq
 from symposion.sponsorship.models import Sponsor
+from pybay.proposals.models import Proposal
 
 from collections import defaultdict
 
@@ -44,3 +45,20 @@ def pybay_cfp_create(request):
     else:
         form = CallForProposalForm()
         return render(request, 'frontend/cfp.html', {'form': form})
+
+
+def pybay_speakers_list(request):
+    accepted_proposals = Proposal.objects.filter(
+        result__status='accepted')
+    speakers = []
+    for proposal in accepted_proposals:
+        speakers.append(proposal.speaker)
+        speakers += proposal.additional_speakers.all()
+
+    speakers = list(set(speakers))  # filters duplicate speakers
+    speakers = filter(lambda s: s.photo, speakers)  # removes speakers without photo
+    speakers = sorted(speakers, key=lambda i: i.name)  # sorts alphabetically
+
+    return render(request, 'frontend/speakers_list.html', {
+        'speakers': speakers
+    })
