@@ -13,7 +13,7 @@
 
     {% for speaker in speakers %}
       <div class="col-md-6">
-        <img src="{% thumbnail speaker.photo '256x256' %}" alt="{{ speaker.name }}">
+        <img src="{% thumbnail speaker.photo '300x300' %}" alt="{{ speaker.name }}">
         <h2>{{ speaker.name }}</h2>
         <span>{{ speaker.biography|truncatechars:"300" }}</span>
       </div>

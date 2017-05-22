@@ -92,7 +92,10 @@ TEMPLATES = [{
         'django.contrib.messages.context_processors.messages',
         'account.context_processors.account',
         'pinax_theme_bootstrap.context_processors.theme',
-        'symposion.reviews.context_processors.reviews']}}]
+        'symposion.reviews.context_processors.reviews',
+        'pybay.context_processors.settings_variables',
+    ]}
+}]
 
 MIDDLEWARE_CLASSES = [
     "django.contrib.sessions.middleware.SessionMiddleware",
@@ -217,4 +220,6 @@ PROPOSAL_FORMS = {
     "talk": "pybay.proposals.forms.TalkProposalForm",
 }
 #Crispy Forms
-CRISPY_TEMPLATE_PACK ='bootstrap3'
+CRISPY_TEMPLATE_PACK = 'bootstrap3'
+
+SHOW_SPEAKERS_LIST_NAVBAR_LINK = True

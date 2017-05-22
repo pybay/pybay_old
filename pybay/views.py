@@ -56,7 +56,7 @@ def pybay_speakers_list(request):
         speakers += proposal.additional_speakers.all()
 
     speakers = list(set(speakers))  # filters duplicate speakers
-    speakers = filter(lambda s: s.photo, speakers)  # removes speakers without photo
+    speakers = filter(lambda s: s.photo, speakers)  # filters speakers without photo
     speakers = sorted(speakers, key=lambda i: i.name)  # sorts alphabetically
 
     return render(request, 'frontend/speakers_list.html', {
