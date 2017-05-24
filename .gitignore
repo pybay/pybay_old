@@ -89,3 +89,5 @@ ENV/
 .ropeproject
 
 dev.db
+
+pybay/site_media/*

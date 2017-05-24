@@ -2,13 +2,12 @@ from django.test import TestCase
 from pybay.forms import CallForProposalForm
 
 
-
 class CfpFormTestCase(TestCase):
-    fixtures=[
+    fixtures = [
         "conference",
         "proposal_base",
     ]
-    
+
     def _get_data(self):
         return {
             'first_name': "Daniel",
