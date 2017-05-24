@@ -4,4 +4,6 @@ python:
 - 3.6
 install:
 - pip install -r requirements.txt
-script: ./manage.py test
+script: TRAVIS=true ./manage.py test
+env:
+- TRAVIS=true

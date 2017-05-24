@@ -98,6 +98,7 @@ TEMPLATES = [{
 }]
 
 MIDDLEWARE_CLASSES = [
+    "rollbar.contrib.django.middleware.RollbarNotifierMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
@@ -227,3 +228,19 @@ CRISPY_TEMPLATE_PACK = 'bootstrap3'
 SHOW_SPEAKERS_LIST_NAVBAR_LINK = False
 
 DEBUG_TOOLBAR = False
+
+ROLLBAR_PATH = '/home/pybay/rollbar.txt'
+if not os.environ.get('TRAVIS', False) and os.path.exists(ROLLBAR_PATH):
+    with open(ROLLBAR_PATH) as f:
+        rollbar_token = f.read().strip()
+
+    ROLLBAR = {
+        'access_token': rollbar_token,
+        'environment': 'development' if DEBUG else 'production',
+        'branch': 'master',
+        'root': BASE_DIR,
+    }
+
+    # Intentially added below the ROLLBAR const. Please do not move
+    import rollbar
+    rollbar.init(**ROLLBAR)
