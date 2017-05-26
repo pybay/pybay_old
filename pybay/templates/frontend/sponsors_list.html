@@ -1,94 +1,20 @@
 {% extends 'frontend/base.html' %}
 {% load static %}
 
-{% block sliders %}
-    <li class="hero-slide">
-        <div class="background-image-holder parallax-background">
-            <img class="background-image" alt="Background Image" src="{% static 'new/img/sponsor_slider1.jpg' %}">
-        </div>
-        <div class="container">
-            <div class="row">
-                    <div class="col-md-6 col-sm-6">
-                        <h1 class="large-h1 text-white">Bringing together Python's most forward thinking innovators &amp; developers.</h1>
-                    </div>
-            </div><!--end of row-->
-        </div><!--end of container-->
-    </li>
-    <li class="hero-slide">
-        <div class="background-image-holder parallax-background">
-            <img class="background-image" alt="Background Image" src="{% static 'new/img/sponsor_slider2.jpg' %}">
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-6">
-                    <h1 class="large-h1 text-white">Bringing together Python's most forward thinking innovators &amp; developers.</h1>
-                </div>
-            </div><!--end of row-->
-        </div><!--end of container-->
-    </li>
-    <li class="hero-slide">
-        <div class="background-image-holder parallax-background">
-                <img class="background-image" alt="Background Image" src="{% static 'new/img/ch7.jpg' %}">
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-6">
-                    <h1 class="large-h1 text-white">Bringing together Python's most forward thinking innovators &amp; developers.</h1>
-                </div>
-            </div><!--end of row-->
-        </div><!--end of container-->
-    </li>
-        <li class="hero-slide">
-            <div class="background-image-holder parallax-background">
-                <img class="background-image" alt="Background Image" src="{% static 'new/img/cdbg.jpg' %}">
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-sm-6">
-                        <h1 class="large-h1 text-white">Bringing together Python's most forward thinking innovators &amp; developers.</h1>
-                    </div>
-                </div><!--end of row-->
-            </div><!--end of container-->
-         </li>
-{% endblock sliders %}
 {% block content %}
-    <div class="container">
-    <h1> Graph 1 goes here</h1>
-    <div id="barchart2"> </div>
-</div>
 <!-- Chart 3 ENDS -->
-<div class="container">
-        <div class="col-md-12 no-padding clearfix">
-            <div class="page-header pull-left">
-                <h1>Sponsorship table</h1>
-            </div>
-        </div><!-- /.col-md-12 -->
-            <div class="separator col-md-12">
-                <div class="pricely-chart pricely-professional">
-                    <section class="pricely-chart-three col-xs-12">
+<div>
+  <section class="col-md-12 no-padding clearfix">
+    <div class="container">
+      <h1><strong>Our Sponsors</strong></h1>
+    </div>
+  </section>
 
-                      {% if gold_sponsors %}
-                          <h1>Gold Sponsors</h1>
-                          {% for sponsor in gold_sponsors %}
-                              {% include "frontend/sponsor_unit.html" %}
-                          {% endfor %}
-                      {% endif %}
+  {% include "frontend/sponsor_level_list.html" with sponsors=gold_sponsors color="gold" title="Gold Sponsors" icon="" %}
 
-                      {% if silver_sponsors %}
-                          <h1>Silver Sponsors</h1>
-                          {% for sponsor in silver_sponsors %}
-                              {% include "frontend/sponsor_unit.html" %}
-                          {% endfor %}
-                      {% endif %}
+  {% include "frontend/sponsor_level_list.html" with sponsors=silver_sponsors color="silver" title="Silver Sponsors" icon="" %}
 
-                      {% if bronze_sponsors %}
-                          <h1>Bronze Sponsors</h1>
-                          {% for sponsor in bronze_sponsors %}
-                              {% include "frontend/sponsor_unit.html" %}
-                          {% endfor %}
-                      {% endif %}
-                    </section>
-                </div>
-            </div>
-    </div><!--container -->
+  {% include "frontend/sponsor_level_list.html" with sponsors=bronze_sponsors color="bronze" title="Bronze Sponsors" icon="" %}
+
+</div>
 {% endblock content %}

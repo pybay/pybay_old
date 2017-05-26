@@ -17,9 +17,12 @@ def pybay_sponsors_list(request):
         sponsor_map[sponsor.level.name].append(sponsor)
 
     return render(request, 'frontend/sponsors_list.html', {
-        "bronze_sponsors": sponsor_map['Bronze'],
         "gold_sponsors": sponsor_map['Gold'],
         "silver_sponsors": sponsor_map['Silver'],
+        "bronze_sponsors": sponsor_map['Bronze'],
+        "bronze_logo": "",
+        "gold_logo": "",
+        "silver_logo": "",
     })
 
 
