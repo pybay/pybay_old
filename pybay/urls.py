@@ -42,7 +42,8 @@ urlpatterns = [
     url(r"^reviews/", include("symposion.reviews.urls")),
     url(r"^boxes/", include("pinax.boxes.urls")),
 
-    # url(r"^schedule/", include("symposion.schedule.urls")),
+    url(r"^schedule/", views.pybay_schedule),
+    url(r"^schedule-sym/", include("symposion.schedule.urls")),
     # url(r"^account/signup/$", SignupView.as_view(), name="account_signup"),
     # url(r"^account/login/$", symposion.views.LoginView.as_view(), name="account_login"),
     # url(r"^teams/", include(teams_urls)),
