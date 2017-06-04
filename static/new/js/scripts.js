@@ -355,6 +355,9 @@ $(window).load(function() {
 
 //Call For Propositions Form
 $(document).ready(function() {
+    if(!$('#contact_form').bootstrapValidator) {
+        return;
+    }
     $('#contact_form').bootstrapValidator({
         // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
         feedbackIcons: {

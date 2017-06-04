@@ -85,6 +85,29 @@ p.question {
     color: #32648e;
 }
 
+/* Schedule */
+
+.sch-schedule:not(.sch-schedule-filtered) .sch-filter-list > li[data-filter=""] {
+  background: #428bca;
+  color: white;
+}
+
+.sch-day-title {
+  font-weight: bold;
+  margin: 22px 0 0 0;
+  padding: 8px 0;
+}
+
+.sch-timeslot-time {
+  margin: 8px 0 0 0;
+  padding: 5px 0 5px 2px;
+}
+
+.sch-timeslot-slots {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /* Sponsor list */
 .gold-sponsors .sponsor-list {
   /*background: hsl(0, 50%, 50%);
@@ -151,6 +174,190 @@ p.question {
   }
 }
 
+.sch-filters span {
+  font-size: 16px;
+}
+
+.sch-filter-list {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.sch-filter-list > li {
+  display: inline-block;
+  padding: 10px 15px 11px 15px;
+  margin: 0 5px 5px 0;
+  line-height: 1;
+  border: 3px solid #428bca;
+  border-radius: 25px;
+  color: #428bca;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease-out;
+}
+
+.sch-timeslot-slot {
+  flex: 1 0 20%;
+  margin: 0 5px 10px 5px;
+  padding: 16px 20px;
+  border: 2px solid hsl(0, 0%, 95%);
+  border-radius: 4px;
+  text-align: center;
+}
+
+.sch-timeslot-kind-keynote,
+.sch-timeslot-kind-reception,
+.sch-timeslot-kind-lunch,
+.sch-timeslot-kind-lightning,
+.sch-timeslot-kind-expo
+{
+  font-weight: bold;
+  border: 0;
+  background: hsl(50, 100%, 80%);
+  border-radius: 6px;
+}
+
+@media(max-width: 991px) {
+  .sch-timeslot-slot {
+    flex-basis: 45%;
+  }
+}
+
+.sch-timeslot-kind-talk {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  position: relative;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  text-align: left;
+}
+
+.sch-timeslot-kind-talk > * {
+  flex-basis: 100%;
+}
+
+.sch-room, .sch-duration {
+  flex: 1 0 auto;
+  white-space: nowrap;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.sch-room {
+  order: -100;
+  text-align: right;
+}
+
+.sch-duration {
+  order: -90;
+}
+
+.sch-duration::before {
+  content: '\2022';
+  margin: 0 .5em;
+}
+
+.sch-timeslot-kind-talk > h4 {
+  font-weight: bold;
+}
+
+.sch-speaker {
+  font-weight: bold;
+  margin-top: 4px;
+}
+
+.sch-speaker-photo {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  position: absolute;
+  top: 42px;
+  right: 15px;
+  border-radius: 50%;
+}
+.sch-speaker-photo img {
+  height: 100%;
+}
+
+.sch-speaker-photo + h4,
+.sch-speaker-photo + h4 + .sch-speaker {
+  padding-right: 50px;
+}
+
+@media(max-width: 450px) {
+  .schedule-page.container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .sch-filters > span {
+    display: block;
+    margin-left: 10px;
+  }
+
+  .sch-timeslot-time {
+    background: hsl(0, 0%, 95%);
+    padding: 8px 10px;
+    text-align: center;
+  }
+
+  .sch-timeslot-slots {
+    display: block;
+  }
+
+  .sch-timeslot-slot {
+    border: 0;
+    padding: 15px 10px;
+    margin: 0;
+  }
+  .sch-timeslot-slot:not(:first-child) {
+    border-top: 1px solid hsl(0, 0%, 95%);
+    border-radius: 0;
+  }
+
+  .sch-timeslot-kind-talk {
+    margin: 0;
+  }
+
+  .sch-timeslot-kind-talk > h4 {
+    order: -120;
+    flex: 1 1;
+  }
+
+  .sch-duration, .sch-room {
+    flex: 0 1;
+    margin: 0;
+    line-height: 1;
+  }
+
+  .sch-speaker-photo {
+    left: 10px;
+    top: 15px;
+  }
+
+  .sch-speaker-photo + h4,
+  .sch-speaker-photo + h4 + .sch-speaker {
+    padding: 0 0 0 46px;
+  }
+
+  .sch-timeslot-kind-keynote,
+  .sch-timeslot-kind-reception,
+  .sch-timeslot-kind-lunch,
+  .sch-timeslot-kind-lightning,
+  .sch-timeslot-kind-expo {
+    margin: 0 0;
+    border-radius: 0;
+  }
+
+  .sch-timeslot-special .sch-timeslot-kind-keynote,
+  .sch-timeslot-special .sch-timeslot-kind-reception,
+  .sch-timeslot-special .sch-timeslot-kind-lunch,
+  .sch-timeslot-special .sch-timeslot-kind-lightning,
+  .sch-timeslot-special .sch-timeslot-kind-expo {
+    margin-bottom: 30px;
+  }
+}
 
 /* SPONSOR PAGE PRICING TABLE */
 
