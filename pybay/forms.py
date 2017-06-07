@@ -2,6 +2,8 @@ import random
 import string
 
 from django import forms
+from django.conf import settings
+from django.core.mail import EmailMessage
 from django.core.exceptions import ValidationError
 from django.contrib.auth.models import User
 
@@ -109,4 +111,14 @@ class CallForProposalForm(forms.Form):
             speaker_and_talk_history=data['speaker_and_talk_history'],
             talk_links=data['links_to_past_talks'],
         )
+
+        # Email submitter
+        with open('%s/proposals/email_confirmation.tmpl' %
+                  settings.PACKAGE_ROOT) as f:
+            message = f.read().format(**data, **settings.PROJECT_DATA)
+        email = EmailMessage(
+            'Your PyBay talk proposal was successfully submitted!',
+            message, to=[data['email']])
+        email.send()
+
         return speaker, proposal

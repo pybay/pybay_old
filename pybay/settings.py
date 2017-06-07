@@ -1,5 +1,5 @@
 import os
-
+from base64 import b64decode
 
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
 PACKAGE_ROOT = os.path.abspath(os.path.dirname(__file__))
@@ -189,8 +189,6 @@ FIXTURE_DIRS = [
     os.path.join(PROJECT_ROOT, "fixtures"),
 ]
 
-EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
-
 ACCOUNT_OPEN_SIGNUP = True
 ACCOUNT_EMAIL_UNIQUE = True
 ACCOUNT_EMAIL_CONFIRMATION_REQUIRED = False
@@ -244,3 +242,17 @@ if not os.environ.get('TRAVIS', False) and os.path.exists(ROLLBAR_PATH):
     # Intentially added below the ROLLBAR const. Please do not move
     import rollbar
     rollbar.init(**ROLLBAR)
+
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+if os.environ.get('SMTP_PWD', ''):
+    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+    EMAIL_HOST = 'smtp.glidelink.net'
+    EMAIL_PORT = 587
+    EMAIL_HOST_USER = 'pybay'
+    DEFAULT_FROM_EMAIL = 'info@pybay.com'
+    EMAIL_HOST_PASSWORD = b64decode(os.environ.get('SMTP_PWD', '')).decode('utf-8')
+    EMAIL_USE_TLS = True
+
+
+PROJECT_DATA = dict(
+    cfp_close_date='June 10')
