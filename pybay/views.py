@@ -44,11 +44,7 @@ class FaqTemplateView(TemplateView):
         filters = {}
         if self.faq_filter is not None:
             filters[self.faq_filter] = True
-        context['faqs'] = (
-            Faq.objects
-            .filter(**filters)
-            .order_by('ordering')
-        )
+        context['faqs'] = Faq.objects.filter(**filters)
         return context
 
 

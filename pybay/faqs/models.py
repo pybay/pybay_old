@@ -16,6 +16,7 @@ class CategoryManager(models.Manager):
 
 class Category(models.Model):
     class Meta:
+        ordering = ['ordering']
         verbose_name_plural = "Categories"
 
     title = models.CharField(max_length=200)
@@ -39,3 +40,6 @@ class Faq(models.Model):
 
     def __str__(self):
         return "{}: {}".format(self.title, self.body)
+
+    class Meta:
+        ordering = ['ordering']
