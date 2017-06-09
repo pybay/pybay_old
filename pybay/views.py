@@ -12,6 +12,8 @@ from pybay.proposals.models import Proposal
 from collections import defaultdict
 from django.conf import settings
 
+cfp_close_date = settings.PROJECT_DATA['cfp_close_date']
+
 
 def pybay_sponsors_list(request):
     active_sponsors = Sponsor.objects.filter(active=True).order_by('name')
@@ -65,7 +67,8 @@ def pybay_cfp_create(request):
 
     else:
         form = CallForProposalForm()
-        return render(request, 'frontend/cfp.html', {'form': form})
+        return render(request, 'frontend/cfp.html',
+            {'form': form, 'cfp_close_date': cfp_close_date})
 
 
 def pybay_speakers_list(request):

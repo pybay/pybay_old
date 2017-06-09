@@ -262,4 +262,4 @@ if os.environ.get('SMTP_PWD', ''):
 
 
 PROJECT_DATA = dict(
-    cfp_close_date='June 10')
+    cfp_close_date='June 17')
