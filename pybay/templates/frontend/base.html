@@ -55,7 +55,7 @@
                                     <a class="inner-link" href="{% url 'pybay_sponsors' %}" >Sponsors Prospectus</a>
                                 </li>
                                 <li>
-                                    <a class="inner-link" href="/cfp">Call For Proposals</a>
+                                    <a class="inner-link" href="{% url 'pybay_cfp' %}">Call For Proposals</a>
                                 </li>
                                 {% if SHOW_SPEAKERS_LIST_NAVBAR_LINK %}
                                 <li>
@@ -97,7 +97,7 @@
                                     <a class="inner-link" href="{% url 'pybay_sponsors' %}" target="default">Sponsors Prospectus</a>
                                 </li>
                                 <li>
-                                    <a class="inner-link" href="cfp" target="default">Call For Proposal</a>
+                                    <a class="inner-link" href="{% url 'pybay_cfp' %}" target="default">Call For Proposal</a>
                                 </li>
                                 <li>
                                     <a class="inner-link" href="{% url 'pybay_tickets' %}">Registration</a>
