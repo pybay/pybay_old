@@ -44,6 +44,38 @@ h1 {
     color: black;
 }
 
+.video-tagline, .video-moreinfo {
+  display: block;
+  color: white;
+  font-weight: 300;
+}
+
+.video-tagline {
+  margin: 25px 0 40px 0;
+}
+
+.video-moreinfo {
+  font-size: 25px;
+  margin: 25px 0;
+}
+.video-moreinfo.countdown {
+  margin-top: 50px;
+}
+
+@media(max-width: 767px) {
+  .video-moreinfo {
+    font-size: 20px;
+  }
+  .video-moreinfo.countdown {
+    margin-top: 20px;
+  }
+  .countdown-amount {
+    margin-bottom: 10px;
+  }
+  .countdown-section {
+    margin: 0 2px;
+  }
+}
 
 /* FAQ boxes */
 .faq-box .more-link {
@@ -435,4 +467,9 @@ section.topics.duplicatable-content.home-page {
 .youtube .play:hover {
     opacity: 1;
     filter: alpha(opacity=100);
+}
+
+.btn {
+  padding-left: 15px;
+  padding-right: 15px;
 }
