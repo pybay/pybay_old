@@ -44,6 +44,15 @@ h1 {
     color: black;
 }
 
+section.cta {
+  background-color: #0072bc;
+  color: white;
+}
+section.cta .large-h1 {
+  display: block;
+  margin: 50px 0;
+}
+
 
 /* FAQ boxes */
 .faq-box .more-link {
@@ -435,4 +444,9 @@ section.topics.duplicatable-content.home-page {
 .youtube .play:hover {
     opacity: 1;
     filter: alpha(opacity=100);
+}
+
+.btn {
+  padding-left: 15px;
+  padding-right: 15px;
 }
