@@ -7,24 +7,34 @@
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
                 <h1 class="blue-header"><strong>Frequently Asked Questions</strong></h1>
-                {% for slug, title, faqs in faq_categories %}
-                    <div class="category" id={{ slug }}>
-                        {% if faq_categories|length > 1 %}
-                            <h2 class="blue-header"><strong>{{ title }}</strong></h2>
-                        {% endif %}
-                        <div class="faq-items">
-                            {% for faq in faqs %}
-                                <a name="faq-{{ faq.id }}" style="position:relative;top:-60px">&nbsp;</a> {# The anchor with margin is just to get the page to scroll down a bit and not hide the title. #}
-                                <div class="faq-item" id="faq-{{ faq.id }}">
-                                    <h3 class="lead blue-header"><strong>{{ faq.title }}</strong> <a class="glyphicon glyphicon-link" href="#faq-{{ faq.id }}"></a></h3>
-                                    <p>
-                                        {{ faq.body | safe }}
-                                    </p>
-                                </div>
-                            {% endfor %}
-                        </div>
+                    <div class="panel-group id=accordion">
+                                {% for slug, title, faqs in faq_categories %}
+                                    <div class="category panel panel-default" id="{{ slug }}">
+                                        {% if faq_categories|length > 1 %}
+                                            <div class="panel-heading">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{ slug }}">
+                                                    <h2 class="blue-header"><strong>{{ title }}</strong></h2>
+                                                </a>
+                                            </div>
+                                        {% endif %}
+                                            <div id="collapse{{ slug }}" class="panel-collapse collapse in">
+                                                <div class="panel-body">
+                                                    <div class="faq-items">
+                                                        {% for faq in faqs %}
+                                                            <a name="faq-{{ faq.id }}" style="position:relative;top:-60px">&nbsp;</a> {# The anchor with margin is just to get the page to scroll down a bit and not hide the title. #}
+                                                            <div class="faq-item" id="faq-{{ faq.id }}">
+                                                                <h3 class="lead blue-header"><strong>{{ faq.title }}</strong> <a class="glyphicon glyphicon-link" href="#faq-{{ faq.id }}"></a></h3>
+                                                                <p>
+                                                                    {{ faq.body | safe }}
+                                                                </p>
+                                                            </div>
+                                                        {% endfor %}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                {% endfor %}
                     </div>
-                {% endfor %}
             </div>
         </div>
     </div>
