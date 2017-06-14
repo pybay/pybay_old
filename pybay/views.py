@@ -71,6 +71,9 @@ def pybay_cfp_create(request):
             {'form': form, 'cfp_close_date': cfp_close_date})
 
 
+def pybay_speakers_detail(request, speaker_id):
+    pass
+
 def pybay_speakers_list(request):
     accepted_proposals = Proposal.objects.filter(
         result__status='accepted')
@@ -86,8 +89,8 @@ def pybay_speakers_list(request):
         'speakers': speakers
     })
 
-def undecided_proposals(request):
 
+def undecided_proposals(request):
     api_token = request.GET.get('token')
     if api_token != settings.PYBAY_API_TOKEN:
         return HttpResponseForbidden()
