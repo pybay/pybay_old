@@ -113,6 +113,7 @@ class CallForProposalForm(forms.Form):
             meetup_talk=data['meetup_talk'],
             speaker_and_talk_history=data['speaker_and_talk_history'],
             talk_links=data['links_to_past_talks'],
+            speaker_website=data['website'],
         )
 
         # Email submitter
