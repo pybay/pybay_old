@@ -1,0 +1,48 @@
+{% extends 'frontend/base.html' %}
+{% load static %}
+{% load thumbnail %}
+
+{% block content %}
+<section>
+  <div class="container">
+    <div class="col-md-12 no-padding clearfix">
+        <div class="page-header">
+            <h1>{{ speaker.name }}</h1>
+            <img width="200" src="{{ speaker.photo.url }}" alt="{{ speaker.name }}" />
+        </div>
+        <div>
+            {{ speaker.biography_html | safe }}
+        </div>
+        <div>
+            {% if speaker_website %}
+                <a href="{{ speaker_website }}" class="btn">Speaker Home Page</a>
+            {% endif %}
+        </div>
+    </div><!-- /.col-md-12 -->
+
+    <div class="col-md-12 no-padding clearfix">
+        <div class="page-header">Talks</div>
+            <ul>
+            {% for talk in talks %}
+                <li>
+                    <div class="col-md-12 no-padding clearfix">
+                        <div class="page-header">
+                            <h3>{{ talk.title }}</h1>
+                        </div>
+                        <div>
+                            <p>Abstract: {{ talk.abstract }}</p>
+                        </div>
+                        <div>
+                            <p>Description: {{ talk.description }}</p>
+                        </div>
+                    </div><!-- /.col-md-12 -->
+                </li>
+            {% endfor %}
+            </ul>
+        <div>
+    </div><!-- /.col-md-12 -->
+
+    
+  </div><!--container -->
+</section>
+{% endblock content %}
