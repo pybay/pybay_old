@@ -2,10 +2,10 @@
 {% load static %}
 
 {% block content %}
-<section class="code_of_conduct">
+<section class="topics duplicatable-content">
     <div class="container">
         <div class="row">
-            <div class="col-md-10 col-md-offset-1">
+            <div class="col-md-12">
                 <h1 class="blue-header"><strong>Frequently Asked Questions</strong></h1>
                 {% for slug, title, faqs in faq_categories %}
                     <div class="category" id={{ slug }}>
