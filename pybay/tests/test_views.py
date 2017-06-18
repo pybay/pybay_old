@@ -1,6 +1,6 @@
 from django.test import TestCase
 from django.core.urlresolvers import reverse
-from pybay.proposals.models import Proposal
+from pybay.proposals.models import Proposal, TalkProposal
 from symposion.proposals.models import ProposalKind
 from symposion.speakers.models import Speaker
 from symposion.proposals.models import AdditionalSpeaker
@@ -13,8 +13,11 @@ class SpeakersViewTest(TestCase):
     def setUp(self):
         kind = mommy.make(ProposalKind)
         self.speaker = mommy.make(Speaker, photo=gen_image_field())
-        self.proposal = Proposal.objects.create(
-            title='test this title', kind=kind, speaker=self.speaker)
+        self.proposal = TalkProposal.objects.create(
+            title='test this title', kind=kind,
+            speaker=self.speaker,
+            audience_level=1,
+        )
         proposal_result = mommy.make(ProposalResult,
             proposal=self.proposal,
             status='accepted')
