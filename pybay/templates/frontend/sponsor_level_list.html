@@ -15,15 +15,26 @@
     <section class="sponsor-list">
       {% for sponsor in sponsors %}
         <div class="sl-sponsor">
+          <!-- move this section into sl-blurb --
           <a class="sl-logo" href="{{ sponsor.external_url }}">
             <img
               alt="{{ sponsor.name }}"
               src="{{ sponsor.website_logo.url }}"
             />
           </a>
+          -- end move -->
           <div class="sl-blurb">
             <h3><a href="{{ sponsor.external_url }}">{{ sponsor.name }}</a></h3>
+            <!-- replace link with logo --
             <p class="sl-link"><a href="{{ sponsor.external_url }}">{{ sponsor.external_url }}</a></p>
+            -- end replace -->
+            <a class="sl-logo" href="{{ sponsor.external_url }}">
+              <img
+                alt="{{ sponsor.name }}"
+                src="{{ sponsor.website_logo.url }}"
+                width="200px"
+              /> <!-- note width should likely be  a % or ems or another pixel size -->
+            </a>
             <p class="sl-intro">{{ sponsor.listing_text|urlize|linebreaks }}</p>
           </div>
         </div>
