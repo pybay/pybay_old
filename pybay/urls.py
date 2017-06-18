@@ -57,7 +57,7 @@ urlpatterns = [
     # url(r"^markitup/", include("markitup.urls")),
     url(r"^our-sponsors/$", pybay_sponsors_list, name="pybay_sponsors_list"),
     url(r"^our-speakers/$", pybay_speakers_list, name="pybay_speakers_list"),
-    url(r"^speaker/(?P<speaker_id>\d+)/$$", pybay_speakers_detail, name="pybay_speakers_detail"),
+    url(r"^speaker/(?P<speaker_slug>[-\w]+)/$$", pybay_speakers_detail, name="pybay_speakers_detail"),
     url(r"^api/undecided_proposals$", undecided_proposals, name="pybay_undecided_proposals"),
     url(r"^api/proposals/(?P<proposal_id>\d+)/$", proposal_detail, name="pybay_detail_proposal"),
     url(r"^404$", TemplateView.as_view(template_name="404.html")),  # Adding explicitly for template dev purposes

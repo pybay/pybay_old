@@ -1,8 +1,7 @@
 from django.test import TestCase
 from django.core.urlresolvers import reverse
 from pybay.proposals.models import TalkProposal
-from pybay.utils import (get_slugged_name_from_speaker, 
-                         get_accepted_speaker_by_slug)
+from pybay.utils import get_accepted_speaker_by_slug
 from symposion.proposals.models import ProposalKind
 from symposion.speakers.models import Speaker
 from symposion.proposals.models import AdditionalSpeaker
@@ -16,7 +15,7 @@ class SpeakersModelTest(TestCase):
     def test_get_slug(self):
         self.speaker = mommy.make(Speaker, name="Lorem Ipsum",
                                   photo=gen_image_field())
-        self.assertEquals(get_slugged_name_from_speaker(self.speaker),
+        self.assertEquals(self.speaker.name_slug,
                           "lorem-ipsum")
 
     def test_get_active_speaker_by_slug(self):
@@ -27,7 +26,6 @@ class SpeakersModelTest(TestCase):
         s3 = mommy.make(Speaker, name="Lorem Ipsum 3",
                         photo=gen_image_field())
 
-
         kind = mommy.make(ProposalKind)
         p2 = TalkProposal.objects.create(
             title='test this title', kind=kind,
@@ -35,11 +33,11 @@ class SpeakersModelTest(TestCase):
         )
         mommy.make(ProposalResult, proposal=p2, status='accepted')
         self.assertEquals(
-            get_accepted_speaker_by_slug(get_slugged_name_from_speaker(s2)),
+            get_accepted_speaker_by_slug(s2.name_slug),
             s2,
         )
         with self.assertRaises(Speaker.DoesNotExist):
-            get_accepted_speaker_by_slug(get_slugged_name_from_speaker(s1))
+            get_accepted_speaker_by_slug(s1.name_slug)
 
 
 

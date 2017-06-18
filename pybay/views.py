@@ -9,6 +9,7 @@ from .forms import CallForProposalForm
 from pybay.faqs.models import Faq, Category
 from symposion.sponsorship.models import Sponsor
 from pybay.proposals.models import TalkProposal, TutorialProposal
+from pybay.utils import get_accepted_speaker_by_slug
 from symposion.speakers.models import Speaker
 
 from collections import defaultdict
@@ -77,22 +78,18 @@ def pybay_cfp_create(request):
             {'form': form, 'cfp_close_date': cfp_close_date})
 
 
-def pybay_speakers_detail(request, speaker_id):
+def pybay_speakers_detail(request, speaker_slug):
 
     # Fetch speaker
     try:
-        speaker = Speaker.objects.get(id=speaker_id)
+        speaker = get_accepted_speaker_by_slug(speaker_slug)
     except Speaker.DoesNotExist:
-        log.error("Speaker %s does not exist", speaker_id)
+        log.error("Speaker %s does not have any approved talks or does not exist", speaker_slug)
         return HttpResponseNotFound()
 
-    # Assert speaker has at least one talk approved
     speaker_approved_talks = TalkProposal.objects.filter(
         speaker=speaker
     ).filter(result__status='accepted')
-    if not speaker_approved_talks.exists():
-        log.error("Speaker %s does not have any approved talks", speaker_id)
-        return HttpResponseNotFound()
 
     return render(request, 'frontend/speakers_detail.html',
                   {'speaker': speaker, 'talks': speaker_approved_talks,
