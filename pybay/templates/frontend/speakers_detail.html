@@ -1,0 +1,52 @@
+{% extends 'frontend/base.html' %}
+{% load static %}
+{% load thumbnail %}
+{% block content %}
+<section>
+   <div class="container" style="padding-top: 150px;">
+     <div class="row">
+       <div class="col-sm-6 col-md-4">
+           <a href="{{ speaker.photo.url }}" data-title="Meetup 2013">
+              <div>
+                  <img class="img-responsive" alt="{{ speaker.name }}" src="{{ speaker.photo.url }}">
+              </div>
+           </a>
+       </div>
+       <div class="col-sm-6 col-md-7">
+           <h1><strong>{{ speaker.name }}</strong></h1>
+          <p class="lead">{{ speaker.biography_html | safe }}</p>
+          <a style="margin-top: 20px;" href="{{ speaker_website }}" class="btn">Speaker home page</a>
+       </div>
+     </div>
+   </div>
+</section>
+
+{% for talk in talks %}
+    <section class="inline-video">
+            <div class="container">
+                    <div class="row">
+                            <div class="col-sm-12">
+                                <h2><strong>{{ talk.title }}</strong></h2>
+                                {{ talk.category | capfirst }}, {{ talk.get_audience_level_display | capfirst }}
+                            </div>
+                    </div>
+            
+                    <div class="row">
+                            <div class="col-md-11">
+                                <p class="lead"></p>
+                                <p class="lead">
+                                    <h3>Description</h3>
+                                    {{ talk.description }}
+                                </p>
+                                <p class="lead">
+                                    <h3>Abstract</h3>
+                                    {{ talk.abstract }}
+                                </p>
+                                <a href="#" class="btn">&nbsp; &nbsp; Conference Schedule &nbsp; &nbsp;</a>
+                            </div>
+                    </div>
+            </div>
+    </section>
+{% endfor %}
+
+{% endblock content %}

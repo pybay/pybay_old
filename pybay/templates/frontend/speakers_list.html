@@ -14,7 +14,7 @@
     {% for speaker in speakers %}
       <div class="col-md-6">
         <img src="{% thumbnail speaker.photo '300x300' %}" alt="{{ speaker.name }}">
-        <h2>{{ speaker.name }}</h2>
+        <h2><a href="{% url 'pybay_speakers_detail' speaker.name_slug %}">{{ speaker.name }}</a></h2>
         <span>{{ speaker.biography|truncatechars:"300" }}</span>
       </div>
     {% endfor %}

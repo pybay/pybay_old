@@ -1,16 +1,23 @@
 import json
 
 from django.shortcuts import render
-from django.http import HttpResponse, HttpResponseForbidden
+from django.http import (HttpResponse, HttpResponseForbidden,
+                         HttpResponseNotFound)
 from django.views.generic import TemplateView
 
 from .forms import CallForProposalForm
 from pybay.faqs.models import Faq, Category
 from symposion.sponsorship.models import Sponsor
-from pybay.proposals.models import Proposal, TalkProposal, TutorialProposal
+from pybay.proposals.models import TalkProposal, TutorialProposal
+from pybay.utils import get_accepted_speaker_by_slug
+from symposion.speakers.models import Speaker
 
 from collections import defaultdict
 from django.conf import settings
+
+from logging import getLogger
+
+log = getLogger(__file__)
 
 cfp_close_date = settings.PROJECT_DATA['cfp_close_date']
 
@@ -71,9 +78,26 @@ def pybay_cfp_create(request):
             {'form': form, 'cfp_close_date': cfp_close_date})
 
 
+def pybay_speakers_detail(request, speaker_slug):
+
+    # Fetch speaker
+    try:
+        speaker = get_accepted_speaker_by_slug(speaker_slug)
+    except Speaker.DoesNotExist:
+        log.error("Speaker %s does not have any approved talks or does not exist", speaker_slug)
+        return HttpResponseNotFound()
+
+    speaker_approved_talks = TalkProposal.objects.filter(
+        speaker=speaker
+    ).filter(result__status='accepted')
+
+    return render(request, 'frontend/speakers_detail.html',
+                  {'speaker': speaker, 'talks': speaker_approved_talks,
+                   'speaker_website': speaker_approved_talks[0].speaker_website})
+
+
 def pybay_speakers_list(request):
-    accepted_proposals = Proposal.objects.filter(
-        result__status='accepted')
+    accepted_proposals = TalkProposal.objects.filter(result__status='accepted')
     speakers = []
     for proposal in accepted_proposals:
         speakers += list(proposal.speakers())
@@ -86,8 +110,8 @@ def pybay_speakers_list(request):
         'speakers': speakers
     })
 
-def undecided_proposals(request):
 
+def undecided_proposals(request):
     api_token = request.GET.get('token')
     if api_token != settings.PYBAY_API_TOKEN:
         return HttpResponseForbidden()
