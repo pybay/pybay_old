@@ -1,48 +1,52 @@
 {% extends 'frontend/base.html' %}
 {% load static %}
 {% load thumbnail %}
-
 {% block content %}
 <section>
-  <div class="container">
-    <div class="col-md-12 no-padding clearfix">
-        <div class="page-header">
-            <h1>{{ speaker.name }}</h1>
-            <img width="200" src="{{ speaker.photo.url }}" alt="{{ speaker.name }}" />
-        </div>
-        <div>
-            {{ speaker.biography_html | safe }}
-        </div>
-        <div>
-            {% if speaker_website %}
-                <a href="{{ speaker_website }}" class="btn">Speaker Home Page</a>
-            {% endif %}
-        </div>
-    </div><!-- /.col-md-12 -->
-
-    <div class="col-md-12 no-padding clearfix">
-        <div class="page-header">Talks</div>
-            <ul>
-            {% for talk in talks %}
-                <li>
-                    <div class="col-md-12 no-padding clearfix">
-                        <div class="page-header">
-                            <h3>{{ talk.title }}</h1>
-                        </div>
-                        <div>
-                            <p>Abstract: {{ talk.abstract }}</p>
-                        </div>
-                        <div>
-                            <p>Description: {{ talk.description }}</p>
-                        </div>
-                    </div><!-- /.col-md-12 -->
-                </li>
-            {% endfor %}
-            </ul>
-        <div>
-    </div><!-- /.col-md-12 -->
-
-    
-  </div><!--container -->
+   <div class="container" style="padding-top: 150px;">
+     <div class="row">
+       <div class="col-sm-6 col-md-4">
+           <a href="{{ speaker.photo.url }}" data-title="Meetup 2013">
+              <div>
+                  <img class="img-responsive" alt="{{ speaker.name }}" src="{{ speaker.photo.url }}">
+              </div>
+           </a>
+       </div>
+       <div class="col-sm-6 col-md-7">
+           <h1><strong>{{ speaker.name }}</strong></h1>
+          <p class="lead">{{ speaker.biography_html | safe }}</p>
+          <a style="margin-top: 20px;" href="{{ speaker_website }}" class="btn">Speaker home page</a>
+       </div>
+     </div>
+   </div>
 </section>
+
+{% for talk in talks %}
+    <section class="inline-video">
+            <div class="container">
+                    <div class="row">
+                            <div class="col-sm-12">
+                                <h2><strong>{{ talk.title }}</strong></h2>
+                                {{ talk.category | capfirst }}, {{ talk.get_audience_level_display | capfirst }}
+                            </div>
+                    </div>
+            
+                    <div class="row">
+                            <div class="col-md-11">
+                                <p class="lead"></p>
+                                <p class="lead">
+                                    <h3>Description</h3>
+                                    {{ talk.description }}
+                                </p>
+                                <p class="lead">
+                                    <h3>Abstract</h3>
+                                    {{ talk.abstract }}
+                                </p>
+                                <a href="#" class="btn">&nbsp; &nbsp; Conference Schedule &nbsp; &nbsp;</a><a href="#" class="btn">&nbsp; &nbsp; Workshop Offerings &nbsp; &nbsp;</a>
+                            </div>
+                    </div>
+            </div>
+    </section>
+{% endfor %}
+
 {% endblock content %}
