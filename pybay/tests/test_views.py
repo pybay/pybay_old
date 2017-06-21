@@ -64,12 +64,6 @@ class SpeakersViewTest(TestCase):
         self.assertIn('speakers', response.context)
         self.assertEquals(response.context['speakers'], [self.speaker])
 
-    def test_photo_required(self):
-        self.speaker.photo = None
-        self.speaker.save()
-        response = self.client.get(reverse('pybay_speakers_list'))
-        self.assertEquals(response.context['speakers'], [])
-
     def test_additional_speaker(self):
         speaker2 = mommy.make(Speaker, photo=gen_image_field())
         mommy.make(
