@@ -6,8 +6,8 @@
 		  <h1>Some of our speakers.</h1>
 		</div>
 	  </div>
-      {% for featured in speakers %}
 	  <div class="row speakers-row">
+      {% for featured in speakers %}
 		<div class="col-md-3 col-sm-6 speaker-column">
 		  <div class="speaker">
            {% if featured.speaker.photo %}
@@ -22,12 +22,12 @@
 			  </div>
 			</div>
             {% endif %}
-			<span class="speaker-name">{{ featured.speaker }}</span>
+			<span class="speaker-name">{{ featured.speaker.name }}</span>
 			{{ featured.speaker.biography_html|safe }}
 		  </div>
 		</div>
-	  </div>
       {% endfor %}
+	  </div>
 	</div>
   </section>
 </div>
