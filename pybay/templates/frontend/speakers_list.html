@@ -7,16 +7,36 @@
   <div class="container">
     <div class="col-md-12 no-padding clearfix">
         <div class="page-header pull-left">
-            <h1>All Speakers</h1>
+            <h1 class="blue-header"><strong>All Speakers</strong></h1>
         </div>
     </div><!-- /.col-md-12 -->
-    
+
     {% for speaker in speakers %}
-      <div class="col-md-6">
-        <img src="{% thumbnail speaker.photo '300x300' %}" alt="{{ speaker.name }}">
-        <h2><a href="{% url 'pybay_speakers_detail' speaker.name_slug %}">{{ speaker.name }}</a></h2>
-        <span>{{ speaker.biography|truncatechars:"300" }}</span>
+    {% if forloop.counter|divisibleby:2 %}<div class="row">{% endif %}
+      <div class="col-md-5 col-sm-12" style="padding-bottom: 50px">
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <img src="{% thumbnail speaker.photo '300x300' %}" alt="{{ speaker.name }}">
+          </div>
+          <div class="col-md-8 col-sm-12">
+            <h2><a href="#">{{ speaker.name }}</a></h2>
+            <div><strong>{{ speaker.all_presentations.0.title }}</strong></div>
+            <span class="pull-right" style="padding-left: 15px">{{ speaker.all_presentations.0.slot.day.date }}</span>
+            <span class="pull-right">{{ speaker.all_presentations.0.slot.start }}</span>
+            <span class="pull-left">{{ speaker.all_presentations.0.proposal.category | capfirst }}</span>
+            <span class="pull-left" style="padding-left: 15px">
+              {{ speaker.all_presentations.0.proposal.audience_level }}
+            </span>
+          </div>
+            <div class="row">
+              <div class="col-md-12"
+                <span>{{ speaker.biography|truncatechars:"300" }}</span>
+              </div>
+            </div>
+        </div>
       </div>
+      <div class="col-md-1"></div>
+    {% if forloop.counter|divisibleby:2 %}</div>{% endif %}
     {% endfor %}
   </div><!--container -->
 </section>
