@@ -1,0 +1,33 @@
+<div class="main-container">
+  <section class="speakers duplicatable-content">
+	<div class="container">
+	  <div class="row">
+		<div class="col-sm-12">
+		  <h1>Some of our speakers.</h1>
+		</div>
+	  </div>
+      {% for featured in speakers %}
+	  <div class="row speakers-row">
+		<div class="col-md-3 col-sm-6 speaker-column">
+		  <div class="speaker">
+           {% if featured.speaker.photo %}
+			<div class="image-holder">
+			  <img class="background-image" alt="Speaker" src="{{ MEDIA_URL }}{{ featured.speaker.photo.name }}">
+			  <div class="hover-state text-center preserve3d">
+				<div class="social-links vertical-align">
+                  {% if featured.speaker.twitter_username %}
+				  <a href="http://twitter.com/{{ featured.speaker.twitter_username }}"><i class="icon social_twitter"></i></a>
+                  {% endif %}
+				</div>
+			  </div>
+			</div>
+            {% endif %}
+			<span class="speaker-name">{{ featured.speaker }}</span>
+			{{ featured.speaker.biography_html|safe }}
+		  </div>
+		</div>
+	  </div>
+      {% endfor %}
+	</div>
+  </section>
+</div>
