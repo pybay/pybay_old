@@ -24,7 +24,7 @@ Try:
     (ENV)$ pip install -r requirements.txt
     (ENV)$ pip install -e YOUR/PATH/TO/symposion/   # this installs our symposion fork to ENV!
     (ENV)$ ./manage.py migrate
-    (ENV)$ ./manage.py loaddata fixtures/*
+    (ENV)$ ./manage.py loaddata fixtures/*     # doesn't work on Windows, see "Windows instructions" below
     (ENV)$ ./manage.py runserver
 
 The default admin user is test and password is test
@@ -36,6 +36,19 @@ disk. Eg:
     $ cd ~/workspace/pybay/ENV/lib/python3.6/site-packages/
     $ rm -rf symposion
     $ ln -s ~/workspace/symposion/symposion .
+
+### Windows Instructions
+
+For some reason, running `manage.py loaddata fixtures/*` gives a `No fixture named '*' found` error on Windows. You'll have to load each fixture file individually:
+
+    (ENV)$ python manage.py loaddata fixtures/auth.json
+    (ENV)$ python manage.py loaddata fixtures/conference.json
+    (ENV)$ python manage.py loaddata fixtures/proposal_base.json
+    (ENV)$ python manage.py loaddata fixtures/sites.json
+    (ENV)$ python manage.py loaddata fixtures/sponsor_benefits.json
+    (ENV)$ python manage.py loaddata fixtures/sponsor_levels.json
+
+(You can ignore the "invalid foreign keys" warnings you get. The foreign keys will become valid once you've loaded all the fixture files.)
 
 ## Deploying
 
