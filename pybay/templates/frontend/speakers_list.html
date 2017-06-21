@@ -7,15 +7,17 @@
       </div>
     </div>
 
-    <table border="4">
+    <table border="1">
       <tr>
         {% for speaker in speakers %}
         <td  style="vertical-align:top; background-color:white;">
           <img src="{% thumbnail speaker.photo '200x200' %}" alt="{{ speaker.name }}"  style="float: left; margin:10px;">
           <h2 style="float: left; margin: 3px 10px 10px 0px;">{{ speaker.name }}</h2>
           <br />
+          {{speaker.category}}, {{speaker.audience_level}}
+          <br />
           <div style="margin: 10px; clear: left;">
-          {{ speaker.biography | truncatechars:"300" }}
+          {{ speaker.biography | truncatechars:"600" }}
         </div>
         <div  style="float:left; margin: 10px;">
           <a href="#"><i class="icon social_twitter"></i></a>
