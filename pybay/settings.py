@@ -140,8 +140,10 @@ INSTALLED_APPS = [
     "eventlog",
     "markitup",
     "metron",
+    "ordered_model",
     "taggit",
     "timezones",
+
 
     # symposion
     "symposion.sponsorship",
@@ -156,6 +158,7 @@ INSTALLED_APPS = [
     'pybay.proposals',
     'pybay.faqs',
     'pybay.flatpages_ext.apps.FlatpagesExtConfig',
+    'pybay.featured_speakers',
     'crispy_forms',
 ]
 
