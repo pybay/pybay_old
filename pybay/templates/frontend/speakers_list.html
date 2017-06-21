@@ -1,4 +1,8 @@
-{% extends 'frontend/base.html' %} {% load static %} {% load thumbnail %} {% block content %}
+{% extends 'frontend/base.html' %}
+{% load static %}
+{% load thumbnail %}
+
+{% block content %}
 <section>
   <div class="container">
     <div class="col-md-12 no-padding clearfix">
@@ -13,33 +17,7 @@
         <h2><a href="{% url 'pybay_speakers_detail' speaker.name_slug %}">{{ speaker.name }}</a></h2>
         <span>{{ speaker.biography|truncatechars:"300" }}</span>
       </div>
-    </div>
-
-    <table border="1">
-      <tr>
-        {% for speaker in speakers %}
-        <td  style="vertical-align:top; background-color:white;">
-          <img src="{% thumbnail speaker.photo '200x200' %}" alt="{{ speaker.name }}"  style="float: left; margin:10px;">
-          <h2 style="float: left; margin: 3px 10px 10px 0px;">{{ speaker.name }}</h2>
-          <br />
-          {{speaker.category}}, {{speaker.audience_level}}
-          <br />
-          <div style="margin: 10px; clear: left;">
-          {{ speaker.biography | truncatechars:"600" }}
-        </div>
-        <div  style="float:left; margin: 10px;">
-          <a href="#"><i class="icon social_twitter"></i></a>
-        </div>
-        <div  style="float:left; margin: 9px;">
-          <a href="#"><i class="icon social_linkedin"></i></a>
-        </div>
-        </td>
-        {% if not forloop.last and forloop.counter == 2 or forloop.counter == 4 %}
-      </tr>
-      <tr>
-        {% endif %}
-      {% endfor %}
-    </tr>
-  </table>
+    {% endfor %}
+  </div><!--container -->
 </section>
 {% endblock content %}
