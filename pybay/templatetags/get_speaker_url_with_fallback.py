@@ -10,7 +10,6 @@ register = Library()
 @register.simple_tag
 def speaker_url_with_fallback(speaker):
     if bool(speaker.photo):
-        selected_photo = speaker.photo
-        return get_thumbnailer(selected_photo).get_thumbnail({'size': (200, 200), 'crop': True}).url
+        return get_thumbnailer(speaker.photo).get_thumbnail({'size': (200, 200), 'crop': True}).url
     else:
         return static(settings.DEFAULT_FALLBACK_IMAGE)
