@@ -2,13 +2,14 @@
 {% load static %}
 {% load thumbnail %}
 {% block content %}
+{% load get_speaker_url_with_fallback %}
 <section>
    <div class="container" style="padding-top: 150px;">
      <div class="row">
        <div class="col-sm-6 col-md-4">
-           <a href="{{ speaker.photo.url }}">
+           <a href="{% speaker_url_with_fallback speaker 360 %}">
               <div>
-                  <img class="img-responsive" alt="{{ speaker.name }}" src="{{ speaker.photo.url }}">
+                  <img class="img-responsive" height=360 alt="{{ speaker.name }}" src="{% speaker_url_with_fallback speaker 360 %}">
               </div>
            </a>
        </div>
