@@ -269,5 +269,7 @@ if os.environ.get('SMTP_PWD', ''):
     EMAIL_USE_TLS = True
 
 
-PROJECT_DATA = dict(
-    cfp_close_date='June 17')
+PROJECT_DATA = {
+    'cfp_close_date': 'June 17',
+    'cfp_closed': True,
+}

@@ -20,6 +20,7 @@ from logging import getLogger
 log = getLogger(__file__)
 
 cfp_close_date = settings.PROJECT_DATA['cfp_close_date']
+cfp_closed = settings.PROJECT_DATA['cfp_closed']
 
 
 def pybay_sponsors_list(request):
@@ -58,6 +59,8 @@ class FaqTemplateView(TemplateView):
 
 
 def pybay_cfp_create(request):
+    if cfp_closed:
+        return render(request, 'frontend/cfp_closed.html')
     if request.method == 'POST':
         form = CallForProposalForm(request.POST)
 
