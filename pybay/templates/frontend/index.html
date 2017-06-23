@@ -119,6 +119,15 @@
          </div>><!--end of container-->
     </section>
     <!--Count Down Ends  -->
+    <!-- Featured speakers Begins -->
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            {% load featured_tags %}
+            {% featured_speakers %}
+          </div>
+        </div>
+      </div>
     <!--Video 2016 Starts -->
     <section >
         <div class="container">
@@ -287,15 +296,6 @@
         </div><!--end of container-->
     </section>
     <!--Previous Meetup Ends -->
-    <!-- featured speakers -->
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-              {% load featured_tags %}
-              {% featured_speakers %}
-            </div>
-        </div>
-    </div>
     <!--Subscribe to stay tune Starts -->
     <section class="subscribe-2">
         <div class="container">
