@@ -119,6 +119,15 @@
          </div>><!--end of container-->
     </section>
     <!--Count Down Ends  -->
+    <!-- Featured speakers Begins -->
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            {% load featured_tags %}
+            {% featured_speakers %}
+          </div>
+        </div>
+      </div>
     <!--Video 2016 Starts -->
     <section >
         <div class="container">
@@ -334,7 +343,3 @@
     </section>
     <!--Subsribe to stay Tune Ends -->
 {% endblock content %}
-
-
-
-
