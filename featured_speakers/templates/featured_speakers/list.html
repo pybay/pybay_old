@@ -3,7 +3,7 @@
 	<div class="container">
 	  <div class="row">
 		<div class="col-sm-12">
-		  <h1>Some of our speakers.</h1>
+		  <h1 class="text-center">Some of our speakers</h1>
 		</div>
 	  </div>
 	  <div class="row speakers-row">
@@ -23,7 +23,7 @@
 			</div>
             {% endif %}
 			<span class="speaker-name">{{ featured.speaker.name }}</span>
-			{{ featured.speaker.biography_html|safe }}
+			{{ featured.speaker.annotation|safe }}
 		  </div>
 		</div>
       {% endfor %}
