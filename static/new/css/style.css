@@ -116,6 +116,19 @@ p.question {
   flex-wrap: wrap;
 }
 
+.sch-timeslot-kind-talk .sch-description {
+  transition: all 0.2s ease-out;
+  transform: scaleY(1);
+  transform-origin: top;
+  max-height: 1000px
+}
+
+.sch-timeslot-kind-talk:not(:hover) .sch-description {
+  transform: scaleY(0);
+  max-height: 0;
+}
+
+
 /* Sponsor list */
 .gold-sponsors .sponsor-list {
   /*background: hsl(0, 50%, 50%);
