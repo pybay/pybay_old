@@ -73,6 +73,13 @@
 
 {% block scripts %}
     <script src="{% static 'new/js/schedule-filters.js' %}" async></script>
+
+    <script type="text/javascript">
+        $('.sch-timeslot-slot').hover(function() {
+            $(this).find('.sch-description').toggle();
+        })
+    </script>
+
     <style type="text/css">
       {% for slug, _ in filters %}
       .sch-schedule-filter-{{ slug }} .sch-filter-list > li[data-filter="{{ slug }}"]{% if not forloop.last %},{% endif %}{% endfor %} {
@@ -90,6 +97,10 @@
         .sch-schedule-filter-{{ slug }} .sch-timeslot-kind-talk:not(.sch-talk-{{ slug }}){% if not forloop.last %},{% endif %} {% endfor %} {
           display: none;
         }
+      }
+
+      .sch-description {
+          display: none;
       }
 
     </style>
