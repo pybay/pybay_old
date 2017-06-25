@@ -1,0 +1,33 @@
+{% load get_speaker_url_with_fallback %}
+<div class="main-container">
+  <section class="speakers duplicatable-content">
+	<div class="container">
+	  <div class="row">
+		<div class="col-sm-12">
+		  <h1 class="text-center">Some of our speakers</h1>
+		</div>
+	  </div>
+	  <div class="row speakers-row">
+      {% for featured in speakers %}
+		<div class="col-md-3 col-sm-6 speaker-column">
+		  <div class="speaker">
+			<div class="image-holder">
+              <img width="240" class="background-image" src="{% speaker_url_with_fallback featured.speaker 240 %}" alt="{{ featured.speaker.name }}">
+			  {# <img class="background-image" alt="Speaker" src="{{ MEDIA_URL }}{{ featured.speaker.photo.name }}"> #}
+			  <div class="hover-state text-center preserve3d">
+				<div class="social-links vertical-align">
+                  {% if featured.speaker.twitter_username %}
+				  <a href="http://twitter.com/{{ featured.speaker.twitter_username }}"><i class="icon social_twitter"></i></a>
+                  {% endif %}
+				</div>
+			  </div>
+			</div>
+			<span class="speaker-name">{{ featured.speaker.name }}</span>
+			{{ featured.speaker.annotation|safe }}
+		  </div>
+		</div>
+      {% endfor %}
+	  </div>
+	</div>
+  </section>
+</div>
