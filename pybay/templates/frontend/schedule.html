@@ -44,7 +44,7 @@
                         {% with talk=slot.content_ptr %}
                           <div class="sch-timeslot-slot sch-timeslot-kind-{{ slot.kind.label }} sch-talk-level-{{ talk.proposal.audience_level }} sch-talk-{% value_from_list_or_default talk.proposal.category|cut:" " allowed_categories "other" %}">
                             {% if talk.speaker.photo %}<p class="sch-speaker-photo"><img src="{% thumbnail talk.speaker.photo '50x50' %}" alt="{{ talk.speaker.name }}" /></p>{% endif %}
-                            <h4>{{ talk.title }}</h4>
+                            <h4><a href="{% url 'pybay_speakers_detail' talk.speaker.name_slug %}">{{ talk.title }}</a></h4>
                             <p class="sch-speaker">{{ talk.speaker.name }}</p>
                             {% if talk.speaker.photo %}<p class="sch-speaker-photo"><img src="{% thumbnail talk.speaker.photo '50x50' %}" alt="{{ talk.speaker.name }}" /></p>{% endif %}
                             <p class="sch-description">{{ talk.description }}</p>
