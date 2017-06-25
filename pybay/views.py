@@ -1,9 +1,11 @@
 import json
+import itertools
 
 from django.shortcuts import render
 from django.http import (HttpResponse, HttpResponseForbidden,
                          HttpResponseNotFound)
 from django.views.generic import TemplateView
+from django.db.models import Prefetch
 
 from .forms import CallForProposalForm
 from pybay.faqs.models import Faq, Category
@@ -11,6 +13,7 @@ from symposion.sponsorship.models import Sponsor
 from pybay.proposals.models import TalkProposal, Proposal
 from pybay.utils import get_accepted_speaker_by_slug
 from symposion.speakers.models import Speaker
+from symposion.schedule.models import Schedule
 
 from collections import defaultdict
 from django.conf import settings
@@ -158,3 +161,46 @@ def proposal_detail(request, proposal_id):
     return HttpResponse(
         json.dumps({'data': result}), content_type="application/json"
     )
+
+
+def _day_slots(day):
+    groupby = itertools.groupby(day.slot_set.all(), lambda slot: slot.start)
+    for time, grouper in groupby:
+        slots = list(grouper)
+        kind = slots[0].kind if len(slots) == 1 and slots[0].content_override else ''
+        yield time, slots, kind
+
+
+FILTER_CATEGORIES = [
+    "All things Web",
+    "DevOps",
+]
+
+
+def pybay_schedule(request):
+    if request.user.is_staff:
+        schedules = Schedule.objects.filter(hidden=False)
+    else:
+        schedules = Schedule.objects.filter(published=True, hidden=False)
+
+    schedules.prefetch_related(
+        Prefetch('day_set__slot_set__presentation_set__proposal_base'),
+    )
+
+    schedules = [
+        [(day, _day_slots(day)) for day in schedule.day_set.all()]
+        for schedule in schedules
+    ]
+
+    filters = [
+        (name.lower().replace(' ', ''), name)
+        for name in FILTER_CATEGORIES
+    ]
+
+    ctx = {
+        'schedules': schedules,
+        'filters' :  filters + [('other', 'Other'), ('level-1', 'Beginner-friendly')],
+        'allowed_categories': [slug for slug, _ in filters]
+    }
+
+    return render(request, "frontend/schedule.html", ctx)
