@@ -709,3 +709,7 @@ tito-widget .tito-wrapper {
 tito-widget .tito-ticket-description {
   color: #808080;
 }
+
+.speaker .image-holder {
+  display: inline-block;
+}
