@@ -1,18 +1,18 @@
+
+{% load get_speaker_url_with_fallback %}
 <div class="main-container">
   <section class="speakers duplicatable-content">
 	<div class="container">
 	  <div class="row">
 		<div class="col-sm-12">
-		  <h1>Some of our speakers.</h1>
-		</div>
+		  <h1 class="text-center">Some of our speakers</h1>
 	  </div>
 	  <div class="row speakers-row">
       {% for featured in speakers %}
 		<div class="col-md-3 col-sm-6 speaker-column">
 		  <div class="speaker">
-           {% if featured.speaker.photo %}
 			<div class="image-holder">
-			  <img class="background-image" alt="Speaker" src="{{ MEDIA_URL }}{{ featured.speaker.photo.name }}">
+              <img width="240" class="background-image" src="{% speaker_url_with_fallback featured.speaker 240 %}" alt="{{ featured.speaker.name }}">
 			  <div class="hover-state text-center preserve3d">
 				<div class="social-links vertical-align">
                   {% if featured.speaker.twitter_username %}
@@ -21,9 +21,8 @@
 				</div>
 			  </div>
 			</div>
-            {% endif %}
 			<span class="speaker-name">{{ featured.speaker.name }}</span>
-			{{ featured.speaker.biography_html|safe }}
+			{{ featured.speaker.annotation|safe }}
 		  </div>
 		</div>
       {% endfor %}
