@@ -688,3 +688,11 @@ section.topics.duplicatable-content.home-page {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+tito-widget .tito-wrapper {
+  background: white;
+}
+
+tito-widget .tito-ticket-description {
+  color: #808080;
+}
