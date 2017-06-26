@@ -3,10 +3,34 @@
 {% block head_title %}Not Found{% endblock %}
 
 {% block content %}
-<section class="topics duplicatable-content">
-    <header class="jumbotron subhead" id="overview">
-        <h1>Page not found</h1>
-        <p class="lead">We're sorry but that page could not be found.</p>
-    </header>
-</section>
+    	<div class="loader">
+    		<div class="strip-holder">
+				<div class="strip-1"></div>
+				<div class="strip-2"></div>
+				<div class="strip-3"></div>
+    		</div>
+    	</div>
+
+    	<a id="top"></a>
+
+		<div class="nav-container"></div>
+		<div class="main-container"><section class="error-page fullscreen-element preserve-3d" style ="background:#32648E">
+				<div class="container vertical-align">
+					<div class="row">
+						<div class="col-sm-8">
+							<h1 class="text-white">404<br>Not Found</h1>
+							<p class="lead text-white">Oh dear, this is not the way to the PyBay</p>
+							<a href="{% url 'home' %}" class="btn btn-white" style ="color:#32648E">Take Me Home</a>
+
+						</div>
+
+						<div class="col-sm-4 text-right">
+							<i class="icon pe-7s-way"></i>
+							<i class="icon pe-7s-compass"></i>
+							<i class="icon pe-7s-attention"></i>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
 {% endblock %}
