@@ -140,10 +140,8 @@ INSTALLED_APPS = [
     "eventlog",
     "markitup",
     "metron",
-    "ordered_model",
     "taggit",
     "timezones",
-
 
     # symposion
     "symposion.sponsorship",
@@ -159,7 +157,6 @@ INSTALLED_APPS = [
     'pybay.faqs',
     'pybay.flatpages_ext.apps.FlatpagesExtConfig',
     'crispy_forms',
-    'featured_speakers',
 ]
 
 # A sample logging configuration. The only tangible logging
