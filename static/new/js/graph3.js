@@ -9,7 +9,7 @@
           { origin: 'Gender', label: 'Male', count: 75, color: "#6b486b"},
           { origin: 'Expertise Level', label: 'Beginner', count: 13, color: "#a05d56"},
           { origin: 'Expertise Level', label: 'Intermediate', count: 53, color: "#d0743c"},
-          { origin: 'Expertise Level', label: 'Advance', count: 30, color: "#ff8c00"},
+          { origin: 'Expertise Level', label: 'Advanced', count: 30, color: "#ff8c00"},
           { origin: 'Expertise Level', label: 'Non-Technical', count: 4, color: "#FBBE3B"},
         ];
 
