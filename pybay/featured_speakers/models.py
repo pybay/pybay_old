@@ -5,8 +5,8 @@ from symposion.speakers.models import Speaker
 
 
 class FeaturedSpeaker(OrderedModel):
-    title = models.CharField(max_length=50)
     speaker = models.OneToOneField(Speaker, on_delete=models.CASCADE, primary_key=True)
+    description = models.TextField()
 
     class Meta(OrderedModel.Meta):
         pass

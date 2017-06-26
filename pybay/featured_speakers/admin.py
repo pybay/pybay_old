@@ -1,6 +1,5 @@
 from django import forms
 from django.contrib import admin
-from django.db import models
 
 from ordered_model.admin import OrderedModelAdmin
 
@@ -16,7 +15,7 @@ class FeaturedSpeakerForm(forms.ModelForm):
     speaker = SpeakerChoiceField(Speaker.objects.all())
 
 class FeaturedSpeakerAdmin(OrderedModelAdmin):
-    list_display = ('title', 'speaker_name', 'move_up_down_links')
+    list_display = ('speaker_name', 'move_up_down_links')
     form = FeaturedSpeakerForm
     def speaker_name(self, obj):
         return obj.speaker.name
