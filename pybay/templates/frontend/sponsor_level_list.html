@@ -12,23 +12,19 @@
       </div>
     </section>
 
-    <section class="sponsor-list">
-      {% for sponsor in sponsors %}
-        <div class="sl-sponsor">
-          <a class="sl-logo" href="{{ sponsor.external_url }}">
-            <img
-              alt="{{ sponsor.name }}"
-              src="{{ sponsor.website_logo.url }}"
-            />
-          </a>
-          <div class="sl-blurb">
-            <h3><a href="{{ sponsor.external_url }}">{{ sponsor.name }}</a></h3>
-            <p class="sl-link"><a href="{{ sponsor.external_url }}">{{ sponsor.external_url }}</a></p>
-            <p class="sl-intro">{{ sponsor.listing_text|urlize|linebreaks }}</p>
+    <div class="container">
+      <section class="sponsor-list">
+        {% for sponsor in sponsors %}
+          <div class="sl-sponsor">
+            <div class="sl-blurb">
+              <a class="sl-logo" href="{{ sponsor.external_url }}">
+                <img alt="{{ sponsor.name }}" src="{{ sponsor.website_logo.url }}" width="200px" />
+              </a>
+              <p class="sl-intro">{{ sponsor.listing_text|urlize|linebreaks }}</p>
+            </div>
           </div>
-        </div>
-      {% endfor %}
-    </section>
-
-  </div>
+        {% endfor %}
+      </section>
+    </div>
+</div>
 {% endif %}
