@@ -54,6 +54,14 @@ h1 {
   margin: 25px 0 40px 0;
 }
 
+.video-header .uppercase {
+  text-transform: none;
+}
+.video-header .uppercase strong {
+  text-transform: uppercase;
+  color: hsl(41, 97%, 70%);
+}
+
 .video-moreinfo {
   font-size: 25px;
   margin: 25px 0;
