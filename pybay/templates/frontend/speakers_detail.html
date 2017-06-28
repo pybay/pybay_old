@@ -3,6 +3,8 @@
 {% load thumbnail %}
 {% block content %}
 {% load get_speaker_url_with_fallback %}
+{% load slot_desc %}
+
 <section>
    <div class="container" style="padding-top: 150px;">
      <div class="row">
@@ -30,6 +32,10 @@
                                 <h2><strong>{{ talk.title }}</strong></h2>
                                 {{ talk.category | capfirst }}, {{ talk.get_audience_level_display | capfirst }}
                             </div>
+                            {% slot_desc talk as talk_slot %}
+                            {% if talk_slot %}
+                              <a href="{% url 'pybay_schedule' %}" class="btn">{{ talk_slot }}</a>
+                            {% endif %}
                     </div>
             
                     <div class="row">
@@ -43,7 +49,6 @@
                                     <h3>Abstract</h3>
                                     {{ talk.abstract }}
                                 </p>
-                                <a href="#" class="btn">Conference Schedule</a>
                             </div>
                     </div>
             </div>
