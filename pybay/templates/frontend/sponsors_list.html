@@ -4,12 +4,6 @@
 {% block content %}
 <!-- Chart 3 ENDS -->
 <div>
-  <section class="col-md-12 no-padding clearfix">
-    <div class="container">
-      <h1><strong>Our Sponsors</strong></h1>
-    </div>
-  </section>
-
   {% include "frontend/sponsor_level_list.html" with sponsors=gold_sponsors color="gold" title="Gold Sponsors" icon="" %}
 
   {% include "frontend/sponsor_level_list.html" with sponsors=silver_sponsors color="silver" title="Silver Sponsors" icon="" %}

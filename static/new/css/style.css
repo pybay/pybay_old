@@ -142,7 +142,7 @@ p.question {
 
 .sl-group .subscribe-2 {
   clear: both;
-  background: hsl(0, 0%, 90%);
+  background: "#f5f5f5";
 }
 .sl-group-heading p:first-child {
   margin-top: 20px;
