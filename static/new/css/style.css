@@ -120,12 +120,14 @@ p.question {
   transition: all 0.2s ease-out;
   transform: scaleY(1);
   transform-origin: top;
-  max-height: 1000px
+  max-height: 1000px;
+  opacity: 1;
 }
 
 .sch-timeslot-kind-talk:not(:hover) .sch-description {
   transform: scaleY(0);
   max-height: 0;
+  opacity: 0;
 }
 
 
