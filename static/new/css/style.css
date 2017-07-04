@@ -615,7 +615,7 @@ input#mce-EMAIL.form-email.signup-email-field{
     border: none;
     border-radius: 20px;
     margin-bottom: 10px;
-    padding: 12px;
+    padding: 12px 20px;
     font-size: 14px;
     background: rgba(0, 0, 0, 0.2);
     color: black;
