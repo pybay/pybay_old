@@ -166,7 +166,7 @@ def proposal_detail(request, proposal_id):
 def _day_slots(day):
     groupby = itertools.groupby(day.slot_set.all(), lambda slot: slot.start)
     for time, grouper in groupby:
-        slots = list(grouper)
+        slots = sorted(grouper, key=lambda slot: slot.rooms[0].order if slot.rooms else 0)
         kind = slots[0].kind if len(slots) == 1 and slots[0].content_override else ''
         yield time, slots, kind
 
