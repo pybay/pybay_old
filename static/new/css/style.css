@@ -710,6 +710,10 @@ tito-widget .tito-ticket-description {
   color: #808080;
 }
 
+.speaker {
+  width: 240px;
+}
+
 .speaker .image-holder {
   display: inline-block;
 }
