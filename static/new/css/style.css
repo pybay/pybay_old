@@ -676,9 +676,11 @@ section.topics.duplicatable-content.home-page {
 .youtube {
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
     transition: all 200ms ease-out;
     cursor: pointer;
+    padding-bottom: 56.25%;
 }
 
 .youtube .play {
