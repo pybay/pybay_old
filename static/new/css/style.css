@@ -732,3 +732,88 @@ tito-widget .tito-ticket-description {
   align-items: center;
   height: calc(100% - 20px);
 }
+
+.nav-bar .nav-buttons a {
+  color: #333333;
+}
+
+@media(min-width: 769px) {
+  .overlay-nav {
+    padding-top: 0;
+  }
+
+  .nav-bar {
+    display: flex;
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+  .nav-logo .logo {
+    position: static;
+    margin: 5px 0 5px 16px;
+  }
+
+  .nav-collapse {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1 1;
+    flex-wrap: wrap;
+    overflow: hidden;
+    position: relative;
+  }
+  .nav-collapse li {
+    position: static;
+    white-space: nowrap;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-collapse {
+    margin-right: 17px;
+  }
+  .nav-collapse li {
+    margin: 0 0 0 32px;
+  }
+  .nav-collapse li a {
+    padding-bottom: 0;
+  }
+
+  .nav-bar .nav-buttons {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+  }
+  .nav-bar .nav-buttons > * {
+    margin-left: 15px;
+    position: static;
+  }
+  .nav-bar .nav-buttons a {
+    color: #333333;
+  }
+  .nav-bar .nav-buttons .sidebar-menu-toggle {
+    margin-top: 1px;
+  }
+}
+
+@media(max-width: 768px) {
+  .overlay-nav {
+    padding: 12px 24px 24px 24px;
+  }
+
+  .nav-bar .logo {
+    position: static;
+    margin-left: -12px;
+  }
+
+  .nav-bar .menu {
+    margin-top: 19px;
+  }
+
+  .mobile-menu-toggle {
+    right: 12px;
+  }
+
+  .social-link {
+    margin-right: 18px;
+  }
+}

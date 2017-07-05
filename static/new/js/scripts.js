@@ -11,12 +11,6 @@ $(document).ready(function() {
         }
     });
 
-    // Margin on the menu to make room for sidebar menu if it exists
-
-    if ($('.sidebar-menu-toggle').length && !$('.sidebar-menu-toggle i').hasClass('variant-deleted-mrv')) {
-        $('nav').find('.menu').css('margin-right', 32);
-    }
-
     // Mobile menu toggle
 
     $('.mobile-menu-toggle').click(function() {
