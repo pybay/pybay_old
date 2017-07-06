@@ -334,17 +334,6 @@ $(window).load(function() {
         iFrame.contents().find('form').attr('target', '_blank').submit();
         return false;
     });
-
-    setTimeout(function() {
-        $('.loader').addClass('hide-loader');
-        setTimeout(function() {
-            $('.loader').remove();
-            $('.main-container').addClass('show-content');
-            $('nav').addClass('show-content');
-        }, 500);
-    }, 10);
-
-
 });
 
 //Call For Propositions Form
