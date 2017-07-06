@@ -340,6 +340,9 @@ p.question {
     padding-left: 0;
     padding-right: 0;
   }
+  .schedule-page .row {
+    margin: 0 5px;
+  }
 
   .sch-filters > span {
     display: block;
