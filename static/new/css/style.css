@@ -888,3 +888,13 @@ tito-widget .tito-ticket-description {
     padding: 0;
   }
 }
+
+.code_of_conduct h1 {
+  padding-top: 100px;
+}
+
+@media(max-width: 767px) {
+  .code_of_conduct h1 {
+    padding-top: 50px;
+  }
+}
