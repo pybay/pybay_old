@@ -120,12 +120,14 @@ p.question {
   transition: all 0.2s ease-out;
   transform: scaleY(1);
   transform-origin: top;
-  max-height: 1000px
+  max-height: 1000px;
+  opacity: 1;
 }
 
 .sch-timeslot-kind-talk:not(:hover) .sch-description {
   transform: scaleY(0);
   max-height: 0;
+  opacity: 0;
 }
 
 
@@ -366,24 +368,26 @@ p.question {
   }
 
   .sch-timeslot-kind-talk > h4 {
-    order: -120;
-    flex: 1 1;
+    flex: 1 0;
+    flex-basis: 100%;
   }
 
   .sch-duration, .sch-room {
-    flex: 0 1;
-    margin: 0;
     line-height: 1;
   }
 
+  .sch-room {
+    flex: 0 1;
+  }
+
   .sch-speaker-photo {
-    left: 10px;
-    top: 15px;
+    right: 10px;
+    top: 33px;
   }
 
   .sch-speaker-photo + h4,
   .sch-speaker-photo + h4 + .sch-speaker {
-    padding: 0 0 0 46px;
+    padding: 0 46px 0 0;
   }
 
   .sch-timeslot-special {
