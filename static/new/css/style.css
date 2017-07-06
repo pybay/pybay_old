@@ -615,7 +615,7 @@ input#mce-EMAIL.form-email.signup-email-field{
     border: none;
     border-radius: 20px;
     margin-bottom: 10px;
-    padding: 12px;
+    padding: 12px 20px;
     font-size: 14px;
     background: rgba(0, 0, 0, 0.2);
     color: black;
@@ -676,9 +676,11 @@ section.topics.duplicatable-content.home-page {
 .youtube {
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
     transition: all 200ms ease-out;
     cursor: pointer;
+    padding-bottom: 56.25%;
 }
 
 .youtube .play {
@@ -716,4 +718,123 @@ tito-widget .tito-ticket-description {
 
 .speaker .image-holder {
   display: inline-block;
+}
+
+.sponsor-footer-list > .row {
+  display: flex;
+}
+.sponsor-footer-list > .row > * {
+  position: relative;
+}
+
+.sponsor-footer .thumbnail {
+  display: flex;
+  align-items: center;
+  height: calc(100% - 20px);
+}
+
+.nav-bar .nav-buttons a {
+  color: #333333;
+}
+
+@media(min-width: 769px) {
+  .overlay-nav {
+    padding-top: 0;
+  }
+
+  .nav-bar {
+    display: flex;
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+  .nav-logo .logo {
+    position: static;
+    margin: 5px 0 5px 16px;
+  }
+
+  .nav-collapse {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1 1;
+    flex-wrap: wrap;
+    overflow: hidden;
+    position: relative;
+  }
+  .nav-collapse li {
+    position: static;
+    white-space: nowrap;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-collapse {
+    margin-right: 17px;
+  }
+  .nav-collapse li {
+    margin: 0 0 0 32px;
+  }
+  .nav-collapse li a {
+    padding-bottom: 0;
+  }
+
+  .nav-bar .nav-buttons {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+  }
+  .nav-bar .nav-buttons > * {
+    margin-left: 15px;
+    position: static;
+  }
+  .nav-bar .nav-buttons a {
+    color: #333333;
+  }
+  .nav-bar .nav-buttons .sidebar-menu-toggle {
+    margin-top: 1px;
+  }
+}
+
+@media(max-width: 768px) {
+  .overlay-nav {
+    padding: 12px 24px 24px 24px;
+  }
+
+  .nav-bar .logo {
+    position: static;
+    margin-left: -12px;
+  }
+
+  .nav-bar .menu {
+    margin-top: 19px;
+  }
+
+  .mobile-menu-toggle {
+    right: 12px;
+  }
+
+  .social-link {
+    margin-right: 18px;
+  }
+}
+
+@media(max-width: 767px) {
+  .topic {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .topic h3 {
+    position: static;
+    margin-left: 12px;
+    flex: 1 1;
+    white-space: wrap;
+  }
+  .topic p {
+    flex-basis: 100%;
+  }
+  .topics .container .container {
+    margin: 0;
+    padding: 0;
+  }
 }

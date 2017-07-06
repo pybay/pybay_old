@@ -11,12 +11,6 @@ $(document).ready(function() {
         }
     });
 
-    // Margin on the menu to make room for sidebar menu if it exists
-
-    if ($('.sidebar-menu-toggle').length && !$('.sidebar-menu-toggle i').hasClass('variant-deleted-mrv')) {
-        $('nav').find('.menu').css('margin-right', 32);
-    }
-
     // Mobile menu toggle
 
     $('.mobile-menu-toggle').click(function() {
@@ -252,7 +246,7 @@ $(document).ready(function() {
             if ($(this).data('params')) iframe_url+='&'+$(this).data('params');
 
             // The height and width of the iFrame should be the same as parent
-            var iframe = $('<iframe/>', {'frameborder': '0', 'src': iframe_url, 'width': $(this).width(), 'height': $(this).height() })
+            var iframe = $('<iframe/>', {'frameborder': '0', 'src': iframe_url, 'width': $(this).width(), 'height': $('.play', this).height() })
 
             // Replace the YouTube thumbnail with YouTube HTML5 Player
             $(this).replaceWith(iframe);

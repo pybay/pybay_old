@@ -1,12 +1,18 @@
+{% load thumbnail %}
+
 {% if sponsors %}
-    <div class="row">
+    <div class="row sponsor-footer">
         <div class="col-md-4"></div>
         <div class="col-md-12">
-            <div class="bs-example" data-example-id="simple-thumbnails">
+            <div class="sponsor-footer-list">
                 <div class="row">
                     {% for sponsor in sponsors %}
                       {% if sponsor.website_logo %}
-                         <div class="col-md-3 col-xs-6"> <a href="#" class="thumbnail img-responsive"> <img alt="100%x180" data-src="holder.js/100%x180" style="height: 140px; width: 100%; display: block;" src="{{ sponsor.website_logo.url }}" data-holder-rendered="true"> </a> </div>
+                        <div class="col-md-3 col-xs-6">
+                          <a href="{{ sponsor.external_url }}" target="_blank" rel="noreferrer noopener" class="thumbnail">
+                            <img title="{{ sponsor.name }}" alt="{{ sponsor.name }}" src="{% thumbnail sponsor.website_logo '155x140' %}" />
+                          </a>
+                        </div>
                       {% endif %}
                     {% endfor %}
                 </div>
