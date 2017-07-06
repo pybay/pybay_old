@@ -208,12 +208,12 @@ p.question {
 
 .sch-filter-list > li {
   display: inline-block;
-  padding: 10px 15px 11px 15px;
+  padding: 13px 18px 14px 18px;
   margin: 0 5px 5px 0;
   line-height: 1;
-  border: 3px solid #428bca;
   border-radius: 25px;
-  color: #428bca;
+  background-color: #FBBD4A;
+  color: white;
   cursor: pointer;
   font-weight: 600;
   transition: all 0.3s ease-out;
