@@ -202,12 +202,12 @@ p.question {
 }
 
 .sch-filter-list {
-  display: inline-block;
-  margin-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .sch-filter-list > li {
-  display: inline-block;
   padding: 13px 18px 14px 18px;
   margin: 0 5px 5px 0;
   line-height: 1;
@@ -217,6 +217,9 @@ p.question {
   cursor: pointer;
   font-weight: 600;
   transition: all 0.3s ease-out;
+}
+.sch-filter-list > li:last-child {
+  margin-right: 0;
 }
 
 .sch-timeslot {
