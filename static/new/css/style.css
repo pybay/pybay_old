@@ -335,6 +335,15 @@ p.question {
   padding-right: 50px;
 }
 
+@media(min-height: 600px) {
+  .substicky {
+    position: sticky;
+    top: 55px;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 50;
+  }
+}
+
 @media(max-width: 450px) {
   .schedule-page.container {
     padding-left: 0;
@@ -767,6 +776,10 @@ tito-widget .tito-ticket-description {
   height: calc(100% - 20px);
 }
 
+.sticky-nav {
+  z-index: 100;
+}
+
 .nav-bar .nav-buttons a {
   color: #333333;
 }
@@ -832,6 +845,9 @@ tito-widget .tito-ticket-description {
 @media(max-width: 768px) {
   .overlay-nav {
     padding: 12px 24px 24px 24px;
+  }
+  .substicky {
+    top: 67px;
   }
 
   .nav-bar .logo {
