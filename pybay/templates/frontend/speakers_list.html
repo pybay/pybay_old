@@ -3,15 +3,16 @@
 {% load thumbnail %}
 {% load get_speaker_url_with_fallback %}
 
+
 {% block content %}
-<section>
+<section class="topics duplicatable-content">
   <div class="container">
-    <div class="col-md-12 no-padding clearfix">
-        <div class="page-header pull-left">
-            <h1>All Speakers</h1>
-        </div>
-    </div><!-- /.col-md-12 -->
-    
+    <div class="row">
+      <div class="col-md-12 no-padding clearfix">
+          <h1 class="blue-header"><strong>All Speakers</strong></h1>
+      </div><!-- /.col-md-12 -->
+    </div>
+
     {% for speaker in speakers %}
       <div class="col-md-6">
         <img width=200 src="{% speaker_url_with_fallback speaker 200 %}" alt="{{ speaker.name }}">
