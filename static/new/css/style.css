@@ -202,21 +202,24 @@ p.question {
 }
 
 .sch-filter-list {
-  display: inline-block;
-  margin-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .sch-filter-list > li {
-  display: inline-block;
-  padding: 10px 15px 11px 15px;
+  padding: 13px 18px 14px 18px;
   margin: 0 5px 5px 0;
   line-height: 1;
-  border: 3px solid #428bca;
   border-radius: 25px;
-  color: #428bca;
+  background-color: #FBBD4A;
+  color: white;
   cursor: pointer;
   font-weight: 600;
   transition: all 0.3s ease-out;
+}
+.sch-filter-list > li:last-child {
+  margin-right: 0;
 }
 
 .sch-timeslot {
@@ -332,10 +335,22 @@ p.question {
   padding-right: 50px;
 }
 
+@media(min-height: 600px) {
+  .substicky {
+    position: sticky;
+    top: 55px;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 50;
+  }
+}
+
 @media(max-width: 450px) {
   .schedule-page.container {
     padding-left: 0;
     padding-right: 0;
+  }
+  .schedule-page .row {
+    margin: 0 5px;
   }
 
   .sch-filters > span {
@@ -761,6 +776,10 @@ tito-widget .tito-ticket-description {
   height: calc(100% - 20px);
 }
 
+.sticky-nav {
+  z-index: 100;
+}
+
 .nav-bar .nav-buttons a {
   color: #333333;
 }
@@ -827,6 +846,9 @@ tito-widget .tito-ticket-description {
   .overlay-nav {
     padding: 12px 24px 24px 24px;
   }
+  .substicky {
+    top: 67px;
+  }
 
   .nav-bar .logo {
     position: static;
@@ -864,5 +886,15 @@ tito-widget .tito-ticket-description {
   .topics .container .container {
     margin: 0;
     padding: 0;
+  }
+}
+
+.code_of_conduct h1 {
+  padding-top: 100px;
+}
+
+@media(max-width: 767px) {
+  .code_of_conduct h1 {
+    padding-top: 50px;
   }
 }
