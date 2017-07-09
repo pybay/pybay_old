@@ -121,21 +121,31 @@ p.question {
   flex-wrap: wrap;
 }
 
+.sch-timeslot-kind-talk:hover {
+  border-color: hsl(0, 0%, 75%);
+}
+
 .sch-timeslot-kind-talk .sch-description {
   text-align: left;
+  position: absolute;
+  top: calc(100% - 6px);
+  left: -2px;
+  right: -2px;
+  border: 2px solid hsl(0, 0%, 75%);
+  border-top: 0;
+  border-radius: 0 0 4px 4px;
+  background: white;
+  padding: 7px 20px;
   transition: all 0.2s ease-out;
-  transform: scaleY(1);
-  transform-origin: top;
-  max-height: 1000px;
   opacity: 1;
+  transform: translateY(0);
+  pointer-events: none;
+  z-index: 50;
 }
 
 .sch-timeslot-kind-talk:not(:hover) .sch-description {
-  transform: scaleY(0);
-  max-height: 0;
   opacity: 0;
 }
-
 
 /* Sponsor list */
 .gold-sponsors .sponsor-list {
@@ -292,7 +302,7 @@ p.question {
   position: relative;
   padding-top: 4px;
   padding-bottom: 4px;
-  transition: opacity 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .sch-timeslot-kind-talk .sch-slot-inner {
@@ -459,6 +469,20 @@ p.question {
   }
   .sch-timeslot-special .sch-timeslot-slots {
     display: block;
+  }
+
+  .sch-timeslot-kind-talk .sch-description {
+    transition: all 0.2s ease-out;
+    transform: scaleY(1);
+    transform-origin: top;
+    max-height: 1000px;
+    opacity: 1;
+  }
+
+  .sch-timeslot-kind-talk:not(:hover) .sch-description {
+    transform: scaleY(0);
+    max-height: 0;
+    opacity: 0;
   }
 }
 
