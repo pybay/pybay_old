@@ -7,6 +7,14 @@ from easy_thumbnails.files import get_thumbnailer
 register = Library()
 
 
+@register.filter
+def single_paragraph(value):
+    splits = value.split('.')
+    if len(splits) > 0:
+        return splits[0]
+    return ""
+
+
 @register.simple_tag
 def speaker_url_with_fallback(speaker, crop_size):
     if bool(speaker.photo):
