@@ -12,11 +12,15 @@
         </div>
     </div><!-- /.col-md-12 -->
     
-    {% for speaker in speakers %}
-      <div class="col-md-6">
-        <img width=200 src="{% speaker_url_with_fallback speaker 200 %}" alt="{{ speaker.name }}">
-        <h2><a href="{% url 'pybay_speakers_detail' speaker.name_slug %}">{{ speaker.name }}</a></h2>
-        <span>{{ speaker.biography|truncatechars:"300" }}</span>
+    {% for chunk in chunks %}
+      <div class="row speaker-list-row">
+        {% for speaker in chunk %}
+          <div class="col-md-6">
+            <img width=200 src="{% speaker_url_with_fallback speaker 200 %}" alt="{{ speaker.name }}">
+            <h2><a href="{% url 'pybay_speakers_detail' speaker.name_slug %}">{{ speaker.name }}</a></h2>
+            <span>{{ speaker.biography|truncatechars:"300" }}</span>
+          </div>
+        {% endfor %}
       </div>
     {% endfor %}
   </div><!--container -->
