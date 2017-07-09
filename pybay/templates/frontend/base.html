@@ -41,25 +41,35 @@
                         <li class="inner-link">
                             <a class="inner-link" href="/">home</a>
                         </li>
+                        {% comment %}
                         <li>
-                            <a class="inner-link" href="{% url 'pybay_sponsors' %}" >Sponsors Prospectus</a>
+                            <ul>
+                                <li><a class="inner-link" href="{% url 'pybay_speakers_list' %}">Conference schedule</a></li>
+                                <li><a class="inner-link" href="{% url 'pybay_speakers_list' %}">Speakers</a></li>
+                            </ul>
+                            <a class="inner-link" href="/">Schedule</a>
                         </li>
-                        {% if SHOW_SPEAKERS_LIST_NAVBAR_LINK %}
+                        {% endcomment %}
                         <li>
-                            <a class="inner-link" href="{% url 'pybay_speakers_list' %}">Speakers</a>
-                        </li>
-                        {% endif %}
-                        <li>
+                            <ul>
+                                <li><a class="inner-link" href="{% url 'pybay_tickets' %}" >Registration</a></li>
+                                <li><a class="inner-link" href="/scholarships/" >Scholarships</a></li>
+                            </ul>
                             <a class="inner-link" href="{% url 'pybay_tickets' %}">Registration</a>
                         </li>
                         <li>
-                            <a class="inner-link" href="/scholarships/" >Scholarships</a>
+                            <ul>
+                                <li><a class="inner-link" href="{% url 'pybay_sponsors_list' %}">Sponsors list</a></li>
+                                <li><a class="inner-link" href="{% url 'pybay_sponsors' %}">Becoming a sponsor</a></li>
+                            </ul>
+                            <a class="inner-link" href="{% url 'pybay_sponsors' %}" >Sponsors</a>
                         </li>
                         <li>
+                            <ul>
+                                <li><a class="inner-link" href="{% url 'pybay_faq' %}">Frequently Asked Questions</a></li>
+                                <li><a class="inner-link" href="{% url 'pybay_coc' %}">Code of Conduct</a></li>
+                            </ul>
                             <a class="inner-link" href="{% url 'pybay_faq' %}">FAQ</a>
-                        </li>
-                        <li>
-                            <a class="inner-link" href="{% url 'pybay_coc' %}">Code of Conduct</a>
                         </li>
                     </ul>
 
