@@ -803,26 +803,48 @@ tito-widget .tito-ticket-description {
     display: flex;
     justify-content: flex-end;
     flex: 1 1;
-    flex-wrap: wrap;
-    overflow: hidden;
-    position: relative;
-  }
-  .nav-collapse li {
-    position: static;
-    white-space: nowrap;
-    height: 100%;
-    display: flex;
-    align-items: center;
-  }
-
-  .nav-collapse {
     margin-right: 17px;
   }
-  .nav-collapse li {
+  .nav-collapse > li {
+    position: relative;
+    top: 0;
+    white-space: nowrap;
+    height: 55px;
+    display: flex;
+    align-items: center;
     margin: 0 0 0 32px;
   }
-  .nav-collapse li a {
+  .nav-collapse > li a {
     padding-bottom: 0;
+  }
+  .nav-collapse > li > ul + a::after {
+    content: " \25bc";
+  }
+  .nav-collapse > li > ul {
+    opacity: 0;
+    visibility: hidden;
+    background: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    top: 100%;
+    left: -16px;
+  }
+  .nav-collapse > li:last-child > ul {
+    left: auto;
+    right: -16px;
+    text-align: right;
+  }
+  .nav-collapse > li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+    padding-bottom: 10px;
+  }
+  .nav-collapse > li > ul > li {
+    float: none;
+    padding: 7px 16px;
+    margin: 0;
+  }
+  .nav-collapse > li > ul > li:first-child {
+    padding-top: 0;
   }
 
   .nav-bar .nav-buttons {
@@ -857,6 +879,14 @@ tito-widget .tito-ticket-description {
 
   .nav-bar .menu {
     margin-top: 19px;
+  }
+
+  .menu > li > ul {
+    margin-bottom: 28px;
+  }
+
+  .menu > li > ul + a {
+    display: none;
   }
 
   .mobile-menu-toggle {
