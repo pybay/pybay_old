@@ -13,7 +13,7 @@
     </div><!-- /.col-md-12 -->
     
     {% for chunk in chunks %}
-      <div class="row">
+      <div class="row speaker-list-row">
         {% for speaker in chunk %}
           <div class="col-md-6">
             <img width=200 src="{% speaker_url_with_fallback speaker 200 %}" alt="{{ speaker.name }}">
