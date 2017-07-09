@@ -2,21 +2,16 @@
 
 {% if sponsors %}
     <div class="row sponsor-footer">
-        <div class="col-md-4"></div>
-        <div class="col-md-12">
-            <div class="sponsor-footer-list">
-                <div class="row">
-                    {% for sponsor in sponsors %}
-                      {% if sponsor.website_logo %}
-                        <div class="col-md-3 col-xs-6">
-                          <a href="{{ sponsor.external_url }}" target="_blank" rel="noreferrer noopener" class="thumbnail">
-                            <img title="{{ sponsor.name }}" alt="{{ sponsor.name }}" src="{% thumbnail sponsor.website_logo '155x140' %}" />
-                          </a>
-                        </div>
-                      {% endif %}
-                    {% endfor %}
+        <div class="sponsor-footer-list">
+            {% for sponsor in sponsors %}
+              {% if sponsor.website_logo %}
+                <div class="footer-sponsor">
+                  <a href="{{ sponsor.external_url }}" target="_blank" rel="noreferrer noopener">
+                    <img title="{{ sponsor.name }}" alt="{{ sponsor.name }}" src="{% thumbnail sponsor.website_logo '155x140' %}" />
+                  </a>
                 </div>
-            </div>
-       </div>
+              {% endif %}
+            {% endfor %}
+        </div>
     </div>
 {% endif %}

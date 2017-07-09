@@ -763,14 +763,18 @@ tito-widget .tito-ticket-description {
   display: inline-block;
 }
 
-.sponsor-footer-list > .row {
+.sponsor-footer-list {
   display: flex;
-}
-.sponsor-footer-list > .row > * {
-  position: relative;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.sponsor-footer .thumbnail {
+.footer-sponsor {
+  position: relative;
+  margin: 10px;
+}
+
+.footer-sponsor a {
   display: flex;
   align-items: center;
   height: calc(100% - 20px);

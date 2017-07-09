@@ -110,13 +110,11 @@
             <footer class="classic">
                 <div class="container">
                     <div style="margin-bottom: 100px;" class="row">
-                        <div class="col-sm-12 text-center">
+                        <div class="row text-center">
                                                     <h1 class="text-center" style="color: black;">Proudly Sponsored By</h1>
                         </div>
-                        <div class="col-sm-8">
-                                                    {% sponsors_footer %}
-                        </div>
-                        <div class="col-sm-12 text-center">
+                        {% sponsors_footer %}
+                        <div class="row text-center">
                                                     <p>Interested in becoming a sponsor? <a href={% url 'pybay_sponsors' %}>Check out our options</a></p>
                         </div>
                                         </div>
