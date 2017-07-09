@@ -9,6 +9,8 @@ from model_mommy import mommy
 from model_mommy.random_gen import gen_image_field
 from symposion.reviews.models import ProposalResult
 
+import itertools
+
 
 class SpeakersModelTest(TestCase):
 
@@ -61,8 +63,8 @@ class SpeakersViewTest(TestCase):
 
     def test_accepted_users(self):
         response = self.client.get(reverse('pybay_speakers_list'))
-        self.assertIn('speakers', response.context)
-        self.assertEquals(response.context['speakers'], [self.speaker])
+        self.assertIn('chunks', response.context)
+        self.assertEquals(response.context['chunks'], [[self.speaker]])
 
     def test_additional_speaker(self):
         speaker2 = mommy.make(Speaker, photo=gen_image_field())
@@ -72,4 +74,5 @@ class SpeakersViewTest(TestCase):
             speaker=speaker2,
             status=AdditionalSpeaker.SPEAKING_STATUS_ACCEPTED)
         response = self.client.get(reverse('pybay_speakers_list'))
-        self.assertCountEqual(response.context['speakers'], [self.speaker, speaker2])
+        speakers = list(itertools.chain.from_iterable(response.context['chunks']))
+        self.assertCountEqual(speakers, [self.speaker, speaker2])
