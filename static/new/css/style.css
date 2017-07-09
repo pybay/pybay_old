@@ -898,3 +898,7 @@ tito-widget .tito-ticket-description {
     padding-top: 50px;
   }
 }
+
+.speaker-list-row {
+    margin-bottom: 50px;
+}

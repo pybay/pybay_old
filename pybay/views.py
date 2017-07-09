@@ -109,8 +109,13 @@ def pybay_speakers_list(request):
     speakers = list(set(speakers))  # filters duplicate speakers
     speakers = sorted(speakers, key=lambda i: i.name)  # sorts alphabetically
 
+    # Make them chunks of 2
+    chunks = []
+    for chunk_idx in range(0, len(speakers), 2):
+        chunks.append(speakers[chunk_idx:chunk_idx + 2])
+
     return render(request, 'frontend/speakers_list.html', {
-        'speakers': speakers
+        'chunks': chunks
     })
 
 
