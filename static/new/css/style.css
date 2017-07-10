@@ -117,6 +117,7 @@ p.question {
 }
 
 .sch-timeslot-kind-talk .sch-description {
+  text-align: left;
   transition: all 0.2s ease-out;
   transform: scaleY(1);
   transform-origin: top;
@@ -274,21 +275,25 @@ p.question {
 }
 
 .sch-timeslot-kind-talk {
-  display: flex;
-  flex-flow: row wrap;
-  align-content: flex-start;
   position: relative;
   padding-top: 4px;
   padding-bottom: 4px;
-  text-align: left;
   transition: opacity 0.2s ease-out;
 }
 
-.sch-timeslot-kind-talk > * {
+.sch-timeslot-kind-talk .sch-slot-inner {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  text-align: left;
+  overflow: hidden;
+}
+
+.sch-timeslot-kind-talk .sch-slot-inner > * {
   flex-basis: 100%;
 }
 
-.sch-room, .sch-duration {
+.sch-timeslot-kind-talk .sch-room, .sch-timeslot-kind-talk .sch-duration {
   flex: 1 0 auto;
   white-space: nowrap;
   font-size: 11px;
@@ -309,16 +314,36 @@ p.question {
   margin: 0 .5em;
 }
 
-.sch-timeslot-kind-talk > h4 {
+.sch-timeslot-kind-talk .sch-slot-inner > h4 {
   font-weight: bold;
 }
 
-.sch-speaker {
+.sch-timeslot-kind-talk .sch-speaker {
+  margin-right: 1.4em;
+  margin-bottom: 0;
+}
+
+.sch-timeslot-kind-talk .sch-speaker, .sch-timeslot-kind-talk .sch-category {
   font-weight: bold;
   margin-top: 4px;
+  white-space: nowrap;
+  flex: 0 1 auto;
+  align-self: baseline;
 }
 
-.sch-speaker-photo {
+.sch-timeslot-kind-talk .sch-category {
+  position: relative;
+  line-height: 1;
+}
+
+.sch-timeslot-kind-talk .sch-category::before {
+  position: absolute;
+  right: 100%;
+  content: "\2022";
+  padding: 0 .5em;
+}
+
+.sch-timeslot-kind-talk .sch-speaker-photo {
   width: 40px;
   height: 40px;
   overflow: hidden;
@@ -327,12 +352,11 @@ p.question {
   right: 15px;
   border-radius: 50%;
 }
-.sch-speaker-photo img {
+.sch-timeslot-kind-talk .sch-speaker-photo img {
   height: 100%;
 }
 
-.sch-speaker-photo + h4,
-.sch-speaker-photo + h4 + .sch-speaker {
+.sch-timeslot-kind-talk .sch-speaker-photo ~ h4 {
   padding-right: 50px;
 }
 
@@ -383,7 +407,7 @@ p.question {
     margin: 0;
   }
 
-  .sch-timeslot-kind-talk > h4 {
+  .sch-timeslot-kind-talk .sch-slot-inner > h4 {
     flex: 1 0;
     flex-basis: 100%;
   }
@@ -392,17 +416,17 @@ p.question {
     line-height: 1;
   }
 
-  .sch-room {
+  .sch-timeslot-kind-talk .sch-room {
     flex: 0 1;
   }
 
-  .sch-speaker-photo {
+  .sch-timeslot-kind-talk .sch-speaker-photo {
     right: 10px;
     top: 33px;
   }
 
-  .sch-speaker-photo + h4,
-  .sch-speaker-photo + h4 + .sch-speaker {
+  .sch-timeslot-kind-talk .sch-speaker-photo + h4,
+  .sch-timeslot-kind-talk .sch-speaker-photo + h4 + .sch-speaker {
     padding: 0 46px 0 0;
   }
 
