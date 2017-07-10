@@ -281,6 +281,7 @@ p.question {
   padding-top: 4px;
   padding-bottom: 4px;
   text-align: left;
+  transition: opacity 0.2s ease-out;
 }
 
 .sch-timeslot-kind-talk > * {
