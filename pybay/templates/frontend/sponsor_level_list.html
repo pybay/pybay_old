@@ -17,7 +17,7 @@
         {% for sponsor in sponsors %}
           <div class="sl-sponsor">
             <div class="sl-blurb">
-              <a class="sl-logo" href="{{ sponsor.external_url }}">
+              <a class="sl-logo" href="{{ sponsor.external_url }}" target="_blank" rel="noopener noreferrer">
                 <img alt="{{ sponsor.name }}" src="{{ sponsor.website_logo.url }}" width="200px" />
               </a>
               <p class="sl-intro">{{ sponsor.listing_text|urlize|linebreaks }}</p>
