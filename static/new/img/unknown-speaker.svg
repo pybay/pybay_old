@@ -10,13 +10,13 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="77mm"
-   height="77mm"
-   viewBox="0 0 272.83464 272.83465"
+   width="61.887302mm"
+   height="61.887302mm"
+   viewBox="0 0 219.28571 219.28572"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   inkscape:export-filename="C:\Users\Yann\default.png"
+   inkscape:export-filename="C:\Users\Yann\unknown-speaker.png"
    inkscape:export-xdpi="118.74345"
    inkscape:export-ydpi="118.74345"
    sodipodi:docname="unknown-speaker.svg">
@@ -51,9 +51,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="135.09349"
-     inkscape:cy="7.2418048"
+     inkscape:zoom="2.56"
+     inkscape:cx="160.44722"
+     inkscape:cy="39.009689"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -72,19 +72,19 @@
      inkscape:window-y="-8"
      inkscape:window-maximized="1">
     <sodipodi:guide
-       position="136.07144,125.71429"
+       position="109.64285,109.64288"
        orientation="1,0"
        id="guide3342" />
     <sodipodi:guide
-       position="234.64287,136.42857"
+       position="208.21428,120.35716"
        orientation="0,1"
        id="guide3352" />
     <sodipodi:guide
-       position="293.92859,18.571434"
+       position="267.49999,2.5000173"
        orientation="0,1"
        id="guide3358" />
     <sodipodi:guide
-       position="220.35716,207.14286"
+       position="193.92857,191.07145"
        orientation="0,1"
        id="guide3363" />
   </sodipodi:namedview>
@@ -104,7 +104,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-31.785706,-16.670411)">
+     transform="translate(-58.214283,-54.147919)">
     <path
        style="fill:url(#linearGradient4210);fill-opacity:1;fill-rule:evenodd;stroke:#fdd88b;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        mask="none"
