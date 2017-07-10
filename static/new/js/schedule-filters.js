@@ -13,10 +13,7 @@
       schedule.removeClass(function(i, cls) { return cls; });
       schedule.addClass(parentClass);
       if (!alreadySelected) {
-        var filters = $.map(filter.split(' '), function (f) {
-          return prefix + f;
-        }).join(' ');
-        schedule.addClass(filterEnabledClass + ' ' + filters);
+        schedule.addClass(filterEnabledClass + ' ' + prefix + filter.replace(/ /g, '-'));
       }
   });
 }(jQuery);

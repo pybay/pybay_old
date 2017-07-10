@@ -75,19 +75,19 @@
 
     <style type="text/css">
       {% for _, slugs in filters %}{% for slug in slugs %}
-      .sch-schedule-filter-{{ slug }} .sch-filter-list > li[data-filter~="{{ slug }}"]{% if not forloop.last %},{% endif %}{% endfor %}{% if not forloop.last %},{% endif %}{% endfor %}{
+      .sch-schedule-filter-{{ slugs|join:'-' }} .sch-filter-list > li[data-filter="{{ slugs|join:' ' }}"]{% if not forloop.last %},{% endif %}{% endfor %}{% if not forloop.last %},{% endif %}{% endfor %}{
         background: #428bca;
         color: white;
       }
 
-      {% for _, slugs in filters %}{% for slug in slugs %}
-      .sch-schedule-filter-{{ slug }} .sch-timeslot-kind-talk:not(.sch-talk-{{ slug }}){% if not forloop.last %},{% endif %}{% endfor %}{% if not forloop.last %},{% endif %}{% endfor %}{
+      {% for _, slugs in filters %}
+      .sch-schedule-filter-{{ slugs|join:'-' }} .sch-timeslot-kind-talk{% for slug in slugs %}:not(.sch-talk-{{ slug }}){% endfor %}{% if not forloop.last %},{% endif %}{% endfor %}{
         opacity: .3;
       }
 
       @media(max-width: 450px) {
-        {% for _, slugs in filters %}{% for slug in slugs %}
-        .sch-schedule-filter-{{ slug }} .sch-timeslot-kind-talk:not(.sch-talk-{{ slug }}){% if not forloop.last %},{% endif %}{% endfor %}{% if not forloop.last %},{% endif %}{% endfor %}{
+        {% for _, slugs in filters %}
+        .sch-schedule-filter-{{ slugs|join:'-' }} .sch-timeslot-kind-talk{% for slug in slugs %}:not(.sch-talk-{{ slug }}){% endfor %}{% if not forloop.last %},{% endif %}{% endfor %}{
           display: none;
         }
       }
