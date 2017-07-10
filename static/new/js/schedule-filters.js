@@ -7,11 +7,16 @@
       var filter = target.closest('li').data('filter');
       if (filter === undefined) return;
       var schedule = target.closest('.' + parentClass);
-      var alreadySelected = filter === '' || schedule.hasClass(prefix + filter);
+      schedule.data('filter');
+      var alreadySelected = filter === '' || schedule.data('filter') === filter;
+      schedule.data('filter', filter);
       schedule.removeClass(function(i, cls) { return cls; });
       schedule.addClass(parentClass);
       if (!alreadySelected) {
-        schedule.addClass(filterEnabledClass + ' ' + prefix + filter);
+        var filters = $.map(filter.split(' '), function (f) {
+          return prefix + f;
+        }).join(' ');
+        schedule.addClass(filterEnabledClass + ' ' + filters);
       }
   });
 }(jQuery);

@@ -20,8 +20,8 @@
         <div class="sch-filters substicky">
             <ul class="sch-filter-list">
                 <li data-filter="">All Talks</li>
-              {% for filter, name in filters %}
-                <li data-filter="{{ filter }}">{{ name }}</li>
+              {% for name, filter in filters %}
+                <li data-filter="{{ filter|join:" " }}">{{ name }}</li>
               {% endfor %}
             </ul>
         </div>
@@ -74,20 +74,20 @@
     <script src="{% static 'new/js/schedule-filters.js' %}" async></script>
 
     <style type="text/css">
-      {% for slug, _ in filters %}
-      .sch-schedule-filter-{{ slug }} .sch-filter-list > li[data-filter="{{ slug }}"]{% if not forloop.last %},{% endif %}{% endfor %} {
+      {% for _, slugs in filters %}{% for slug in slugs %}
+      .sch-schedule-filter-{{ slug }} .sch-filter-list > li[data-filter~="{{ slug }}"]{% if not forloop.last %},{% endif %}{% endfor %}{% if not forloop.last %},{% endif %}{% endfor %}{
         background: #428bca;
         color: white;
       }
 
-      {% for slug, _ in filters %}
-      .sch-schedule-filter-{{ slug }} .sch-timeslot-kind-talk:not(.sch-talk-{{ slug }}){% if not forloop.last %},{% endif %} {% endfor %}{
+      {% for _, slugs in filters %}{% for slug in slugs %}
+      .sch-schedule-filter-{{ slug }} .sch-timeslot-kind-talk:not(.sch-talk-{{ slug }}){% if not forloop.last %},{% endif %}{% endfor %}{% if not forloop.last %},{% endif %}{% endfor %}{
         opacity: .3;
       }
 
       @media(max-width: 450px) {
-        {% for slug, _ in filters %}
-        .sch-schedule-filter-{{ slug }} .sch-timeslot-kind-talk:not(.sch-talk-{{ slug }}){% if not forloop.last %},{% endif %} {% endfor %} {
+        {% for _, slugs in filters %}{% for slug in slugs %}
+        .sch-schedule-filter-{{ slug }} .sch-timeslot-kind-talk:not(.sch-talk-{{ slug }}){% if not forloop.last %},{% endif %}{% endfor %}{% if not forloop.last %},{% endif %}{% endfor %}{
           display: none;
         }
       }

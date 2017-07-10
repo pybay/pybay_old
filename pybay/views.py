@@ -177,9 +177,19 @@ def _day_slots(day):
 
 
 FILTER_CATEGORIES = [
-    "All things Web",
-    "DevOps",
+    ("Fundamentals", ['fundamentals']),
+    ("Data", ['dealingwithdata']),
+    ("Python at Scale", ['performantpython', 'scalablepython', 'devops']),
 ]
+
+ALLOWED_CATEGORIES = [
+    slug
+    for _, slugs in FILTER_CATEGORIES
+    for slug in slugs
+]
+
+FILTER_CATEGORIES.append(('Misc', ['other']))
+FILTER_CATEGORIES.append(('Beginner-friendly', ['level-1']))
 
 
 def pybay_schedule(request):
@@ -197,15 +207,10 @@ def pybay_schedule(request):
         for schedule in schedules
     ]
 
-    filters = [
-        (name.lower().replace(' ', ''), name)
-        for name in FILTER_CATEGORIES
-    ]
-
     ctx = {
         'schedules': schedules,
-        'filters' :  filters + [('other', 'Other'), ('level-1', 'Beginner-friendly')],
-        'allowed_categories': [slug for slug, _ in filters]
+        'filters' :  FILTER_CATEGORIES,
+        'allowed_categories': ALLOWED_CATEGORIES,
     }
 
     return render(request, "frontend/schedule.html", ctx)
