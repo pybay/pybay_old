@@ -4,6 +4,7 @@
 {% block content %}
 {% load get_speaker_url_with_fallback %}
 {% load slot_desc %}
+{% load markup_tags %}
 
 <section>
    <div class="container" style="padding-top: 150px;">
@@ -41,14 +42,14 @@
                     <div class="row">
                             <div class="col-md-11">
                                 <p class="lead"></p>
-                                <p class="lead">
+                                <div class="lead">
                                     <h3>Description</h3>
-                                    {{ talk.description }}
-                                </p>
-                                <p class="lead">
+                                    {{ talk.description|apply_markup:"markdown" }}
+                                </div>
+                                <div class="lead">
                                     <h3>Abstract</h3>
-                                    {{ talk.abstract|linebreaks }}
-                                </p>
+                                    {{ talk.abstract|apply_markup:"markdown" }}
+                                </div>
                             </div>
                     </div>
             </div>
