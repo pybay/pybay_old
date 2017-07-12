@@ -18,7 +18,7 @@
        </div>
        <div class="col-sm-6 col-md-7">
            <h1><strong>{{ speaker.name }}</strong></h1>
-          <p class="lead">{{ speaker.biography_html | safe }}</p>
+          <div class="lead">{{ speaker.biography | apply_markup:"markdown" }}</div>
           <a style="margin-top: 20px;" href="{{ speaker_website }}" class="btn">Speaker home page</a>
        </div>
      </div>
