@@ -2,6 +2,7 @@ django-appconf==1.0.1
 django-bootstrap-form==3.2.1
 django-crispy-forms==1.6.1
 django-jsonfield==1.0.1
+django-markup==1.2
 django-markitup==2.2.2
 django-model-utils==2.4
 django-ordered-model==1.4.1
