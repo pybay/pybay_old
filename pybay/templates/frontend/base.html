@@ -21,6 +21,29 @@
             <link rel="stylesheet" type="text/css" href="new/css/ie9.css" />
         <![endif]-->
         <link href='//fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
+
+        {% static 'new/img/home-screenshot.png' as share_image %}
+        {% with share_image_width=1366 share_image_height=768 share_title="PyBay 2017" share_desc="Like the always-sold-out PyCon, PyBay will be a weekend of fun geeking out with awesome Devs on one of your favorite topics - Python!  Check out the impressive speaker list!" %}
+        {% block share_card %}
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@py_bay">
+        <meta name="twitter:title" content="{{ share_title }}">
+        <meta name="twitter:description" content="{{ share_desc }}">
+        <meta name="twitter:image" content="{{ CANONICAL_HOST }}{{ share_image }}">
+
+        <meta property="fb:app_id" content="252653391896401" />
+        <meta property="og:url" content="{{ CANONICAL_HOST }}{{ request.get_full_path }}" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="{{ share_title }}" />
+        <meta property="og:description" content="{{ share_desc }}" />
+        <meta property="og:image" content="{{ CANONICAL_HOST }}{{ share_image }}" />
+        <meta property="og:image:width" content="{{ share_image_width }}" />
+        <meta property="og:image:height" content="{{ share_image_height }}" />
+
+        <meta name="description" content="{{ share_desc }}" />
+        {% endblock %}
+        {% endwith %}
+
     </head>
 
     {% block header %}
