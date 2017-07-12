@@ -3,6 +3,7 @@
 {% load staticfiles %}
 {% load thumbnail %}
 {% load value_from_list_or_default %}
+{% load markup_tags %}
 
 {% block content %}
 <section class="code_of_conduct">
@@ -46,7 +47,7 @@
                             <h4><a href="{% url 'pybay_speakers_detail' talk.speaker.name_slug %}">{{ talk.title }}</a></h4>
                             <p class="sch-speaker">{{ talk.speaker.name }}</p>
                             {% if talk.speaker.photo %}<p class="sch-speaker-photo"><img src="{% thumbnail talk.speaker.photo '50x50' %}" alt="{{ talk.speaker.name }}" /></p>{% endif %}
-                            <p class="sch-description">{{ talk.description }}</p>
+                            <div class="sch-description">{{ talk.description|apply_markup:"markdown" }}</div>
                             <p class="sch-room">{{ slot.rooms|join:', ' }}</p>
                             <p class="sch-duration">{{ slot.length_in_minutes }} mins</p>
                           </div>

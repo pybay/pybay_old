@@ -140,6 +140,7 @@ INSTALLED_APPS = [
     "account",
     "easy_thumbnails",
     "eventlog",
+    "django_markup",
     "markitup",
     "metron",
     "ordered_model",
