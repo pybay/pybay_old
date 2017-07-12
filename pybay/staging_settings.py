@@ -16,6 +16,8 @@ DATABASES = {
 
 ALLOWED_HOSTS = ['staging.pyconfsf.com']
 
+CANONICAL_HOST = 'http://staging.pybay.com'
+
 TIME_ZONE = "US/Pacific"
 
 MEDIA_ROOT = '/data/websites/staging_site_media/media'
