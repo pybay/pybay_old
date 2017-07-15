@@ -91,9 +91,12 @@ def pybay_speakers_detail(request, speaker_slug):
         return HttpResponseNotFound()
 
     # NOTE: Cannot perform reverse lookup (speaker.talk_proposals) for some reason.
-    speaker_approved_talks = TalkProposal.objects.filter(
-        speaker=speaker
-    ).filter(result__status='accepted')
+    speaker_approved_talks = [
+        prop.talkproposal if hasattr(prop, 'talkproposal') else prop.tutorialproposal
+        for prop in Proposal.objects.filter(speaker=speaker)
+        .filter(result__status='accepted')
+        .prefetch_related('talkproposal', 'tutorialproposal')
+    ]
 
     return render(request, 'frontend/speakers_detail.html',
                   {'speaker': speaker, 'talks': speaker_approved_talks,
