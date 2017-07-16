@@ -963,3 +963,7 @@ tito-widget .tito-badge-link a {
 .speaker-list-row {
     margin-bottom: 50px;
 }
+
+.no-background {
+  background: transparent;
+}
