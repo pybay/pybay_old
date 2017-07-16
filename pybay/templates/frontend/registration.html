@@ -1,6 +1,8 @@
 {% extends 'frontend/base.html' %}
 {% load staticfiles %}
 
+{% block body_class %}{{ block.super }} registration-page{% endblock %}
+
 {% block content %}
 <a id="top"></a>
 <section class="topics duplicatable-content">
