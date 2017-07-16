@@ -756,6 +756,16 @@ tito-widget .tito-ticket-description {
   color: #808080;
 }
 
+@media screen and (min-width: 520px) {
+  tito-widget .tito-ticket-name-wrapper {
+    width: 70%;
+  }
+  tito-widget .tito-ticket-price-quantity-wrapper {
+    width: 30%;
+  }
+}
+
+
 .speaker {
   width: 240px;
 }
