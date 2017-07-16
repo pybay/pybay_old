@@ -748,6 +748,11 @@ section.topics.duplicatable-content.home-page {
   padding-right: 15px;
 }
 
+.btn.btn-soldout {
+  background: hsl(0, 0%, 50%);
+  text-transform: uppercase;
+}
+
 tito-widget .tito-wrapper {
   background: white;
 }
