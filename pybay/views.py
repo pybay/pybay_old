@@ -104,7 +104,7 @@ def pybay_speakers_detail(request, speaker_slug):
 
 
 def pybay_speakers_list(request):
-    accepted_proposals = TalkProposal.objects.filter(result__status='accepted')
+    accepted_proposals = Proposal.objects.filter(result__status='accepted')
     speakers = []
     for proposal in accepted_proposals:
         speakers += list(proposal.speakers())
