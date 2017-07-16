@@ -753,6 +753,12 @@ section.topics.duplicatable-content.home-page {
   text-transform: uppercase;
 }
 
+.btn.btn-nohover {
+  color: #fff;
+  background: #FBBD4A;
+  cursor: initial;
+}
+
 tito-widget .tito-wrapper {
   background: white;
 }
