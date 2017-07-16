@@ -65,3 +65,6 @@ class TalkProposal(Proposal):
 class TutorialProposal(Proposal):
     class Meta:
         verbose_name = "tutorial proposal"
+
+    ticket_price = models.CharField(max_length=50, blank=True)
+    sold_out = models.BooleanField(default=False)

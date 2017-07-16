@@ -50,6 +50,15 @@
                                     <h3>Abstract</h3>
                                     {{ talk.abstract|apply_markup:"markdown" }}
                                 </div>
+                                {% if talk.ticket_price %}
+                                <div class="lead">
+                                    <a class="btn{% if talk.sold_out %} btn-soldout{% endif %}" href="{% url 'pybay_tickets' %}#tickets">
+                                      {% if talk.sold_out %}Sold out
+                                      {% else %}Register (${{ talk.ticket_price }})
+                                      {% endif %}
+                                    </a>
+                                </div>
+                                {% endif %}
                             </div>
                     </div>
             </div>
