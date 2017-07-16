@@ -1,4 +1,5 @@
 {% load get_speaker_url_with_fallback %}
+{% load markup_tags %}
 <div class="row">
     <div class="col-sm-12">
         <h1 class="blue-header" style="margin-top:42px"><strong>Some of our speakers</strong></h1>
@@ -19,7 +20,7 @@
         {% endif %}
       </div>
       <span class="speaker-name">{{ featured.speaker.name }}</span>
-      {{ featured.description|safe|linebreaks }}
+      {{ featured.description|apply_markup:"markdown" }}
     </div>
   </div>
   {% endfor %}
