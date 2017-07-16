@@ -777,6 +777,11 @@ tito-widget .tito-ticket-description {
 }
 
 
+tito-widget .tito-badge-link a {
+  color: inherit;
+}
+
+
 .speaker {
   width: 240px;
 }
