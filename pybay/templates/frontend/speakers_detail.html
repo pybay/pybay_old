@@ -34,7 +34,9 @@
                                 {{ talk.category | capfirst }}, {{ talk.get_audience_level_display | capfirst }}
                             </div>
                             {% slot_desc talk as talk_slot %}
-                            {% if talk_slot %}
+                            {% if talk.location_override %}
+                              <a class="btn btn-nohover">{{ talk.location_override }}</a>
+                            {% elif talk_slot %}
                               <a href="{% url 'pybay_schedule' %}" class="btn">{{ talk_slot }}</a>
                             {% endif %}
                     </div>
