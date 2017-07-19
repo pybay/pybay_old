@@ -5,9 +5,8 @@
         <h1 class="blue-header" style="margin-top:42px"><strong>Some of our speakers</strong></h1>
     </div>
 </div>
-<div class="row speakers-row">
+<div class="speakers-row">
   {% for featured in speakers %}
-  <div class="col-md-3 col-sm-6 speaker-column">
     <div class="speaker">
       <div class="image-holder">
         <img width="240" class="background-image" src="{% speaker_url_with_fallback featured.speaker 240 %}" alt="{{ featured.speaker.name }}">
@@ -22,6 +21,5 @@
       <span class="speaker-name">{{ featured.speaker.name }}</span>
       {{ featured.description|apply_markup:"markdown" }}
     </div>
-  </div>
   {% endfor %}
 </div>

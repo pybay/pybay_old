@@ -806,8 +806,16 @@ tito-widget .tito-badge-link a {
 }
 
 
+.speakers-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 18px;
+}
+
 .speaker {
-  width: 240px;
+  margin: 18px;
+  max-width: 240px;
 }
 
 .speaker .image-holder {
