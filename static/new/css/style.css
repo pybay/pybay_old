@@ -86,6 +86,11 @@ h1 {
 }
 
 /* FAQ boxes */
+.registration-page section.faq-box,
+.sponsor-prospectus-page section.faq-box {
+  background: transparent;
+}
+
 .faq-box .more-link {
   text-align: center;
 }
