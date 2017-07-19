@@ -1,30 +1,30 @@
 {% if sponsors %}
   <div class="sl-group {{ color }}-sponsors">
 
-    <section class="subscribe-2">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 text-center sl-group-heading" >
-            {% if image %}<p>{{ image }}</p>{% endif %}
-            <h1 class="large-h1">{{ title }}</h1>
-          </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 text-center sl-group-heading" >
+          {% if image %}<p>{{ image }}</p>{% endif %}
+          <h1 class="large-h1">{{ title }}</h1>
         </div>
       </div>
-    </section>
-
-    <div class="container">
-      <section class="sponsor-list">
-        {% for sponsor in sponsors %}
-          <div class="sl-sponsor">
-            <div class="sl-blurb">
-              <a class="sl-logo" href="{{ sponsor.external_url }}" target="_blank" rel="noopener noreferrer">
-                <img alt="{{ sponsor.name }}" src="{{ sponsor.website_logo.url }}" width="200px" />
-              </a>
-              <p class="sl-intro">{{ sponsor.listing_text|urlize|linebreaks }}</p>
-            </div>
-          </div>
-        {% endfor %}
-      </section>
     </div>
+
+    <section class="subscribe-2">
+      <div class="container">
+        <section class="sponsor-list">
+          {% for sponsor in sponsors %}
+            <div class="sl-sponsor">
+              <div class="sl-blurb">
+                <a class="sl-logo" href="{{ sponsor.external_url }}" target="_blank" rel="noopener noreferrer">
+                  <img alt="{{ sponsor.name }}" src="{{ sponsor.website_logo.url }}" width="200px" />
+                </a>
+                <p class="sl-intro">{{ sponsor.listing_text|urlize|linebreaks }}</p>
+              </div>
+            </div>
+          {% endfor %}
+        </section>
+      </div>
+    </section>
 </div>
 {% endif %}

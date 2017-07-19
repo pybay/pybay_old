@@ -143,6 +143,15 @@ p.question {
   flex-wrap: wrap;
 }
 
+
+.sponsor-list-page .sl-group:first-child > .container {
+  padding-top: 55px;
+}
+
+.sl-group section {
+  padding: 30px 0;
+}
+
 .sl-group .subscribe-2 {
   clear: both;
   background: "#f5f5f5";
