@@ -26,7 +26,7 @@
 </section>
 
 {% for talk in talks %}
-    <section class="inline-video">
+    <section class="inline-video" id="talk-{{ talk.id }}">
             <div class="container">
                     <div class="row">
                             <div class="col-sm-12">
@@ -40,7 +40,7 @@
                               <a href="{% url 'pybay_schedule' %}" class="btn">{{ talk_slot }}</a>
                             {% endif %}
                     </div>
-            
+
                     <div class="row">
                             <div class="col-md-11">
                                 <p class="lead"></p>
