@@ -1042,3 +1042,10 @@ tito-widget .tito-badge-link a {
 .no-background {
   background: transparent;
 }
+
+.speaker-page .lead ul{
+    padding-left:20px;
+    list-style: disc;
+    font-size: 14px;
+    padding-bottom:10px;
+}
