@@ -148,6 +148,7 @@ INSTALLED_APPS = [
     "ordered_model",
     "taggit",
     "timezones",
+    "columns",
 
 
     # symposion
