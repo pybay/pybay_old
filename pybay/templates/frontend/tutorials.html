@@ -1,0 +1,41 @@
+{% load columns %}
+
+<section class="duplicatable-content visitor-info">
+  <div class="container">
+    <!-- need container class  , border-->
+    <div class="row">
+      <div class="col-sm-12">
+        <h1><strong>Half-day workshops</strong></h1>
+      </div>
+    </div>
+
+    <div class="col-sm-12">
+      {% for col in half|columns:2 %}
+        <div class="row">
+        {% for proposal in col %}
+         {% include "frontend/tutorial.html" %}
+        {% endfor %}
+        </div>
+      {% endfor %}
+    </div>
+</section>
+<!-- ================= end section====================-->
+<!-- =================section====================-->
+<section class="duplicatable-content visitor-info">
+  <div class="container" > <!-- need container class   , border  -->
+    <div class="row ">
+      <div class="col-sm-12">
+        <h1><strong>Full-day workshops</strong></h1>
+      </div>
+    </div>
+    <div class="col-sm-12">
+      {% for col in full|columns:2 %}
+        <div class="row">
+        {% for proposal in col %}
+         {% include "frontend/tutorial.html" %}
+        {% endfor %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

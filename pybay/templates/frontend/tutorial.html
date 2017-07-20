@@ -1,0 +1,22 @@
+{% load tutorial_tags %}
+{% load markup_tags %}
+{% load get_speaker_url_with_fallback %}
+
+        <div class="col-sm-6">
+          <div class="info-box">
+            <div class="image-holder">
+              <img src="{% speaker_url_with_fallback proposal.speaker 360 %}" alt="" width="240">
+            </div>
+            <h3><strong>
+                <a href="{% url 'pybay_speakers_detail' speaker_slug=proposal.speaker.name_slug %}#talk-{{ proposal.id }}" id="skrnm-{{ proposal.speaker.name_slug }}">{{ proposal.speaker.name }}
+                  </a></strong></h3>
+            <h4 class="black lnht">{{ proposal.title }}</h4>
+            <h5 class="black lnht">{% tutorial_level proposal %}</h5>
+            <h5 class="black lnht">{{ proposal.location_override }}</h5>
+            <br />
+            {{ proposal.description|apply_markup:"markdown" }}
+
+            <a href="{% url 'pybay_speakers_detail' speaker_slug=proposal.speaker.name_slug %}#talk-{{ proposal.id }}" class="btn">More Information<i class="fa fa-caret-right" aria-hidden="true"></i></a>
+            <a href="/registration#tickets" class="btn">REGISTER (${{ proposal.ticket_price }})</a>
+          </div>
+        </div>

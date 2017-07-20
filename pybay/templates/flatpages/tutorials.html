@@ -1,0 +1,17 @@
+{% extends 'frontend/base.html' %}
+
+{% block head_title %}{{ flatpage.title }}{% endblock %}
+
+{% block content %}
+<section class="code_of_conduct">
+    <div class="container">
+        <div class="row">
+            {{ flatpage.content }}
+        </div>
+<!-- ALL THIS -->
+        {% load tutorial_tags %}
+        {% tutorials %}
+<!-- TO HERE -->
+    </div>
+</section>
+{% endblock %}
