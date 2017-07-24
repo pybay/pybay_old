@@ -165,6 +165,7 @@ INSTALLED_APPS = [
     'pybay.faqs',
     'pybay.flatpages_ext.apps.FlatpagesExtConfig',
     'pybay.featured_speakers',
+    'pybay.countdowns',
     'crispy_forms',
 ]
 

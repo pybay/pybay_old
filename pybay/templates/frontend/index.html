@@ -25,8 +25,8 @@
                   San Francisco, California</span>
                                     <span class="large-h1 video-tagline">Bringing together Python's most forward-thinking developers</span>
                                     {% if countdown %}
-                                    <span class="video-moreinfo">{{ countdown.text }}</span>
-                                    <div class="video-moreinfo countdown" data-date="{{ countdown.date }} "></div>
+                                    <span class="video-moreinfo">{{ countdown.title }}</span>
+                                    <div class="video-moreinfo countdown" id="countdown" data-countdown-date="{{ countdown.date }}" data-countdown-reference="{{ countdown.reference }}"></div>
                                     <span class="video-moreinfo"><a class="btn" href="{{ countdown.link }}">{{ countdown.cta }}</a></span>
                                     {% endif %}
 								</div>
@@ -344,3 +344,13 @@
     </section>
     <!--Subsribe to stay Tune Ends -->
 {% endblock content %}
+
+{% block scripts %}
+{{ block.super }}
+{% if countdown %}
+<script type="text/javascript" src="{% static 'new/js/countdown.js' %}"></script>
+<script type="text/javascript">
+countdown(document.getElementById('countdown'));
+</script>
+{% endif %}
+{% endblock %}
