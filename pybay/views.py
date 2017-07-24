@@ -1,16 +1,19 @@
 import json
 import itertools
+import time
 
 from django.shortcuts import render
 from django.http import (HttpResponse, HttpResponseForbidden,
                          HttpResponseNotFound)
 from django.views.generic import TemplateView
 from django.db.models import Prefetch
+from django.utils import timezone
 
 from .forms import CallForProposalForm
 from pybay.faqs.models import Faq, Category
 from symposion.sponsorship.models import Sponsor
 from pybay.proposals.models import TalkProposal, Proposal
+from pybay.countdowns.models import Countdown
 from pybay.utils import get_accepted_speaker_by_slug
 from symposion.speakers.models import Speaker
 from symposion.schedule.models import Schedule
@@ -57,6 +60,19 @@ class FaqTemplateView(TemplateView):
         if self.faq_filter is not None:
             filters[self.faq_filter] = True
         context['faqs'] = Faq.objects.filter(**filters)
+        return context
+
+
+class FrontpageView(FaqTemplateView):
+    @classmethod
+    def as_view(cls, **kwargs):
+        return super().as_view(template_name="frontend/index.html", **kwargs)
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        countdown = Countdown.objects.filter(date__gt=timezone.now()).first()
+        if countdown:
+            context['countdown'] = countdown.context_for_template()
         return context
 
 

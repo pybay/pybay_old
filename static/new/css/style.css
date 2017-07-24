@@ -66,9 +66,25 @@ h1 {
   font-size: 25px;
   margin: 25px 0;
 }
-.video-moreinfo.countdown {
-  margin-top: 50px;
+.countdown {
+  display: flex;
+  justify-content: center;
 }
+.countdown-part {
+  display: flex;
+  flex-direction: column;
+  margin: 0 .5em;
+  flex-basis: 5em;
+}
+.countdown-count {
+  font-size: 2em;
+  font-weight: bold;
+  line-height: initial;
+}
+.countdown-label {
+  text-transform: uppercase;
+}
+
 
 @media(max-width: 767px) {
   .video-moreinfo {

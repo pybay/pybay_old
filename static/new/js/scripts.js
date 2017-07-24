@@ -128,14 +128,6 @@ $(document).ready(function() {
 
     });
 
-    /************** Countdown Timer **************/
-
-    $('.countdown').each(function() {
-        $(this).countdown({
-            until: new Date($(this).attr('data-date'))
-        });
-    });
-
     /************** Map Interaction **************/
 
     $('.fullwidth-map').click(function() {
