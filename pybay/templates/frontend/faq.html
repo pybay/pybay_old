@@ -12,6 +12,18 @@
                         {% if faq_categories|length > 1 %}
                             <h2 class="blue-header"><strong>{{ title }}</strong></h2>
                         {% endif %}
+
+                    </div>
+                {% endfor %}
+
+
+
+
+                {% for slug, title, faqs in faq_categories %}
+                    <div class="category" id={{ slug }}>
+                        {% if faq_categories|length > 1 %}
+                            <h2 class="blue-header"><strong>{{ title }}</strong></h2>
+                        {% endif %}
                         <div class="faq-items">
                             {% for faq in faqs %}
                                 <a name="faq-{{ faq.id }}" style="position:relative;top:-60px">&nbsp;</a> {# The anchor with margin is just to get the page to scroll down a bit and not hide the title. #}
