@@ -3,4 +3,8 @@ from django.contrib import admin
 from . import models
 
 
-admin.site.register(models.Countdown)
+class CountdownAdmin(admin.ModelAdmin):
+    list_display = 'title', 'date'
+
+
+admin.site.register(models.Countdown, CountdownAdmin)
