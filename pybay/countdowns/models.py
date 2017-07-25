@@ -12,3 +12,6 @@ class Countdown(models.Model):
         ret = dict(self.__dict__, reference=timezone.now().timestamp())
         ret['date'] = ret['date'].timestamp()
         return ret
+
+    def __str__(self):
+        return '{0.title}: {0.date}'.format(self)
