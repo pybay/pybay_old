@@ -163,6 +163,17 @@ p.question {
   opacity: 0;
 }
 
+
+/* Registration */
+img.conf {
+  max-height: 300px;
+}
+
+img.preconf {
+  max-height: 80px;
+}
+
+
 /* Sponsor list */
 .gold-sponsors .sponsor-list {
   /*background: hsl(0, 50%, 50%);
