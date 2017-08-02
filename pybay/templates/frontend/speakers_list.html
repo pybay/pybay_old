@@ -5,20 +5,20 @@
 {% load markup_tags %}
 
 {% block content %}
-<section>
+<section class="code_of_conduct">
   <div class="container">
     <div class="col-md-12 no-padding clearfix">
-        <div class="page-header pull-left">
-            <h1>All Speakers</h1>
+        <div class="blue-header">
+            <h1><strong>All Speakers</strong></h1>
         </div>
     </div><!-- /.col-md-12 -->
-    
+
     {% for chunk in chunks %}
       <div class="row speaker-list-row">
         {% for speaker in chunk %}
           <div class="col-md-6">
             <img width=200 src="{% speaker_url_with_fallback speaker 200 %}" alt="{{ speaker.name }}">
-            <h2><a href="{% url 'pybay_speakers_detail' speaker.name_slug %}">{{ speaker.name }}</a></h2>
+            <h2><strong><a href="{% url 'pybay_speakers_detail' speaker.name_slug %}">{{ speaker.name }}</a></strong></h2>
             <span>{{ speaker.biography|apply_markup:"markdown"|truncatewords_html:"40" }}</span>
           </div>
         {% endfor %}
