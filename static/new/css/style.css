@@ -317,6 +317,10 @@ img.preconf {
   padding: 0 .5em;
   content: " \2015 ";
 }
+.sch-timeslot-special p {
+  line-height: inherit;
+  font-size: inherit;
+}
 
 
 @media(max-width: 991px) {
