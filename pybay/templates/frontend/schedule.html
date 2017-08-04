@@ -38,7 +38,7 @@
                     {% for slot in slots %}
                       {% if slot.content_override %}
                         <div class="sch-timeslot-slot sch-timeslot-kind-{{ slot.kind.label }} sch-timeslot-custom">
-                          {{ slot.content_override }}
+                          {{ slot.content_override_html|safe }}
                         </div>
                       {% elif slot.content_ptr %}
                         {% with talk=slot.content_ptr %}
