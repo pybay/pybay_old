@@ -481,7 +481,7 @@ img.preconf {
   }
 
   .sch-timeslot-kind-talk .sch-speaker-photo + h4,
-  .sch-timeslot-kind-talk .sch-speaker-photo + h4 + .sch-speaker {
+  .sch-timeslot-kind-talk .sch-speaker-photo + h4 ~ .sch-category {
     padding: 0 46px 0 0;
   }
 
