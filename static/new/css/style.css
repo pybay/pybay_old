@@ -503,6 +503,9 @@ img.preconf {
   }
 
   .sch-timeslot-kind-talk .sch-description {
+    position: relative;
+    border: 0;
+    padding: 0;
     transition: all 0.2s ease-out;
     transform: scaleY(1);
     transform-origin: top;
