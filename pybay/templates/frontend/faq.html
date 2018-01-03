@@ -3,30 +3,38 @@
 
 {% block content %}
 <section class="code_of_conduct">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <h1 class="blue-header"><strong>Frequently Asked Questions</strong></h1>
-                {% for slug, title, faqs in faq_categories %}
-                    <div class="category" id={{ slug }}>
-                        {% if faq_categories|length > 1 %}
-                            <h2 class="blue-header"><strong>{{ title }}</strong></h2>
-                        {% endif %}
-                        <div class="faq-items">
-                            {% for faq in faqs %}
-                                <a name="faq-{{ faq.id }}" style="position:relative;top:-60px">&nbsp;</a> {# The anchor with margin is just to get the page to scroll down a bit and not hide the title. #}
-                                <div class="faq-item" id="faq-{{ faq.id }}">
-                                    <h3 class="lead blue-header"><strong>{{ faq.title }}</strong> <a class="glyphicon glyphicon-link" href="#faq-{{ faq.id }}"></a></h3>
-                                    <p>
-                                        {{ faq.body | safe }}
-                                    </p>
-                                </div>
-                            {% endfor %}
-                        </div>
-                    </div>
-                {% endfor %}
-            </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <h1 class="blue-header" id="top"><strong>Frequently Asked Questions</strong></h1>
+        {% for slug, title, faqs in faq_categories %}
+        <div class="category" id="{{ slug }}">
+          <h2 class="blue-header"><strong>{{ title }}</strong></h2>
+          <div class="faq-items" style="padding:10px;">
+            <ul>
+            {% for faq in faqs %}
+            <li style="" id="faq-{{ faq.id }}-nav"><strong><a href="#faq-{{ faq.id }}">{{ faq.title }}</a></strong></li>
+            {% endfor %}
+            </ul>
+          </div>
         </div>
+        {% endfor %}
+        {% for slug, title, faqs in faq_categories %}
+        <div class="faq-item" id="faq-{{ faq.id }}">
+          {% for faq in faqs %}
+          <a name="faq-{{ faq.id }}" style="position:relative;top:-60px">&nbsp;</a>
+          {# The anchor with margin is just to get the page to scroll down a bit and not hide the title. #}
+          <h3 class="lead blue-header"><strong>{{ faq.title }}</strong> <a class="glyphicon glyphicon-link" href="#faq-{{ faq.id }}"></a></h3>
+          <p>
+            {{ faq.body | safe }}
+          </p>
+          <p><a href="#faq-{{ faq.id }}-nav">Back</a></p>
+          {% endfor %}
+        </div>
+        {% endfor %}
+
+      </div>
     </div>
+  </div>
 </section>
 {% endblock content %}
