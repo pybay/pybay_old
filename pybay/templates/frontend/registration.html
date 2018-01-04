@@ -15,11 +15,8 @@
         <div class="row">
             <div class="col-md-6 col-sm-6">
                 <div class="topic">
-                    <i class="pe-7s-like2 icon-large"></i>
-                    <h3 class="blue-header"><strong>Corporate Pass</strong></h3>
-                    <p class="lead">
-                         We love employers who support their employees’ continuous education. If your company sends 20% or more of your engineering team or 10 or more developers to PyBay at the corporate rate, we'll feature your company's logo among Python Supporters!</p>
-
+                  {% load generic_flatblocks %}
+                  {% gblock "registration_1st" for "gblocks.Text" with 'frontend/flatblock.html' %}
                 </div>
             </div>
         <div class="col-md-6 col-sm-6">

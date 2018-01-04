@@ -149,6 +149,8 @@ INSTALLED_APPS = [
     "taggit",
     "timezones",
     "columns",
+    'django_generic_flatblocks',
+    'django_generic_flatblocks.contrib.gblocks',
 
 
     # symposion
