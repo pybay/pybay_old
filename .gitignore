@@ -91,3 +91,6 @@ ENV/
 dev.db
 
 pybay/site_media/*
+
+# jetbrains
+.idea/
