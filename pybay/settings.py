@@ -271,14 +271,18 @@ if not os.environ.get('TRAVIS', False) and os.path.exists(ROLLBAR_PATH):
     rollbar.init(**ROLLBAR)
 
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
-if os.environ.get('SMTP_PWD', ''):
-    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-    EMAIL_HOST = 'smtp.glidelink.net'
-    EMAIL_PORT = 587
-    EMAIL_HOST_USER = 'pybay'
-    DEFAULT_FROM_EMAIL = 'info@pybay.com'
-    EMAIL_HOST_PASSWORD = b64decode(os.environ.get('SMTP_PWD', '')).decode('utf-8')
-    EMAIL_USE_TLS = True
+SENDGRID_PATH = '/home/pybay/sendgrid.txt'
+if os.path.exists(SENDGRID_PATH):
+    with open(SENDGRID_PATH) as f:
+        sendgrid_password = f.read().strip()
+
+        EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+        EMAIL_HOST = 'smtp.sendgrid.net'
+        EMAIL_HOST_USER = 'pybay'
+        EMAIL_HOST_PASSWORD = sendgrid_password
+        EMAIL_PORT = 587
+        EMAIL_USE_TLS = True
+        DEFAULT_FROM_EMAIL = 'info@pybay.com'
 
 DEFAULT_FALLBACK_IMAGE = "new/img/unknown-speaker.png"
 
