@@ -270,12 +270,13 @@ if not os.environ.get('TRAVIS', False) and os.path.exists(ROLLBAR_PATH):
     import rollbar
     rollbar.init(**ROLLBAR)
 
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 SENDGRID_PATH = '/home/pybay/sendgrid.txt'
 if os.path.exists(SENDGRID_PATH):
     with open(SENDGRID_PATH) as f:
         sendgrid_password = f.read().strip()
 
-        EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+        EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
         EMAIL_HOST = 'smtp.sendgrid.net'
         EMAIL_HOST_USER = 'pybay'
         EMAIL_HOST_PASSWORD = sendgrid_password
