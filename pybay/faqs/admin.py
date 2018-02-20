@@ -9,6 +9,7 @@ class CategoryAdmin(OrderedModelAdmin):
 
 class FaqAdmin(OrderedModelAdmin):
     list_display = ('category', 'title', 'move_up_down_links')
+    list_filter = ('category',)
 
 
 admin.site.register(Faq, FaqAdmin)
