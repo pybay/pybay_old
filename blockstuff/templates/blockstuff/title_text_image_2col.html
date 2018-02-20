@@ -1,0 +1,28 @@
+{% if object.title %}
+<section class="duplicatable-content visitor-info">
+  <div class="container">
+    <div class="row"><a href="{{ admin_url }}">edit</a></div>
+    <div class="row">
+      <div class="col-sm-14">
+        <h1><strong>{{ object.title }}</strong></h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <!-- change cols 6 to 9 -->
+        <div>
+          {{ object.text|safe }}
+        </div>
+      </div>
+      <div class="col-sm-6">
+        {% if object.image %}
+        <img id="workshop2" src="{{ MEDIA_URL }}{{ object.image }}" alt="">
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+{% else %}
+{% if admin_url %}<section><div class="container"><div class="row"><a href="{{ admin_url }}">edit</a></div></div></section>{% endif %}
+{% endif %}
