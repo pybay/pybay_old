@@ -1,0 +1,15 @@
+{% extends 'frontend/base.html' %}
+{% load generic_flatblocks %}
+
+{% block head_title %}{{ flatpage.title }}{% endblock %}
+
+{% block content %}
+<section class="code_of_conduct">
+{% gblock "flatpage",flatpage.id for "gblocks.TitleTextAndImage" with 'blockstuff/title_text_image_2col.html'%}
+    <div class="container">
+        <div class="row">
+            {{ flatpage.content }}
+        </div>
+    </div>
+</section>
+{% endblock %}

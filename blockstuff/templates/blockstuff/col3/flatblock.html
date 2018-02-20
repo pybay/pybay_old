@@ -1,0 +1,36 @@
+{% load blockstuff %}
+{% if object.show_title %}
+<div class="row">
+    <div class="col-sm-12">
+        <h1 class="blue-header"><strong>{{ object.overall_title|safe }}</strong></h1>
+        {% if admin_url %}<a href="{{ admin_url }}">edit</a>{% endif %}
+    </div>
+</div>
+{% else %}
+  {% if admin_url %}<div class="row"><a href="{{ admin_url }}">edit</a></div>{% endif %}
+{% endif %}
+<div class="row">
+    <div class="{{ object|three_col_class }}">
+        <div class="topic">
+            <i class="{{ object.icon_1 }}"></i>
+            <h3 class="blue-header"><strong>{{ object.title_1|safe }}</strong></h3>
+              {{ object.content_1|safe }}
+        </div>
+    </div>
+
+    <div class="{{ object|three_col_class }}">
+        <div class="topic">
+            <i class="{{ object.icon_2 }}"></i>
+            <h3 class="blue-header"><strong>{{ object.title_2|safe }}</strong></h3>
+              {{ object.content_2|safe }}
+        </div>
+    </div>
+
+    <div class="{{ object|three_col_class }}">
+        <div class="topic">
+            <i class="{{ object.icon_3 }}"></i>
+            <h3 class="blue-header"><strong>{{ object.title_3|safe }}</strong></h3>
+              {{ object.content_3|safe }}
+        </div>
+    </div>
+</div>
