@@ -1,5 +1,6 @@
 {% extends 'frontend/base.html' %}
 {% load staticfiles %}
+{% load generic_flatblocks %}
 
 {% block body_class %}{{ block.super }} sponsor-prospectus-page{% endblock %}
 
@@ -8,53 +9,10 @@
 <a id="about" class="in-page-link"></a>
 
 <section class="topics duplicatable-content">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <h1 class="blue-header"><strong>Why Sponsor?</strong></h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-5 col-sm-6 col-md-offset-1">
-                <div class="topic">
-                    <i class="pe-7s-graph1"> </i>
-                    <h3 class="blue-header"><strong>Maximize your ROI</strong></h3>
-                    <p class="lead">
-                        If your target audience is Python developers in the San Francisco Bay Area, there is no better dev gathering to promote your company.
-                    </p>
-                </div>
-            </div>
-            <div class="col-md-5 col-sm-6 col-md-offset-1">
-                <div class="topic">
-                    <i class="pe-7s-paper-plane"> </i>
-                    <h3 class="blue-header"><strong>Elevate your brand</strong></h3>
-                    <p class="lead">
-                        Sponsoring companies and attendees are among the most innovative and forward-thinking in the Python ecosystem.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-5 col-sm-6 col-md-offset-1">
-                <div class="topic">
-                    <i class="pe-7s-micro"> </i>
-                    <h3 class="blue-header"><strong>Get the word out</strong></h3>
-                    <p class="lead">
-                        Higher-level sponsorships offer more creative options to interact with devs to promote your product or technology or to network for your next hire.
-                    </p>
-                </div>
-            </div>
-            <div class="col-md-5 col-sm-6 col-md-offset-1">
-                <div class="topic">
-                    <i class="pe-7s-cup"> </i>
-                    <h3 class="blue-header"><strong>Be a Community hero</strong></h3>
-                    <p class="lead">
-                        Your sponsorship dollars also support SF Python, which produces 20+ donation-based educational events a year, as well as a local charity chosen by the conference attendees.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
+  <div class="container">
+    {% gblock "sponsors_1" for "blockstuff.Col3" %}
+    {% gblock "sponsors_2" for "blockstuff.Col3" %}
+  </div>
 </section>
 <section class="topics duplicatable-content no-background">
     <div class="container">

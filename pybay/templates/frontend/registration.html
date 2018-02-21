@@ -1,58 +1,15 @@
 {% extends 'frontend/base.html' %}
 {% load staticfiles %}
-
+{% load generic_flatblocks %}
 {% block body_class %}{{ block.super }} registration-page{% endblock %}
+{% load generic_flatblocks %}
 
 {% block content %}
 <a id="top"></a>
 <section class="topics duplicatable-content">
     <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-sm-6">
-                <h1><strong>Ticket Types</strong></h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-sm-6">
-                <div class="topic">
-                  {% load generic_flatblocks %}
-                  {% gblock "registration_1st" for "gblocks.Text" with 'frontend/flatblock.html' %}
-                </div>
-            </div>
-        <div class="col-md-6 col-sm-6">
-            <div class="topic">
-                <i class="pe-7s-user icon-large"></i>
-                <h3 class="blue-header"><strong>Individual Pass</strong></h3>
-                <p class="lead">Your employer isn’t reimbursing your attendance at PyBay? &nbsp;You’re on a tight budget or between jobs? &nbsp;Or you’re a student? &nbsp;We've got you covered with individual passes. Make sure you get yours ASAP, as the price goes up as the allotted passes at each price tier sell out.</p>
-
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-4 col-md-4">
-                <div class="topic">
-                    <i class="pe-7s-tools icon-large"></i>
-                    <h3 class="blue-header"><strong>Pre-Conference Workshop</strong></h3>
-                    <p class="lead">Want to enhance your conference experience by deep diving with some of the top educators in the Python ecosystem? &nbsp;Or skip the conference altogether and just attend the pre-conference workshops? &nbsp;Passes for full-day and half-day workshops are available à la carte.</p>
-
-                </div>
-            </div>
-            <div class="col-sm-4 col-md-4">
-                <div class="topic">
-                    <i class="pe-7s-timer icon-large"></i>
-                    <h3 class="blue-header"><strong>One-Day Pass</strong></h3>
-                    <p class="lead">Have too much going on but still want to join in on the fun? &nbsp;Come and geek out with other Pythonistas and attend some talks for just Saturday or Sunday.</p>
-                </div>
-            </div>
-            <div class="col-sm-4 col-md-4">
-                <div class="topic">
-                    <i class="pe-7s-cash icon-large"></i>
-                    <h3 class="blue-header"><strong>Work-Trade Pass</strong></h3>
-                    <p class="lead">Want to trade your talents for a discounted pass? &nbsp;We have 20 work-trade passes available during the conference, enabling you to pay only 1/3 of the lowest price. We also have pre-conference roles that grant you free entry to the conference. Check out the <a href="{% url "pybay_faq" %}">info</a> for reduced or free entry while helping make PyBay a great conference!</p>
-                </div>
-            </div>
-        </div>
+      {% gblock "registration_row_1" for "blockstuff.Col3" %}
+      {% gblock "registration_row_2" for "blockstuff.Col3" %}
     </div>
 </section>
 
