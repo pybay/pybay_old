@@ -1,20 +1,18 @@
-
 {% extends 'frontend/base.html' %}
 {% load staticfiles %}
 {% load thumbnail %}
 {% load value_from_list_or_default %}
 {% load markup_tags %}
+{% load generic_flatblocks %}
 
 {% block content %}
 <section class="code_of_conduct">
   <div class="container schedule-page">
-    <div>
-      <div>
-        <div class="blue-header">
-          <h1><strong>Schedule</strong></h1>
-        </div>
-      </div>
+    <div class="blue-header">
+      <h1><strong>Schedule</strong></h1>
     </div>
+
+    {% gblock "all_speakers_top_block" for "gblocks.Text" %}
 
     {% for schedule_days in schedules %}
       <div class="sch-schedule">

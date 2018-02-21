@@ -1,6 +1,8 @@
-{% extends 'frontend/base.html' %}
+W{% extends 'frontend/base.html' %}
 {% load staticfiles %}
 {% load featured_speakers %}
+{% load generic_flatblocks %}
+
 
 {% block headeroption %}
 		<div class="main-container"><a id="home" class="in-page-link"></a>
@@ -21,9 +23,8 @@
 							<div class="row">
 								<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
 									<img alt="logo" class="logo" src="{% static 'new/img/PB_PNG.png' %}">
-									<span class="uppercase text-white">August 10-11 <strong>Workshops</strong> | August 11-13 <strong>Talks</strong><br />
-                  San Francisco, California</span>
-                                    <span class="large-h1 video-tagline">Bringing together Python's most forward-thinking developers</span>
+									{% gblock "index_date_line" for "gblocks.Text" %}
+
                                     {% if countdown %}
                                     <span class="video-moreinfo">{{ countdown.title }}</span>
                                     <div class="video-moreinfo countdown" id="countdown" data-countdown-date="{{ countdown.date }}" data-countdown-reference="{{ countdown.reference }}"></div>
@@ -41,47 +42,10 @@
 {% block content %}
 
 <!--Event Focus Starts -->
-    <a id="about" class="in-page-link"></a>
-
     <section class="topics duplicatable-content home-page">
-
-        <div class="container">
-				<div class="row">
-                    <div class="col-sm-12">
-						<h1 class="blue-header"><strong>Why You Want to Attend PyBay</strong></h1>
-                    </div>
-				</div><!--end of row-->
-				<div class="row">
-				    <div class="col-md-4 col-sm-6">
-				        <div class="topic">
-				            <i class="pe-7s-browser"></i>
-				            <h3 class="blue-header"><strong>Stay on the cutting edge</strong></h3>
-				            <p class="lead">
-				               PyBay offers the most influential speakers presenting the most crucial technologies to help beginners and seasoned developers alike get up-to-date quickly. Whether you’re interested in web technologies, data, devops, Python internals, or performance, PyBay will help you stay on top of your game. And if you’re in the SF Bay Area, you’ll avoid travel costs by having the experts come to you!
-
-                            </p>
-				        </div>
-				    </div>
-                    <div class="col-md-4 col-sm-6">
-				        <div class="topic">
-				            <i class="pe-7s-share icon-large"></i>
-				            <h3 class="blue-header"><strong>Advance your career</strong></h3>
-				            <p class="lead">
-				                Boost your skills with practical talks during the main conference. Dive deeper with highly respected trainers at pre-conference workshops. Reinforce your knowledge by offering a talk, lightning talk, or Open Space presentation. Connect with our sponsoring companies looking to hire. There’s no shortage of great tech jobs, but there aren’t enough skilled developers to fill them. Be one!
-                            </p>
-				        </div>
-				    </div>
-                    <div class="col-md-4 col-sm-6">
-				        <div class="topic">
-				            <i class="pe-7s-target icon-large"></i>
-				            <h3 class="blue-header"><strong>Code together, laugh together</strong></h3>
-				            <p class="lead">
-								At PyBay you can hang out with a Python luminary, code with a new buddy, share your experience by mentoring someone at the Hacker Lounge, present your passion project at a lightning talk or Open Spaces, refresh your mind and body with yoga, laugh out loud at improv, or play some tunes under the sun. The "hallway track" was well-loved last year--let's make it even better this year!
-				            </p>
-						</div>
-				    </div><!--end of individual topic-->
-				</div><!--end of row-->
-        </div><!--end of container-->
+      <div class="container">
+        {% gblock "index_why_attend" for "blockstuff.Col3" %}
+      </div>
     </section>
 
     <!--Count Down Ends  -->

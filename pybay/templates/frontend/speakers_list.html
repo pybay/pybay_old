@@ -3,6 +3,7 @@
 {% load thumbnail %}
 {% load get_speaker_url_with_fallback %}
 {% load markup_tags %}
+{% load generic_flatblocks %}
 
 {% block content %}
 <section class="code_of_conduct">
@@ -10,6 +11,8 @@
     <div class="col-md-12 no-padding clearfix">
         <div class="blue-header">
             <h1><strong>All Speakers</strong></h1>
+                  {% gblock "all_speakers_top_block" for "gblocks.Text" %}
+            <p></p>
         </div>
     </div><!-- /.col-md-12 -->
 
