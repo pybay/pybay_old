@@ -1,0 +1,20 @@
+<ul class="nav-collapse menu">
+{% for item in menuitems %}
+  {% with submenu=item.menuitems.all %}
+  {% if submenu %}
+     <li>
+         <ul>
+           {% for subitem in submenu %}
+             <li><a class="inner-link" href="{{ subitem.url }}" {% if subitem.target %}target="_blank"{% endif %}>{{ subitem.text }}</a></li>
+           {% endfor %}
+         </ul>
+         <a class="inner-link" href="{{ item.url }}" {% if item.target %}target="_blank"{% endif %}>{{ item.text }}</a>
+     </li>
+  {% else %}
+     <li>
+         <a class="inner-link" href="{{ item.url }}" {% if item.target %}target="_blank"{% endif %}>{{ item.text }}</a>
+     </li>
+  {% endif %}
+  {% endwith %}
+{% endfor %}
+</ul>
