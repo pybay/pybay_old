@@ -169,6 +169,7 @@ INSTALLED_APPS = [
     'pybay.featured_speakers',
     'pybay.countdowns',
     'blockstuff',
+    'menu',
     'crispy_forms',
 ]
 
