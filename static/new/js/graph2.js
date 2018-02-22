@@ -1,7 +1,7 @@
 //data
-	var label= ['','Web','Data Science','DevOps'];
+	var label= ['','Web','Data Science','DevOps','Testing', 'Hardware','Tools'];
 
-	var people = [359,339,220];
+	var people = [298,321,212,231,118,283];
 
 	//////////////////////
 	// Graph 1
@@ -11,7 +11,7 @@
 	var colors = ['#FBBE3B'];
 
 	var grid1 = d3.range(25).map(function(i){
-		return {'x1':0,'y1':0,'x2':0,'y2':120};
+		return {'x1':0,'y1':0,'x2':0,'y2':180};
 	});
 
 	var tickVals1 = grid1.map(function(d,i){
@@ -20,12 +20,12 @@
 	});
 
 	var xscale1 = d3.scale.linear()
-					.domain([10,400]) //chart range
+					.domain([10,350]) //chart range
 					.range([0,722]);
 
 	var yscale1 = d3.scale.linear()
 					.domain([0,label.length])
-					.range([0,120]);
+					.range([0,180]);
 
 	var colorScale1 = d3.scale.quantize()
 					.domain([0,label.length])
@@ -33,7 +33,7 @@
 
 	var canvas1 = d3.select('#barchart1')
 					.append('svg')
-					.attr("viewBox", "0 0 900 180")
+					.attr("viewBox", "0 0 900 280")
   					.attr("preserveAspectRatio", "xMinYMin meet")
 					;
 
@@ -51,14 +51,12 @@
 						})
 					  .style({'stroke':'#adadad','stroke-width':'1px'});
 
-	var	xAxis1 = d3.svg.axis();
-		xAxis1
+	var	xAxis1 = d3.svg.axis()
 			.orient('bottom')
 			.scale(xscale1)
 			.tickValues(tickVals1);
 
-	var	yAxis1 = d3.svg.axis();
-		yAxis1
+	var	yAxis1 = d3.svg.axis()
 			.orient('left')
 			.scale(yscale1)
 			.tickSize(2)
@@ -71,7 +69,7 @@
 					  .call(yAxis1);
 
 	var x_xis1 = canvas1.append('g')
-					  .attr("transform", "translate(200,120)")
+					  .attr("transform", "translate(200,180)")
 					  .attr('id','xAxis1')
 					  .call(xAxis1);
 

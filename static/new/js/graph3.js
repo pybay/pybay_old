@@ -3,18 +3,20 @@
 ////////////
 
  var data =[
-          { origin: 'In Bay Area', label: 'Outside', count: 6, color: "#98abc5"},
-          { origin: 'In Bay Area', label: 'Local', count: 94, color: "#8a89a6"},
-          { origin: 'Gender', label: 'Female', count: 25, color: "#7b6888"},
-          { origin: 'Gender', label: 'Male', count: 75, color: "#6b486b"},
-          { origin: 'Expertise Level', label: 'Beginner', count: 13, color: "#a05d56"},
-          { origin: 'Expertise Level', label: 'Intermediate', count: 53, color: "#d0743c"},
-          { origin: 'Expertise Level', label: 'Advanced', count: 30, color: "#ff8c00"},
-          { origin: 'Expertise Level', label: 'Non-Technical', count: 4, color: "#FBBE3B"},
+          { origin: 'In Bay Area', label: 'Greater Bay Area', count: 3, color: "#98abc5"},
+          { origin: 'In Bay Area', label: 'Bay Area', count: 65, color: "#8a89a6"},
+          { origin: 'In Bay Area', label: 'San Francisco', count: 35, color: " #a2ecec"},
+          { origin: 'In Bay Area', label: 'Other', count: 5, color: "#a2ccec"},
+          { origin: 'Gender', label: 'Female', count: 20, color: "#7b6888"},
+          { origin: 'Gender', label: 'Male', count: 80, color: "#6b486b"},
+          { origin: 'Expertise Level', label: 'Beginner', count: 8, color: "#a05d56"},
+          { origin: 'Expertise Level', label: 'Intermediate', count: 50, color: "#d0743c"},
+          { origin: 'Expertise Level', label: 'Advance', count: 39, color: "#ff8c00"},
+          { origin: 'Expertise Level', label: 'Non-Technical', count: 1, color: "#FBBE3B"},
         ];
 
 //Chart size vars
-var	m = 30;
+var m = 30;
 var radius = 120;
 
 //Pie Canvas

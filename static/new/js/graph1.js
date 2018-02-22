@@ -1,7 +1,7 @@
 //data
-	var label2= ['','Student','Individual Contributor','Contributes to Open Source', 'Open to Job Opportunities', 'Working Professional', 'Leadership Experience', 'Presented at Conferences','Publish Tech Blogs or Books'];
+	var label2= ['','Student','Individual Contributer','Contributes to Open Source', 'Open to Job Opportunities', 'Working Professional', 'Leadership Experience', 'Presented at Conferences','Publish Tech Blogs or Books'];
 
-	var people2 = [36,145,111,141,394,145,123,58];
+	var people2 = [51,109,98,143,391,132,97,60];
 
 	///////////////////////
 	// Graph 2
@@ -51,14 +51,12 @@
 						})
 					  .style({'stroke':'#adadad','stroke-width':'1px'});
 
-	var	xAxis2 = d3.svg.axis();
-		xAxis2
+	var	xAxis2 = d3.svg.axis()
 			.orient('bottom')
 			.scale(xscale2)
 			.tickValues(tickVals2);
 
-	var	yAxis2 = d3.svg.axis();
-		yAxis2
+	var	yAxis2 = d3.svg.axis()
 			.orient('left')
 			.scale(yscale2)
 			.tickSize(2)
