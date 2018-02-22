@@ -1,6 +1,7 @@
 from django.contrib import admin
 from django import forms
 from django.contrib.admin.widgets import FilteredSelectMultiple
+from ordered_model.admin import OrderedModelAdmin
 
 from .models import Benefit, BenefitLevel
 
@@ -17,9 +18,15 @@ class BenefitForm(forms.ModelForm):
         exclude = []
         model = Benefit
 
-class BenefitAdmin(admin.ModelAdmin):
-    list_display = ('text', 'price')
+
+class BenefitLevelAdmin(OrderedModelAdmin):
+    list_display = ('text', 'move_up_down_links')
+
+
+class BenefitAdmin(OrderedModelAdmin):
+    list_display = ('text', 'price', 'move_up_down_links')
     form = BenefitForm
 
+
 admin.site.register(Benefit, BenefitAdmin)
-admin.site.register(BenefitLevel)
+admin.site.register(BenefitLevel, BenefitLevelAdmin)
