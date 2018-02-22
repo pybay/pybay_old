@@ -170,6 +170,7 @@ INSTALLED_APPS = [
     'pybay.countdowns',
     'blockstuff',
     'menu',
+    'sponsorbenefits',
     'crispy_forms',
 ]
 
