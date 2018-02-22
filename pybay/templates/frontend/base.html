@@ -65,47 +65,8 @@
                             <img alt="Logo" class="logo" src="{% static 'new/img/PB_PNG.png' %}">
                         </a>
                     </div>
-
-                    <ul class="nav-collapse menu">
-                        <li class="inner-link">
-                            <a class="inner-link" href="/">home</a>
-                        </li>
-                        <li>
-                            <a class="inner-link" href="{% url 'pybay_speakers_list' %}">Speakers</a>
-                        </li>
-                        <li>
-                            <ul>
-                                <li><a class="inner-link" href="{% url 'pybay_schedule' %}">Conference schedule</a></li>
-                                <li><a class="inner-link" href="/pre-conference-workshops/" >Pre-conference workshops</a></li>
-                                <li><a class="inner-link" href="/open-spaces/" >Open Spaces</a></li>
-                            </ul>
-                            <a class="inner-link" href="{% url 'pybay_schedule' %}">Schedule</a>
-                        </li>
-                        <li>
-                            <ul>
-                                <li><a class="inner-link" href="{% url 'pybay_tickets' %}#conf-locations" >Conference Locations</a></li>
-                                <li><a class="inner-link" href="{% url 'pybay_tickets' %}" >Tickets</a></li>
-                                <li><a class="inner-link" href="/scholarships/" >Scholarships</a></li>
-                            </ul>
-                            <a class="inner-link" href="{% url 'pybay_tickets' %}#tickets">Registration</a>
-                        </li>
-                        <li>
-                            <ul>
-                                <li><a class="inner-link" href="{% url 'pybay_sponsors_list' %}">Sponsors list</a></li>
-                                <li><a class="inner-link" href="{% url 'pybay_sponsors' %}">Becoming a sponsor</a></li>
-                            </ul>
-                            <a class="inner-link" href="{% url 'pybay_sponsors' %}" >Sponsors</a>
-                        </li>
-                        <li>
-                            <ul>
-                                <li><a class="inner-link" href="{% url 'pybay_faq' %}">Frequently Asked Questions</a></li>
-                                <li><a class="inner-link" href="{% url 'pybay_coc' %}">Code of Conduct</a></li>
-                            </ul>
-                            <a class="inner-link" href="{% url 'pybay_faq' %}">FAQ</a>
-                        </li>
-                        <li><a class="inner-link" href="https://medium.com/pybay" target="_blank" rel="noopener noreferrer">Blog</a></li>
-                    </ul>
-
+                    {% load menu_tags %}
+                    {% menu %}
                     <div class="nav-buttons">
                         <div class="social-link">
                             <a href="https://twitter.com/py_bay" target="_blank" rel="noopener noreferrer"><i class="icon social_twitter"></i></a>
