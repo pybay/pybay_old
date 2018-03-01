@@ -18,12 +18,12 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <h1 class="blue-header"><strong>Who attended the Inaugural PyBay?</strong></h1>
+                <h1 class="blue-header"><strong>{% gblock "index_who_attended_innaugural_pybay" for "gblocks.Text" %}</strong></h1>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12 offset-3">
-                <p align ="right">*Data from 500+ registered guests at PyBay 2016</p>
+                <p align ="right">{% gblock "index_data_from_registered_guests" for "gblocks.Text" %}</p>
                 <h4><center>Participant's Skills & Interest</center></h4>
                  <div id="barchart1" width="500" height="300"></div>
 
@@ -295,7 +295,7 @@
                 <div class="container vertical-align">
                     <div class="row">
                         <div class="col-md-5 col-sm-8">
-                            <h1 class="text-white">Want to showcase your company at PyBay 2017?</h1>
+                            <h1 class="text-white">{% gblock "want_to_showcase" for "gblocks.Text" %}</h1>
                             <div style="color: white; margin-bottom: 20px">
                                 Tell us your budget, wish list, and questions. Let's find the best way
                                 to show you off at the largest gathering of SF Bay Area's Python developers

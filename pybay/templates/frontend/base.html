@@ -1,5 +1,6 @@
 {% load staticfiles %}
 {% load sponsors_list %}
+{% load generic_flatblocks %}
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -104,7 +105,7 @@
                 <div class="container">
                     <div style="margin-bottom: 100px;">
                         <div class="row text-center">
-                                                    <h1 class="text-center" style="color: black;">Proudly Sponsored By</h1>
+                                                    <h1 class="text-center" style="color: black;">{% gblock "index_produdly_sponsored_by" for "gblocks.Text" %}</h1>
                         </div>
                         {% sponsors_footer %}
                         <div class="row text-center">

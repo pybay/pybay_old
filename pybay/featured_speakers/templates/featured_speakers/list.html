@@ -1,8 +1,9 @@
 {% load get_speaker_url_with_fallback %}
 {% load markup_tags %}
+{% load generic_flatblocks %}
 <div class="row">
     <div class="col-sm-12">
-        <h1 class="blue-header" style="margin-top:42px"><strong>Some of our speakers</strong></h1>
+        <h1 class="blue-header" style="margin-top:42px"><strong>{% gblock "features_speakers_row_1" for "gblocks.Text" %}</strong></h1>
     </div>
 </div>
 <div class="speakers-row">
