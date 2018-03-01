@@ -53,6 +53,7 @@ class Proposal(ProposalBase):
     speaker_and_talk_history = models.TextField()
     speaker_website = models.TextField(null=True, blank=True)
     location_override = models.CharField(max_length=200, blank=True)
+    phone = models.CharField(blank=False,max_length=15, null=True)
 
     class Meta:
         abstract = True
