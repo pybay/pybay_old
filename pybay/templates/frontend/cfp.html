@@ -3,6 +3,7 @@
 {% load bootstrap %}
 {% load pinax_boxes_tags %}
 {% load crispy_forms_tags %}
+{% load generic_flatblocks %}
 
 
 {% block content %}
@@ -10,50 +11,7 @@
     <a id="about" class="in-page-link"></a>
     <section class="topics duplicatable-content">
         <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <h1 class="blue-header"><strong>Call For Proposals</strong></h1>
-                </div>
-            </div><!--end of row-->
-            <div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <div class="topic">
-                        <i class="pe-7s-info"></i>
-                        <h3 class="blue-header"><strong>Info</strong></h3>
-                        <p class="lead">
-                        <p>PyBay is a developer-centric conference, focused primarily but not exclusively on the Python language. We're primarily seeking technical talks, though talks on the process and other topics relevant to the community will be considered. Feel free to browse last year's <a href=http://www.pybay16.com/schedule-1>talk list</a>, <a href=https://speakerdeck.com/pybay2016>slides</a>, and <a href=https://www.youtube.com/channel/UC51aOZF5nnderbuar5D5ifw>videos</a></p>
-                        <p>Talks are 40 minutes</p>
-                        <p>Call For Proposals opens: April 23</p>
-                        <p>Call For Proposals ends: {{cfp_close_date}} (at 11:59pm PST)
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="topic">
-                        <i class="pe-7s-help1 icon-large"></i>
-                        <h3 class="blue-header"><strong>Proposal Guidelines</strong></h3>
-                        <p class="lead">
-                            <p>You may submit up to 3 proposals.</p>
-                            <p>The title, description, and abstract should sell your talk to attendees and reviewers.
-                                    They should answer the questions:
-                                    Why should I attend this talk?
-                                    What will I learn?
-                                    What makes this a compelling talk?</p>
-
-                            <p>Please select the best fit for the category and level fields below. Your talk may cover content that spans more than one category, but please choose the one that best describes its primary focus. The "/etc" category is for talks whose primary focus does not fit under the others.</p>
-                        </p>
-				     </div>
-				 </div>
-                 <div class="col-md-4 col-sm-6">
-					<div class="topic">
-                        <i class="pe-7s-search icon-large"></i>
-                        <h3 class="blue-header"><strong>Talk Selection&nbsp;</strong></h3>
-				            <p class="lead">
-								<p>The first phase of selection is blind -- we'll only consider talk information, and not speaker information. In the second phase of selection, we'll consider speaker information if needed.</p>
-                                <p>Our goal is to determine the program largely by talk content while still ensuring a diversity of talks and speakers.</p>
-				            </p>
-                    </div>
-                </div> <!--end of individual topic-->
-		  </div><!--end of row-->
+            {% gblock "cfp_top_block" for "blockstuff.Col3" %}
         </div><!--end of container-->
     </section>
 <!--Event Focus Ends -->

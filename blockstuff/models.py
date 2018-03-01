@@ -22,3 +22,6 @@ class Col3(models.Model):
 
     def __unicode__(self):
         return self.overall_title
+
+    def __str__(self):
+        return self.overall_title
