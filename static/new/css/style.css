@@ -3,7 +3,7 @@
     width: 300px;
     border: 1px solid #bfbfbf;
 }
-#id_category, #id_audience_level {
+#id_category,  #id_talk_length, #id_audience_level{
     width: 340px;
     border: 1px solid #bfbfbf;
 }

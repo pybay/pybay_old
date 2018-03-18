@@ -23,6 +23,7 @@ class CallForProposalForm(forms.Form):
     phone = forms.CharField(label='Phone', max_length=20)
     category = forms.ChoiceField(choices=TalkProposal.CATEGORY_CHOICES)
     audience_level = forms.ChoiceField(choices=TalkProposal.AUDIENCE_LEVELS)
+    talk_length = forms.ChoiceField(choices=TalkProposal.TALK_LENGTHS)
     speaker_bio = forms.CharField(widget=forms.Textarea)
     meetup_talk = forms.ChoiceField(widget=forms.RadioSelect,label="Deliver talk @ future SF Python Meetups if we cannot fit you in the PyBay program?", choices=TalkProposal.MEETUP_CHOICES)
     talk_title = forms.CharField(label='Talk Title', max_length=100)
@@ -44,6 +45,7 @@ class CallForProposalForm(forms.Form):
         PrependedText('phone', '<i class="glyphicon glyphicon-earphone"></i>',placeholder='415-555-1234'),
         'category',
         'audience_level',
+        'talk_length',
         PrependedText('speaker_bio', '<i class="glyphicon glyphicon-pencil"></i>',placeholder='Speaker Bio'),
         PrependedText('talk_title', '<i class="glyphicon glyphicon-pencil"></i>',placeholder='Talk Title'),
         PrependedText('description', '<i class="glyphicon glyphicon-pencil"></i>',placeholder='A brief description of your presentation to be displayed in the conference schedule.\nPlease limit the descrtiption to 400 characters\n'),
@@ -109,6 +111,7 @@ class CallForProposalForm(forms.Form):
             audience_level=data['audience_level'],
             speaker=speaker,
             category=data['category'],
+            talk_length=data['talk_length'],
             what_will_attendees_learn=data['what_will_attendees_learn'],
             meetup_talk=data['meetup_talk'],
             speaker_and_talk_history=data['speaker_and_talk_history'],
@@ -117,11 +120,12 @@ class CallForProposalForm(forms.Form):
         )
 
         # Email submitter
-        with open('%s/proposals/email_confirmation.tmpl' % settings.PACKAGE_ROOT) as f:
+        with open('%s/proposals/email_confirmation.tmpl' %
+                  settings.PACKAGE_ROOT) as f:
             message = f.read().format(**data, **settings.PROJECT_DATA)
         email = EmailMessage(
-        'Your PyBay talk proposal was successfully submitted!',
-        message, to=[data['email']])
+            'Your PyBay talk proposal was successfully submitted!',
+            message, to=[data['email']])
         email.send()
 
         return speaker, proposal

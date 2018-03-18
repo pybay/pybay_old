@@ -36,6 +36,13 @@ class Proposal(ProposalBase):
         (c.lower().replace('/', ''), c) for c in CATEGORY_CHOICES
     ]
 
+    TALK_SHORT = 25
+    TALK_LONG = 40
+
+    TALK_LENGTHS = [
+        (TALK_SHORT, "25 minutes"),
+        (TALK_LONG, "40 minutes")
+    ]
     audience_level = models.IntegerField(choices=AUDIENCE_LEVELS)
 
     recording_release = models.BooleanField(
@@ -43,6 +50,7 @@ class Proposal(ProposalBase):
         help_text="By submitting your proposal, you agree to give permission to the conference organizers to record, edit, and release audio and/or video of your presentation. If you do not agree to this, please uncheck this box."
     )
     category = models.CharField(max_length=100, choices=CATEGORY_CHOICES)
+    talk_length = models.IntegerField(choices=TALK_LENGTHS)
     talk_links = models.CharField(max_length=200)
     what_will_attendees_learn = models.TextField()
     meetup_talk = models.CharField(choices=MEETUP_CHOICES, max_length=100, default="No")
