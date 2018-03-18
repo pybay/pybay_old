@@ -118,7 +118,7 @@ class CallForProposalForm(forms.Form):
 
         # Email submitter
         with open('%s/proposals/email_confirmation.tmpl' % settings.PACKAGE_ROOT) as f:
-            message = f.read().format(*data, **settings.PROJECT_DATA)
+            message = f.read().format(**data, **settings.PROJECT_DATA)
         email = EmailMessage(
         'Your PyBay talk proposal was successfully submitted!',
         message, to=[data['email']])
