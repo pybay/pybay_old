@@ -32,7 +32,7 @@ class CfpFormTestCase(TestCase):
         form = CallForProposalForm(self._get_data())
         self.assertTrue(form.is_valid())
         self.assertEqual(
-            len(form.cleaned_data), 15
+            len(form.cleaned_data), 16
         )
 
     def test_cannot_ommit_fields(self):
