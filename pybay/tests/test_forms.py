@@ -17,6 +17,7 @@ class CfpFormTestCase(TestCase):
             'phone': "+14155289519",
             'category': "python fundamentals and language internals",
             'audience_level': 1,
+            'talk_length': 25,
             'speaker_bio': 'wooo',
             'talk_title': 'wooo',
             'description': 'wooo',
