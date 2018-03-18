@@ -26,15 +26,11 @@ class Proposal(ProposalBase):
     ]
 
     CATEGORY_CHOICES = [
-        "Fundamentals",
-        "Language Internals",
-        "All things Web",
-        "Dealing with Data",
-        "Security",
-        "Performant Python",
-        "Scalable Python",
-        "DevOps",
-        "/etc"
+        "Python fundamentals and language internals",
+        "Machine learning, AI, & all things data",
+        "DevOps, automation, & testing",
+        "Hacking hardware with Python",
+        "Engineering a community",
     ]
     CATEGORY_CHOICES = [
         (c.lower().replace('/', ''), c) for c in CATEGORY_CHOICES
