@@ -15,7 +15,7 @@ class CfpFormTestCase(TestCase):
             'email': "pirosb3@gmail.com",
             'website': "woo.com",
             'phone': "+14155289519",
-            'category': "Python fundamentals and language internals",
+            'category': "python fundamentals and language internals",
             'audience_level': 1,
             'speaker_bio': 'wooo',
             'talk_title': 'wooo',
