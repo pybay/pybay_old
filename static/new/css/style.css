@@ -11,7 +11,7 @@
     width: 400px;
     border: 1px solid #bfbfbf;
 }
-#id_description, #id_speaker_bio, #id_abstract, #id_what_will_attendees_learn, #id_speaker_and_talk_history, #id_links_to_past_talks {
+#id_description, #id_speaker_bio, #id_abstract, #id_what_attendees_will_learn, #id_speaker_and_talk_history, #id_links_to_past_talks {
     width: 400px;
     height: 200px;
     border: 1px solid #bfbfbf;

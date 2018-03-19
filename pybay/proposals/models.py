@@ -12,7 +12,7 @@ class Proposal(ProposalBase):
     AUDIENCE_LEVELS = [
         (AUDIENCE_LEVEL_NOVICE, "Novice"),
         (AUDIENCE_LEVEL_INTERMEDIATE, "Intermediate"),
-        (AUDIENCE_LEVEL_EXPERIENCED, "Experienced"),
+        (AUDIENCE_LEVEL_EXPERIENCED, "Advanced"),
     ]
 
     MEETUP_CHOICE_YES =  "Yes"
@@ -49,10 +49,10 @@ class Proposal(ProposalBase):
         default=True,
         help_text="By submitting your proposal, you agree to give permission to the conference organizers to record, edit, and release audio and/or video of your presentation. If you do not agree to this, please uncheck this box."
     )
-    category = models.CharField(max_length=100, choices=CATEGORY_CHOICES)
+    category = models.CharField(max_length=250, choices=CATEGORY_CHOICES)
     talk_length = models.IntegerField(choices=TALK_LENGTHS, default=25)
     talk_links = models.CharField(max_length=200)
-    what_will_attendees_learn = models.TextField()
+    what_attendees_will_learn = models.TextField()
     meetup_talk = models.CharField(choices=MEETUP_CHOICES, max_length=100, default="No")
     speaker_and_talk_history = models.TextField()
     speaker_website = models.TextField(null=True, blank=True)
