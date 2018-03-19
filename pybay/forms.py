@@ -119,7 +119,7 @@ class CallForProposalForm(forms.Form):
             speaker_website=data['website'],
         )
 
-        # Email submitter
+        # Email submit
         with open('%s/proposals/email_confirmation.tmpl' %
                   settings.PACKAGE_ROOT) as f:
             message = f.read().format(**data, **settings.PROJECT_DATA)
