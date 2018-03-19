@@ -21,7 +21,7 @@ class CallForProposalForm(forms.Form):
     email = forms.EmailField(label='Email')
     website = forms.URLField(label='Website', required=False)
     phone = forms.CharField(label='Phone', max_length=20)
-    category = forms.ChoiceField(choices=TalkProposal.CATEGORY_CHOICES)
+    category = forms.MultipleChoiceField(widget=forms.CheckboxSelectMultiple, choices=TalkProposal.CATEGORY_CHOICES)
     audience_level = forms.ChoiceField(choices=TalkProposal.AUDIENCE_LEVELS)
     talk_length = forms.ChoiceField(choices=TalkProposal.TALK_LENGTHS)
     speaker_bio = forms.CharField(widget=forms.Textarea)
@@ -29,7 +29,7 @@ class CallForProposalForm(forms.Form):
     talk_title = forms.CharField(label='Talk Title', max_length=100)
     description = forms.CharField(label="Brief Description", widget=forms.Textarea)
     abstract = forms.CharField(widget=forms.Textarea)
-    what_will_attendees_learn = forms.CharField(widget=forms.Textarea)
+    what_attendees_will_learn = forms.CharField(widget=forms.Textarea)
     speaker_and_talk_history = forms.CharField(widget=forms.Textarea)
     links_to_past_talks = forms.CharField(widget=forms.Textarea, label="Links to slide deck/talk video", max_length=100, required=False)
 
@@ -48,11 +48,11 @@ class CallForProposalForm(forms.Form):
         'talk_length',
         PrependedText('speaker_bio', '<i class="glyphicon glyphicon-pencil"></i>',placeholder='Speaker Bio'),
         PrependedText('talk_title', '<i class="glyphicon glyphicon-pencil"></i>',placeholder='Talk Title'),
-        PrependedText('description', '<i class="glyphicon glyphicon-pencil"></i>',placeholder='A brief description of your presentation to be displayed in the conference schedule.\nPlease limit the descrtiption to 400 characters\n'),
-        PrependedText('abstract', '<i class="glyphicon glyphicon-pencil"></i>', placeholder='A more detailed description that sells your talk to attendees and reviewers'),
-        PrependedText('what_will_attendees_learn', '<i class="glyphicon glyphicon-pencil"></i>', placeholder='This is for the reviewers, the info here will not be published'),
+        PrependedText('description', '<i class="glyphicon glyphicon-pencil"></i>',placeholder='A brief description of your presentation to be displayed in the conference schedule. \nPlease limit to 400 characters.\n'),
+        PrependedText('abstract', '<i class="glyphicon glyphicon-pencil"></i>', placeholder='A more detailed description that sells your talk to attendees and reviewers.'),
+        PrependedText('what_attendees_will_learn', '<i class="glyphicon glyphicon-pencil"></i>', placeholder='This is for the reviewers, the info here will not be published.'),
         PrependedText('speaker_and_talk_history', '<i class="glyphicon glyphicon-pencil"></i>', placeholder='Anything else we should know about you and your speaking experience. Will you have a co-presenter?'),
-        PrependedText('links_to_past_talks', '<i class="glyphicon glyphicon-pencil"></i>', placeholder='If you already have your slide deck for this talk, or if you have slide deck or video to past talks, please add the URLs here'),
+        PrependedText('links_to_past_talks', '<i class="glyphicon glyphicon-pencil"></i>', placeholder='If you already have your slide deck for this talk, or if you have slide decks or videos for past talks, please add the URLs here.'),
         'meetup_talk'
     )
 
@@ -112,14 +112,14 @@ class CallForProposalForm(forms.Form):
             speaker=speaker,
             category=data['category'],
             talk_length=data['talk_length'],
-            what_will_attendees_learn=data['what_will_attendees_learn'],
+            what_attendees_will_learn=data['what_attendees_will_learn'],
             meetup_talk=data['meetup_talk'],
             speaker_and_talk_history=data['speaker_and_talk_history'],
             talk_links=data['links_to_past_talks'],
             speaker_website=data['website'],
         )
 
-        # Email submitter
+        # Email submit
         with open('%s/proposals/email_confirmation.tmpl' %
                   settings.PACKAGE_ROOT) as f:
             message = f.read().format(**data, **settings.PROJECT_DATA)

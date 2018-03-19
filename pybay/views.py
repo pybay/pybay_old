@@ -171,7 +171,7 @@ def proposal_detail(request, proposal_id):
         "title": proposal.title,
         "audience_level": TalkProposal.AUDIENCE_LEVELS[proposal.audience_level-1][1],
         "category": proposal.category,
-        "what_will_attendees_learn": proposal.what_will_attendees_learn,
+        "what_attendees_will_learn": proposal.what_attendees_will_learn,
         # "title": proposal.talk_links,
         # "title": proposal.meetup_talk,
         "speaker_and_talk_history": proposal.speaker_and_talk_history,

@@ -26,7 +26,7 @@ class Migration(migrations.Migration):
         ),
         migrations.AddField(
             model_name='talkproposal',
-            name='what_will_attendees_learn',
+            name='what_attendees_will_learn',
             field=models.TextField(default=''),
             preserve_default=False,
         ),
@@ -44,7 +44,7 @@ class Migration(migrations.Migration):
         ),
         migrations.AddField(
             model_name='tutorialproposal',
-            name='what_will_attendees_learn',
+            name='what_attendees_will_learn',
             field=models.TextField(default=''),
             preserve_default=False,
         ),
