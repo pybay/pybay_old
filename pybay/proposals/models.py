@@ -30,7 +30,8 @@ class Proposal(ProposalBase):
         "Machine Learning, AI, & All things Data",
         "DevOps, Automation, & Testing",
         "Dealing with Speed, Scale, & Performance",
-        "Fun: Hacking Hardware/Engineering a Community "
+        "Engineering a Community",
+        "Hacking Hardware"
     ]
     CATEGORY_CHOICES = [
         (c.lower().replace('/', ''), c) for c in CATEGORY_CHOICES
