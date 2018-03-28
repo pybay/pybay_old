@@ -13,8 +13,8 @@ from symposion.proposals.models import ProposalKind
 from pybay.proposals.models import TalkProposal
 
 from crispy_forms.helper import FormHelper
-from crispy_forms.layout import Layout, Fieldset, HTML, MultiField
-from crispy_forms.bootstrap import PrependedText, AppendedText
+from crispy_forms.layout import Layout
+from crispy_forms.bootstrap import PrependedText
 
 class CallForProposalForm(forms.Form):
     first_name = forms.CharField(label='First Name', max_length=100)
