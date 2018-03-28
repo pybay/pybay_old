@@ -25,7 +25,7 @@ class Proposal(ProposalBase):
          (MEETUP_CHOICE_NO, "No")
     ]
 
-    CATEGORY_CHOICES = [
+    THEME_CHOICES = [
         "Python Fundamentals & Popular Libraries",
         "Machine Learning, AI, & All things Data",
         "DevOps, Automation, & Testing",
@@ -33,8 +33,8 @@ class Proposal(ProposalBase):
         "Engineering a Community",
         "Hacking Hardware"
     ]
-    CATEGORY_CHOICES = [
-        (c.lower().replace('/', ''), c) for c in CATEGORY_CHOICES
+    THEME_CHOICES = [
+        (c.lower().replace('/', ''), c) for c in THEME_CHOICES
     ]
 
     TALK_SHORT = 25
@@ -50,7 +50,7 @@ class Proposal(ProposalBase):
         default=True,
         help_text="By submitting your proposal, you agree to give permission to the conference organizers to record, edit, and release audio and/or video of your presentation. If you do not agree to this, please uncheck this box."
     )
-    category = models.CharField(max_length=250, choices=CATEGORY_CHOICES)
+    themes = models.CharField(max_length=250, choices=THEME_CHOICES)
     talk_length = models.IntegerField(choices=TALK_LENGTHS, default=25)
     talk_links = models.CharField(max_length=200)
     what_attendees_will_learn = models.TextField()

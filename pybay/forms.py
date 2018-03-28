@@ -22,7 +22,7 @@ class CallForProposalForm(forms.Form):
     email = forms.EmailField(label='Email')
     website = forms.URLField(label='Website', required=False)
     phone = forms.CharField(label='Phone', max_length=20)
-    themes = forms.MultipleChoiceField(label=mark_safe('Themes<br /><i>Select all that apply</i>'), widget=forms.CheckboxSelectMultiple, choices=TalkProposal.CATEGORY_CHOICES)
+    themes = forms.MultipleChoiceField(label=mark_safe('Themes<br /><i>Select all that apply</i>'), widget=forms.CheckboxSelectMultiple, choices=TalkProposal.THEME_CHOICES)
     audience_level = forms.ChoiceField(choices=TalkProposal.AUDIENCE_LEVELS)
     talk_length = forms.ChoiceField(choices=TalkProposal.TALK_LENGTHS)
     speaker_bio = forms.CharField(widget=forms.Textarea)
