@@ -6,14 +6,15 @@ from django.conf import settings
 from django.core.mail import EmailMessage
 from django.core.exceptions import ValidationError
 from django.contrib.auth.models import User
+from django.utils.safestring import mark_safe
 
 from symposion.speakers.models import Speaker
 from symposion.proposals.models import ProposalKind
 from pybay.proposals.models import TalkProposal
 
 from crispy_forms.helper import FormHelper
-from crispy_forms.layout import Layout
-from crispy_forms.bootstrap import PrependedText
+from crispy_forms.layout import Layout, Fieldset, HTML, MultiField
+from crispy_forms.bootstrap import PrependedText, AppendedText
 
 class CallForProposalForm(forms.Form):
     first_name = forms.CharField(label='First Name', max_length=100)
@@ -21,7 +22,7 @@ class CallForProposalForm(forms.Form):
     email = forms.EmailField(label='Email')
     website = forms.URLField(label='Website', required=False)
     phone = forms.CharField(label='Phone', max_length=20)
-    category = forms.MultipleChoiceField(widget=forms.CheckboxSelectMultiple, choices=TalkProposal.CATEGORY_CHOICES)
+    themes = forms.MultipleChoiceField(label=mark_safe('Themes<br /><i>Select all that apply</i>'), widget=forms.CheckboxSelectMultiple, choices=TalkProposal.CATEGORY_CHOICES)
     audience_level = forms.ChoiceField(choices=TalkProposal.AUDIENCE_LEVELS)
     talk_length = forms.ChoiceField(choices=TalkProposal.TALK_LENGTHS)
     speaker_bio = forms.CharField(widget=forms.Textarea)
@@ -43,7 +44,7 @@ class CallForProposalForm(forms.Form):
         PrependedText('email', '<i class="glyphicon glyphicon-envelope"></i>',placeholder='   Email'),
         PrependedText('website', '<i class="glyphicon glyphicon-globe"></i>',placeholder='  Home Page'),
         PrependedText('phone', '<i class="glyphicon glyphicon-earphone"></i>',placeholder='415-555-1234'),
-        'category',
+        'themes',
         'audience_level',
         'talk_length',
         PrependedText('speaker_bio', '<i class="glyphicon glyphicon-pencil"></i>',placeholder='Speaker Bio'),

@@ -26,7 +26,7 @@ class Proposal(ProposalBase):
     ]
 
     CATEGORY_CHOICES = [
-        "Python Fundamentals & Language Internals",
+        "Python Fundamentals & Popular Libraries",
         "Machine Learning, AI, & All things Data",
         "DevOps, Automation, & Testing",
         "Dealing with Speed, Scale, & Performance",
