@@ -1,6 +1,8 @@
 import random
 import string
 
+from pathlib import Path
+
 from django import forms
 from django.conf import settings
 from django.core.mail import EmailMessage
@@ -15,6 +17,7 @@ from pybay.proposals.models import TalkProposal
 from crispy_forms.helper import FormHelper
 from crispy_forms.layout import Layout
 from crispy_forms.bootstrap import PrependedText
+
 
 class CallForProposalForm(forms.Form):
     first_name = forms.CharField(label='First Name', max_length=100)
@@ -111,7 +114,7 @@ class CallForProposalForm(forms.Form):
             abstract=data['abstract'],
             audience_level=data['audience_level'],
             speaker=speaker,
-            category=data['category'],
+            themes=data['themes'],
             talk_length=data['talk_length'],
             what_attendees_will_learn=data['what_attendees_will_learn'],
             meetup_talk=data['meetup_talk'],
@@ -121,8 +124,8 @@ class CallForProposalForm(forms.Form):
         )
 
         # Email submit
-        with open('%s/proposals/email_confirmation.tmpl' %
-                  settings.PACKAGE_ROOT) as f:
+        current_directory = Path(__file__).resolve().parent
+        with open(str(current_directory / "proposals/email_confirmation.tmpl")) as f:
             message = f.read().format(**data, **settings.PROJECT_DATA)
         email = EmailMessage(
             'Your PyBay talk proposal was successfully submitted!',
