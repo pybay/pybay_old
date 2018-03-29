@@ -107,6 +107,7 @@ class CallForProposalForm(forms.Form):
             )
 
         # Create a new talk
+        themes_csv = ','.join(data['themes'])
         proposal = TalkProposal.objects.create(
             kind=ProposalKind.objects.get(name='talk'),
             title=data['talk_title'],
@@ -114,7 +115,7 @@ class CallForProposalForm(forms.Form):
             abstract=data['abstract'],
             audience_level=data['audience_level'],
             speaker=speaker,
-            themes=data['themes'],
+            themes=themes_csv,
             talk_length=data['talk_length'],
             what_attendees_will_learn=data['what_attendees_will_learn'],
             meetup_talk=data['meetup_talk'],
