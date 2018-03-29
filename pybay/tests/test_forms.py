@@ -15,7 +15,8 @@ class CfpFormTestCase(TestCase):
             'email': "pirosb3@gmail.com",
             'website': "woo.com",
             'phone': "+14155289519",
-            'themes': ['python fundamentals & language internals'],
+            'themes': ['python fundamentals & popular libraries',
+                       'engineering a community'],
             'audience_level': 1,
             'talk_length': 25,
             'speaker_bio': 'wooo',
@@ -58,6 +59,8 @@ class CfpFormTestCase(TestCase):
         self.assertEqual(proposal.speaker_and_talk_history, 'wooo2')
         self.assertEqual(proposal.talk_links, 'http://google.com')
         self.assertEqual(speaker.user.username, "pirosb3@gmail.com")
+        self.assertEqual('python fundamentals & popular libraries,engineering a community',
+                         proposal.themes)
 
     def test_form_duplicate_profile(self):
         form1 = CallForProposalForm(self._get_data())

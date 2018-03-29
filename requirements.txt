@@ -29,3 +29,4 @@ pytz==2015.7
 rollbar==0.13.2
 six==1.10.0
 model-mommy==1.3.2
+sqlparse==0.2.4
