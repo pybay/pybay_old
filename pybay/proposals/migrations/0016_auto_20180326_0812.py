@@ -13,7 +13,7 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.RunSQL(
-            sql = "ALTER TABLE `proposals_talkproposal` ADD `what_will_attendees_learn` longtext NULL;",
-            reverse_sql = "ALTER TABLE `proposals_talkproposal` ADD `what_attendees_will_learn` longtext NULL;"
+            sql = "ALTER TABLE `proposals_talkproposal` ADD `what_will_attendees_learn` longtext;",
+            reverse_sql = "ALTER TABLE `proposals_talkproposal` ADD `what_attendees_will_learn` longtext;"
         ),
     ]
