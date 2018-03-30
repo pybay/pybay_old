@@ -3,14 +3,12 @@ from django.contrib import admin
 from django.utils.safestring import mark_safe
 
 from .models import TalkProposal, TutorialProposal
-from pybay.forms import CallForProposalForm
 
 class ProposalForm(forms.ModelForm):
     """Custom form to override Themes drop-down & create a multi-slecet checklist"""
 
     themes = forms.MultipleChoiceField(label=mark_safe('Themes<br /><i>Select all that apply</i>'), widget=forms.CheckboxSelectMultiple, choices=TalkProposal.THEME_CHOICES)
 
-    themes_csv = ','.join('themes')
 
 class TalkProposalAdmin(admin.ModelAdmin):
     form = ProposalForm
@@ -24,7 +22,7 @@ class TalkProposalAdmin(admin.ModelAdmin):
 
     def speaker_status(self, obj):
         return obj.speaker.status
-        
+
     speaker_status.admin_order_field = 'status'
 
 class TutorialForm(forms.ModelForm):
