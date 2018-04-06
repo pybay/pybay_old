@@ -72,3 +72,11 @@ class CfpFormTestCase(TestCase):
         speaker2, proposal2 = form2.save_to_models()
 
         self.assertEqual(speaker1, speaker2)
+
+
+    def test_phone_too_long_triggers_validation_error(self):
+        data = self._get_data()
+        data['phone'] = '+55 81 982459204' # Real data entered by brazilian user!
+        form = CallForProposalForm(data)
+        self.assertFalse(form.is_valid())
+        self.assertIn('phone', form.errors)

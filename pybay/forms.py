@@ -24,7 +24,7 @@ class CallForProposalForm(forms.Form):
     last_name = forms.CharField(label='Last Name', max_length=100)
     email = forms.EmailField(label='Email')
     website = forms.URLField(label='Website', required=False)
-    phone = forms.CharField(label='Phone', max_length=20)
+    phone = forms.CharField(label='Phone', max_length=15)  # pybay.proposals.models.Proposal.phone has max_length 15
     themes = forms.MultipleChoiceField(label=mark_safe('Themes<br /><i>Select all that apply</i>'), widget=forms.CheckboxSelectMultiple, choices=TalkProposal.THEME_CHOICES)
     audience_level = forms.ChoiceField(choices=TalkProposal.AUDIENCE_LEVELS)
     talk_length = forms.ChoiceField(choices=TalkProposal.TALK_LENGTHS)
