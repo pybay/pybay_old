@@ -1,12 +1,9 @@
 [[source]]
-
 url = "https://pypi.python.org/simple"
 verify_ssl = true
 name = "pypi"
 
-
 [packages]
-
 django-appconf = "==1.0.1"
 django-bootstrap-form = "==3.2.1"
 django-columns = "==0.1.0"
@@ -33,12 +30,11 @@ metron = "==1.3.5"
 olefile = "==0.44"
 pillow = "*"
 pinax-boxes = "==2.1.2"
-pinax-theme-bootstrap = "==5.6.0"
+pinax-theme-bootstrap = "==5.7.2"
 pytz = "==2015.7"
 rollbar = "==0.13.2"
 model-mommy = "==1.3.2"
 
-
 [dev-packages]
-
 mysqlclient = "==1.3.10"
+"2eaf2af" = {path = "./../symposion"}
