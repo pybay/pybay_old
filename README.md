@@ -4,38 +4,30 @@
 
 The website for PyBay - the Bay Area Python Conference.
 
-To work on this you'll need Python 3. Then:
+To work on this you'll need Python 3.6. Then:
 
 1. Fork the repo to your own personal github.
     - also clone the symposion repository, take note of the path to symposion/
 2. Clone the repo to your local environment.
-3. Create a virtualenv and activate it
-4. `pip install` the requirements
-5. `pip install -e` the symposion repository
-6. start the management server
+3. Use `pipenv install` to install all required packages locally (using a virtualenv)
+4. Use `pipenv shell` to use the local packages
+5. start the management server
 
 Try:
 
+    $ python3.6 -m pip install --user pipenv
+    $ git clone git@github.com:pybay/symposion
     $ git clone git@github.com:YOURUSERNAME/pybay
-    $ git clone git@github.com:pybay/symposion.git
     $ cd pybay
-    $ python3 -m venv ENV
-    $ source ENV/bin/activate
-    (ENV)$ pip install -r requirements.txt
-    (ENV)$ pip install -e YOUR/PATH/TO/symposion/   # this installs our symposion fork to ENV!
-    (ENV)$ ./manage.py migrate
-    (ENV)$ ./manage.py loaddata fixtures/*     # doesn't work on Windows, see "Windows instructions" below
-    (ENV)$ ./manage.py runserver
+    $ python3.6 -m pipenv install --dev
+    $ python3.6 -m pipenv shell
+    (ENV)$ python ./manage.py migrate
+    (ENV)$ python ./manage.py loaddata fixtures/*     # doesn't work on Windows, see "Windows instructions" below
+    (ENV)$ python ./manage.py runserver
 
 The default admin user is test and password is test
 
-If you also will be adding fixes to symposion we forked you can delete
-the version in your site-packages and symlink in the directory on your
-disk. Eg:
-
-    $ cd ~/workspace/pybay/ENV/lib/python3.6/site-packages/
-    $ rm -rf symposion
-    $ ln -s ~/workspace/symposion/symposion .
+You may need to update your copy of symposion from time to time.
 
 ### Windows Instructions
 
