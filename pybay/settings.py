@@ -76,6 +76,7 @@ STATICFILES_DIRS = [
 STATICFILES_FINDERS = [
     "django.contrib.staticfiles.finders.FileSystemFinder",
     "django.contrib.staticfiles.finders.AppDirectoriesFinder",
+    "compressor.finders.CompressorFinder",
 ]
 
 STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
@@ -139,6 +140,9 @@ INSTALLED_APPS = [
     "bootstrapform",
     "pinax_theme_bootstrap",
     "pinax.boxes",
+
+    "compressor",
+    "sass_processor",
 
     # external
     "account",
@@ -293,3 +297,8 @@ DEFAULT_FALLBACK_IMAGE = "new/img/unknown-speaker.png"
 
 PROJECT_DATA = dict(
     cfp_close_date='June 17')
+
+# SASS CSS preprocessor
+SASS_PROCESSOR_INCLUDE_DIRS = [
+    os.path.join(PROJECT_ROOT, 'static/scss'),
+]
