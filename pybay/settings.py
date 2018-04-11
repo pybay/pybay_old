@@ -289,5 +289,7 @@ if os.path.exists(SENDGRID_PATH):
 
 DEFAULT_FALLBACK_IMAGE = "new/img/unknown-speaker.png"
 
-PROJECT_DATA = dict(
-    cfp_close_date='June 17')
+PROJECT_DATA = {
+    'cfp_close_date': 'June 17',
+    'cfp_closed': True,
+}
