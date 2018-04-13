@@ -36,6 +36,7 @@ def migrate(checkout, prod=False):
     settings = "pybay.prod_settings" if prod else "pybay.staging_settings"
     with cd(checkout):
         run("ENV/bin/python3 pybay/manage.py migrate --settings=%s" % settings)
+        run("ENV/bin/python3 pybay/manage.py compilescss --settings=%s" % settings)
         run("ENV/bin/python3 pybay/manage.py collectstatic --noinput --settings=%s" % settings)
 
 def relink(checkout, prod=False):
