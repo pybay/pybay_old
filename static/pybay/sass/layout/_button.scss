@@ -1,0 +1,15 @@
+.btn {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.btn.btn-soldout {
+  background: hsl(0, 0%, 50%);
+  text-transform: uppercase;
+}
+
+.btn.btn-nohover {
+  color: #fff;
+  background: #FBBD4A;
+  cursor: initial;
+}

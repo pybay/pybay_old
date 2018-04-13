@@ -1,0 +1,28 @@
+.cfp-page {
+
+  .form-element {
+      border: 1px solid #bfbfbf;
+  }
+
+  #id_first_name, #id_last_name, #id_email, #id_phone, #id_website {
+      @extend .form-element;
+      width: 300px;
+  }
+
+  #id_category,  #id_talk_length, #id_audience_level {
+      @extend .form-element;
+      width: 340px;
+  }
+
+  #id_talk_title {
+      @extend .form-element;
+      width: 400px;
+  }
+
+  #id_description, #id_speaker_bio, #id_abstract, #id_what_attendees_will_learn, #id_speaker_and_talk_history, #id_links_to_past_talks {
+      @extend .form-element;
+      width: 400px;
+      height: 200px;
+  }
+
+}

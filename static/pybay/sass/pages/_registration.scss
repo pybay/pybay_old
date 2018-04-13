@@ -1,0 +1,41 @@
+.registration-page {
+
+  img.conf {
+    max-height: 300px;
+  }
+
+  img.preconf {
+    max-height: 80px;
+  }
+
+  .tickets {
+    margin-top: 40px;
+  }
+
+  .python-corps {
+    display: flex;
+    justify-content: center;
+  }
+
+  tito-widget .tito-wrapper {
+    background: white;
+  }
+
+  tito-widget .tito-ticket-description {
+    color: #808080;
+  }
+
+  @media screen and (min-width: 520px) {
+    tito-widget .tito-ticket-name-wrapper {
+      width: 70%;
+    }
+    tito-widget .tito-ticket-price-quantity-wrapper {
+      width: 30%;
+    }
+  }
+
+  tito-widget .tito-badge-link a {
+    color: inherit;
+  }
+
+}

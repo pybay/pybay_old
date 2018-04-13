@@ -1,0 +1,321 @@
+.schedule-page {
+
+  .sch-schedule:not(.sch-schedule-filtered) .sch-filter-list > li[data-filter=""] {
+    background: #428bca;
+    color: white;
+  }
+
+  .sch-day-title {
+    font-weight: bold;
+    margin: 22px 0 0 0;
+    padding: 8px 0;
+  }
+
+  .sch-timeslot-time {
+    margin: 8px 0 0 0;
+    padding: 5px 0 5px 2px;
+  }
+
+  .sch-timeslot-slots {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .sch-timeslot-kind-talk:hover {
+    border-color: hsl(0, 0%, 75%);
+  }
+
+  .sch-timeslot-kind-talk .sch-description {
+    text-align: left;
+    position: absolute;
+    top: calc(100% - 6px);
+    left: -2px;
+    right: -2px;
+    border: 2px solid hsl(0, 0%, 75%);
+    border-top: 0;
+    border-radius: 0 0 4px 4px;
+    background: white;
+    padding: 7px 20px;
+    transition: all 0.2s ease-out;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: none;
+    z-index: 50;
+  }
+
+  .sch-timeslot-kind-talk:not(:hover) .sch-description {
+    opacity: 0;
+  }
+
+  .sch-filters span {
+    font-size: 16px;
+  }
+
+  .sch-filter-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .sch-filter-list > li {
+    padding: 13px 18px 14px 18px;
+    margin: 0 5px 5px 0;
+    line-height: 1;
+    border-radius: 25px;
+    background-color: #FBBD4A;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease-out;
+  }
+  .sch-filter-list > li:last-child {
+    margin-right: 0;
+  }
+
+  .sch-timeslot {
+    margin: 4px 0;
+  }
+
+  .sch-timeslot-slot {
+    flex: 1 0 20%;
+    margin: 0 5px 10px 5px;
+    padding: 16px 20px;
+    border: 2px solid hsl(0, 0%, 95%);
+    border-radius: 4px;
+    text-align: center;
+  }
+
+  .sch-timeslot-special {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    border: 0;
+    background: hsl(50, 100%, 80%);
+    border-radius: 6px;
+    margin: 4px 0;
+    padding: 0 20px;
+  }
+  .sch-timeslot-special .sch-timeslot-slot {
+    margin: 0;
+    border: 0;
+    padding: 0;
+  }
+  .sch-timeslot-special .sch-timeslot-time {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: hsl(0, 0%, 20%);
+    font-size: 16px;
+  }
+  .sch-timeslot-special .sch-timeslot-slots {
+    color: hsl(0, 0%, 40%);
+    font-size: 16px;
+  }
+  .sch-timeslot-special .sch-timeslot-slots::before {
+    padding: 0 .5em;
+    content: " \2015 ";
+  }
+  .sch-timeslot-special p {
+    line-height: inherit;
+    font-size: inherit;
+  }
+
+
+  @media(max-width: 991px) {
+    .sch-timeslot-slot {
+      flex-basis: 45%;
+    }
+  }
+
+  .sch-timeslot-kind-talk {
+    position: relative;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    transition: all 0.2s ease-out;
+  }
+
+  .sch-timeslot-kind-talk .sch-slot-inner {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    text-align: left;
+    overflow: hidden;
+  }
+
+  .sch-timeslot-kind-talk .sch-slot-inner > * {
+    flex-basis: 100%;
+  }
+
+  .sch-timeslot-kind-talk .sch-room, .sch-timeslot-kind-talk .sch-duration {
+    flex: 1 0 auto;
+    white-space: nowrap;
+    font-size: 11px;
+    font-weight: bold;
+  }
+
+  .sch-room {
+    order: -100;
+    text-align: right;
+  }
+
+  .sch-duration {
+    order: -90;
+  }
+
+  .sch-duration::before {
+    content: '\2022';
+    margin: 0 .5em;
+  }
+
+  .sch-timeslot-kind-talk .sch-slot-inner > h4 {
+    font-weight: bold;
+  }
+
+  .sch-timeslot-kind-talk .sch-speaker {
+    margin-right: 1.4em;
+    margin-bottom: 0;
+  }
+
+  .sch-timeslot-kind-talk .sch-speaker, .sch-timeslot-kind-talk .sch-category {
+    font-weight: bold;
+    margin-top: 4px;
+    white-space: nowrap;
+    flex: 0 1 auto;
+    align-self: baseline;
+  }
+
+  .sch-timeslot-kind-talk .sch-category {
+    position: relative;
+    line-height: 1;
+  }
+
+  .sch-timeslot-kind-talk .sch-category::before {
+    position: absolute;
+    right: 100%;
+    content: "\2022";
+    padding: 0 .5em;
+  }
+
+  .sch-timeslot-kind-talk .sch-speaker-photo {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    position: absolute;
+    top: 42px;
+    right: 15px;
+    border-radius: 50%;
+  }
+  .sch-timeslot-kind-talk .sch-speaker-photo img {
+    height: 100%;
+  }
+
+  .sch-timeslot-kind-talk .sch-speaker-photo ~ h4 {
+    padding-right: 50px;
+  }
+
+  @media(min-height: 600px) {
+    .substicky {
+      position: sticky;
+      top: 55px;
+      background: rgba(255, 255, 255, 0.9);
+      z-index: 50;
+    }
+  }
+
+  @media(max-width: 450px) {
+    .schedule-page.container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .schedule-page .row {
+      margin: 0 5px;
+    }
+
+    .sch-filters > span {
+      display: block;
+      margin-left: 10px;
+    }
+
+    .sch-timeslot-time {
+      background: hsl(0, 0%, 95%);
+      padding: 8px 10px;
+      text-align: center;
+    }
+
+    .sch-timeslot-slots {
+      display: block;
+    }
+
+    .sch-timeslot-slot {
+      border: 0;
+      padding: 15px 10px;
+      margin: 0;
+    }
+    .sch-timeslot-slot:not(:first-child) {
+      border-top: 1px solid hsl(0, 0%, 95%);
+      border-radius: 0;
+    }
+
+    .sch-timeslot-kind-talk {
+      margin: 0;
+    }
+
+    .sch-timeslot-kind-talk .sch-slot-inner > h4 {
+      flex: 1 0;
+      flex-basis: 100%;
+    }
+
+    .sch-duration, .sch-room {
+      line-height: 1;
+    }
+
+    .sch-timeslot-kind-talk .sch-room {
+      flex: 0 1;
+    }
+
+    .sch-timeslot-kind-talk .sch-speaker-photo {
+      right: 10px;
+      top: 33px;
+    }
+
+    .sch-timeslot-kind-talk .sch-speaker-photo + h4,
+    .sch-timeslot-kind-talk .sch-speaker-photo + h4 ~ .sch-category {
+      padding: 0 46px 0 0;
+    }
+
+    .sch-timeslot-special {
+      display: block;
+      line-height: 1.3;
+      padding-bottom: 4px;
+      border-radius: 0;
+    }
+    .sch-timeslot-special .sch-timeslot-time {
+      background: transparent;
+      display: block;
+    }
+    .sch-timeslot-special .sch-timeslot-slots::before {
+      content: none;
+    }
+    .sch-timeslot-special .sch-timeslot-slots {
+      display: block;
+    }
+
+    .sch-timeslot-kind-talk .sch-description {
+      position: relative;
+      border: 0;
+      padding: 0;
+      transition: all 0.2s ease-out;
+      transform: scaleY(1);
+      transform-origin: top;
+      max-height: 1000px;
+      opacity: 1;
+    }
+
+    .sch-timeslot-kind-talk:not(:hover) .sch-description {
+      transform: scaleY(0);
+      max-height: 0;
+      opacity: 0;
+    }
+  }
+
+}

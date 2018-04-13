@@ -1,0 +1,18 @@
+.form-control.textarea {
+   color: black;
+   font-size: 16px;
+}
+
+.form-control.textinput,#id_email.emailinput, #id_speaker_bio.speakerbioinput,#id_website.urlinput {
+    -moz-box-sizing: border-box;
+    font-size: 16px;
+    height: 100%;
+    width: 100%;
+    color: black;
+}
+#id_email.emailinput,#id_website.urlinput {
+    width: 300px;
+    height: 100%;
+}
+
+

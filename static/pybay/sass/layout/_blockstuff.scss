@@ -1,0 +1,20 @@
+@media(max-width: 767px) {
+  .topic {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .topic h3 {
+    position: static;
+    margin-left: 12px;
+    flex: 1 1;
+    white-space: wrap;
+  }
+  .topic p {
+    flex-basis: 100%;
+  }
+  .topics .container .container {
+    margin: 0;
+    padding: 0;
+  }
+}

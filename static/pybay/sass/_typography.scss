@@ -1,0 +1,19 @@
+h1 {
+    color: #32648e;
+}
+.blue-header{
+    &, h1, h2, h3, h4, h5, h6 {
+        color: #32648e !important;
+    }
+}
+
+.heavy-header {
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: 600 !important;
+    }
+}
+
+.text-center h1 {
+    color: black;
+}
+

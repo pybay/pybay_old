@@ -1,0 +1,21 @@
+
+input#mce-EMAIL.form-email.signup-email-field{
+    width: 235px;
+    height: 48px;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    padding: 12px 20px;
+    font-size: 14px;
+    background: rgba(0, 0, 0, 0.2);
+    color: black;
+}
+.form-email.signup-email-field::placeholder {
+    color: white;
+    font-size: 16px;
+    margin: 0px auto;
+    min-width: 100%;
+    max-width: 100%;
+    text-align: center;
+}
+

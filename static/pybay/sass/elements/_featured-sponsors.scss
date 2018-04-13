@@ -1,0 +1,18 @@
+.sponsor-footer-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-sponsor {
+  position: relative;
+  margin: 10px;
+}
+
+.footer-sponsor a {
+  display: flex;
+  align-items: center;
+  height: calc(100% - 20px);
+}
+
+

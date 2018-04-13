@@ -1,0 +1,56 @@
+.sponsor-prospectus-page {
+
+  @import './_tiers.scss';
+
+  #pie1 {
+    width: 100%;
+    margin-left: 8%;
+  }
+
+  .sponsortable {
+    th {
+      width: 185px;
+      text-align: center;
+      vertical-align: top;
+      border-right: 1px solid #ccc;
+      color: #ffffff;
+      background: #428bca;
+    }
+
+    tr {
+      border: 1px solid #ccc;
+    }
+
+    td {
+      text-align: center;
+    }
+
+    .last-column{
+      border-right: none;
+    }
+
+    .first-column {
+      background: #FBBD4A;
+      color: black;
+    }
+
+    .axial-column {
+      text-align: left;
+    }
+
+    .last-row td {
+      background: #fef8eb;
+    }
+  }
+
+  .no-background {
+    background: transparent;
+  }
+
+  .sponsorbenefits {
+    li {
+      list-style-type: disc;
+    }
+  }
+
+}
