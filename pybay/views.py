@@ -170,7 +170,7 @@ def proposal_detail(request, proposal_id):
         "additional_notes": proposal.additional_notes,
         "title": proposal.title,
         "audience_level": TalkProposal.AUDIENCE_LEVELS[proposal.audience_level-1][1],
-        "category": proposal.category,
+        "category": proposal.themes,
         "what_attendees_will_learn": proposal.what_attendees_will_learn,
         # "title": proposal.talk_links,
         # "title": proposal.meetup_talk,
