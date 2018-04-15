@@ -3,7 +3,12 @@ python:
 - 3.5
 - 3.6
 install:
-- pip install -r requirements.txt
-script: ./manage.py migrate && ./manage.py collectstatic --no-input && ./manage.py test
+- pip install pipenv
+- pipenv install
+script:
+- pipenv run ./manage.py migrate
+- pipenv run ./manage.py compilescss
+- pipenv run ./manage.py collectstatic --no-input
+- pipenv run ./manage.py test
 env:
 - TRAVIS=true
