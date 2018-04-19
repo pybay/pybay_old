@@ -14,7 +14,7 @@ DATABASES = {
     }
 }
 
-ALLOWED_HOSTS = ['staging.pyconfsf.com']
+ALLOWED_HOSTS = ['staging.pybay.com']
 
 CANONICAL_HOST = 'http://staging.pybay.com'
 
