@@ -5,8 +5,9 @@ from .models import TalkProposal, TutorialProposal
 
 
 class TalkProposalAdmin(admin.ModelAdmin):
-    list_display = ('title', 'themes', 'speaker', 'speaker_email', 'phone', 'status')
-    ordering = ['result__status', 'speaker']
+    list_display = ('title', 'themes', 'speaker', 'speaker_email', 'phone', 'status', 'submitted')
+    ordering = ['-submitted', 'result__status', 'speaker']
+    list_filter = ('themes',)
 
     def speaker_phone_number(self, obj):
         return obj.speaker.phone
