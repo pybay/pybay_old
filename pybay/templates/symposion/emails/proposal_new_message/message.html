@@ -9,5 +9,5 @@
 </blockquote>
 <p>
     {% if reviewer %}{% url 'review_detail' proposal.pk as detail_url %}{% else %}{% url 'proposal_detail' proposal.pk as detail_url %}{% endif %}
-    {% blocktrans %} Respond online at <a href="http://{{ current_site }}{{ detail_url }}#proposal-feedback">http://{{ current_site }}{{ detail_url }}#proposal-feedback</a>{% endblocktrans %}
+    {% blocktrans %} Respond online at <a href="https://{{ current_site }}{{ detail_url }}#proposal-feedback">https://{{ current_site }}{{ detail_url }}#proposal-feedback</a>{% endblocktrans %}
 </p>
