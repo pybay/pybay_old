@@ -175,6 +175,7 @@ def proposal_detail(request, proposal_id):
         # "title": proposal.talk_links,
         # "title": proposal.meetup_talk,
         "speaker_and_talk_history": proposal.speaker_and_talk_history,
+        "talk_length": proposal.talk_length,
     }
 
     result = {
