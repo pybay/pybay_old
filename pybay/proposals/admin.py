@@ -31,7 +31,7 @@ class ThemeFilter(admin.SimpleListFilter):
 class TalkProposalAdmin(admin.ModelAdmin):
     list_display = ('title', 'themes', 'speaker', 'speaker_email', 'phone', 'status',
                     'audience_level', 'submitted')
-    search_fields = ['title', 'speaker', 'description']
+    search_fields = ['title', 'speaker__name', 'description']
     ordering = ['-submitted', 'result__status', 'speaker']
     list_filter = (ThemeFilter,)
     list_per_page = 200
