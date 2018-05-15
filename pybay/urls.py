@@ -33,6 +33,7 @@ urlpatterns = [
     url(r"^faq$", views.pybay_faq_index, name="pybay_faq"),
 
     url(r"^admin/", include(admin.site.urls)),
+    url(r"^admin/blockstuff/docs", TemplateView.as_view(template_name="blockstuff/docs.html")),
     url(r"^dashboard/", symposion.views.dashboard, name="dashboard"),
 
     url(r"^account/", include("account.urls")),

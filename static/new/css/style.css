@@ -37,8 +37,11 @@
 h1 {
     color: #32648e;
 }
-.blue-header{
-    color: #32648e;
+.blue-header h1, .blue-header h2, .blue-header h3, .blue-header h4, .blue-header h5, .blue-header h6 {
+    color: #32648e !important;
+}
+.heavy-header h1, .heavy-header h2, .heavy-header h3, .heavy-header h4, .heavy-header h5, .heavy-header h6 {
+    font-weight:600 !important; font-size:36px !important;
 }
 .text-center h1 {
     color: black;
@@ -162,6 +165,24 @@ p.question {
 .sch-timeslot-kind-talk:not(:hover) .sch-description {
   opacity: 0;
 }
+
+
+
+.skylineback {
+	background-image:url(../img/PyBay-SF-Background-grey.gif);
+	background-repeat:no-repeat;
+	background-position:center top;
+	min-height: 300px;
+}
+.skylineback2 {
+	background-image:url(../img/PyBay-SF-Background-grey-small.gif);
+	background-repeat: repeat-x;
+	background-position:center top;
+	border-bottom: 1px solid #CCC;
+	min-height: 100px;
+	margin-top: 20px;
+}
+
 
 
 /* Registration */
@@ -708,11 +729,11 @@ img.preconf {
     .pricely-pro li.pricely-first-heading {
         display: none;
     }
-
+/*
     .pricely-pro .glyphicon {
         display: none !important;
     }
-
+*/
     .pricely-foreword, .pricely-label {
         display: inline-block;
         margin: 0;
@@ -722,11 +743,15 @@ img.preconf {
     }
 
 }
-table th {
-    width: 185px;
+
+.sponsortable>thead>tr>th {
     text-align: center;
+	vertical-align: top;
     border-right: 1px solid #ccc;
     color: #ffffff;
+}
+table td {
+    text-align: center;
 }
 tr {
     border: 1px solid #ccc;
@@ -734,14 +759,23 @@ tr {
  .last-column{
   border-right: none;
 }
-table tr {
+table th {
     background: #428bca;
 }
 .first-column {
     background: #FBBD4A;
     color: black;
 }
-
+.sponsortable>thead>tr>th.axial-column,
+.sponsortable>tbody>tr>td.axial-column {
+    text-align: left;
+}
+ul.sponsorbenefits>li {
+    list-style-type: disc;
+}
+.sponsortable>tbody>tr.last-row>td {
+	background: #fef8eb;
+}
 .tickets {
     margin-top: 40px;
 }
