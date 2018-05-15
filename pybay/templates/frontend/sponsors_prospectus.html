@@ -8,150 +8,39 @@
 <!-- Why Sponsor Starts -->
 <a id="about" class="in-page-link"></a>
 
-<section class="topics duplicatable-content">
+<section class="image-with-text background-dark preserve-3d heavy-header">
+    <div class="container vertical-align">
+        <div class="row">
+            <div class="col-md-5 col-sm-8">
+                <h1 class="text-white">Want to showcase your company at the largest gathering of Bay Area Python Developers?</h1>
+                <div style="color: white; margin-bottom: 20px">
+                  <ul class="sponsorbenefits bulleted">
+                    <li>500+ attendees.</li>
+                    <li>15,000+ eyeballs through pre-conference promotions.</li>
+                    <li>50% mid-level developers. 39% senior-level. 25% women.</li>
+                    <li>Speakers and sponsors include Microsoft, Google, Yelp, and Bloomberg.</li>
+                  </ul>
+                </div>
+                <a href="mailto:grace@pybay.com?cc=avy@faingezicht.com&subject=Hi, I want to sponsor PyBay&body=Please include your company name and your budget, wish list, and questions." value="Register Now" class="btn">Email Us</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="go-right side-image col-sm-4 col-md-6">
+        <div class="background-image-holder" style="background-image: {% static "new/img/lb3.jpg" %};">
+            <img class="background-image" alt="About Image" src="{% static "new/img/lb3.jpg" %}">
+        </div>
+    </div>
+</section>
+
+{% include "frontend/sponsors_charts.html" %}
+{% include "frontend/sponsors_benefits.html" %}
+
+<section class="topics">
   <div class="container">
     {% gblock "sponsors_1" for "blockstuff.Col3" %}
     {% gblock "sponsors_2" for "blockstuff.Col3" %}
   </div>
-</section>
-<section class="topics duplicatable-content no-background">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <h1 class="blue-header"><strong>{% gblock "index_who_attended_innaugural_pybay" for "gblocks.Text" %}</strong></h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12 offset-3">
-                <p align ="right">{% gblock "index_data_from_registered_guests" for "gblocks.Text" %}</p>
-                <h4><center>Participant's Skills & Interest</center></h4>
-                 <div id="barchart1" width="500" height="300"></div>
-
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12 offset-4">
-                <div>
-
-                    <h4><center>Participant's Background</center></h4>
-                    <div id="barchart2" width="500" height="300"></div>
-
-                </div>
-            </div>
-        </div>
-        <div class="row">
-
-            <div id="pie1" width="500" height="300"> </div>
-
-        </div>
-    </div>
-</section>
-<!-- Why Sponsor Ends-->
-<!-- Chart 3 ENDS -->
-<section>
-  {% load benefit_tags %}
-  {% load_benefits %}
-  <div class="container">
-    <div class="col-md-12 no-padding clearfix">
-      <div class="page-header pull-left">
-        <h2 class="blue-header"><strong>Sponsorship Opportunities*</strong></h2>
-      </div>
-    </div><!-- /.col-md-12 -->
-    <div class="separator col-md-12">
-      <div class="pricely-chart pricely-professional">
-        <ul class="pricely-pro" >
-          <li class="pricely-first-heading panel-default col-md-4">
-            <h3 class="panel-heading">
-              <span class="pricely-label">Benefits</span>
-            </h3>
-            <ul class="list-group">
-              {% for benefit in benefits %}
-              <li class="list-group-item">{{ benefit.text|safe }}</li>
-              {% endfor %}
-            </ul>
-          </li>
-          <li class="pricely-inner panel-info col-xs-6 col-md-2">
-            <h3 class="panel-heading">
-              <span class="pricely-label"><b>Diamond</b></span>
-              <div class="pricely-figure">
-                <span class="pricely-currency">$</span>
-                <span class="pricely-amount">20,000</span>
-              </div>
-            </h3>
-            <ul class="list-group">
-              {% for benefit in benefits %}
-              <li class="list-group-item">
-                {{ benefit.diamond_text|checkmark }}
-                <span class="feature-hide">{{ benefit.diamond_text }}</span>
-              </li>
-              {% endfor %}
-            </ul>
-          </li>
-          <li class="pricely-inner panel-warning col-xs-6 col-md-2">
-            <h3 class="panel-heading">
-              <span class="pricely-label"><b>Gold</b></span>
-              <div class="pricely-figure">
-                <span class="pricely-currency">$</span>
-                <span class="pricely-amount">10,000</span>
-              </div>
-            </h3>
-            <ul class="list-group">
-              {% for benefit in benefits %}
-              <li class="list-group-item">
-                {{ benefit.gold_text|checkmark }}
-                <span class="feature-hide">{{ benefit.gold_text }}</span>
-              </li>
-              {% endfor %}
-            </ul>
-          </li>
-          <li class="pricely-inner panel-info col-xs-6 col-md-2">
-            <h3 class="panel-heading">
-              <span class="pricely-label"><b>Silver</b></span>
-              <div class="pricely-figure">
-                <span class="pricely-currency">$</span>
-                <span class="pricely-amount">5,000</span>
-              </div>
-            </h3>
-            <ul class="list-group">
-              {% for benefit in benefits %}
-              <li class="list-group-item">
-                {{ benefit.silver_text|checkmark }}
-                <span class="feature-hide">{{ benefit.silver_text }}</span>
-              </li>
-              {% endfor %}
-            </ul>
-          </li>
-          <li class="pricely-inner panel-warning col-xs-6 col-md-2">
-            <h3 class="panel-heading">
-              <span class="pricely-label"><b>Bronze</b></span>
-
-              <div class="pricely-figure">
-                <span class="pricely-currency">$</span>
-                <span class="pricely-amount">2,500</span>
-              </div>
-            </h3>
-            <ul class="list-group">
-              {% for benefit in benefits %}
-              <li class="list-group-item">
-                {{ benefit.bronze_text|checkmark }}
-                <span class="feature-hide">{{ benefit.bronze_text }}</span>
-              </li>
-              {% endfor %}
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <table class="table-responsive">
-      <th class="first-column">Add Ons:</th>
-      <th>Logo on Lanyard <br>$1,500</th>
-      <th>Open Space Room <br>Naming <br>$1,000</th>
-      <th>Main Talks <br>Room Naming <br>$2,500</th>
-      <th>Sponsored BOF <br>$6,000</th>
-      <th class="last-column">PyBay Scholarships<br>$1,800 - $6,000</th>
-    </table>
-  </div>
-</div><!--container -->
 </section>
 
 {% include "frontend/faq_box.html" %}
@@ -185,8 +74,10 @@
        </section>
 {% endblock subscribe %}
 {% block scripts %}
+{% comment %}
     <script src="{% static 'new/js/d3.v3.min.js' %}"></script>
     <script src="{% static 'new/js/graph1.js' %}"></script>
     <script src="{% static 'new/js/graph2.js' %}"></script>
     <script src="{% static 'new/js/graph3.js' %}"></script>
+{% endcomment %}
 {% endblock scripts %}

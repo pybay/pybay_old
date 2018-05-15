@@ -18,3 +18,9 @@ def checkmark(text):
     checkmark = '<span class="glyphicon glyphicon-ok"></span>'
     output = checkmark if text.lower() == 'yes' else '<span>{}</span>'.format(text)
     return mark_safe(output)
+
+@register.filter
+@stringfilter
+def comma2br(text):
+    output = "<br>".join(text.split(","))
+    return mark_safe(output)
