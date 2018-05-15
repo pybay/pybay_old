@@ -1,0 +1,37 @@
+{% extends "admin/base_site.html" %}
+{% load i18n admin_urls admin_static admin_list %}
+
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+<a href="{% url 'admin:index' %}">{% trans 'Home' %}</a>
+&rsaquo; <a href="{% url 'admin:app_list' app_label='blockstuff' %}">Blockstuff</a>
+&rsaquo; Documentation
+</div>
+{% endblock %}
+
+<!-- Content -->
+<div id="content" class="{% block coltype %}colM{% endblock %}">
+  {% block content_title %}<h1>Blockstuff Docs</h1>{% endblock %}
+  {% block content %}
+  <h2>tl;dr</h2>
+  <p>
+  When creating new flatpages you can specify the <em>Template
+  Name</em> under <em>Advanced options</em>. Specifying a specific
+  template will get you a flatpage with specific design and possibly layout. Read on for details.
+  </p>
+  <h2>Available Templates</h2>
+  <h3>flatpages/text_image_2col.html</h3>
+    <p>This template provides a main title with a text/image 2 column block below and main text in single block at the bottom. </p>
+    <p><img width="400" src="{{ STATIC_URL }}/mocks/text_image_2col.png"></p>
+
+  <hr>
+  <h3>flatpages/template3.html</h3>
+  <p>This template provides a pretty title with a city skyline behind it. </p>
+    <p><img width="400" src="{{ STATIC_URL }}/mocks/Template3.png"></p>
+  <hr>
+  {% endblock %}
+
+
+  />
+</div>
+<!-- END Content -->

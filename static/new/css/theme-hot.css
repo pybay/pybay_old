@@ -265,7 +265,6 @@ h5,
 h6 {
   font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
-  margin: 0px;
   color: #333333;
 }
 h1 {
@@ -310,6 +309,14 @@ ul {
   list-style: none;
   margin: 0px;
   padding: 0px;
+}
+ul.bulleted {
+  list-style-type: disc;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 40px;
 }
 @media all and (max-width: 767px) {
   h1 {

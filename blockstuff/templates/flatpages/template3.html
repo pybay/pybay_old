@@ -1,0 +1,23 @@
+{% extends 'frontend/base.html' %}
+
+{% block head_title %}{{ flatpage.title }}{% endblock %}
+
+{% block content %}
+<!-- Header Section BEGINS -->
+<section style="padding-top:200px;">
+  <div class="container">
+    <div class="row text-center blue-header heavy-header">
+      <h1 class="">{{ flatpage.title|safe }}</h1>
+      <div class="row skylineback2"></div>
+    </div>
+  </div>
+</section>
+<!-- Header Section ENDS -->
+<section class="blue-header heavy-header">
+  <div class="container">
+    <div class="row">
+      {{ flatpage.content }}
+    </div>
+  </div>
+</section>
+{% endblock %}
