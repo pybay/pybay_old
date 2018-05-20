@@ -6,32 +6,37 @@
 
 {% block content %}
 <!-- Why Sponsor Starts -->
-<a id="about" class="in-page-link"></a>
 
-<section class="image-with-text background-dark preserve-3d heavy-header">
-    <div class="container vertical-align">
-        <div class="row">
-            <div class="col-md-5 col-sm-8">
-                <h1 class="text-white">Want to showcase your company at the largest gathering of Bay Area Python Developers?</h1>
-                <div style="color: white; margin-bottom: 20px">
-                  <ul class="sponsorbenefits bulleted">
-                    <li>500+ attendees.</li>
-                    <li>15,000+ eyeballs through pre-conference promotions.</li>
-                    <li>50% mid-level developers. 39% senior-level. 25% women.</li>
-                    <li>Speakers and sponsors include Microsoft, Google, Yelp, and Bloomberg.</li>
-                  </ul>
+
+<a id="register" class="in-page-link"></a>
+
+            <section class="image-with-text background-dark preserve-3d">
+
+                <div class="container vertical-align">
+                    <div class="row">
+                        <div class="col-md-5 col-sm-8">
+                            <h1 class="text-white">{% gblock "want_to_showcase" for "gblocks.Text" %}</h1>
+                            <div style="color: white; margin-bottom: 20px">
+                              <ul class="sponsorbenefits bulleted">
+                                <li>500+ attendees.</li>
+                                <li>15,000+ eyeballs through pre-conference promotions.</li>
+                                <li>50% mid-level developers. 39% senior-level. 25% women.</li>
+                                <li>Speakers and sponsors include Microsoft, Google, Yelp, and Bloomberg.</li>
+                              </ul>
+                            </div>
+                            <a href="mailto:grace@pybay.com?cc=avy@faingezicht.com&subject=Hi, I want to sponsor PyBay&body=Please include your company name and your budget, wish list, and questions." value="Register Now" class="btn">Email Us</a>
+                        </div>
+                    </div><!--end of row-->
+
+                </div><!--end of container-->
+
+                <div class="go-right side-image col-sm-4 col-md-6">
+                    <div class="background-image-holder">
+                        <img class="background-image" alt="About Image" src= "{% static 'new/img/lb3.jpg' %}">
+                    </div>
                 </div>
-                <a href="mailto:grace@pybay.com?cc=avy@faingezicht.com&subject=Hi, I want to sponsor PyBay&body=Please include your company name and your budget, wish list, and questions." value="Register Now" class="btn">Email Us</a>
-            </div>
-        </div>
-    </div>
+       </section>
 
-    <div class="go-right side-image col-sm-4 col-md-6">
-        <div class="background-image-holder" style="background-image: {% static "new/img/lb3.jpg" %};">
-            <img class="background-image" alt="About Image" src="{% static "new/img/lb3.jpg" %}">
-        </div>
-    </div>
-</section>
 
 {% include "frontend/sponsors_charts.html" %}
 {% include "frontend/sponsors_benefits.html" %}
@@ -47,32 +52,6 @@
 
 {% endblock content %}
 
-{% block subscribe %}
-<a id="register" class="in-page-link"></a>
-
-            <section class="image-with-text background-dark preserve-3d">
-
-                <div class="container vertical-align">
-                    <div class="row">
-                        <div class="col-md-5 col-sm-8">
-                            <h1 class="text-white">{% gblock "want_to_showcase" for "gblocks.Text" %}</h1>
-                            <div style="color: white; margin-bottom: 20px">
-                                Tell us your budget, wish list, and questions. Let's find the best way
-                                to show you off at the largest gathering of SF Bay Area's Python developers
-                            </div>
-                            <a href="mailto:grace@pybay.com?cc=avy@faingezicht.com&subject=Hi, I want to sponsor PyBay&body=Please include your company name and your budget, wish list, and questions." value="Register Now" class="btn">Email Us</a>
-                        </div>
-                    </div><!--end of row-->
-
-                </div><!--end of container-->
-
-                <div class="go-right side-image col-sm-4 col-md-6">
-                    <div class="background-image-holder">
-                        <img class="background-image" alt="About Image" src= "{% static 'new/img/lb3.jpg' %}">
-                    </div>
-                </div>
-       </section>
-{% endblock subscribe %}
 {% block scripts %}
 {% comment %}
     <script src="{% static 'new/js/d3.v3.min.js' %}"></script>
