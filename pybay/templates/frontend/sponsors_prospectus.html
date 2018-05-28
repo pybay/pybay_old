@@ -1,6 +1,7 @@
 {% extends 'frontend/base.html' %}
 {% load staticfiles %}
 {% load generic_flatblocks %}
+{% load benefit_tags %}
 
 {% block body_class %}{{ block.super }} sponsor-prospectus-page{% endblock %}
 
@@ -16,15 +17,22 @@
                     <div class="row">
                         <div class="col-md-5 col-sm-8">
                             <h1 class="text-white">{% gblock "want_to_showcase" for "gblocks.Text" %}</h1>
-                            <div style="color: white; margin-bottom: 20px">
-                              <ul class="sponsorbenefits bulleted">
-                                <li>500+ attendees.</li>
-                                <li>15,000+ eyeballs through pre-conference promotions.</li>
-                                <li>50% mid-level developers. 39% senior-level. 25% women.</li>
-                                <li>Speakers and sponsors include Microsoft, Google, Yelp, and Bloomberg.</li>
-                              </ul>
-                            </div>
+                            {% gblock "showcase_benefits" for "gblocks.Text" as "showcase_benefits" %}
+                            {% if showcase_benefits|count_content_lines > 0 %}
+                                {{ showcase_benefits }}
+                            {% else %}
+                              {{ showcase_benefits }}
+                              <div style="color: white; margin-bottom: 20px">
+                                <ul class="sponsorbenefits bulleted">
+                                  <li>500+ attendees.</li>
+                                  <li>15,000+ eyeballs through pre-conference promotions.</li>
+                                  <li>50% mid-level developers. 39% senior-level. 25% women.</li>
+                                  <li>Speakers and sponsors include Microsoft, Google, Yelp, and Bloomberg.</li>
+                                </ul>
+                              </div>
                             <a href="mailto:grace@pybay.com?cc=avy@faingezicht.com&subject=Hi, I want to sponsor PyBay&body=Please include your company name and your budget, wish list, and questions." value="Register Now" class="btn">Email Us</a>
+                            {% endif %}
+
                         </div>
                     </div><!--end of row-->
 
