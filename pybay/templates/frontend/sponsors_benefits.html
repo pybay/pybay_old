@@ -1,6 +1,6 @@
 <!-- Sponsorship Opportunities BEGINS -->
 {% load benefit_tags %}
-{% load_benefits %}
+{% load generic_flatblocks %}
 <section>
   <div class="container heavy-header blue-header" style="margin-bottom:-50px">
     <h2 class="blue-header">Sponsorship Opportunities</h2>
@@ -25,6 +25,7 @@
         </tr>
       </thead>
       <tbody class="pricely-pro">
+      {% load_benefits %}
       {% for benefit in benefits %}
         <tr {% if forloop.last %} class="last-row"{% endif %}>
         {% if forloop.last %}
@@ -55,26 +56,13 @@
         <br>
         <div class="table-responsive">
         <table class="table table-striped sponsortable">
+        {% load_addon_benefits %}
+        {% for benefit in benefits %}
           <tr>
-            <td class="axial-column"><strong>Logo on Lanyard </strong></td>
-            <td>$1,500</td>
+            <td class="axial-column"><strong>{{ benefit.title }} </strong></td>
+            <td>{{ benefit.price_text }}</td>
           </tr>
-          <tr>
-            <td class="axial-column"><strong>Open Space Room Naming</strong></td>
-            <td>$1,000</td>
-          </tr>
-          <tr>
-            <td class="axial-column"><strong>Main Talks Room Naming</strong></td>
-            <td>$2,500</td>
-          </tr>
-          <tr>
-            <td class="axial-column"><strong>Sponsored BOF</strong></td>
-            <td>$6,000</td>
-          </tr>
-          <tr>
-            <td class="axial-column"><strong>PyBay Scholarships</strong></td>
-            <td>$1,800 - $6,000</td>
-          </tr>
+        {% endfor %}
         </table>
         </div>
       </div>
@@ -83,27 +71,27 @@
         <br>
         <div class="table-responsive">
         <table class="table table-striped sponsortable">
+        {% load_alacarte_benefits %}
+        {% for benefit in benefits %}
           <tr>
-            <td class="axial-column"><strong>Diversity and Inclusion Sponsors </strong><br>
-            Help improve the diversity of our community with respect to gender, race, sexual orientation, etc., and provide support to students, speakers and open source contributors who need financial aid to attend PyBay.
-            <a href="#" value="Learn More">Learn More</a>
-            </td>
-            <td>$2,000-$5,000+</td>
+            <td class="axial-column"><strong>{{ benefit.title }} </strong><br>{{ benefit.text|safe }}</td>
+            <td>{{ benefit.price_text }}</td>
           </tr>
-          <tr>
-            <td class="axial-column"><strong>Speakers' Lodging & Flight</strong><br>
-            Help our speakers cover their travel expenses.
-            </td>
-            <td>$5,000+</td>
-          </tr>
+        {% endfor %}
         </table>
         </div>
       </div>
     </div>
     <div class="row text-center">
+      {% gblock "sponsor_emailus" for "gblocks.Text" as "emailus" %}
+      {% if emailus|count_content_lines > 0 %}
+        {{ emailus }}
+      {% else %}
+        {{ emailus }}
       <br>
       <br>
       <a href="mailto:grace@pybay.com?cc=avy@faingezicht.com&subject=Hi, I want to sponsor PyBay&body=Please include your company name and your budget, wish list, and questions." value="Email Us" class="btn">Email Us</a>
+      {% endif %}
     </div>
   </div>
 </section>
