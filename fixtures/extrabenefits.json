@@ -1,0 +1,67 @@
+[
+  {
+    "model": "sponsorbenefits.addonbenefitrow",
+    "pk": 1,
+    "fields": {
+      "order": 0,
+      "title": "Logo on Lanyard",
+      "price_text": "$1,500"
+    }
+  },
+  {
+    "model": "sponsorbenefits.addonbenefitrow",
+    "pk": 2,
+    "fields": {
+      "order": 1,
+      "title": "Open Space Room Naming",
+      "price_text": "$1,000"
+    }
+  },
+  {
+    "model": "sponsorbenefits.addonbenefitrow",
+    "pk": 3,
+    "fields": {
+      "order": 2,
+      "title": "Main Talks Room Naming",
+      "price_text": "$2,500"
+    }
+  },
+  {
+    "model": "sponsorbenefits.addonbenefitrow",
+    "pk": 4,
+    "fields": {
+      "order": 3,
+      "title": "Sponsored BOF",
+      "price_text": "$6000"
+    }
+  },
+  {
+    "model": "sponsorbenefits.addonbenefitrow",
+    "pk": 5,
+    "fields": {
+      "order": 4,
+      "title": "PyBay Scholarships",
+      "price_text": "$1,800-$6,000"
+    }
+  },
+  {
+    "model": "sponsorbenefits.alacartebenefitrow",
+    "pk": 1,
+    "fields": {
+      "order": 0,
+      "title": "Diversity and Inclusion Sponsors",
+      "text": "Help improve the diversity of our community with respect to gender, race, sexual orientation, etc., and provide support to students, speakers and open source contributors who need financial aid to attend PyBay. <a href=\"/sponsors-prospectus/\">Learn More</a>.",
+      "price_text": "$2,000-$5,000+"
+    }
+  },
+  {
+    "model": "sponsorbenefits.alacartebenefitrow",
+    "pk": 2,
+    "fields": {
+      "order": 1,
+      "title": "Speakers' Lodging & Flight",
+      "text": "Help our speakers cover their travel expenses.",
+      "price_text": "$5,000+"
+    }
+  }
+]
