@@ -1121,3 +1121,6 @@ tito-widget .tito-badge-link a {
 .speaker-page .lead ul {
     list-style: disc;
 }
+section.grey-box {
+  background-color: #F5F5F5;
+}
