@@ -42,7 +42,7 @@ h1 {
     color: #32648e !important;
 }
 .heavy-header h1, .heavy-header h2, .heavy-header h3, .heavy-header h4, .heavy-header h5, .heavy-header h6 {
-    font-weight:600 !important; font-size:36px !important;
+    font-weight:600 !important;
 }
 .text-center h1 {
     color: black;
