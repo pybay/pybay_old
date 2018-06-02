@@ -18,19 +18,24 @@
         </div>
     </div>
 
-    <div class="{{ object|three_col_class }}">
-        <div class="topic">
-            <i class="{{ object.icon_2 }}"></i>
-            <h3 class="blue-header"><strong>{{ object.title_2|safe }}</strong></h3>
-              {{ object.content_2|safe }}
+    {% if object.content_2|length > 0 %}
+        <div class="{{ object|three_col_class }}">
+            <div class="topic">
+                <i class="{{ object.icon_2 }}"></i>
+                <h3 class="blue-header"><strong>{{ object.title_2|safe }}</strong></h3>
+                  {{ object.content_2|safe }}
+            </div>
         </div>
-    </div>
+    {% endif %}
 
-    <div class="{{ object|three_col_class }}">
-        <div class="topic">
-            <i class="{{ object.icon_3 }}"></i>
-            <h3 class="blue-header"><strong>{{ object.title_3|safe }}</strong></h3>
-              {{ object.content_3|safe }}
+    {% if object.content_3|length > 0 %}
+        <div class="{{ object|three_col_class }}">
+            <div class="topic">
+                <i class="{{ object.icon_3 }}"></i>
+                <h3 class="blue-header"><strong>{{ object.title_3|safe }}</strong></h3>
+                  {{ object.content_3|safe }}
+            </div>
         </div>
-    </div>
+    {% endif %}
+
 </div>
