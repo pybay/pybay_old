@@ -1,0 +1,1454 @@
+[
+    {
+        "pk": 1,
+        "fields": {
+            "hidden": false,
+            "section": 2,
+            "published": true
+        },
+        "model": "symposion_schedule.schedule"
+    },
+    {
+        "pk": 1,
+        "fields": {
+            "date": "2018-08-18",
+            "schedule": 1
+        },
+        "model": "symposion_schedule.day"
+    },
+    {
+        "pk": 2,
+        "fields": {
+            "date": "2018-08-16",
+            "schedule": 1
+        },
+        "model": "symposion_schedule.day"
+    },
+    {
+        "pk": 3,
+        "fields": {
+            "date": "2018-08-17",
+            "schedule": 1
+        },
+        "model": "symposion_schedule.day"
+    },
+    {
+        "pk": 4,
+        "fields": {
+            "date": "2018-08-19",
+            "schedule": 1
+        },
+        "model": "symposion_schedule.day"
+    },
+    {
+        "pk": 1,
+        "fields": {
+            "name": "Room A",
+            "order": 0,
+            "schedule": 1
+        },
+        "model": "symposion_schedule.room"
+    },
+    {
+        "pk": 2,
+        "fields": {
+            "name": "House Canary",
+            "order": 1,
+            "schedule": 1
+        },
+        "model": "symposion_schedule.room"
+    },
+    {
+        "pk": 3,
+        "fields": {
+            "name": "Robertson",
+            "order": 2,
+            "schedule": 1
+        },
+        "model": "symposion_schedule.room"
+    },
+    {
+        "pk": 4,
+        "fields": {
+            "name": "Fisher",
+            "order": 3,
+            "schedule": 1
+        },
+        "model": "symposion_schedule.room"
+    },
+    {
+        "pk": 5,
+        "fields": {
+            "name": "Atrium",
+            "order": 4,
+            "schedule": 1
+        },
+        "model": "symposion_schedule.room"
+    },
+    {
+        "pk": 2,
+        "fields": {
+            "label": "workshop",
+            "schedule": 1
+        },
+        "model": "symposion_schedule.slotkind"
+    },
+    {
+        "pk": 3,
+        "fields": {
+            "label": "talk",
+            "schedule": 1
+        },
+        "model": "symposion_schedule.slotkind"
+    },
+    {
+        "pk": 4,
+        "fields": {
+            "label": "party",
+            "schedule": 1
+        },
+        "model": "symposion_schedule.slotkind"
+    },
+    {
+        "pk": 5,
+        "fields": {
+            "label": "break",
+            "schedule": 1
+        },
+        "model": "symposion_schedule.slotkind"
+    },
+    {
+        "pk": 9,
+        "fields": {
+            "label": "lunch",
+            "schedule": 1
+        },
+        "model": "symposion_schedule.slotkind"
+    },
+    {
+        "pk": 10,
+        "fields": {
+            "label": "keynote",
+            "schedule": 1
+        },
+        "model": "symposion_schedule.slotkind"
+    },
+    {
+        "pk": 1,
+        "fields": {
+            "start": "09:00:00",
+            "day": 2,
+            "name": "2018-08-16 talk (09:00:00 - 10:00:00) House Canary Robertson",
+            "end": "10:00:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 3
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 2,
+        "fields": {
+            "start": "10:00:00",
+            "day": 2,
+            "name": "2018-08-16 talk (10:00:00 - 11:00:00) ",
+            "end": "11:00:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 3
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 3,
+        "fields": {
+            "start": "09:30:00",
+            "day": 1,
+            "name": "2018-08-18 keynote (09:30:00 - 10:40:00) Room A House Canary",
+            "end": "10:40:00",
+            "content_override": "Opening | Keynote from Raymond Hettinger",
+            "content_override_html": "<p>Opening | Keynote from Raymond Hettinger</p>",
+            "kind": 10
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 4,
+        "fields": {
+            "start": "10:40:00",
+            "day": 1,
+            "name": "2018-08-18 keynote (10:40:00 - 11:00:00) Room A House Canary",
+            "end": "11:00:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 10
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 9,
+        "fields": {
+            "start": "11:40:00",
+            "day": 1,
+            "name": "2018-08-18 talk (11:40:00 - 12:20:00) House Canary",
+            "end": "12:20:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 3
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 10,
+        "fields": {
+            "start": "11:40:00",
+            "day": 1,
+            "name": "2018-08-18 talk (11:40:00 - 12:20:00) Robertson",
+            "end": "12:20:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 3
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 11,
+        "fields": {
+            "start": "11:40:00",
+            "day": 1,
+            "name": "2018-08-18 talk (11:40:00 - 12:20:00) Fisher",
+            "end": "12:20:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 3
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 12,
+        "fields": {
+            "start": "11:00:00",
+            "day": 3,
+            "name": "2018-08-17 talk (11:00:00 - 11:40:00) House Canary",
+            "end": "11:40:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 3
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 13,
+        "fields": {
+            "start": "11:00:00",
+            "day": 1,
+            "name": "2018-08-18 talk (11:00:00 - 11:40:00) Fisher",
+            "end": "11:40:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 3
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 14,
+        "fields": {
+            "start": "11:00:00",
+            "day": 1,
+            "name": "2018-08-18 talk (11:00:00 - 11:40:00) Robertson",
+            "end": "11:40:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 3
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 15,
+        "fields": {
+            "start": "10:40:00",
+            "day": 1,
+            "name": "2018-08-18 break (10:40:00 - 11:00:00) ",
+            "end": "11:00:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 5
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 16,
+        "fields": {
+            "start": "12:15:00",
+            "day": 1,
+            "name": "2018-08-18 lunch (12:15:00 - 13:15:00) Atrium",
+            "end": "13:15:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 9
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 17,
+        "fields": {
+            "start": "13:30:00",
+            "day": 1,
+            "name": "2018-08-18 talk (13:30:00 - 14:10:00) House Canary",
+            "end": "14:10:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 3
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 18,
+        "fields": {
+            "start": "13:30:00",
+            "day": 1,
+            "name": "2018-08-18 talk (13:30:00 - 14:10:00) Fisher",
+            "end": "14:10:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 3
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 19,
+        "fields": {
+            "start": "13:30:00",
+            "day": 1,
+            "name": "2018-08-18 talk (13:30:00 - 14:10:00) Robertson",
+            "end": "14:10:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 3
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 20,
+        "fields": {
+            "start": "14:10:00",
+            "day": 1,
+            "name": "2018-08-18 talk (14:10:00 - 14:50:00) House Canary",
+            "end": "14:50:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 3
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 21,
+        "fields": {
+            "start": "14:10:00",
+            "day": 1,
+            "name": "2018-08-18 talk (14:10:00 - 14:50:00) Fisher",
+            "end": "14:50:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 3
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 22,
+        "fields": {
+            "start": "14:10:00",
+            "day": 1,
+            "name": "2018-08-18 talk (14:10:00 - 14:50:00) Robertson",
+            "end": "14:50:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 3
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 23,
+        "fields": {
+            "start": "14:50:00",
+            "day": 1,
+            "name": "2018-08-18 talk (14:50:00 - 15:30:00) House Canary",
+            "end": "15:30:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 3
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 24,
+        "fields": {
+            "start": "14:50:00",
+            "day": 1,
+            "name": "2018-08-18 talk (14:50:00 - 15:30:00) Fisher",
+            "end": "15:30:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 3
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 25,
+        "fields": {
+            "start": "14:50:00",
+            "day": 1,
+            "name": "2018-08-18 talk (14:50:00 - 15:30:00) Robertson",
+            "end": "15:30:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 3
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 26,
+        "fields": {
+            "start": "15:20:00",
+            "day": 1,
+            "name": "2018-08-18 break (15:20:00 - 15:45:00) ",
+            "end": "15:45:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 5
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 27,
+        "fields": {
+            "start": "15:45:00",
+            "day": 1,
+            "name": "2018-08-18 talk (15:45:00 - 16:40:00) House Canary",
+            "end": "16:40:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 3
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 28,
+        "fields": {
+            "start": "15:45:00",
+            "day": 1,
+            "name": "2018-08-18 talk (15:45:00 - 16:40:00) Fisher",
+            "end": "16:40:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 3
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 29,
+        "fields": {
+            "start": "15:45:00",
+            "day": 1,
+            "name": "2018-08-18 talk (15:45:00 - 16:40:00) Robertson",
+            "end": "16:40:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 3
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 30,
+        "fields": {
+            "start": "16:40:00",
+            "day": 1,
+            "name": "2018-08-18 talk (16:40:00 - 17:20:00) House Canary",
+            "end": "17:20:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 3
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 31,
+        "fields": {
+            "start": "16:40:00",
+            "day": 1,
+            "name": "2018-08-18 talk (16:40:00 - 17:20:00) Fisher",
+            "end": "17:20:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 3
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 32,
+        "fields": {
+            "start": "16:40:00",
+            "day": 1,
+            "name": "2018-08-18 talk (16:40:00 - 17:20:00) Robertson",
+            "end": "17:20:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 3
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 33,
+        "fields": {
+            "start": "17:20:00",
+            "day": 1,
+            "name": "2018-08-18 talk (17:20:00 - 18:00:00) House Canary",
+            "end": "18:00:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 3
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 34,
+        "fields": {
+            "start": "17:20:00",
+            "day": 1,
+            "name": "2018-08-18 talk (17:20:00 - 18:00:00) Fisher",
+            "end": "18:00:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 3
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 35,
+        "fields": {
+            "start": "17:20:00",
+            "day": 1,
+            "name": "2018-08-18 talk (17:20:00 - 18:00:00) Robertson",
+            "end": "18:00:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 3
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 38,
+        "fields": {
+            "start": "09:15:00",
+            "day": 4,
+            "name": "2018-08-19 talk (09:15:00 - 10:00:00) House Canary Fisher",
+            "end": "10:00:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 3
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 39,
+        "fields": {
+            "start": "09:55:00",
+            "day": 4,
+            "name": "2018-08-19 break (09:55:00 - 10:15:00) ",
+            "end": "10:15:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 5
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 40,
+        "fields": {
+            "start": "10:15:00",
+            "day": 4,
+            "name": "2018-08-19 talk (10:15:00 - 10:55:00) House Canary",
+            "end": "10:55:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 3
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 43,
+        "fields": {
+            "start": "10:15:00",
+            "day": 4,
+            "name": "2018-08-19 talk (10:15:00 - 10:55:00) Fisher",
+            "end": "10:55:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 3
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 44,
+        "fields": {
+            "start": "10:15:00",
+            "day": 4,
+            "name": "2018-08-19 talk (10:15:00 - 10:55:00) Robertson",
+            "end": "10:55:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 3
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 45,
+        "fields": {
+            "start": "10:55:00",
+            "day": 4,
+            "name": "2018-08-19 talk (10:55:00 - 11:35:00) House Canary",
+            "end": "11:35:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 3
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 46,
+        "fields": {
+            "start": "10:55:00",
+            "day": 4,
+            "name": "2018-08-19 talk (10:55:00 - 11:35:00) Fisher",
+            "end": "11:35:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 3
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 47,
+        "fields": {
+            "start": "10:55:00",
+            "day": 4,
+            "name": "2018-08-19 talk (10:55:00 - 11:35:00) Robertson",
+            "end": "11:35:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 3
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 48,
+        "fields": {
+            "start": "11:35:00",
+            "day": 4,
+            "name": "2018-08-19 talk (11:35:00 - 12:15:00) House Canary",
+            "end": "12:15:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 3
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 49,
+        "fields": {
+            "start": "11:35:00",
+            "day": 4,
+            "name": "2018-08-19 talk (11:35:00 - 12:30:00) Fisher",
+            "end": "12:30:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 3
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 50,
+        "fields": {
+            "start": "11:35:00",
+            "day": 4,
+            "name": "2018-08-19 talk (11:35:00 - 12:15:00) Robertson",
+            "end": "12:15:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 3
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 53,
+        "fields": {
+            "start": "13:00:00",
+            "day": 4,
+            "name": "2018-08-19 talk (13:00:00 - 13:55:00) Robertson",
+            "end": "13:55:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 3
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 54,
+        "fields": {
+            "start": "13:00:00",
+            "day": 4,
+            "name": "2018-08-19 talk (13:00:00 - 13:55:00) House Canary",
+            "end": "13:55:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 3
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 55,
+        "fields": {
+            "start": "13:15:00",
+            "day": 4,
+            "name": "2018-08-19 talk (13:15:00 - 13:55:00) Fisher",
+            "end": "13:55:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 3
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 56,
+        "fields": {
+            "start": "12:00:00",
+            "day": 4,
+            "name": "2018-08-19 lunch (12:00:00 - 13:15:00) Atrium",
+            "end": "13:15:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 9
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 57,
+        "fields": {
+            "start": "13:55:00",
+            "day": 4,
+            "name": "2018-08-19 talk (13:55:00 - 14:35:00) House Canary",
+            "end": "14:35:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 3
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 58,
+        "fields": {
+            "start": "13:55:00",
+            "day": 4,
+            "name": "2018-08-19 talk (13:55:00 - 14:35:00) Fisher",
+            "end": "14:35:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 3
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 59,
+        "fields": {
+            "start": "13:55:00",
+            "day": 4,
+            "name": "2018-08-19 talk (13:55:00 - 14:35:00) Robertson",
+            "end": "14:35:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 3
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 60,
+        "fields": {
+            "start": "14:35:00",
+            "day": 4,
+            "name": "2018-08-19 talk (14:35:00 - 15:15:00) House Canary",
+            "end": "15:15:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 3
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 61,
+        "fields": {
+            "start": "14:35:00",
+            "day": 4,
+            "name": "2018-08-19 talk (14:35:00 - 15:15:00) Fisher",
+            "end": "15:15:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 3
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 62,
+        "fields": {
+            "start": "14:35:00",
+            "day": 4,
+            "name": "2018-08-19 talk (14:35:00 - 15:15:00) Robertson",
+            "end": "15:15:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 3
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 63,
+        "fields": {
+            "start": "15:05:00",
+            "day": 4,
+            "name": "2018-08-19 break (15:05:00 - 15:30:00) ",
+            "end": "15:30:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 5
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 64,
+        "fields": {
+            "start": "15:30:00",
+            "day": 4,
+            "name": "2018-08-19 talk (15:30:00 - 16:10:00) House Canary",
+            "end": "16:10:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 3
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 65,
+        "fields": {
+            "start": "15:30:00",
+            "day": 4,
+            "name": "2018-08-19 talk (15:30:00 - 16:10:00) Fisher",
+            "end": "16:10:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 3
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 66,
+        "fields": {
+            "start": "15:30:00",
+            "day": 4,
+            "name": "2018-08-19 talk (15:30:00 - 16:10:00) Robertson",
+            "end": "16:10:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 3
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 67,
+        "fields": {
+            "start": "16:10:00",
+            "day": 4,
+            "name": "2018-08-19 talk (16:10:00 - 16:50:00) House Canary",
+            "end": "16:50:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 3
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 68,
+        "fields": {
+            "start": "16:10:00",
+            "day": 4,
+            "name": "2018-08-19 talk (16:10:00 - 16:50:00) Fisher",
+            "end": "16:50:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 3
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 69,
+        "fields": {
+            "start": "16:10:00",
+            "day": 4,
+            "name": "2018-08-19 talk (16:10:00 - 16:50:00) Robertson",
+            "end": "16:50:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 3
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 70,
+        "fields": {
+            "start": "16:50:00",
+            "day": 4,
+            "name": "2018-08-19 talk (16:50:00 - 17:50:00) House Canary",
+            "end": "17:50:00",
+            "content_override": "",
+            "content_override_html": "",
+            "kind": 3
+        },
+        "model": "symposion_schedule.slot"
+    },
+    {
+        "pk": 1,
+        "fields": {
+            "room": 1,
+            "slot": 3
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 2,
+        "fields": {
+            "room": 1,
+            "slot": 4
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 3,
+        "fields": {
+            "room": 2,
+            "slot": 3
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 4,
+        "fields": {
+            "room": 2,
+            "slot": 4
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 10,
+        "fields": {
+            "room": 2,
+            "slot": 1
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 11,
+        "fields": {
+            "room": 3,
+            "slot": 1
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 13,
+        "fields": {
+            "room": 2,
+            "slot": 9
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 14,
+        "fields": {
+            "room": 3,
+            "slot": 10
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 15,
+        "fields": {
+            "room": 4,
+            "slot": 11
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 16,
+        "fields": {
+            "room": 2,
+            "slot": 12
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 17,
+        "fields": {
+            "room": 4,
+            "slot": 13
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 18,
+        "fields": {
+            "room": 3,
+            "slot": 14
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 19,
+        "fields": {
+            "room": 2,
+            "slot": 15
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 20,
+        "fields": {
+            "room": 4,
+            "slot": 15
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 21,
+        "fields": {
+            "room": 3,
+            "slot": 15
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 22,
+        "fields": {
+            "room": 5,
+            "slot": 16
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 23,
+        "fields": {
+            "room": 2,
+            "slot": 17
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 24,
+        "fields": {
+            "room": 4,
+            "slot": 18
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 25,
+        "fields": {
+            "room": 3,
+            "slot": 19
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 26,
+        "fields": {
+            "room": 2,
+            "slot": 20
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 27,
+        "fields": {
+            "room": 4,
+            "slot": 21
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 28,
+        "fields": {
+            "room": 3,
+            "slot": 22
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 29,
+        "fields": {
+            "room": 2,
+            "slot": 23
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 30,
+        "fields": {
+            "room": 4,
+            "slot": 24
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 31,
+        "fields": {
+            "room": 3,
+            "slot": 25
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 32,
+        "fields": {
+            "room": 5,
+            "slot": 26
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 33,
+        "fields": {
+            "room": 2,
+            "slot": 27
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 34,
+        "fields": {
+            "room": 4,
+            "slot": 28
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 35,
+        "fields": {
+            "room": 3,
+            "slot": 29
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 36,
+        "fields": {
+            "room": 2,
+            "slot": 30
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 37,
+        "fields": {
+            "room": 4,
+            "slot": 31
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 38,
+        "fields": {
+            "room": 3,
+            "slot": 32
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 39,
+        "fields": {
+            "room": 2,
+            "slot": 33
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 40,
+        "fields": {
+            "room": 4,
+            "slot": 34
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 41,
+        "fields": {
+            "room": 3,
+            "slot": 35
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 44,
+        "fields": {
+            "room": 2,
+            "slot": 38
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 45,
+        "fields": {
+            "room": 4,
+            "slot": 38
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 46,
+        "fields": {
+            "room": 5,
+            "slot": 39
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 47,
+        "fields": {
+            "room": 2,
+            "slot": 40
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 50,
+        "fields": {
+            "room": 4,
+            "slot": 43
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 51,
+        "fields": {
+            "room": 3,
+            "slot": 44
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 52,
+        "fields": {
+            "room": 2,
+            "slot": 45
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 53,
+        "fields": {
+            "room": 4,
+            "slot": 46
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 54,
+        "fields": {
+            "room": 3,
+            "slot": 47
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 55,
+        "fields": {
+            "room": 2,
+            "slot": 48
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 56,
+        "fields": {
+            "room": 4,
+            "slot": 49
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 57,
+        "fields": {
+            "room": 3,
+            "slot": 50
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 60,
+        "fields": {
+            "room": 3,
+            "slot": 53
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 61,
+        "fields": {
+            "room": 2,
+            "slot": 54
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 62,
+        "fields": {
+            "room": 4,
+            "slot": 55
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 63,
+        "fields": {
+            "room": 5,
+            "slot": 56
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 64,
+        "fields": {
+            "room": 2,
+            "slot": 57
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 65,
+        "fields": {
+            "room": 4,
+            "slot": 58
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 66,
+        "fields": {
+            "room": 3,
+            "slot": 59
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 67,
+        "fields": {
+            "room": 2,
+            "slot": 60
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 68,
+        "fields": {
+            "room": 4,
+            "slot": 61
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 69,
+        "fields": {
+            "room": 3,
+            "slot": 62
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 70,
+        "fields": {
+            "room": 5,
+            "slot": 63
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 71,
+        "fields": {
+            "room": 2,
+            "slot": 64
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 72,
+        "fields": {
+            "room": 4,
+            "slot": 65
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 73,
+        "fields": {
+            "room": 3,
+            "slot": 66
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 74,
+        "fields": {
+            "room": 2,
+            "slot": 67
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 75,
+        "fields": {
+            "room": 4,
+            "slot": 68
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 76,
+        "fields": {
+            "room": 3,
+            "slot": 69
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 77,
+        "fields": {
+            "room": 2,
+            "slot": 70
+        },
+        "model": "symposion_schedule.slotroom"
+    },
+    {
+        "pk": 2,
+        "fields": {
+            "day": 1,
+            "slots": []
+        },
+        "model": "symposion_schedule.session"
+    },
+    {
+        "pk": 3,
+        "fields": {
+            "day": 1,
+            "slots": [
+                4
+            ]
+        },
+        "model": "symposion_schedule.session"
+    }
+]

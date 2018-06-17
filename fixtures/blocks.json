@@ -1,0 +1,265 @@
+[
+    {
+        "model": "blockstuff.col3",
+        "pk": 1,
+        "fields": {
+            "overall_title": "Why You Want to Attend PyBay",
+            "icon_1": "pe-7s-browser",
+            "title_1": "Stay on the cutting edge",
+            "content_1": "<p class=\"lead\">PyBay offers the most influential speakers presenting the most crucial technologies to help beginners and seasoned developers alike get up-to-date quickly. Whether you\u2019re interested in web technologies, data, devops, Python internals, or performance, PyBay will help you stay on top of your game. And if you\u2019re in the SF Bay Area, you\u2019ll avoid travel costs by having the experts come to you!</p>",
+            "icon_2": "pe-7s-share icon-large",
+            "title_2": "Advance your career",
+            "content_2": "<p class=\"lead\">Boost your skills with practical talks during the main conference. Dive deeper with highly respected trainers at pre-conference workshops. Reinforce your knowledge by offering a talk, lightning talk, or Open Space presentation. Connect with our sponsoring companies looking to hire. There\u2019s no shortage of great tech jobs, but there aren\u2019t enough skilled developers to fill them. Be one!</p>",
+            "icon_3": "pe-7s-target icon-large",
+            "title_3": "Code together, laugh together",
+            "content_3": "<p class=\"lead\">PyBay embraces and is inclusive to everyone who is passionate about the technology and doing good. Come out to see who you'd meet. Chat with a Python luminary, mentor or code with a new buddy at the Hacker Lounge, present your passion project at a lightning talk or Open Spaces, take a yoga class or play some tunes under the sun. Feel free to ditch the talks and hang out at the happening \"hallway track\"!</p>",
+            "show_title": true
+        }
+    },
+    {
+        "model": "blockstuff.col3",
+        "pk": 2,
+        "fields": {
+            "overall_title": "Ticket Types",
+            "icon_1": "pe-7s-like2 icon-large",
+            "title_1": "Corporate Pass",
+            "content_1": "<p class=\"lead\">We love employers who support their employees\u2019 continuous education. If your company sends 20% or more of your engineering team or 10 or more developers to PyBay at the corporate rate, we'll feature your company's logo among Python Supporters!</p>",
+            "icon_2": "pe-7s-user icon-large",
+            "title_2": "Individual Pass",
+            "content_2": "<p class=\"lead\">Your employer isn\u2019t reimbursing your attendance at PyBay? &nbsp;You\u2019re on a tight budget or between jobs? &nbsp;Or you\u2019re a student? &nbsp;We've got you covered with individual passes. Make sure you get yours ASAP, as the price goes up as the allotted passes at each price tier sell out.</p>",
+            "icon_3": "",
+            "title_3": "",
+            "content_3": "",
+            "show_title": true
+        }
+    },
+    {
+        "model": "blockstuff.col3",
+        "pk": 3,
+        "fields": {
+            "overall_title": "Registration 2nd line",
+            "icon_1": "pe-7s-tools icon-large",
+            "title_1": "Pre-Conference Workshop",
+            "content_1": "<p class=\"lead\">Want to enhance your conference experience by deep diving with some of the top educators in the Python ecosystem? &nbsp;Or skip the conference altogether and just attend the pre-conference workshops? &nbsp;Passes for full-day and half-day workshops are available \u00e0 la carte.</p>",
+            "icon_2": "pe-7s-timer icon-large",
+            "title_2": "One-Day Pass",
+            "content_2": "<p class=\"lead\">Have too much going on but still want to join in on the fun? &nbsp;Come and geek out with other Pythonistas and attend some talks for just Saturday or Sunday.</p>",
+            "icon_3": "pe-7s-cash icon-large",
+            "title_3": "Work-Trade Pass",
+            "content_3": "<p class=\"lead\">Want to trade your talents for a discounted pass? &nbsp;We have 20 work-trade passes available during the conference, enabling you to pay only 1/3 of the lowest price. We also have pre-conference roles that grant you free entry to the conference. Check out the <a href=\"/faq\">info</a> for reduced or free entry while helping make PyBay a great conference!</p>",
+            "show_title": false
+        }
+    },
+    {
+        "model": "blockstuff.col3",
+        "pk": 4,
+        "fields": {
+            "overall_title": "More on sponsor's benefits",
+            "icon_1": "",
+            "title_1": "<div class=\"heavy-header blue-header\"><h3>A la carte sponsors</h3></div>",
+            "content_1": "<p class=\"lead\">This is a flexible and meaningful way to give back to the community while working within your budget</p>\r\n<li> >$2000 will receive a 20% discount on conference tickets, have their praises sung in tweets and their logo and blurb included on PyBay's website</li>\r\n<li> >$5000 will also be the subject of a blog post about their participation and will have their company recognized before PyBay keynotes</li></p>\r\n<br>\r\n<div class=\"heavy-header blue-header\"><h3>Sponsor Packages</h3></div>\r\n<p class=\"lead\">Gold and Diamond-level sponsors of <b>food</b> will have their company\u2019s contribution recognized on the projector screens before talk starts and their logo printed on the napkins accompanying the sponsored event. The logo of companies sponsoring <b>coffee</b> will be printed on coffee cups.</p>\r\n<p class=\"lead\">Gold-level sponsors of <b>video</b> will have their company\u2019s logo included in the conference talk video\u2019s introduction, and a link to your company\u2019s URL will be included in the talk video\u2019s description on YouTube. SF Python\u2019s YouTube channel has over 4,000 subscribers, and each talk video from past PyBays has received 5,000-20,000+ views.</p>\r\n<p class=\"lead\">Diamond-level sponsors of <b>body workers</b> at your booth will be assigned an extra-large booth. PyBay will provide body workers to offer 20-minute massages to attendees. Sponsors can chat with developers waiting for their turn or ask them to sign up and be messaged when their turn has come.</p>\r\n<p class=\"lead\">Diamond-level sponsors of <b>Company Lounge</b> will have access to an extra large booth to use however you'd like to draw in attendees: hosted talks, office hours with experts, informational interviews, entertainment... imagine your own meetups within PyBay.  This option is ideal for companies with multiple initiatives to connect with Python devs.  Your creativity and budget will be your only limits at your company lounge.</p>",
+            "icon_2": "",
+            "title_2": "",
+            "content_2": "",
+            "icon_3": "",
+            "title_3": "",
+            "content_3": "",
+            "show_title": true
+        }
+    },
+    {
+        "model": "blockstuff.col3",
+        "pk": 5,
+        "fields": {
+            "overall_title": "2nd Row",
+            "icon_1": "pe-7s-micro",
+            "title_1": "A Brand You Can Trust",
+            "content_1": "<p class=\"lead\">\r\nSF Python, the producer of PyBay, has built 150+ popular educational events for Bay Area Python developers over the last 9 years.That's why we\u2019re able to attract some of the best speakers and sponsors, including Microsoft, Google, Yelp, and Bloomberg. Don't miss out on showcasing your company among the best.</p>",
+            "icon_2": "pe-7s-cup",
+            "title_2": "Do More Good",
+            "content_2": "<p class=\"lead\">How are helping ensure the continuing existence of what you benefit from? Your sponsorship is the primary funding for SF Python, a volunteer-run organization with a mission to enhance the Python community and ecosystem in the SF Bay Area. We\u2019ve done a lot already, we can do even more, and we\u2019re asking for your support to 1) make PyBay great 2) increase the diversity of its attendees and 3) cover payroll for 2 people and help defray our operating expenses so that, together, we can do more good.</p>",
+            "icon_3": "",
+            "title_3": "",
+            "content_3": "",
+            "show_title": false
+        }
+    },
+    {
+        "model": "blockstuff.col3",
+        "pk": 6,
+        "fields": {
+            "overall_title": "",
+            "icon_1": "",
+            "title_1": "",
+            "content_1": "",
+            "icon_2": "",
+            "title_2": "",
+            "content_2": "",
+            "icon_3": "",
+            "title_3": "",
+            "content_3": "",
+            "show_title": true
+        }
+    },
+    {
+        "model": "blockstuff.col3",
+        "pk": 7,
+        "fields": {
+            "overall_title": "Call For Proposals 2018",
+            "icon_1": "",
+            "title_1": "Talk Topics",
+            "content_1": "<p>PyBay is a developer-centric conference, focused primarily but not exclusively on the Python language. We'd love to have you share your expertise in:</p>\r\n\r\n<p><ul>\r\n<li><strong>&bull;</strong> Python in the world of data science</li>\r\n<li><strong>&bull;</strong> Machine learning and artificial intelligence with Python</li>\r\n<li><strong>&bull;</strong> Data visualization, data wrangling...</li>\r\n<li><strong>&bull;</strong> DevOps and infrastructure with Python</li>\r\n<li><strong>&bull;</strong> Frameworks and tools</li>\r\n<li><strong>&bull;</strong> High performance, reliable, and scalable applications</li> \r\n<li><strong>&bull;</strong> Core Python language features</li>\r\n<li><strong>&bull;</strong> Programming hardware with Python</li>\r\n<li><strong>&bull;</strong> Building, integrating, or migrating your project using Python</li>\r\n<li><strong>&bull;</strong> The people side of engineering and community</li>\r\n<li><strong>&bull;</strong> Other stuff you're passionate about</li> \r\n</ul></p>\r\n \r\n<p>Feel free to browse <a href=http://www.pybay16.com/schedule-1>2016</a> and <a href=http://2017.pybay.com/schedule.1.html>2017</a> talk lists or watch SF Python's <a href=https://www.youtube.com/channel/UC51aOZF5nnderbuar5D5ifw/videos>talk videos</a> for inspiration.</p>",
+            "icon_2": "",
+            "title_2": "Proposal Guidelines",
+            "content_2": "<p>CFP OPENS: 3/1 | ENDS: 4/21 (11:59pm PST)</p>\r\n<p><ul>\r\n<li><strong>&bull;</strong> Submit up to 3 proposals</li>\r\n<li><strong>&bull;</strong> 25- or 40-minute talks</li>\r\n<li><strong>&bull;</strong> Select the best fit for categories and level</li>\r\n</ul></p>\r\n<p>Your title, description, and abstract should sell your talk to attendees and reviewers.\r\n                                    They should answer the questions:\r\n                                    Why should I attend this talk?\r\n                                    What will I learn?\r\n                                    What makes this a compelling talk?</p>\r\n\r\n<p>We highly value how much the attendees will learn and favor talks that go into details rather than staying at a high level. We also favor talks with a broad appeal vs. a narrow audience. Humor is always a bonus!</p>\r\n\r\n<br>\r\n<a href=\"/speaking-at-pybay\" class=\"btn\">Click here for more info</a>&nbsp;&nbsp;&nbsp;",
+            "icon_3": "",
+            "title_3": "",
+            "content_3": "",
+            "show_title": true
+        }
+    },
+    {
+        "model": "blockstuff.col3",
+        "pk": 8,
+        "fields": {
+            "overall_title": "Topics",
+            "icon_1": "",
+            "title_1": "test",
+            "content_1": "great stuff",
+            "icon_2": "",
+            "title_2": "",
+            "content_2": "",
+            "icon_3": "",
+            "title_3": "",
+            "content_3": "",
+            "show_title": true
+        }
+    },
+    {
+        "model": "gblocks.text",
+        "pk": 3,
+        "fields": {
+            "text": "Test"
+        }
+    },
+    {
+        "model": "gblocks.text",
+        "pk": 4,
+        "fields": {
+            "text": "<span class=\"uppercase text-white\">August 16-17, 2018 <strong>Workshops</strong> | August 18-19, 2018 <strong>Talks</strong><br />San Francisco, California</span>\r\n\r\n<span class=\"h1 video-tagline\">3rd Annual Regional Python Conference for the Community by the Community</span>"
+        }
+    },
+    {
+        "model": "gblocks.text",
+        "pk": 5,
+        "fields": {
+            "text": ""
+        }
+    },
+    {
+        "model": "gblocks.text",
+        "pk": 6,
+        "fields": {
+            "text": "Some of our amazing speakers"
+        }
+    },
+    {
+        "model": "gblocks.text",
+        "pk": 7,
+        "fields": {
+            "text": "Check out the highlights from past PyBays"
+        }
+    },
+    {
+        "model": "gblocks.text",
+        "pk": 8,
+        "fields": {
+            "text": "Memories from Past PyBays"
+        }
+    },
+    {
+        "model": "gblocks.text",
+        "pk": 9,
+        "fields": {
+            "text": "Sponsors Include"
+        }
+    },
+    {
+        "model": "gblocks.text",
+        "pk": 10,
+        "fields": {
+            "text": "Who attended PyBay 2017?"
+        }
+    },
+    {
+        "model": "gblocks.text",
+        "pk": 11,
+        "fields": {
+            "text": "*Data from 450+ registered guests at PyBay 2017"
+        }
+    },
+    {
+        "model": "gblocks.text",
+        "pk": 12,
+        "fields": {
+            "text": "Why Sponsor?"
+        }
+    },
+    {
+        "model": "gblocks.text",
+        "pk": 13,
+        "fields": {
+            "text": "Want to promote your software tools or Python openings to Bay Area's Python Developers at their largest gathering in 2018?"
+        }
+    },
+    {
+        "model": "gblocks.text",
+        "pk": 14,
+        "fields": {
+            "text": "<ul class=\"bulleted text-white\">\r\n<li>500+ Python devs, the largest Python Devs gathering in the Bay Area in 2018</li>\r\n<li>15,000+ eyeballs through pre-conference promotions at SF Python and related Python meetups\u2019 mailing lists</li>\r\n<li>Promote your technical challenges, and network for your next great hire</li>\r\n<li>Drive adoption of your product or technical offerings</li>\r\n<li>Elevate your brand as one of the most innovative and forward thinking in the Python ecosystem</li>\r\n<li>Support SF Python's mission to enhance the Python community and ecosystem in SF Bay Area</li>\r\n</ul>\r\n<br>\r\n<a href=\"mailto:grace@pybay.com?subject=Hi, I want to sponsor PyBay&amp;body=Please include your company name and your budget, wish list, and questions.\" class=\"btn\">Contact us to become a sponsor</a>"
+        }
+    },
+    {
+        "model": "gblocks.text",
+        "pk": 15,
+        "fields": {
+            "text": "<a href=\"mailto:grace@pybay.com?subject=Hi, I want to sponsor PyBay&amp;body=Please include your company name and your budget, wish list, and questions.\" class=\"btn\">Email us with questions</a>   <a href=\"https://drive.google.com/open?id=1IvqybahFZh1r6j_8VU-iJh3GCCiu_fCB\" class=\"btn\">Download Prospectus Here</a>"
+        }
+    },
+    {
+        "model": "gblocks.titletextandimage",
+        "pk": 1,
+        "fields": {
+            "title": "Pre-conference workshops",
+            "text": "<p>Our amazing team at PyBay has sorted out some of the best trainers in the field to help you dive deeper so you really have the skills to be productive and effective from day-one.</p>\r\n\r\n<p>Your a la carte workshop pass will entitle you to the conference opening party on Friday night as well.  But we certainly hope you will decide to join us and share your new found knowledge in the main conference days as well. </p>",
+            "image": "gblocks/workshop2.jpg"
+        }
+    },
+    {
+        "model": "gblocks.titletextandimage",
+        "pk": 2,
+        "fields": {
+            "title": "",
+            "text": "",
+            "image": ""
+        }
+    },
+    {
+        "model": "gblocks.titletextandimage",
+        "pk": 3,
+        "fields": {
+            "title": "Open Spaces",
+            "text": "<p>PyBay 2017 had open spaces - less structured breakout sections</p>\r\n<li>something rather<\\li>\r\n<li>something rather<\\li>\r\n<li>something rather<\\li>\r\n<li>something rather<\\li>",
+            "image": "gblocks/open-spaces.jpg"
+        }
+    },
+    {
+        "model": "gblocks.titletextandimage",
+        "pk": 4,
+        "fields": {
+            "title": "Speaking at PyBay2018",
+            "text": "<p>The Python language and ecosystem are evolving rapidly. Python\u2019s popularity continues to grow at an unprecedented rate, thanks in no small part to the Python core development team, the open-source community, and their partners in the enterprise. New language features and open-source frameworks continue to push the envelope of what can be done with the language. Python projects are being deployed on platforms that were never anticipated -- from server-less to mobile to embedded devices. Vibrant new communities centered around Python and Python-built tools are growing worldwide.</p>\r\n\r\n<p>This year, we\u2019re specifically excited about talks and workshops related to the following themes:</p>\r\n<li>Python Fundamentals and Popular Python Libraries</li>\r\n<li>Machine Learning, AI, and All Things Data</li>\r\n<li>DevOps, Automation, and Testing</li>\r\n<li>Dealing with Speed, Scale, and Performance</li>\r\n<li>Engineering a Community</li>\r\n<li>Hacking Hardware</li>\r\n<br>\r\n<p>We've closed the call for talk proposals on 4/21 but you can still </p>\r\n<a href=\"https://goo.gl/forms/CvlC0QN7FYgBEKl82\" class=\"btn\">Submit your WORKSHOP proposals</a>&nbsp;&nbsp;&nbsp;",
+            "image": "gblocks/IMG_3182.jpg"
+        }
+    }
+]

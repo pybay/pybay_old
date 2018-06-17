@@ -1,0 +1,767 @@
+[
+    {
+        "model": "symposion_schedule.presentation",
+        "pk": 2,
+        "fields": {
+            "slot": null,
+            "title": "How to instantly publish data to the internet with Datasette",
+            "description": "Datasette is a new tool for publishing structured data to the internet, as both a browseable web interface and a flexible JSON API. Aimed at newspapers, cultural institutions and local governments, Datasette makes it easy to publish all kinds of data in a much more powerful format than traditional CSVs. This talk will teach you how to use Datasette and explore the philosophy behind the project.",
+            "description_html": "<p>Datasette is a new tool for publishing structured data to the internet, as both a browseable web interface and a flexible JSON API. Aimed at newspapers, cultural institutions and local governments, Datasette makes it easy to publish all kinds of data in a much more powerful format than traditional CSVs. This talk will teach you how to use Datasette and explore the philosophy behind the project.</p>",
+            "abstract": "https://github.com/simonw/datasette\r\n\r\nDatasette provides an instant, read-only JSON API for any SQLite database. It also provides tools for packaging the database up as a Docker container and instantly deploying that container to a hosting provider.\r\n\r\nThis makes it a powerful tool for sharing interesting data online, in a way that allows users to both explore that data themselves and bulid their own interpretations of the data using the Datasette JSON API.\r\n\r\nIn this session I'll show you how to use Datasette to publish data, and illustrate examples of the exciting things people have already built using the tool. I'll show how Datasette's JSON API can be used to quickly build custom visualizations like https://sf-tree-search.now.sh/\r\n\r\nI'll also talk about the philosophy and design behind Datasette, including how immutable SQLite databases make for a surprisingly scalable solution for serving data on the internet.\r\n\r\nDatasette is built using Python 3 asyncio, and I'll also be discussing some of the asyncio patterns I used to create the tool.",
+            "abstract_html": "<p>https://github.com/simonw/datasette</p>\n<p>Datasette provides an instant, read-only JSON API for any SQLite database. It also provides tools for packaging the database up as a Docker container and instantly deploying that container to a hosting provider.</p>\n<p>This makes it a powerful tool for sharing interesting data online, in a way that allows users to both explore that data themselves and bulid their own interpretations of the data using the Datasette JSON API.</p>\n<p>In this session I'll show you how to use Datasette to publish data, and illustrate examples of the exciting things people have already built using the tool. I'll show how Datasette's JSON API can be used to quickly build custom visualizations like https://sf-tree-search.now.sh/</p>\n<p>I'll also talk about the philosophy and design behind Datasette, including how immutable SQLite databases make for a surprisingly scalable solution for serving data on the internet.</p>\n<p>Datasette is built using Python 3 asyncio, and I'll also be discussing some of the asyncio patterns I used to create the tool.</p>",
+            "speaker": 9,
+            "cancelled": false,
+            "proposal_base": 7,
+            "section": 2,
+            "additional_speakers": []
+        }
+    },
+    {
+        "model": "symposion_schedule.presentation",
+        "pk": 3,
+        "fields": {
+            "slot": null,
+            "title": "Make the most out of static typing",
+            "description": "While static type checkers like mypy are great for producing more reliable code, subtle tweaks to how we model our data can make static typing far more useful and effective at preventing bugs.",
+            "description_html": "<p>While static type checkers like mypy are great for producing more reliable code, subtle tweaks to how we model our data can make static typing far more useful and effective at preventing bugs.</p>",
+            "abstract": "This talk dives into some techniques that can be used to make the most out of static typing in Python. It covers some of the subtle tweaks to how we model our data that can improve code quality and reliability, and also touches on some slightly more advanced uses of mypy.",
+            "abstract_html": "<p>This talk dives into some techniques that can be used to make the most out of static typing in Python. It covers some of the subtle tweaks to how we model our data that can improve code quality and reliability, and also touches on some slightly more advanced uses of mypy.</p>",
+            "speaker": 10,
+            "cancelled": false,
+            "proposal_base": 8,
+            "section": 2,
+            "additional_speakers": []
+        }
+    },
+    {
+        "model": "symposion_schedule.presentation",
+        "pk": 4,
+        "fields": {
+            "slot": 1,
+            "title": "defeating sauron with python",
+            "description": "we must destroy the dark lord",
+            "description_html": "<p>we must destroy the dark lord</p>",
+            "abstract": "blah",
+            "abstract_html": "<p>blah</p>",
+            "speaker": 5,
+            "cancelled": false,
+            "proposal_base": 4,
+            "section": 2,
+            "additional_speakers": []
+        }
+    },
+    {
+        "model": "symposion_schedule.presentation",
+        "pk": 5,
+        "fields": {
+            "slot": 2,
+            "title": "Robot Nitpicks",
+            "description": "Ever had a code review that was nothing more than nitpicking?\r\nEver gave one?\r\nNitpicks do not foster good relationships,\r\nbut code consistency is good to have.\r\nLet the robots nitpick for you,\r\nand have interesting discussions about code instead!",
+            "description_html": "<p>Ever had a code review that was nothing more than nitpicking?\nEver gave one?\nNitpicks do not foster good relationships,\nbut code consistency is good to have.\nLet the robots nitpick for you,\nand have interesting discussions about code instead!</p>",
+            "abstract": "Nitpicking in code review is often as annoying for the reviewer as it is for the submitter, and tends to cause social friction. Using the modern Python static analysis toolbox -- PyLint, flake8, MyPy and more -- it is possible to leave the nitpicks to automated processes.\r\n\r\nThis frees up human reviewer time for important work, like checking that the code is clear and effective -- while letting the nitpicks not just *be* objective and impartial, but be so in a verifiable way.",
+            "abstract_html": "<p>Nitpicking in code review is often as annoying for the reviewer as it is for the submitter, and tends to cause social friction. Using the modern Python static analysis toolbox -- PyLint, flake8, MyPy and more -- it is possible to leave the nitpicks to automated processes.</p>\n<p>This frees up human reviewer time for important work, like checking that the code is clear and effective -- while letting the nitpicks not just <em>be</em> objective and impartial, but be so in a verifiable way.</p>",
+            "speaker": 11,
+            "cancelled": false,
+            "proposal_base": 9,
+            "section": 2,
+            "additional_speakers": []
+        }
+    },
+    {
+        "model": "symposion_schedule.presentation",
+        "pk": 6,
+        "fields": {
+            "slot": null,
+            "title": "Ask Alexa: How do I create my first Alexa skill?",
+            "description": "Have you ever asked Alexa to play a song, asked Siri for a restaurant recommendation, or asked OK Google for a stock price?  Digital personal assistants are becoming increasingly ubiquitous.  If you\u2019ve ever wondered how you can get started on customizing your digital personal assistant, this talk is for you!  We will walk through how to create a basic Alexa skill, test it, and publish it.",
+            "description_html": "<p>Have you ever asked Alexa to play a song, asked Siri for a restaurant recommendation, or asked OK Google for a stock price?  Digital personal assistants are becoming increasingly ubiquitous.  If you\u2019ve ever wondered how you can get started on customizing your digital personal assistant, this talk is for you!  We will walk through how to create a basic Alexa skill, test it, and publish it.</p>",
+            "abstract": "We will walk through how to create a basic Alexa skill.  We will walk through the process of using the Alexa Skills Kit to build a voice user interface (VUI) and creating a backend AWS Lambda function in Python.  We will also talk about how to test and publish your skill.",
+            "abstract_html": "<p>We will walk through how to create a basic Alexa skill.  We will walk through the process of using the Alexa Skills Kit to build a voice user interface (VUI) and creating a backend AWS Lambda function in Python.  We will also talk about how to test and publish your skill.</p>",
+            "speaker": 127,
+            "cancelled": false,
+            "proposal_base": 156,
+            "section": 2,
+            "additional_speakers": []
+        }
+    },
+    {
+        "model": "symposion_schedule.presentation",
+        "pk": 7,
+        "fields": {
+            "slot": null,
+            "title": "Getting started with Deep Learning: Using Keras & Numpy to detect voice disorders",
+            "description": "This talk is for Python programmers who want to learn how to use Keras to get started with deep learning. The audience should expect to learn what deep learning is, develop an intuitive understanding of how it works, and learn how to avoid some common mistakes. All of this is done via a recurring example, using utterance data to determine whether a medical patient might have a voice disorder.",
+            "description_html": "<p>This talk is for Python programmers who want to learn how to use Keras to get started with deep learning. The audience should expect to learn what deep learning is, develop an intuitive understanding of how it works, and learn how to avoid some common mistakes. All of this is done via a recurring example, using utterance data to determine whether a medical patient might have a voice disorder.</p>",
+            "abstract": "Deep learning is a useful tool for problems in computer vision, natural language processing, and medicine. While it might seem difficult to get started in deep learning, Python libraries, such as Keras make deep learning quite accessible. In this talk, we will discuss what deep learning is, introduce NumPy and Keras, and discuss common mistakes and debugging strategies. Throughout the talk, we will return to an example project in the medical domain, which used deep learning on vocal data to determine whether a patient has a voice disorder called vocal hyperfunction.",
+            "abstract_html": "<p>Deep learning is a useful tool for problems in computer vision, natural language processing, and medicine. While it might seem difficult to get started in deep learning, Python libraries, such as Keras make deep learning quite accessible. In this talk, we will discuss what deep learning is, introduce NumPy and Keras, and discuss common mistakes and debugging strategies. Throughout the talk, we will return to an example project in the medical domain, which used deep learning on vocal data to determine whether a patient has a voice disorder called vocal hyperfunction.</p>",
+            "speaker": 63,
+            "cancelled": false,
+            "proposal_base": 76,
+            "section": 2,
+            "additional_speakers": []
+        }
+    },
+    {
+        "model": "symposion_schedule.presentation",
+        "pk": 8,
+        "fields": {
+            "slot": null,
+            "title": "Production-Ready Python applications",
+            "description": "This session is for anyone in the audience who wants to, or does write Python applications that run in production environments. No specific knowledge is required here, however any knowledge of operating a production service would be useful.",
+            "description_html": "<p>This session is for anyone in the audience who wants to, or does write Python applications that run in production environments. No specific knowledge is required here, however any knowledge of operating a production service would be useful.</p>",
+            "abstract": "In 2016, Susan Fowler released the 'Production Ready Microservices' book. This book sets an industry benchmark on explaining how microservices should be conceived, all the way through to documentation. So how does this translate for Python applications? This session will explore how to expertly deploy your Python microservice to production.",
+            "abstract_html": "<p>In 2016, Susan Fowler released the 'Production Ready Microservices' book. This book sets an industry benchmark on explaining how microservices should be conceived, all the way through to documentation. So how does this translate for Python applications? This session will explore how to expertly deploy your Python microservice to production.</p>",
+            "speaker": 25,
+            "cancelled": false,
+            "proposal_base": 28,
+            "section": 2,
+            "additional_speakers": []
+        }
+    },
+    {
+        "model": "symposion_schedule.presentation",
+        "pk": 9,
+        "fields": {
+            "slot": null,
+            "title": "Recent advances in Deep Learning and Tensorflow",
+            "description": "A whirlwind tour of all the latest developments in the world ranging from applications in healthcare, natural language processing, reinforcement learning and machine learning infrastructure.",
+            "description_html": "<p>A whirlwind tour of all the latest developments in the world ranging from applications in healthcare, natural language processing, reinforcement learning and machine learning infrastructure.</p>",
+            "abstract": "Deep learning has been tremendously successful in variety of fields and in such a rapidly growing field it can be hard to keep up with the latest advances in the field. In this talk, we'll try to address that give you a quick overview of what is going on in the field by talking about latest results on different applications of deep learning. Topics covered could include Tensorflow, Retina scans, Cloud TPUs, Meta learning etc.",
+            "abstract_html": "<p>Deep learning has been tremendously successful in variety of fields and in such a rapidly growing field it can be hard to keep up with the latest advances in the field. In this talk, we'll try to address that give you a quick overview of what is going on in the field by talking about latest results on different applications of deep learning. Topics covered could include Tensorflow, Retina scans, Cloud TPUs, Meta learning etc.</p>",
+            "speaker": 67,
+            "cancelled": false,
+            "proposal_base": 82,
+            "section": 2,
+            "additional_speakers": []
+        }
+    },
+    {
+        "model": "symposion_schedule.presentation",
+        "pk": 10,
+        "fields": {
+            "slot": null,
+            "title": "Detecting business chains at scale with PySpark and machine learning",
+            "description": "You\u2019re driving to Tahoe for the slopes. What\u2019s the one thing more important than the snow report? Of course, where the nearest In-N-Out is!\r\n\r\nYelp has a special chain search for all your guilty pleasures, powered by our Chain Detector system that we just rearchitected\r\n\r\nLearn how we leveraged Spark on AWS and py3, moving away from Redshift+py27, for better scalability and maintainability",
+            "description_html": "<p>You\u2019re driving to Tahoe for the slopes. What\u2019s the one thing more important than the snow report? Of course, where the nearest In-N-Out is!</p>\n<p>Yelp has a special chain search for all your guilty pleasures, powered by our Chain Detector system that we just rearchitected</p>\n<p>Learn how we leveraged Spark on AWS and py3, moving away from Redshift+py27, for better scalability and maintainability</p>",
+            "abstract": "Chain Detector is a system at Yelp that automatically detects all chain businesses in the world. It is an important data set that helps us deliver a special user experience in search (\u201cShow me all the Philz Coffee locations in San Francisco\u201d). It also powers an API for these chains to understand what users are saying about them across all of their locations.\r\n\r\nThe application needs to make many complicated transformations and aggregations on all of our business data and put these through a machine learning classifier to come up with the final data set. It is a hard problem because you often deal with imperfect data. For example, you may have many Super Duper listings, and another named \u201cSuper Duper Burgers\u201d. Should they all be classified as the same chain?\r\n \r\nThe original system was built in Python 2.7 and relied on Redshift to execute massively parallelized queries. This wasn\u2019t fast enough and also used 3rd party Python 2.7 libraries to parallelize the Redshift queries even further.\r\n\r\nThis made the optimization logic heavily embedded with the application logic, so it was difficult to reason about the core algorithm. It also relied on too many unit tests mocking out Redshift calls, thus more prone to regressions and mocks that are tedious to maintain. Integration testing with Redshift is not ideal because you cannot readily sandbox clusters and only one developer can run tests at a time.\r\n\r\nWe explored Spark, a fast growing technology at Yelp, and after being impressed with prototypes, we rearchitected the rest of the system to use Spark instead of Redshift for all the data manipulation and machine learning. We were able to do this while keeping the application logic in tact with no regressions, and while upgrading to Python 3.6 in the process!\r\n\r\nSpark allowed us to naturally express the data manipulations and the core algorithm. And by using Spark and setting up proper file system abstractions, it also enabled us to do local stateless end-to-end testing in pytest -- no more mocking in unit tests! The application is also 4x faster.  However, we faced many challenges because some Python code is not compatible with the Spark paradigm and it can be tricky to get your dependencies setup to be compatible to run on AWS.\r\n\r\nOverall, we now have a faster, more modern and maintainable system that has solved our infrastructure issues. In addition, it has allowed us to safely add new features, such as supporting custom overrides from an admin through a UI, and ensure the final data set is still computed correctly.",
+            "abstract_html": "<p>Chain Detector is a system at Yelp that automatically detects all chain businesses in the world. It is an important data set that helps us deliver a special user experience in search (\u201cShow me all the Philz Coffee locations in San Francisco\u201d). It also powers an API for these chains to understand what users are saying about them across all of their locations.</p>\n<p>The application needs to make many complicated transformations and aggregations on all of our business data and put these through a machine learning classifier to come up with the final data set. It is a hard problem because you often deal with imperfect data. For example, you may have many Super Duper listings, and another named \u201cSuper Duper Burgers\u201d. Should they all be classified as the same chain?</p>\n<p>The original system was built in Python 2.7 and relied on Redshift to execute massively parallelized queries. This wasn\u2019t fast enough and also used 3rd party Python 2.7 libraries to parallelize the Redshift queries even further.</p>\n<p>This made the optimization logic heavily embedded with the application logic, so it was difficult to reason about the core algorithm. It also relied on too many unit tests mocking out Redshift calls, thus more prone to regressions and mocks that are tedious to maintain. Integration testing with Redshift is not ideal because you cannot readily sandbox clusters and only one developer can run tests at a time.</p>\n<p>We explored Spark, a fast growing technology at Yelp, and after being impressed with prototypes, we rearchitected the rest of the system to use Spark instead of Redshift for all the data manipulation and machine learning. We were able to do this while keeping the application logic in tact with no regressions, and while upgrading to Python 3.6 in the process!</p>\n<p>Spark allowed us to naturally express the data manipulations and the core algorithm. And by using Spark and setting up proper file system abstractions, it also enabled us to do local stateless end-to-end testing in pytest -- no more mocking in unit tests! The application is also 4x faster.  However, we faced many challenges because some Python code is not compatible with the Spark paradigm and it can be tricky to get your dependencies setup to be compatible to run on AWS.</p>\n<p>Overall, we now have a faster, more modern and maintainable system that has solved our infrastructure issues. In addition, it has allowed us to safely add new features, such as supporting custom overrides from an admin through a UI, and ensure the final data set is still computed correctly.</p>",
+            "speaker": 108,
+            "cancelled": false,
+            "proposal_base": 133,
+            "section": 2,
+            "additional_speakers": []
+        }
+    },
+    {
+        "model": "symposion_schedule.presentation",
+        "pk": 11,
+        "fields": {
+            "slot": null,
+            "title": "Service Testing with Apache Airflow",
+            "description": "End-to-end (E2E) testing is a critical step in the testing pyramid to ensure features powered by multiple services are shipped with high quality. To make it easier at Optimizely, we\u2019ve turned to Apache Airflow\u2014a framework that makes it easy to manage complex workflows. In this talk, we\u2019ll share a pattern we use to test our services end-to-end on top of Airflow and how you can easily adopt it!",
+            "description_html": "<p>End-to-end (E2E) testing is a critical step in the testing pyramid to ensure features powered by multiple services are shipped with high quality. To make it easier at Optimizely, we\u2019ve turned to Apache Airflow\u2014a framework that makes it easy to manage complex workflows. In this talk, we\u2019ll share a pattern we use to test our services end-to-end on top of Airflow and how you can easily adopt it!</p>",
+            "abstract": "Shipping quality software is hard for so many reasons. As engineers, we try our best to ship the best code we can and use frameworks like the testing pyramid to increase our confidence that we are. While unit tests are usually easy to write and integration tests are easy-ish to write, the final frontier of end-to-end (E2E) tests is much more difficult to develop. Despite their difficulty, E2E tests are critical to ensuring features are built in a way that meets users\u2019 needs at launch and during its lifetime.\r\n\r\nIn a services-oriented architecture, E2E tests become even more difficult to write because services tend to be owned by different teams. We reached this problem at Optimizely when we wanted to have rock-solid quality over counting impressions, which we use for billing our customers\u2014so it\u2019s pretty important we get that right and have confidence that it\u2019s always right.\r\n\r\nThe services we relied on surfaced APIs, and in the end, it\u2019s all data, so we thought: what if we use Apache Airflow to make this easy to write, understand, monitor and schedule? Our intuition was accurate and today we use this system to ensure changes to our counting logic do not cause regressions and provide a bad experience for our customers.\r\n\r\nAirflow defines workflows as directed acyclic graphs (DAGs). By defining a test step as a node in the DAG, we\u2019re able to more easily debug independent failures and can share these steps across teams to reduce maintenance and communication overhead\r\n\r\nWe\u2019re excited by this pattern we\u2019ve been using for more than 6 months because it has proven itself invaluable for us by helping catch critical bugs before they happen. More so, we can extend the same test as a monitor by running on a timer post-production. We hope this simple pattern proves useful and makes E2E testing easier for you too!\r\n\r\nAs an outline, this talk will cover:\r\n0 - 2 min: Why E2E testing is important but hard to implement\r\n2 - 4 min: An introduction to Apache Airflow\r\n4 - 5 min: How Apache Airflow workflows map to E2E tests\r\n5 - 8 min: How to write a simple end-to-test using Airflow\r\n8 - 10 min: The benefits of writing E2E tests this way for the debugger and the tester\r\n10 -16 min: Scaling this pattern across teams by sharing the DAG, not the code\r\n16 - 18 min: Using the same E2E test to also monitor in production\r\n18 - 20 min: Conclusion and wrap-up\r\n20 - 25 min: Open for questions",
+            "abstract_html": "<p>Shipping quality software is hard for so many reasons. As engineers, we try our best to ship the best code we can and use frameworks like the testing pyramid to increase our confidence that we are. While unit tests are usually easy to write and integration tests are easy-ish to write, the final frontier of end-to-end (E2E) tests is much more difficult to develop. Despite their difficulty, E2E tests are critical to ensuring features are built in a way that meets users\u2019 needs at launch and during its lifetime.</p>\n<p>In a services-oriented architecture, E2E tests become even more difficult to write because services tend to be owned by different teams. We reached this problem at Optimizely when we wanted to have rock-solid quality over counting impressions, which we use for billing our customers\u2014so it\u2019s pretty important we get that right and have confidence that it\u2019s always right.</p>\n<p>The services we relied on surfaced APIs, and in the end, it\u2019s all data, so we thought: what if we use Apache Airflow to make this easy to write, understand, monitor and schedule? Our intuition was accurate and today we use this system to ensure changes to our counting logic do not cause regressions and provide a bad experience for our customers.</p>\n<p>Airflow defines workflows as directed acyclic graphs (DAGs). By defining a test step as a node in the DAG, we\u2019re able to more easily debug independent failures and can share these steps across teams to reduce maintenance and communication overhead</p>\n<p>We\u2019re excited by this pattern we\u2019ve been using for more than 6 months because it has proven itself invaluable for us by helping catch critical bugs before they happen. More so, we can extend the same test as a monitor by running on a timer post-production. We hope this simple pattern proves useful and makes E2E testing easier for you too!</p>\n<p>As an outline, this talk will cover:\n0 - 2 min: Why E2E testing is important but hard to implement\n2 - 4 min: An introduction to Apache Airflow\n4 - 5 min: How Apache Airflow workflows map to E2E tests\n5 - 8 min: How to write a simple end-to-test using Airflow\n8 - 10 min: The benefits of writing E2E tests this way for the debugger and the tester\n10 -16 min: Scaling this pattern across teams by sharing the DAG, not the code\n16 - 18 min: Using the same E2E test to also monitor in production\n18 - 20 min: Conclusion and wrap-up\n20 - 25 min: Open for questions</p>",
+            "speaker": 122,
+            "cancelled": false,
+            "proposal_base": 148,
+            "section": 2,
+            "additional_speakers": []
+        }
+    },
+    {
+        "model": "symposion_schedule.presentation",
+        "pk": 12,
+        "fields": {
+            "slot": 11,
+            "title": "Cooperative context switching in the cloud, or how to make a multi-tenant microservice",
+            "description": "How to convert an on-prem library to a multitenant application. This talk will demystify cooperative co-routines with a practical real world example.",
+            "description_html": "<p>How to convert an on-prem library to a multitenant application. This talk will demystify cooperative co-routines with a practical real world example.</p>",
+            "abstract": "How do you provide a multi-tenant cloud service when each customer has a significantly different context for each request? On premise applications only have to worry about one customer. When you move to the cloud, now you have to handle requests from many customers, using the same architecture & API. This talk will cover how we leveraged the gevent library, cooperative co-routines, and a microservice architecture to create an efficient solution for multi-tenant context dependent request handling.",
+            "abstract_html": "<p>How do you provide a multi-tenant cloud service when each customer has a significantly different context for each request? On premise applications only have to worry about one customer. When you move to the cloud, now you have to handle requests from many customers, using the same architecture &amp; API. This talk will cover how we leveraged the gevent library, cooperative co-routines, and a microservice architecture to create an efficient solution for multi-tenant context dependent request handling.</p>",
+            "speaker": 87,
+            "cancelled": false,
+            "proposal_base": 107,
+            "section": 2,
+            "additional_speakers": []
+        }
+    },
+    {
+        "model": "symposion_schedule.presentation",
+        "pk": 13,
+        "fields": {
+            "slot": null,
+            "title": "Finding Vulnerabilities for Free: The Magic of Static Analysis",
+            "description": "Are you a website or application developer? Interested about security or compilers?\r\n\r\nIn this talk we will walk through how to automatically find vulnerabilities in web applications with static analysis. Most of what will be presented here is based on a tool called PyT already open-source on GitHub. This talk will lightly cover topics such as web application security and data-flow analysis.",
+            "description_html": "<p>Are you a website or application developer? Interested about security or compilers?</p>\n<p>In this talk we will walk through how to automatically find vulnerabilities in web applications with static analysis. Most of what will be presented here is based on a tool called PyT already open-source on GitHub. This talk will lightly cover topics such as web application security and data-flow analysis.</p>",
+            "abstract": "Many vulnerability classes in web applications share the same pattern of something coming from a 'source' (HTTP request) and eventually getting put in a 'sink' (SQL query), through the power of data-flow analysis, we can easily find them. This talk will walk through the architecture, techniques and past evaluations of an open-source security static analysis tool available at at https://github.com/python-security/pyt We will also talk about alternative approaches and more advanced techniques for reducing false-positives.",
+            "abstract_html": "<p>Many vulnerability classes in web applications share the same pattern of something coming from a 'source' (HTTP request) and eventually getting put in a 'sink' (SQL query), through the power of data-flow analysis, we can easily find them. This talk will walk through the architecture, techniques and past evaluations of an open-source security static analysis tool available at at https://github.com/python-security/pyt We will also talk about alternative approaches and more advanced techniques for reducing false-positives.</p>",
+            "speaker": 50,
+            "cancelled": false,
+            "proposal_base": 62,
+            "section": 2,
+            "additional_speakers": []
+        }
+    },
+    {
+        "model": "symposion_schedule.presentation",
+        "pk": 14,
+        "fields": {
+            "slot": 10,
+            "title": "Robots, Biology and Unsupervised Model Selection",
+            "description": "Zymergen combines robotics, software, and biology to improve microbial strains predictably and reliably. Robots can perform hundreds of experiments in parallel, and our analytical automation cleans and processes those data in near real-time. I present an end-to-end approach, in Python, for model selection, with an emphasis on parameter tuning, for unsupervised outlier detection algorithms.",
+            "description_html": "<p>Zymergen combines robotics, software, and biology to improve microbial strains predictably and reliably. Robots can perform hundreds of experiments in parallel, and our analytical automation cleans and processes those data in near real-time. I present an end-to-end approach, in Python, for model selection, with an emphasis on parameter tuning, for unsupervised outlier detection algorithms.</p>",
+            "abstract": "At Zymergen we integrate robotics, software and biology to provide predictability and reliability to the process of rapidly improving microbial strains through genetic engineering.  One critical part of this process is rapid, robust and useful processing of data to provide scientists with the information they need to make the next round of changes and decide which strains to promote.   Robots can perform hundreds of experiments in parallel, and our analytical automation cleans and processes those data in near real-time.  A first step is to identify outliers that arise in the data due to multiple opportunities for process failure, and with this comes the challenges of modeling outliers, selecting a model, and tuning parameters for these models.  In Robots, Biology and Unsupervised Model Selection, I present an end-to-end approach, in python, for parameter tuning unsupervised outlier detection algorithms.  This problem is well studied for supervised and even semi-supervised (labels are human evaluation) anomaly and outlier detection algorithms, but there are few resources readily available when it comes to unsupervised algorithms in this arena.",
+            "abstract_html": "<p>At Zymergen we integrate robotics, software and biology to provide predictability and reliability to the process of rapidly improving microbial strains through genetic engineering.  One critical part of this process is rapid, robust and useful processing of data to provide scientists with the information they need to make the next round of changes and decide which strains to promote.   Robots can perform hundreds of experiments in parallel, and our analytical automation cleans and processes those data in near real-time.  A first step is to identify outliers that arise in the data due to multiple opportunities for process failure, and with this comes the challenges of modeling outliers, selecting a model, and tuning parameters for these models.  In Robots, Biology and Unsupervised Model Selection, I present an end-to-end approach, in python, for parameter tuning unsupervised outlier detection algorithms.  This problem is well studied for supervised and even semi-supervised (labels are human evaluation) anomaly and outlier detection algorithms, but there are few resources readily available when it comes to unsupervised algorithms in this arena.</p>",
+            "speaker": 20,
+            "cancelled": false,
+            "proposal_base": 23,
+            "section": 2,
+            "additional_speakers": []
+        }
+    },
+    {
+        "model": "symposion_schedule.presentation",
+        "pk": 15,
+        "fields": {
+            "slot": null,
+            "title": "From Batching to Streaming: A challenging migration tale",
+            "description": "Making decisions around data infrastructure investments are never easy. We faced similar challenges at Yelp when we decided to replace our batch ETL system with our streaming Data Pipeline. In this session, we\u2019ll discuss our decision-making process and share lessons learned along the way so that you can apply them when confronted with similar challenges.",
+            "description_html": "<p>Making decisions around data infrastructure investments are never easy. We faced similar challenges at Yelp when we decided to replace our batch ETL system with our streaming Data Pipeline. In this session, we\u2019ll discuss our decision-making process and share lessons learned along the way so that you can apply them when confronted with similar challenges.</p>",
+            "abstract": "In 2011, we wrote an extract-transform-load system (ETL) to move data to our then newly created Data Warehouse. The system worked very well until about 2015 when it failed to handle our rapidly increasing datasets and our growing business needs. We realized that our data infrastructure needed to change -- and fast. This talk will walk you through the challenges we faced and provide a retrospective take on the lessons we learned along the way, covering questions like:\r\nAt what point should you seriously start thinking about the architecture of your data infrastructure?\r\nHow do you decide which technology investments are the right investments for you?\r\nHow do you get organizational buy-in on your new approach?\r\nTo open source or not to open source?\r\nHow do you balance rolling out the new system, while continuing to manage the old system?",
+            "abstract_html": "<p>In 2011, we wrote an extract-transform-load system (ETL) to move data to our then newly created Data Warehouse. The system worked very well until about 2015 when it failed to handle our rapidly increasing datasets and our growing business needs. We realized that our data infrastructure needed to change -- and fast. This talk will walk you through the challenges we faced and provide a retrospective take on the lessons we learned along the way, covering questions like:\nAt what point should you seriously start thinking about the architecture of your data infrastructure?\nHow do you decide which technology investments are the right investments for you?\nHow do you get organizational buy-in on your new approach?\nTo open source or not to open source?\nHow do you balance rolling out the new system, while continuing to manage the old system?</p>",
+            "speaker": 136,
+            "cancelled": false,
+            "proposal_base": 168,
+            "section": 2,
+            "additional_speakers": []
+        }
+    },
+    {
+        "model": "symposion_schedule.presentation",
+        "pk": 16,
+        "fields": {
+            "slot": null,
+            "title": "Tools to manage large Python codebases",
+            "description": "In this talk, you will learn about a variety of open source projects that will help you maintain & scale Python codebases. We will dive deep into best practices surrounding these tools and how you can set them up in new & existing Python codebases.",
+            "description_html": "<p>In this talk, you will learn about a variety of open source projects that will help you maintain &amp; scale Python codebases. We will dive deep into best practices surrounding these tools and how you can set them up in new &amp; existing Python codebases.</p>",
+            "abstract": "Managing a large Python codebase can be difficult. Without the right tools setup, many projects find it difficult to maintain a high level of code quality with few bugs.\r\n\r\nIn this talk, you will learn about a variety of open source projects that will help you maintain & scale Python codebases. Tools discussed include isort, flake8, pip-tools, Coverage.py, pre-commit, python-dotenv & more.",
+            "abstract_html": "<p>Managing a large Python codebase can be difficult. Without the right tools setup, many projects find it difficult to maintain a high level of code quality with few bugs.</p>\n<p>In this talk, you will learn about a variety of open source projects that will help you maintain &amp; scale Python codebases. Tools discussed include isort, flake8, pip-tools, Coverage.py, pre-commit, python-dotenv &amp; more.</p>",
+            "speaker": 64,
+            "cancelled": false,
+            "proposal_base": 77,
+            "section": 2,
+            "additional_speakers": []
+        }
+    },
+    {
+        "model": "symposion_schedule.presentation",
+        "pk": 17,
+        "fields": {
+            "slot": null,
+            "title": "Serverless for data scientists",
+            "description": "Working in the cloud means you don\u2019t have to deal with hardware. The goal of \"serverless\" is to also avoid dealing with operating systems. It offers instances that run for the duration of a single function call. These instances have limitations, but a lot of what data scientists do is a perfect fit for this new world! That\u2019s what this talk is about.",
+            "description_html": "<p>Working in the cloud means you don\u2019t have to deal with hardware. The goal of \"serverless\" is to also avoid dealing with operating systems. It offers instances that run for the duration of a single function call. These instances have limitations, but a lot of what data scientists do is a perfect fit for this new world! That\u2019s what this talk is about.</p>",
+            "abstract": "In this talk we'll first see the basic idea behind serverless and learn how to deploy a very simple web application to AWS Lambda using Zappa. We'll then look in detail at the \"embarrassingly parallel\" problems where serverless really shines for data scientists. In particular we'll take a look at PyWren, an ultra-lightweight alternative to heavy big data distributed systems such as Spark. We'll learn how PyWren uses AWS Lambda as its computational backend to churn through huge analytics tasks. PyWren opens up big data to mere mortal data scientists who don't have the budget or engineering support for a long-lived cluster.",
+            "abstract_html": "<p>In this talk we'll first see the basic idea behind serverless and learn how to deploy a very simple web application to AWS Lambda using Zappa. We'll then look in detail at the \"embarrassingly parallel\" problems where serverless really shines for data scientists. In particular we'll take a look at PyWren, an ultra-lightweight alternative to heavy big data distributed systems such as Spark. We'll learn how PyWren uses AWS Lambda as its computational backend to churn through huge analytics tasks. PyWren opens up big data to mere mortal data scientists who don't have the budget or engineering support for a long-lived cluster.</p>",
+            "speaker": 19,
+            "cancelled": false,
+            "proposal_base": 22,
+            "section": 2,
+            "additional_speakers": []
+        }
+    },
+    {
+        "model": "symposion_schedule.presentation",
+        "pk": 18,
+        "fields": {
+            "slot": null,
+            "title": "Building Google Assistant Apps with Python",
+            "description": "The Google Assistant platform is already available on a majority of Android smart phones and accessible also on iOS and other devices like the Google Home. This talk will demonstrate the process of developing a Google Assistant app using Python. Lastly, the talk will showcase a variety of Python libraries you can integrate to help with natural language processing in your voice app.",
+            "description_html": "<p>The Google Assistant platform is already available on a majority of Android smart phones and accessible also on iOS and other devices like the Google Home. This talk will demonstrate the process of developing a Google Assistant app using Python. Lastly, the talk will showcase a variety of Python libraries you can integrate to help with natural language processing in your voice app.</p>",
+            "abstract": "Google Assistant is a new voice platform that allows you to build apps that are only a spoken keyword away on a majority of smart phones and other devices. This talk will introduce you to Google Assistant apps and how to build them with Python.",
+            "abstract_html": "<p>Google Assistant is a new voice platform that allows you to build apps that are only a spoken keyword away on a majority of smart phones and other devices. This talk will introduce you to Google Assistant apps and how to build them with Python.</p>",
+            "speaker": 17,
+            "cancelled": false,
+            "proposal_base": 18,
+            "section": 2,
+            "additional_speakers": []
+        }
+    },
+    {
+        "model": "symposion_schedule.presentation",
+        "pk": 19,
+        "fields": {
+            "slot": null,
+            "title": "Automated responses to questions about your health",
+            "description": "Have you ever searched online for some healthy issue? With Tensorflow models built from freely available data, and utilizing a domain specific ontology, learn how to bootstrapped a solution for automatically responding to the types questions you might ask on Google but need a more specific medical response.",
+            "description_html": "<p>Have you ever searched online for some healthy issue? With Tensorflow models built from freely available data, and utilizing a domain specific ontology, learn how to bootstrapped a solution for automatically responding to the types questions you might ask on Google but need a more specific medical response.</p>",
+            "abstract": "Have you ever searched online for some healthy issue? Chances are you gained little meaningful information from your search and perhaps made your doctor\u2019s life that much harder when you went into their office with your newfound \u201cknowledge\u201d. With Tensorflow models built from freely available data, and utilizing a domain specific ontology, attendees will learn how to bootstrapped a solution for automatically responding to the types questions you might ask on Google but need a more specific medical response.\r\n\r\nUsing the open source Python library Tensorflow, I will go over the steps I took to create a model that generates medical answers to healthcare questions. The talk will discuss how to frame your machine learning project so that your time and efforts are rewarded with valuable insights that you can report to your team. Technical details such as model performance, choice of deep learning library and design as well as the basics of acquiring good data and cleaning it will be covered. Also covered will be healthcare industry specific challenges in natural language processing and what effort is necessary to create a question/answer system that produces meaningful results\r\n\r\nMore specifically it will touch on:\r\n- Entity extraction\r\n- Automated ontology generation\r\n- Building training sets locally and on cloud\r\n- Speaker recognition\r\n- Sentiment analysis\r\n- Speed comparisons between Tensorflow, Keras and PyTorch",
+            "abstract_html": "<p>Have you ever searched online for some healthy issue? Chances are you gained little meaningful information from your search and perhaps made your doctor\u2019s life that much harder when you went into their office with your newfound \u201cknowledge\u201d. With Tensorflow models built from freely available data, and utilizing a domain specific ontology, attendees will learn how to bootstrapped a solution for automatically responding to the types questions you might ask on Google but need a more specific medical response.</p>\n<p>Using the open source Python library Tensorflow, I will go over the steps I took to create a model that generates medical answers to healthcare questions. The talk will discuss how to frame your machine learning project so that your time and efforts are rewarded with valuable insights that you can report to your team. Technical details such as model performance, choice of deep learning library and design as well as the basics of acquiring good data and cleaning it will be covered. Also covered will be healthcare industry specific challenges in natural language processing and what effort is necessary to create a question/answer system that produces meaningful results</p>\n<p>More specifically it will touch on:\n- Entity extraction\n- Automated ontology generation\n- Building training sets locally and on cloud\n- Speaker recognition\n- Sentiment analysis\n- Speed comparisons between Tensorflow, Keras and PyTorch</p>",
+            "speaker": 124,
+            "cancelled": false,
+            "proposal_base": 151,
+            "section": 2,
+            "additional_speakers": []
+        }
+    },
+    {
+        "model": "symposion_schedule.presentation",
+        "pk": 20,
+        "fields": {
+            "slot": null,
+            "title": "First steps to transition from SQL to pandas",
+            "description": "For developers and analysts using SQL, transitioning to Python to make calculations may initially seem daunting. In my talk, I will discuss different options for data munging before diving into an introduction of how to leverage pandas to \u2018translate\u2019 certain SQL functions, starting with simple aggregations and joins to finally go deeper into window functions and rolling averages.",
+            "description_html": "<p>For developers and analysts using SQL, transitioning to Python to make calculations may initially seem daunting. In my talk, I will discuss different options for data munging before diving into an introduction of how to leverage pandas to \u2018translate\u2019 certain SQL functions, starting with simple aggregations and joins to finally go deeper into window functions and rolling averages.</p>",
+            "abstract": "This talk will discuss my experiences of trying different options when wanting to use both SQL and pandas: the SQL Jupyter extension, Python SQL module, connecting to a database through Python and finally, \u2018translating\u2019 all calculations into pandas. I will touch on advantages and disadvantages of all of these methods and I will then dive deeper into slicing and dicing pandas DataFrames, performing joins, unions, aggregations and more advanced calculations such as window functions and rolling averages. All of the calculations shown will use pandas, one of the most common data science libraries.",
+            "abstract_html": "<p>This talk will discuss my experiences of trying different options when wanting to use both SQL and pandas: the SQL Jupyter extension, Python SQL module, connecting to a database through Python and finally, \u2018translating\u2019 all calculations into pandas. I will touch on advantages and disadvantages of all of these methods and I will then dive deeper into slicing and dicing pandas DataFrames, performing joins, unions, aggregations and more advanced calculations such as window functions and rolling averages. All of the calculations shown will use pandas, one of the most common data science libraries.</p>",
+            "speaker": 73,
+            "cancelled": false,
+            "proposal_base": 92,
+            "section": 2,
+            "additional_speakers": []
+        }
+    },
+    {
+        "model": "symposion_schedule.presentation",
+        "pk": 21,
+        "fields": {
+            "slot": null,
+            "title": "Airflow on Kubernetes: Dynamically Scaling Python-based DAG Workflows",
+            "description": "Over the past year, we have developed a native integration between Apache Airflow and Kubernetes that allows for dynamic allocation of DAG-based workflows and dynamic dependency management of individual tasks.",
+            "description_html": "<p>Over the past year, we have developed a native integration between Apache Airflow and Kubernetes that allows for dynamic allocation of DAG-based workflows and dynamic dependency management of individual tasks.</p>",
+            "abstract": "Apache Airflow is a highly popular Directed Acyclic Graphs (DAG) based workflow engine that allows users to deploy complex DAGs as python code. It is considered a natural progression of the \"code as configuration\" philosophy of DevOps and ETL. \r\n\r\nWith the addition of the native \"Kubernetes Executor\" and \"Kubernetes Operator\", we have extended Airflow's flexibility with dynamic allocation and dynamic dependency management capabilities of Kubernetes and Docker.",
+            "abstract_html": "<p>Apache Airflow is a highly popular Directed Acyclic Graphs (DAG) based workflow engine that allows users to deploy complex DAGs as python code. It is considered a natural progression of the \"code as configuration\" philosophy of DevOps and ETL. </p>\n<p>With the addition of the native \"Kubernetes Executor\" and \"Kubernetes Operator\", we have extended Airflow's flexibility with dynamic allocation and dynamic dependency management capabilities of Kubernetes and Docker.</p>",
+            "speaker": 95,
+            "cancelled": false,
+            "proposal_base": 116,
+            "section": 2,
+            "additional_speakers": []
+        }
+    },
+    {
+        "model": "symposion_schedule.presentation",
+        "pk": 22,
+        "fields": {
+            "slot": null,
+            "title": "Zebras and Lasers: A crash course on barcodes with Python",
+            "description": "Factory automation and logistics are industries full of software and full of technologies that seem simple but aren't. This talk is a Python-filled deep dive into the surprisingly complex world of the humble barcode, a true workhorse at the interface between software and the physical world. There will be shipping labels, sidewalk mosaics and even DNA!",
+            "description_html": "<p>Factory automation and logistics are industries full of software and full of technologies that seem simple but aren't. This talk is a Python-filled deep dive into the surprisingly complex world of the humble barcode, a true workhorse at the interface between software and the physical world. There will be shipping labels, sidewalk mosaics and even DNA!</p>",
+            "abstract": "Because software is nothing but electrons in a box, writing code that deals with tangible objects in the physical world is tricky. To make things easier to identify by software, we have sprinkled our world with machine-readable artifacts like RFID tags and magstripes. The most popular such tag is the barcode, clocking in at an estimated 5 billion barcode reads per day!\r\n\r\nDespite being the ubiquitous interface between the worlds of hardware and software, barcodes rarely get much attention from engineers on either side of software/hardware divide. Only few barcode connoisseurs geek out about the nuanced benefits of the many different barcode symbologies and hundreds of industry-specific data encodings. This talk is a guided tour through the wonderful world of barcodes, curated especially for Pythonistas.\r\n\r\nI will start with a live demo of how to read a barcode with nothing but pen, paper, and a few list comprehensions, followed by a brief barcoding theory 101. After we\u2019ve seen the nuts and bolts, I will go over a brief survey of the packages and tools for generating and reading barcodes that are available to Python developers. We\u2019ll finish with a few application examples, ranging from interesting to mischievous.\r\n\r\nWarning: There might be lasers (but probably no zebras).",
+            "abstract_html": "<p>Because software is nothing but electrons in a box, writing code that deals with tangible objects in the physical world is tricky. To make things easier to identify by software, we have sprinkled our world with machine-readable artifacts like RFID tags and magstripes. The most popular such tag is the barcode, clocking in at an estimated 5 billion barcode reads per day!</p>\n<p>Despite being the ubiquitous interface between the worlds of hardware and software, barcodes rarely get much attention from engineers on either side of software/hardware divide. Only few barcode connoisseurs geek out about the nuanced benefits of the many different barcode symbologies and hundreds of industry-specific data encodings. This talk is a guided tour through the wonderful world of barcodes, curated especially for Pythonistas.</p>\n<p>I will start with a live demo of how to read a barcode with nothing but pen, paper, and a few list comprehensions, followed by a brief barcoding theory 101. After we\u2019ve seen the nuts and bolts, I will go over a brief survey of the packages and tools for generating and reading barcodes that are available to Python developers. We\u2019ll finish with a few application examples, ranging from interesting to mischievous.</p>\n<p>Warning: There might be lasers (but probably no zebras).</p>",
+            "speaker": 54,
+            "cancelled": false,
+            "proposal_base": 66,
+            "section": 2,
+            "additional_speakers": []
+        }
+    },
+    {
+        "model": "symposion_schedule.presentation",
+        "pk": 23,
+        "fields": {
+            "slot": null,
+            "title": "Pull Requests: Merging good practices into your project",
+            "description": "On average, developers spend 45% of their time fixing bugs and technical debt, when they could be developing new features, had those bugs been caught during code review. Badly reviewed code can result in huge risks and unpredictable behavior. The attendees will learn tips, tools, processes and recommended practices from my experience and from big players like Django, Facebook, Mozilla, etc.",
+            "description_html": "<p>On average, developers spend 45% of their time fixing bugs and technical debt, when they could be developing new features, had those bugs been caught during code review. Badly reviewed code can result in huge risks and unpredictable behavior. The attendees will learn tips, tools, processes and recommended practices from my experience and from big players like Django, Facebook, Mozilla, etc.</p>",
+            "abstract": "Although known by most, Pull Requests are often not dealt with in the most effective way. Believe it or not, there are teams that don\u2019t review code at all! People may assume that a senior developer is experienced enough to not make any mistakes, or that merely changing those 3 lines of code couldn\u2019t possibly do any harm to the system. In these cases, it\u2019s not uncommon to skip the code review in order to cut some time. Unreviewed (or badly reviewed) code can be extremely dangerous, resulting in huge risks and unpredictable behavior.\r\n\r\nA survey says that, on average, developers spend 45% of their time fixing bugs and technical debt, when they could be developing new features instead. Defining simple guideline files, adopting certain behaviors and setting up repository configurations are steps that can increase manyfold the code review performance (in both time and quality). Using review tools both on server (e.g. Heroku Review Apps) and locally (e.g. linters) can also greatly increase the process\u2019 speed. Creating templates and checklists ensures no step is overlooked or forgotten. The list goes on, but enough spoilers for now. The attendees will learn specific tips, tools, processes and recommended practices that were compiled from research and real-life use cases (both from my experience and from big players like Django, Facebook, Instagram, Mozilla, etc), along with some survey data that demonstrates why reviewing code is important.",
+            "abstract_html": "<p>Although known by most, Pull Requests are often not dealt with in the most effective way. Believe it or not, there are teams that don\u2019t review code at all! People may assume that a senior developer is experienced enough to not make any mistakes, or that merely changing those 3 lines of code couldn\u2019t possibly do any harm to the system. In these cases, it\u2019s not uncommon to skip the code review in order to cut some time. Unreviewed (or badly reviewed) code can be extremely dangerous, resulting in huge risks and unpredictable behavior.</p>\n<p>A survey says that, on average, developers spend 45% of their time fixing bugs and technical debt, when they could be developing new features instead. Defining simple guideline files, adopting certain behaviors and setting up repository configurations are steps that can increase manyfold the code review performance (in both time and quality). Using review tools both on server (e.g. Heroku Review Apps) and locally (e.g. linters) can also greatly increase the process\u2019 speed. Creating templates and checklists ensures no step is overlooked or forgotten. The list goes on, but enough spoilers for now. The attendees will learn specific tips, tools, processes and recommended practices that were compiled from research and real-life use cases (both from my experience and from big players like Django, Facebook, Instagram, Mozilla, etc), along with some survey data that demonstrates why reviewing code is important.</p>",
+            "speaker": 36,
+            "cancelled": false,
+            "proposal_base": 42,
+            "section": 2,
+            "additional_speakers": []
+        }
+    },
+    {
+        "model": "symposion_schedule.presentation",
+        "pk": 24,
+        "fields": {
+            "slot": null,
+            "title": "How to Read Python You Didn't Write: Ramping up in a new Software Engineering role",
+            "description": "Have you ever looked at someone else\u2019s code and thought, \u201cWill I ever understand how this works?\u201d This talk covers strategies for contributing to an existing codebase sooner, with more context, and with greater confidence. Students and early-career engineers who haven\u2019t yet worked with a codebase will learn how to ramp up on the job without getting overwhelmed.",
+            "description_html": "<p>Have you ever looked at someone else\u2019s code and thought, \u201cWill I ever understand how this works?\u201d This talk covers strategies for contributing to an existing codebase sooner, with more context, and with greater confidence. Students and early-career engineers who haven\u2019t yet worked with a codebase will learn how to ramp up on the job without getting overwhelmed.</p>",
+            "abstract": "Have you ever looked at someone else\u2019s code and thought, \u201cWill I ever understand how this works?\u201d You aren't alone! This is exactly how I felt when I started my first job as a Python software engineer. \r\n\r\nI created a plan for exploring my team's code, which I now call \"The 6 Ds of Becoming Familiar With A Codebase\". The \"Ds\" are Description, Diagrams, Debugger, Dialogue, Docstrings and Documentation. \r\n\r\nJoin me as I show you how to implement each of these 6 learning strategies while doing a live \"first-look\" of a Django app with lots of modules, classes and methods!",
+            "abstract_html": "<p>Have you ever looked at someone else\u2019s code and thought, \u201cWill I ever understand how this works?\u201d You aren't alone! This is exactly how I felt when I started my first job as a Python software engineer. </p>\n<p>I created a plan for exploring my team's code, which I now call \"The 6 Ds of Becoming Familiar With A Codebase\". The \"Ds\" are Description, Diagrams, Debugger, Dialogue, Docstrings and Documentation. </p>\n<p>Join me as I show you how to implement each of these 6 learning strategies while doing a live \"first-look\" of a Django app with lots of modules, classes and methods!</p>",
+            "speaker": 80,
+            "cancelled": false,
+            "proposal_base": 100,
+            "section": 2,
+            "additional_speakers": []
+        }
+    },
+    {
+        "model": "symposion_schedule.presentation",
+        "pk": 25,
+        "fields": {
+            "slot": null,
+            "title": "Why you need to know the internals of list and tuple?",
+            "description": "Data structures are widely used in CPython but the internal details of them are not common knowledge. In this talk, we will discuss the internals of CPython\u2019s list and tuple with examples. We will also learn about the space and time complexity of the list and tuple methods, and finally the appropriate usage of these methods.",
+            "description_html": "<p>Data structures are widely used in CPython but the internal details of them are not common knowledge. In this talk, we will discuss the internals of CPython\u2019s list and tuple with examples. We will also learn about the space and time complexity of the list and tuple methods, and finally the appropriate usage of these methods.</p>",
+            "abstract": "Data structures are widely used in CPython but the internal details of them are not common knowledge. In this talk, we will discuss the internals of CPython\u2019s list and tuple with examples. We will also learn about the space and time complexity of the list and tuple methods, and finally the appropriate usage of these methods. Understanding internals will help in choosing the right data structure for a particular task and also with choosing the right method for a given data structure. \r\n\r\nThis talk is for everybody who is currently using CPython\u2019s data structures such as lists and tuples and would like to learn about the internals.  The attendees need to have intermediate knowledge of Python. \r\n\r\nAt the end of the talk, the attendees will have a clear knowledge of the internal working of CPython\u2019s list and tuple and can use them appropriately and efficiently.",
+            "abstract_html": "<p>Data structures are widely used in CPython but the internal details of them are not common knowledge. In this talk, we will discuss the internals of CPython\u2019s list and tuple with examples. We will also learn about the space and time complexity of the list and tuple methods, and finally the appropriate usage of these methods. Understanding internals will help in choosing the right data structure for a particular task and also with choosing the right method for a given data structure. </p>\n<p>This talk is for everybody who is currently using CPython\u2019s data structures such as lists and tuples and would like to learn about the internals.  The attendees need to have intermediate knowledge of Python. </p>\n<p>At the end of the talk, the attendees will have a clear knowledge of the internal working of CPython\u2019s list and tuple and can use them appropriately and efficiently.</p>",
+            "speaker": 32,
+            "cancelled": false,
+            "proposal_base": 36,
+            "section": 2,
+            "additional_speakers": []
+        }
+    },
+    {
+        "model": "symposion_schedule.presentation",
+        "pk": 26,
+        "fields": {
+            "slot": null,
+            "title": "Django Channels and Websockets in Production!",
+            "description": "Recently we helped launch a React Native mobile application that is a platform for college students to buy and sell from each other. Django and DRF are our usual tools of choice, but for these delivery user flows real-time updates via websockets seemed like the best UX we could offer. We started with a Django Channels spike and now it\u2019s a large piece of our application that is out in the wild.",
+            "description_html": "<p>Recently we helped launch a React Native mobile application that is a platform for college students to buy and sell from each other. Django and DRF are our usual tools of choice, but for these delivery user flows real-time updates via websockets seemed like the best UX we could offer. We started with a Django Channels spike and now it\u2019s a large piece of our application that is out in the wild.</p>",
+            "abstract": "The Technology\r\nAs web technologies have progressed, many backend frameworks that can take advantage of asynchronous code have integrated websockets. This has gone hand and hand with users who now often expect near real-time communication with the applications they use daily. Andrew Godwin started work on bring websockets into Django with is work on Channels in 2015. With the release of Channels 2.0 this year it\u2019s ready for prime time!\r\n\r\nThe Problem\r\nDjango Channels, even though it was been worked on for a few years is still relatively new in the Django world. Even moreso we were using Channels 2.0, which had literally just come out a week prior to us diving head first into Django + websockets. I personally learn best from seeing fully fleshed out examples and an ample amount of tutorials. In this case, we had to rely on just the documentation and go it alone for our use case, which is a bit different than your standard chatroom websocket example.\r\n\r\nThe Talk\r\nFrom this talk you\u2019ll get working code samples that show you a fleshed out Django Channels implementation that is live in production. We\u2019ll cover some first-time pitfalls that you should watch out for (that we fell into). You should walk away with an understanding of how you may go about integrating Django Channels into your application and where you would start with several helpful resources that you can follow up with after the talk. Specifically one of the largest areas that you\u2019ll get a jump start in is actually deploying and running infrastructure that will support Django Channels.",
+            "abstract_html": "<p>The Technology\nAs web technologies have progressed, many backend frameworks that can take advantage of asynchronous code have integrated websockets. This has gone hand and hand with users who now often expect near real-time communication with the applications they use daily. Andrew Godwin started work on bring websockets into Django with is work on Channels in 2015. With the release of Channels 2.0 this year it\u2019s ready for prime time!</p>\n<p>The Problem\nDjango Channels, even though it was been worked on for a few years is still relatively new in the Django world. Even moreso we were using Channels 2.0, which had literally just come out a week prior to us diving head first into Django + websockets. I personally learn best from seeing fully fleshed out examples and an ample amount of tutorials. In this case, we had to rely on just the documentation and go it alone for our use case, which is a bit different than your standard chatroom websocket example.</p>\n<p>The Talk\nFrom this talk you\u2019ll get working code samples that show you a fleshed out Django Channels implementation that is live in production. We\u2019ll cover some first-time pitfalls that you should watch out for (that we fell into). You should walk away with an understanding of how you may go about integrating Django Channels into your application and where you would start with several helpful resources that you can follow up with after the talk. Specifically one of the largest areas that you\u2019ll get a jump start in is actually deploying and running infrastructure that will support Django Channels.</p>",
+            "speaker": 70,
+            "cancelled": false,
+            "proposal_base": 88,
+            "section": 2,
+            "additional_speakers": []
+        }
+    },
+    {
+        "model": "symposion_schedule.presentation",
+        "pk": 27,
+        "fields": {
+            "slot": 9,
+            "title": "Clearer Code at Scale: Static Types at Zulip and Dropbox",
+            "description": "Python now offers static types! Companies like Dropbox and Facebook, and open-source projects like Zulip, use static types (with PEP 484 and mypy) to make Python more productive and fun to work with \u2014 in existing codebases from 40k lines to 4 million, in Python 2 and 3, and while preserving the conciseness and flexibility that make Python a great language in the first place. I\u2019ll describe how.",
+            "description_html": "<p>Python now offers static types! Companies like Dropbox and Facebook, and open-source projects like Zulip, use static types (with PEP 484 and mypy) to make Python more productive and fun to work with \u2014 in existing codebases from 40k lines to 4 million, in Python 2 and 3, and while preserving the conciseness and flexibility that make Python a great language in the first place. I\u2019ll describe how.</p>",
+            "abstract": "Python now offers static types! Companies like Dropbox and Facebook, and open-source projects like Zulip, use static types (with PEP 484 and mypy) to make Python more productive and fun to work with \u2014 in existing codebases from 40k lines to 4 million, in Python 2 and 3, and while preserving the conciseness and flexibility that make Python a great language in the first place. I\u2019ll describe how.\r\n\r\nReading and understanding code is a huge part of what we do as software developers. If we make it easier to understand our codebases, we make everyone more productive, help each other write fewer bugs, and lower barriers for new contributors. That's why Python now features optional static types, and why Dropbox, Facebook, and Zulip use them on part or all of their Python code.\r\n\r\nIn this talk, I\u2019ll share lessons from Zulip\u2019s and Dropbox\u2019s experience \u2014 having led the mypy team at Dropbox and working now on the Zulip core team \u2014 for how you can start using static types in your own codebases, large or small. We\u2019ll discuss how to make it a seamless part of your project\u2019s tooling; what order to approach things in; and powerful new tools that make it even easier today to add static types to your Python codebase than ever before.",
+            "abstract_html": "<p>Python now offers static types! Companies like Dropbox and Facebook, and open-source projects like Zulip, use static types (with PEP 484 and mypy) to make Python more productive and fun to work with \u2014 in existing codebases from 40k lines to 4 million, in Python 2 and 3, and while preserving the conciseness and flexibility that make Python a great language in the first place. I\u2019ll describe how.</p>\n<p>Reading and understanding code is a huge part of what we do as software developers. If we make it easier to understand our codebases, we make everyone more productive, help each other write fewer bugs, and lower barriers for new contributors. That's why Python now features optional static types, and why Dropbox, Facebook, and Zulip use them on part or all of their Python code.</p>\n<p>In this talk, I\u2019ll share lessons from Zulip\u2019s and Dropbox\u2019s experience \u2014 having led the mypy team at Dropbox and working now on the Zulip core team \u2014 for how you can start using static types in your own codebases, large or small. We\u2019ll discuss how to make it a seamless part of your project\u2019s tooling; what order to approach things in; and powerful new tools that make it even easier today to add static types to your Python codebase than ever before.</p>",
+            "speaker": 106,
+            "cancelled": false,
+            "proposal_base": 131,
+            "section": 2,
+            "additional_speakers": []
+        }
+    },
+    {
+        "model": "symposion_schedule.presentation",
+        "pk": 28,
+        "fields": {
+            "slot": null,
+            "title": "The bots are coming! Writing chatbots with Python",
+            "description": "With the popularity of Slack & similar corporate messaging platforms, there's been a recent rise in chatbots, simple applications operating as \"service workers\" in chat rooms. With bots, users can request information & automate tasks, all from user messages. In this session, you'll learn how to create chatbots using Python for both Slack & Google's Hangouts Chat service available for G Suite users",
+            "description_html": "<p>With the popularity of Slack &amp; similar corporate messaging platforms, there's been a recent rise in chatbots, simple applications operating as \"service workers\" in chat rooms. With bots, users can request information &amp; automate tasks, all from user messages. In this session, you'll learn how to create chatbots using Python for both Slack &amp; Google's Hangouts Chat service available for G Suite users</p>",
+            "abstract": "Chatbots are simple computer applications or small artificial intelligence entities that interact with humans or other bots in messaging platforms. An evolution of simplistic instant messaging platforms, newer, more intelligent platforms such as Slack, Atlassian Stride, Cisco Spark, Microsoft Teams, and Hangouts Chat from Google represent a new breed of tools focused on organizations and work tasks.\r\n\r\nSlack has been leading the workplace communication landscape since it launched in 2013 and quicly rose to prominence. More than just a messaging app, Slack differentiates itself from the rest of the field by supporting attachments, search, separate workspaces, and a 3rd-party app development platform. Earlier this year, Google's G Suite team launched their own collaboration, Hangouts Chat, to general availability, including its bot framework and API. Developers can create bot integrations to streamline work, automate tasks, or give users new ways to connect with G Suite apps or data.\r\n\r\nChatbots can cover a variety of applications, from e-commerce to automation to information requests to out-of-band alerts and notifications. With a simple message in a chat room, users can query for information, find relevant customer documents, or perform other heavy-lifting that would otherwise require humans to interact with N systems and requiring manual collation. This session gives attendees an overview of chatbots and demonstrates building simple bots on both platforms. Whether for your organization or your customers, chatbots bring to life the next generation intelligent collaboration platform. Get started today!",
+            "abstract_html": "<p>Chatbots are simple computer applications or small artificial intelligence entities that interact with humans or other bots in messaging platforms. An evolution of simplistic instant messaging platforms, newer, more intelligent platforms such as Slack, Atlassian Stride, Cisco Spark, Microsoft Teams, and Hangouts Chat from Google represent a new breed of tools focused on organizations and work tasks.</p>\n<p>Slack has been leading the workplace communication landscape since it launched in 2013 and quicly rose to prominence. More than just a messaging app, Slack differentiates itself from the rest of the field by supporting attachments, search, separate workspaces, and a 3rd-party app development platform. Earlier this year, Google's G Suite team launched their own collaboration, Hangouts Chat, to general availability, including its bot framework and API. Developers can create bot integrations to streamline work, automate tasks, or give users new ways to connect with G Suite apps or data.</p>\n<p>Chatbots can cover a variety of applications, from e-commerce to automation to information requests to out-of-band alerts and notifications. With a simple message in a chat room, users can query for information, find relevant customer documents, or perform other heavy-lifting that would otherwise require humans to interact with N systems and requiring manual collation. This session gives attendees an overview of chatbots and demonstrates building simple bots on both platforms. Whether for your organization or your customers, chatbots bring to life the next generation intelligent collaboration platform. Get started today!</p>",
+            "speaker": 123,
+            "cancelled": false,
+            "proposal_base": 149,
+            "section": 2,
+            "additional_speakers": []
+        }
+    },
+    {
+        "model": "symposion_schedule.presentation",
+        "pk": 29,
+        "fields": {
+            "slot": null,
+            "title": "2FA, WTF?",
+            "description": "You may recognize Two-factor Authentication (2FA) as an additional safeguard for protecting accounts, but do you really know how it works? This talk will show how to implement One Time Passwords, including what's happening with those expiring tokens. You'll learn different approaches to implementing a 2FA solution and have a better understanding of the solution that's right for your application.",
+            "description_html": "<p>You may recognize Two-factor Authentication (2FA) as an additional safeguard for protecting accounts, but do you really know how it works? This talk will show how to implement One Time Passwords, including what's happening with those expiring tokens. You'll learn different approaches to implementing a 2FA solution and have a better understanding of the solution that's right for your application.</p>",
+            "abstract": "2017 was a banner year for cybersecurity attacks and we should all be worried. In an age when a new data breach is revealed with frightening regularity, developers have a responsibility to secure our applications' user data more than ever. But fear not, YOU have the power to deter the hackers!\r\n\r\nYou may recognize Two-factor Authentication (2FA) as an additional safeguard for protecting accounts, but do you really know how it works? This talk will show you how to implement One Time Passwords in Python (including what's happening under the hood of those expiring tokens) and even provide a legitimate use case for QR codes! You'll come away recognizing the different approaches to implementing a 2FA solution and have a better understanding of the solution that's right for your application. Together, we'll make the web a more secure place.",
+            "abstract_html": "<p>2017 was a banner year for cybersecurity attacks and we should all be worried. In an age when a new data breach is revealed with frightening regularity, developers have a responsibility to secure our applications' user data more than ever. But fear not, YOU have the power to deter the hackers!</p>\n<p>You may recognize Two-factor Authentication (2FA) as an additional safeguard for protecting accounts, but do you really know how it works? This talk will show you how to implement One Time Passwords in Python (including what's happening under the hood of those expiring tokens) and even provide a legitimate use case for QR codes! You'll come away recognizing the different approaches to implementing a 2FA solution and have a better understanding of the solution that's right for your application. Together, we'll make the web a more secure place.</p>",
+            "speaker": 98,
+            "cancelled": false,
+            "proposal_base": 122,
+            "section": 2,
+            "additional_speakers": []
+        }
+    },
+    {
+        "model": "symposion_schedule.presentation",
+        "pk": 30,
+        "fields": {
+            "slot": null,
+            "title": "Parse NBA Statistics with Openpyxl",
+            "description": "Read NBA statistics from a Microsoft Excel sheet using the Openpyxl library. How will we know which statistics to look for and return? Text a number two players and a basketball statistic (like total points) and then the SMS response will look up the statistics of the corresponding players.",
+            "description_html": "<p>Read NBA statistics from a Microsoft Excel sheet using the Openpyxl library. How will we know which statistics to look for and return? Text a number two players and a basketball statistic (like total points) and then the SMS response will look up the statistics of the corresponding players.</p>",
+            "abstract": "Data stored in Excel spreadsheets can be hard to read with anything other than Excel and it\u2019s especially tough to compare two specific datasets within all that data. One possible solution? Let Python do the dirty work of finding the information for us! We'll read NBA statistics with the Openpyxl library and we'll also get the audience involved.",
+            "abstract_html": "<p>Data stored in Excel spreadsheets can be hard to read with anything other than Excel and it\u2019s especially tough to compare two specific datasets within all that data. One possible solution? Let Python do the dirty work of finding the information for us! We'll read NBA statistics with the Openpyxl library and we'll also get the audience involved.</p>",
+            "speaker": 31,
+            "cancelled": false,
+            "proposal_base": 35,
+            "section": 2,
+            "additional_speakers": []
+        }
+    },
+    {
+        "model": "symposion_schedule.presentation",
+        "pk": 31,
+        "fields": {
+            "slot": null,
+            "title": "Docker for Data Scientists: Simplify your workflow and avoid pitfalls",
+            "description": "These days, DevOps folks live and breath containers, especially Docker and related technologies. As a Data Scientist, you may have heard about Docker, but are less interested in investing the time to become an expert, since it is not core to your job. In this talk, you will get just enough Docker knowledge to improve your data science workflow and avoid common pitfalls.",
+            "description_html": "<p>These days, DevOps folks live and breath containers, especially Docker and related technologies. As a Data Scientist, you may have heard about Docker, but are less interested in investing the time to become an expert, since it is not core to your job. In this talk, you will get just enough Docker knowledge to improve your data science workflow and avoid common pitfalls.</p>",
+            "abstract": "The day-to-day concerns of Data Scientists and DevOps Engineers can be very different. In this talk, we\u2019ll show how Docker, a technology from the DevOps world, can improve the lives of Data Scientists. In particular, Docker can dramatically simplify the configuration of your programming/analysis environment, facilitate sharing your work with colleagues, and lead to reproducible workflows and results. On the other hand, there are pitfalls with Docker that you will want to avoid.\r\n\r\nWe will cover container and Docker concepts, running Docker, using Docker with GPUs, and best practices for data science with Docker. You will see concrete examples of how to use Docker in Python-focused environments, including interactive REPL and script development using Anaconda Python and scikit-learn, web environments such as Jupyter and TensorBoard, and Nvidia\u2019s DIGITS. Along the way, we will point out common pitfalls to avoid and better approaches.\r\n\r\nThis talk is aimed at intermediate to advanced Data Scientists. Some familiarity with a Linux/Mac command line is assumed.",
+            "abstract_html": "<p>The day-to-day concerns of Data Scientists and DevOps Engineers can be very different. In this talk, we\u2019ll show how Docker, a technology from the DevOps world, can improve the lives of Data Scientists. In particular, Docker can dramatically simplify the configuration of your programming/analysis environment, facilitate sharing your work with colleagues, and lead to reproducible workflows and results. On the other hand, there are pitfalls with Docker that you will want to avoid.</p>\n<p>We will cover container and Docker concepts, running Docker, using Docker with GPUs, and best practices for data science with Docker. You will see concrete examples of how to use Docker in Python-focused environments, including interactive REPL and script development using Anaconda Python and scikit-learn, web environments such as Jupyter and TensorBoard, and Nvidia\u2019s DIGITS. Along the way, we will point out common pitfalls to avoid and better approaches.</p>\n<p>This talk is aimed at intermediate to advanced Data Scientists. Some familiarity with a Linux/Mac command line is assumed.</p>",
+            "speaker": 53,
+            "cancelled": false,
+            "proposal_base": 65,
+            "section": 2,
+            "additional_speakers": []
+        }
+    },
+    {
+        "model": "symposion_schedule.presentation",
+        "pk": 32,
+        "fields": {
+            "slot": null,
+            "title": "Deprecating the state machine: building conversational AI with the Rasa stack",
+            "description": "Rasa NLU & Rasa Core are the leading open source libraries for building machine learning-based chatbots and voice assistants. In this live-coding workshop you will learn the fundamentals of conversational AI and how to build your own using the Rasa Stack.",
+            "description_html": "<p>Rasa NLU &amp; Rasa Core are the leading open source libraries for building machine learning-based chatbots and voice assistants. In this live-coding workshop you will learn the fundamentals of conversational AI and how to build your own using the Rasa Stack.</p>",
+            "abstract": "There's a large body of research on machine learning-based dialogue, but most voice and chat systems in production are still implemented using a state machine and a set of rules.\r\n\r\nRasa NLU & Rasa Core are the leading open source libraries for building machine learning-based chatbots and voice assistants. \r\n\r\nIn this workshop we will live-code a useful, engaging conversational AI bot based entirely on machine learning. We will start with language understanding, bootstrapping from very little annotated training data. You will then go on to build up your bot's ability to handle increasingly complex dialogues through supervised and interactive learning.",
+            "abstract_html": "<p>There's a large body of research on machine learning-based dialogue, but most voice and chat systems in production are still implemented using a state machine and a set of rules.</p>\n<p>Rasa NLU &amp; Rasa Core are the leading open source libraries for building machine learning-based chatbots and voice assistants. </p>\n<p>In this workshop we will live-code a useful, engaging conversational AI bot based entirely on machine learning. We will start with language understanding, bootstrapping from very little annotated training data. You will then go on to build up your bot's ability to handle increasingly complex dialogues through supervised and interactive learning.</p>",
+            "speaker": 49,
+            "cancelled": false,
+            "proposal_base": 61,
+            "section": 2,
+            "additional_speakers": []
+        }
+    },
+    {
+        "model": "symposion_schedule.presentation",
+        "pk": 33,
+        "fields": {
+            "slot": null,
+            "title": "An Import Loop and a Fiery Reentry",
+            "description": "The Skyfield astronomy library generates planet and satellite positions\r\nfor Python programmers.  With it, Brandon was able to schedule a final\r\nglimpse of Tiangong-1 hours before it burned up in our planet\u2019s\r\natmosphere.  But building a beautiful API always involves compromises,\r\nand Brandon will discuss the problem that import loops pose for Python\r\nAPIs based on method chains.",
+            "description_html": "<p>The Skyfield astronomy library generates planet and satellite positions\nfor Python programmers.  With it, Brandon was able to schedule a final\nglimpse of Tiangong-1 hours before it burned up in our planet\u2019s\natmosphere.  But building a beautiful API always involves compromises,\nand Brandon will discuss the problem that import loops pose for Python\nAPIs based on method chains.</p>",
+            "abstract": "I will start by describing how a library can leverage NumPy and the\r\nJupyter Notebook to avoid reinventing wheels as it brings numerical\r\ncalculations and powerful visualizations to Python programmers.  Using\r\nmy astronomy library Skyfield as an example, I\u2019ll show how I was able to\r\npredict the final few passages of space station Tiangong-1 over my house\r\nbefore its fiery plunge into Earth\u2019s atmosphere in early April.\r\n\r\nBut Python is not a language that\u2019s in every way perfect.  I\u2019ll examine\r\none particular style of API that I used when building Skyfield: the\r\nmethod chain, where objects suggest to the user which operations are\r\npossible next by which methods they support.  This often requires\r\nobjects to be able to instantiate other objects \u2014 in the case of\r\nSkyfield, creating an import loop once the collection of features became\r\nrich enough.  I\u2019ll look at the options for resolving import loops and\r\nwhat the solution does to the shape of a library like Skyfield.",
+            "abstract_html": "<p>I will start by describing how a library can leverage NumPy and the\nJupyter Notebook to avoid reinventing wheels as it brings numerical\ncalculations and powerful visualizations to Python programmers.  Using\nmy astronomy library Skyfield as an example, I\u2019ll show how I was able to\npredict the final few passages of space station Tiangong-1 over my house\nbefore its fiery plunge into Earth\u2019s atmosphere in early April.</p>\n<p>But Python is not a language that\u2019s in every way perfect.  I\u2019ll examine\none particular style of API that I used when building Skyfield: the\nmethod chain, where objects suggest to the user which operations are\npossible next by which methods they support.  This often requires\nobjects to be able to instantiate other objects \u2014 in the case of\nSkyfield, creating an import loop once the collection of features became\nrich enough.  I\u2019ll look at the options for resolving import loops and\nwhat the solution does to the shape of a library like Skyfield.</p>",
+            "speaker": 131,
+            "cancelled": false,
+            "proposal_base": 163,
+            "section": 2,
+            "additional_speakers": []
+        }
+    },
+    {
+        "model": "symposion_schedule.presentation",
+        "pk": 34,
+        "fields": {
+            "slot": null,
+            "title": "asyncio: what's next",
+            "description": "A quick recap of what's new in asyncio in Python 3.7. A look at what features and capabilities we can expect to have in asyncio in Python 3.8 and beyond.",
+            "description_html": "<p>A quick recap of what's new in asyncio in Python 3.7. A look at what features and capabilities we can expect to have in asyncio in Python 3.8 and beyond.</p>",
+            "abstract": "There are some new advanced features in asyncio 3.7 that are worth mentioning: new buffered protocol, start TLS, sendfile, and many other enhancements. The new buffered protocol is especially interesting as it allows to implement protocols with better performance than if was possible before, with less code.\r\n\r\nWith PEP 567 we now have a new Context API in Python and asyncio. It allows to implement advanced tracing (zipkin, statsd, etc) and error reporting in your application, monitoring everything from costs of high-level application logic code to the very low-level IO performance.\r\n\r\nIn Python 3.8 we want to focus on asyncio usability and the robustness of async/await. Particularly, the cancellation logic and timeouts mechanisms need to be redesigned from scratch. Hopefully, closer to August, I'll have a better idea of what we'll be adding to asyncio to make cancellation and timeouts easier to implement and handle correctly.",
+            "abstract_html": "<p>There are some new advanced features in asyncio 3.7 that are worth mentioning: new buffered protocol, start TLS, sendfile, and many other enhancements. The new buffered protocol is especially interesting as it allows to implement protocols with better performance than if was possible before, with less code.</p>\n<p>With PEP 567 we now have a new Context API in Python and asyncio. It allows to implement advanced tracing (zipkin, statsd, etc) and error reporting in your application, monitoring everything from costs of high-level application logic code to the very low-level IO performance.</p>\n<p>In Python 3.8 we want to focus on asyncio usability and the robustness of async/await. Particularly, the cancellation logic and timeouts mechanisms need to be redesigned from scratch. Hopefully, closer to August, I'll have a better idea of what we'll be adding to asyncio to make cancellation and timeouts easier to implement and handle correctly.</p>",
+            "speaker": 99,
+            "cancelled": false,
+            "proposal_base": 123,
+            "section": 2,
+            "additional_speakers": []
+        }
+    },
+    {
+        "model": "symposion_schedule.presentation",
+        "pk": 35,
+        "fields": {
+            "slot": null,
+            "title": "Deploying Python3 application to Kubernetes using  Envoy",
+            "description": "This talk will briefly describe how to deploy Python3 FlaskApp in Kubernetes using Envoy to handle round-robining traffic between several Flask apps",
+            "description_html": "<p>This talk will briefly describe how to deploy Python3 FlaskApp in Kubernetes using Envoy to handle round-robining traffic between several Flask apps</p>",
+            "abstract": "Microservices are an architectural style in which multiple, independent processes communicate with each other. Organizations are adopting microservices to improve agility and development velocity. \r\nIt\u2019s a pretty promising way to add a lot of flexibility without a lot of pain using tools like Envoy for brokering communications between the various parts of the application.",
+            "abstract_html": "<p>Microservices are an architectural style in which multiple, independent processes communicate with each other. Organizations are adopting microservices to improve agility and development velocity. \nIt\u2019s a pretty promising way to add a lot of flexibility without a lot of pain using tools like Envoy for brokering communications between the various parts of the application.</p>",
+            "speaker": 15,
+            "cancelled": false,
+            "proposal_base": 16,
+            "section": 2,
+            "additional_speakers": []
+        }
+    },
+    {
+        "model": "symposion_schedule.presentation",
+        "pk": 36,
+        "fields": {
+            "slot": null,
+            "title": "Amusing Algorithms",
+            "description": "Learn how to answer real life questions with algorithms written in Python!",
+            "description_html": "<p>Learn how to answer real life questions with algorithms written in Python!</p>",
+            "abstract": "Merge sort, quick sort, binary search. Yawn! Algorithms can be fun, but the way they\u2019re taught usually is not\u2026\r\n\r\nAt a fundamental level an algorithm is just a recipe. A step-by-step guide for how to do something. But the recipe is often hidden behind complex math and opaque proofs. And it\u2019s usually applied to a seemingly narrow and uninteresting problem. \r\n\r\nIn \u2018Amusing Algorithms\u2019 we\u2019ll cut through the math and try to understand the mechanics of a few interesting and useful algorithms. We\u2019ll use Jupyter to expose data structures, intermediate steps, and simulations of various algorithms. And we\u2019ll try to use algorithms to answer real life questions like how to find love in a crowded bar, how to buy the best scalpers tickets at a baseball game, and how to figure out when you should leave your job.",
+            "abstract_html": "<p>Merge sort, quick sort, binary search. Yawn! Algorithms can be fun, but the way they\u2019re taught usually is not\u2026</p>\n<p>At a fundamental level an algorithm is just a recipe. A step-by-step guide for how to do something. But the recipe is often hidden behind complex math and opaque proofs. And it\u2019s usually applied to a seemingly narrow and uninteresting problem. </p>\n<p>In \u2018Amusing Algorithms\u2019 we\u2019ll cut through the math and try to understand the mechanics of a few interesting and useful algorithms. We\u2019ll use Jupyter to expose data structures, intermediate steps, and simulations of various algorithms. And we\u2019ll try to use algorithms to answer real life questions like how to find love in a crowded bar, how to buy the best scalpers tickets at a baseball game, and how to figure out when you should leave your job.</p>",
+            "speaker": 103,
+            "cancelled": false,
+            "proposal_base": 128,
+            "section": 2,
+            "additional_speakers": []
+        }
+    },
+    {
+        "model": "symposion_schedule.presentation",
+        "pk": 37,
+        "fields": {
+            "slot": null,
+            "title": "Modern C extensions: Why, How, and the Future",
+            "description": "C extensions are a great way to speed up Python code, but are difficult to manage. Learn how to make your life easier and your Python code faster",
+            "description_html": "<p>C extensions are a great way to speed up Python code, but are difficult to manage. Learn how to make your life easier and your Python code faster</p>",
+            "abstract": "Python is a wonderful programming language. However, at times Python programs can be limited by computational speed. C extension modules can provide a means of providing faster computations without re-writing absolutely everything in another language. C extensions are also a great way to interoperate with existing C and C++ libraries. In this talk we will delve into how to make writing C extensions easier and more maintainable, as well as discuss when it is best to use them.",
+            "abstract_html": "<p>Python is a wonderful programming language. However, at times Python programs can be limited by computational speed. C extension modules can provide a means of providing faster computations without re-writing absolutely everything in another language. C extensions are also a great way to interoperate with existing C and C++ libraries. In this talk we will delve into how to make writing C extensions easier and more maintainable, as well as discuss when it is best to use them.</p>",
+            "speaker": 77,
+            "cancelled": false,
+            "proposal_base": 96,
+            "section": 2,
+            "additional_speakers": []
+        }
+    },
+    {
+        "model": "symposion_schedule.presentation",
+        "pk": 38,
+        "fields": {
+            "slot": null,
+            "title": "Machine Learning at Twitter: Twitter meets Tensorflow",
+            "description": "Twitter is a company with massive amounts of data. Thus, it is no wonder that the company applies machine learning in various ways: from Timeline Ranking to Ads. This talk will be focused on our most recent ML platform, which is built on top of (Python) Tensorflow. We will give you an idea of how we are doing ML at Twitter\u2019s scale and what our platform provides on top of Tensorflow.",
+            "description_html": "<p>Twitter is a company with massive amounts of data. Thus, it is no wonder that the company applies machine learning in various ways: from Timeline Ranking to Ads. This talk will be focused on our most recent ML platform, which is built on top of (Python) Tensorflow. We will give you an idea of how we are doing ML at Twitter\u2019s scale and what our platform provides on top of Tensorflow.</p>",
+            "abstract": "Machine Learning has allowed Twitter to drive engagement, promote healthier conversations, and deliver catered advertisements. Over the past year, we have been working on a new chapter of ML at Twitter by migrating our machine learning platform from Lua Torch to (Python) Tensorflow. This talk will be mainly focusing on the Machine Learning framework we have been developing on top of Tensorflow. More especially, how it allows for teams inside the company to run their models in production at Twitter\u2019s scale.\r\nWe plan to discuss:\r\n    - Our migration from Lua Torch to Tensorflow\r\n    - The additions of our framework on top of Tensorflow\r\n    - How we productionalize our model",
+            "abstract_html": "<p>Machine Learning has allowed Twitter to drive engagement, promote healthier conversations, and deliver catered advertisements. Over the past year, we have been working on a new chapter of ML at Twitter by migrating our machine learning platform from Lua Torch to (Python) Tensorflow. This talk will be mainly focusing on the Machine Learning framework we have been developing on top of Tensorflow. More especially, how it allows for teams inside the company to run their models in production at Twitter\u2019s scale.\nWe plan to discuss:\n    - Our migration from Lua Torch to Tensorflow\n    - The additions of our framework on top of Tensorflow\n    - How we productionalize our model</p>",
+            "speaker": 85,
+            "cancelled": false,
+            "proposal_base": 105,
+            "section": 2,
+            "additional_speakers": []
+        }
+    },
+    {
+        "model": "symposion_schedule.presentation",
+        "pk": 39,
+        "fields": {
+            "slot": null,
+            "title": "Diving into Production Issues at Scale",
+            "description": "Using a real production war story, this talk will highlight some of the thoughts, techniques, and approaches to troubleshooting production python at scale.",
+            "description_html": "<p>Using a real production war story, this talk will highlight some of the thoughts, techniques, and approaches to troubleshooting production python at scale.</p>",
+            "abstract": "Problems with single hosts are challenging enough. Scaling up to hundreds or thousands of running hosts only multiplies the problems. However, troubleshooting and remediating production issues at scale can also be much easier to deal with than issues on smaller installations.\r\n\r\nServices written in python can be more apt to encounter certain problems and lend themselves to certain solutions as well. In this talk, we will explore a real production issue or two around a python application to highlight some sound techniques and approaches to handling services at scale.\r\n\r\nWhile working through the narrative of the problem, we will explore some specific how-tos from a simple level, such as reading logs, to more complicated things pertaining the overall state of the runtime environment.",
+            "abstract_html": "<p>Problems with single hosts are challenging enough. Scaling up to hundreds or thousands of running hosts only multiplies the problems. However, troubleshooting and remediating production issues at scale can also be much easier to deal with than issues on smaller installations.</p>\n<p>Services written in python can be more apt to encounter certain problems and lend themselves to certain solutions as well. In this talk, we will explore a real production issue or two around a python application to highlight some sound techniques and approaches to handling services at scale.</p>\n<p>While working through the narrative of the problem, we will explore some specific how-tos from a simple level, such as reading logs, to more complicated things pertaining the overall state of the runtime environment.</p>",
+            "speaker": 57,
+            "cancelled": false,
+            "proposal_base": 69,
+            "section": 2,
+            "additional_speakers": []
+        }
+    },
+    {
+        "model": "symposion_schedule.presentation",
+        "pk": 40,
+        "fields": {
+            "slot": null,
+            "title": "Bootstrapping a Visual Search Engine",
+            "description": "With the rise of deep learning, computer vision tasks have become more accessible for developers. Building a custom visual search engine creates interesting possibilities for new features. Learn to train and deploy a visual search engine to enable visual similarity search. Implementing it from scratch enables domain-specific features and customizability that third party solutions lack.",
+            "description_html": "<p>With the rise of deep learning, computer vision tasks have become more accessible for developers. Building a custom visual search engine creates interesting possibilities for new features. Learn to train and deploy a visual search engine to enable visual similarity search. Implementing it from scratch enables domain-specific features and customizability that third party solutions lack.</p>",
+            "abstract": "# Intro\r\nBuilding a visual search engine allows users to discover items they may never be exposed to. It enables features such as using images to query visually similar items on an application.\r\n\r\n# Developing a Model\r\nThe field of computer vision has exploded with recent developments in deep convolutional neural networks. These models can embed input images into lower dimensional spaces, transforming them into fixed-size vectors. This is useful because all images reside in a unified vector-space where their relative positions hold significance. With deep learning, visual similarity models are taught to minimize the distance between similar images and separate dissimilar images. This process is called metric learning.\r\n\r\nPython packages like Keras and Tensorflow make it simple to structure and train a model. The training data needed are pairs of similar images and pairs or dissimilar images. This could be as easy as labeling various images of the same item as similar and randomly sampling images as dissimilar. Use Keras to implement a siamese neural network that takes two images as input and embeds each into the vector-space. If the image pair is labeled as similar, the model will adjust itself to push their vectors closer together. Depending on the training set size and GPU hardware, a visual similarity model could be ready within a few hours or days.\r\n\r\n# Indexing Imagery for Search\r\nK-nearest-neighbor search is the method for finding similar images in the vector-space. Each searchable image must be embedded into the vector-space by pushing it through the trained model. When all vectors are generated, create a fast knn data-structure with them to enable real-time vector-search. Many Python packages exists that create binary tree structures or small-world networks for knn search. Once that structure is created, it can be pickled and stored for later production use.\r\n\r\n# Deploying to a Microservice\r\nModels trained on Keras (with a Tensorflow backend) can be deployed to production systems using Tensorflow Serving. TF Serving is a gRPC server that allows a client to run the model on images as if the model were running on the client locally. There are many reasons to run the model outside the microservice such as performance and independent scaling.\r\n\r\nFlask is a useful tool to build a microservice that ties together all the necessary components. Upon startup, the microservice will load the pickled index into memory so it can use the index for knn search. Url routes are easily creatable and support POST data like images. Upon image upload, the microservice will generate the image\u2019s vector via connection to TF Serving and use that vector for a knn search on the in-memory index. The results of the search are the most similar images in the index.\r\n\r\n# Outline\r\n- Intro (3 minutes)\r\n    - Who am I\r\n    - Use cases for visual search\r\n- Developing a Model (6 minutes)\r\n    - Using Keras, create a model to identify when two images are similar\r\n    - Gather training data to fine-tune model\r\n- Indexing Imagery for Search (4 minutes)\r\n    - Use trained model to produce a vector for any image\r\n    - Create fast k-nearest-neighbor structure with image vectors\r\n    - Pickle those structures and save them as the search indexes\r\n- Deploying to Web Service (7 minutes)\r\n    - Compile Tensorflow Serving to load model on gRPC service\r\n    - Run Flask microservice to load search indexes in-memory\r\n    - On query image, use gRPC to generate image vector and do nearest neighbor search\r\n- Questions (5 minutes)",
+            "abstract_html": "<h1>Intro</h1>\n<p>Building a visual search engine allows users to discover items they may never be exposed to. It enables features such as using images to query visually similar items on an application.</p>\n<h1>Developing a Model</h1>\n<p>The field of computer vision has exploded with recent developments in deep convolutional neural networks. These models can embed input images into lower dimensional spaces, transforming them into fixed-size vectors. This is useful because all images reside in a unified vector-space where their relative positions hold significance. With deep learning, visual similarity models are taught to minimize the distance between similar images and separate dissimilar images. This process is called metric learning.</p>\n<p>Python packages like Keras and Tensorflow make it simple to structure and train a model. The training data needed are pairs of similar images and pairs or dissimilar images. This could be as easy as labeling various images of the same item as similar and randomly sampling images as dissimilar. Use Keras to implement a siamese neural network that takes two images as input and embeds each into the vector-space. If the image pair is labeled as similar, the model will adjust itself to push their vectors closer together. Depending on the training set size and GPU hardware, a visual similarity model could be ready within a few hours or days.</p>\n<h1>Indexing Imagery for Search</h1>\n<p>K-nearest-neighbor search is the method for finding similar images in the vector-space. Each searchable image must be embedded into the vector-space by pushing it through the trained model. When all vectors are generated, create a fast knn data-structure with them to enable real-time vector-search. Many Python packages exists that create binary tree structures or small-world networks for knn search. Once that structure is created, it can be pickled and stored for later production use.</p>\n<h1>Deploying to a Microservice</h1>\n<p>Models trained on Keras (with a Tensorflow backend) can be deployed to production systems using Tensorflow Serving. TF Serving is a gRPC server that allows a client to run the model on images as if the model were running on the client locally. There are many reasons to run the model outside the microservice such as performance and independent scaling.</p>\n<p>Flask is a useful tool to build a microservice that ties together all the necessary components. Upon startup, the microservice will load the pickled index into memory so it can use the index for knn search. Url routes are easily creatable and support POST data like images. Upon image upload, the microservice will generate the image\u2019s vector via connection to TF Serving and use that vector for a knn search on the in-memory index. The results of the search are the most similar images in the index.</p>\n<h1>Outline</h1>\n<ul>\n<li>Intro (3 minutes)<ul>\n<li>Who am I</li>\n<li>Use cases for visual search</li>\n</ul>\n</li>\n<li>Developing a Model (6 minutes)<ul>\n<li>Using Keras, create a model to identify when two images are similar</li>\n<li>Gather training data to fine-tune model</li>\n</ul>\n</li>\n<li>Indexing Imagery for Search (4 minutes)<ul>\n<li>Use trained model to produce a vector for any image</li>\n<li>Create fast k-nearest-neighbor structure with image vectors</li>\n<li>Pickle those structures and save them as the search indexes</li>\n</ul>\n</li>\n<li>Deploying to Web Service (7 minutes)<ul>\n<li>Compile Tensorflow Serving to load model on gRPC service</li>\n<li>Run Flask microservice to load search indexes in-memory</li>\n<li>On query image, use gRPC to generate image vector and do nearest neighbor search</li>\n</ul>\n</li>\n<li>Questions (5 minutes)</li>\n</ul>",
+            "speaker": 65,
+            "cancelled": false,
+            "proposal_base": 78,
+            "section": 2,
+            "additional_speakers": []
+        }
+    },
+    {
+        "model": "symposion_schedule.presentation",
+        "pk": 41,
+        "fields": {
+            "slot": null,
+            "title": "1 + 1 = 1 or Record Deduplication with Python",
+            "description": "What to do when you must find duplicate or related records in one or more datasets and you don't have unique identifiers, like the SSN for US citizens? The answer is to use Data Deduplication techniques and look for matches by cleaning and comparing attributes in a fuzzy way. In this talk, you'll learn with Python examples how to do this without needing any expert Data Science knowledge.",
+            "description_html": "<p>What to do when you must find duplicate or related records in one or more datasets and you don't have unique identifiers, like the SSN for US citizens? The answer is to use Data Deduplication techniques and look for matches by cleaning and comparing attributes in a fuzzy way. In this talk, you'll learn with Python examples how to do this without needing any expert Data Science knowledge.</p>",
+            "abstract": "Record Deduplication, or more generally, Record Linkage is the task of finding which records refer to the same entity, like a person or a company. It's used mainly when there isn't a unique identifier in records like Social Security Number for US citizens. This means one can't trivially find duplicate records in a single dataset, neither easily link records from different datasets. Without an identifier, record linkage looks for matches by cleaning and comparing record attributes in a fuzzy way. Imagine you have two datasets with information about people, but without any unique identifier in the records. You have to compare attributes like name, date of birth, and address in a smart way to find which records from the two datasets refer to the same person. A similar approach must be used to dedupe records in a single dataset, so Record Deduplication is a kind of Record Linkage.\r\n\r\nThere are a number of important applications of data deduplication in government and business. For example, by deduping records from Census data, the Australian government was able to find there were 250,000 fewer people in the country than they previously thought. This reduction impacted the estimations of government agencies and even caused the revision economical projections. Similarly, businesses can use record linkage techniques to enrich their customers' data with publicly available datasets.\r\n\r\nIn this talk, you'll learn with Python examples the main concepts of Record Deduplication, what kinds of problems can be solved, what's the most common workflow for the process, what algorithms are involved, and which tools and libraries you can use. Although some of the discussed concepts are related to data mining, any intermediate-level Python developer will be able to learn the basics of how to dedupe data using Python.",
+            "abstract_html": "<p>Record Deduplication, or more generally, Record Linkage is the task of finding which records refer to the same entity, like a person or a company. It's used mainly when there isn't a unique identifier in records like Social Security Number for US citizens. This means one can't trivially find duplicate records in a single dataset, neither easily link records from different datasets. Without an identifier, record linkage looks for matches by cleaning and comparing record attributes in a fuzzy way. Imagine you have two datasets with information about people, but without any unique identifier in the records. You have to compare attributes like name, date of birth, and address in a smart way to find which records from the two datasets refer to the same person. A similar approach must be used to dedupe records in a single dataset, so Record Deduplication is a kind of Record Linkage.</p>\n<p>There are a number of important applications of data deduplication in government and business. For example, by deduping records from Census data, the Australian government was able to find there were 250,000 fewer people in the country than they previously thought. This reduction impacted the estimations of government agencies and even caused the revision economical projections. Similarly, businesses can use record linkage techniques to enrich their customers' data with publicly available datasets.</p>\n<p>In this talk, you'll learn with Python examples the main concepts of Record Deduplication, what kinds of problems can be solved, what's the most common workflow for the process, what algorithms are involved, and which tools and libraries you can use. Although some of the discussed concepts are related to data mining, any intermediate-level Python developer will be able to learn the basics of how to dedupe data using Python.</p>",
+            "speaker": 33,
+            "cancelled": false,
+            "proposal_base": 38,
+            "section": 2,
+            "additional_speakers": []
+        }
+    },
+    {
+        "model": "symposion_schedule.presentation",
+        "pk": 42,
+        "fields": {
+            "slot": null,
+            "title": "High-Performance Python Microservice Communication",
+            "description": "Good design of the communication layer is critical to implementing a high-performance microservice. Serialization and Deserialization in a binary format such as GRPC might be faster than a text format such as JSON however, you might be sacrificing access to human readable messages often useful for debugging.",
+            "description_html": "<p>Good design of the communication layer is critical to implementing a high-performance microservice. Serialization and Deserialization in a binary format such as GRPC might be faster than a text format such as JSON however, you might be sacrificing access to human readable messages often useful for debugging.</p>",
+            "abstract": "Python Microservices are becoming increasingly popular for large scale web applications. We\u2019ll start by talking about some of the trade-offs of different microservice communication designs. Afterwards we\u2019ll dive into code regarding specific configurations including RPC and traditional REST.",
+            "abstract_html": "<p>Python Microservices are becoming increasingly popular for large scale web applications. We\u2019ll start by talking about some of the trade-offs of different microservice communication designs. Afterwards we\u2019ll dive into code regarding specific configurations including RPC and traditional REST.</p>",
+            "speaker": 83,
+            "cancelled": false,
+            "proposal_base": 103,
+            "section": 2,
+            "additional_speakers": []
+        }
+    },
+    {
+        "model": "symposion_schedule.presentation",
+        "pk": 43,
+        "fields": {
+            "slot": null,
+            "title": "Reproducible performance - profiling all the code, all the time, for free.",
+            "description": "This talk will teach you more than you ever wanted to know about measuring and improving the performance of your Python code - even if your program is actually spending most of its time somewhere else. We'll cover a set of improvements in VMProf that make it possible to measure your code all the way down to the C level with next to no overhead - so that you can profile all the code, all the time.",
+            "description_html": "<p>This talk will teach you more than you ever wanted to know about measuring and improving the performance of your Python code - even if your program is actually spending most of its time somewhere else. We'll cover a set of improvements in VMProf that make it possible to measure your code all the way down to the C level with next to no overhead - so that you can profile all the code, all the time.</p>",
+            "abstract": "How would you diagnose a performance issue after is had already happened? How can you tell if your code is about to explode before it actually does? How to tell if your latest slowdown around NumPy is happening at the Python level, or at the C level? Does the Django ORM hate your guts, or is it just Postgres being slow on the first query of the last Friday of the month?\r\n\r\nIn this talk you\u2019ll be equipped with the ability to answer all of these questions - and more! - within two clicks of the mouse\u2026 and if that\u2019s not possible, you\u2019ll learn what your options are.\r\n\r\nWe\u2019ll explore the radical idea of always running with a profiler enabled, and the far-reaching implications of actually being able to do that in production, with almost no run-time overhead.",
+            "abstract_html": "<p>How would you diagnose a performance issue after is had already happened? How can you tell if your code is about to explode before it actually does? How to tell if your latest slowdown around NumPy is happening at the Python level, or at the C level? Does the Django ORM hate your guts, or is it just Postgres being slow on the first query of the last Friday of the month?</p>\n<p>In this talk you\u2019ll be equipped with the ability to answer all of these questions - and more! - within two clicks of the mouse\u2026 and if that\u2019s not possible, you\u2019ll learn what your options are.</p>\n<p>We\u2019ll explore the radical idea of always running with a profiler enabled, and the far-reaching implications of actually being able to do that in production, with almost no run-time overhead.</p>",
+            "speaker": 119,
+            "cancelled": false,
+            "proposal_base": 144,
+            "section": 2,
+            "additional_speakers": []
+        }
+    },
+    {
+        "model": "symposion_schedule.presentation",
+        "pk": 44,
+        "fields": {
+            "slot": null,
+            "title": "Python Scripting for Noobs (or: How I Learned to Stop Shell Scripting and Love the StdLib)",
+            "description": "My first assignment at Sentry was to write a tool that monitored Google Cloud resource quotas and alerted us on Slack whenever our servers reached a specific threshold. How did a self-proclaimed lover of shell scripts end up using python? What lessons about working on an engineering team did I learn in the process?",
+            "description_html": "<p>My first assignment at Sentry was to write a tool that monitored Google Cloud resource quotas and alerted us on Slack whenever our servers reached a specific threshold. How did a self-proclaimed lover of shell scripts end up using python? What lessons about working on an engineering team did I learn in the process?</p>",
+            "abstract": "On the web console for Google Cloud Platform (GCP), users can see and manage resources. Google also provides a command line tool (gcloud) that also allows users to interact with GCP APIs. My assignment was to create an internal tool that would use information from gcloud to calculate percentages that we would otherwise have to grab from the GCP console compute engine resource quotas.\r\n\r\nFortunately, I knew shell scripting! I wrote version 1 (pure Bash with lots of sed and grep) and version 2 (jq is a great utility for parsing JSON) but experienced frustration using binaries that varied on different platforms. Finally, it was time to reach for Python and use excellent stdlib modules like argparse, json, and subprocess to create a better tool.\r\n\r\nThrough the process, I l gained some important insights about learning on the job in an engineering organization and the value of readable code.",
+            "abstract_html": "<p>On the web console for Google Cloud Platform (GCP), users can see and manage resources. Google also provides a command line tool (gcloud) that also allows users to interact with GCP APIs. My assignment was to create an internal tool that would use information from gcloud to calculate percentages that we would otherwise have to grab from the GCP console compute engine resource quotas.</p>\n<p>Fortunately, I knew shell scripting! I wrote version 1 (pure Bash with lots of sed and grep) and version 2 (jq is a great utility for parsing JSON) but experienced frustration using binaries that varied on different platforms. Finally, it was time to reach for Python and use excellent stdlib modules like argparse, json, and subprocess to create a better tool.</p>\n<p>Through the process, I l gained some important insights about learning on the job in an engineering organization and the value of readable code.</p>",
+            "speaker": 110,
+            "cancelled": false,
+            "proposal_base": 135,
+            "section": 2,
+            "additional_speakers": []
+        }
+    },
+    {
+        "model": "symposion_schedule.presentation",
+        "pk": 45,
+        "fields": {
+            "slot": null,
+            "title": "An Absolute Beginner's Guide to Deep Learning with Keras",
+            "description": "Keras is an amazing library that simplifies the coding of deep learning models. We'll begin with a brief intro to neural networks (NNs). Then demo the building of a convolutional neural net (CNN) layer-by-layer. By the end, you should be able to build your simple deep learning models and understand what each element of a neural network does.",
+            "description_html": "<p>Keras is an amazing library that simplifies the coding of deep learning models. We'll begin with a brief intro to neural networks (NNs). Then demo the building of a convolutional neural net (CNN) layer-by-layer. By the end, you should be able to build your simple deep learning models and understand what each element of a neural network does.</p>",
+            "abstract": "Interest in deep learning and building artificial intelligence (AI) based applications has been growing in the past few years. The Keras library makes these techniques accessible by offering a high-level API capable of running on top of TensorFlow, CNTK, or Theano. Similar to Python in general, Keras puts user experience front and center by having an API designed for human beings (not machines). This makes Keras perfect for easy and fast prototyping. Keras also highly modular and easy to extend to more complex deep learning models. This talk will be an introduction to neural networks and the Keras API for building them. We'll walk step-by-step how to build a convolutional neural net (CNN).",
+            "abstract_html": "<p>Interest in deep learning and building artificial intelligence (AI) based applications has been growing in the past few years. The Keras library makes these techniques accessible by offering a high-level API capable of running on top of TensorFlow, CNTK, or Theano. Similar to Python in general, Keras puts user experience front and center by having an API designed for human beings (not machines). This makes Keras perfect for easy and fast prototyping. Keras also highly modular and easy to extend to more complex deep learning models. This talk will be an introduction to neural networks and the Keras API for building them. We'll walk step-by-step how to build a convolutional neural net (CNN).</p>",
+            "speaker": 105,
+            "cancelled": false,
+            "proposal_base": 130,
+            "section": 2,
+            "additional_speakers": []
+        }
+    },
+    {
+        "model": "symposion_schedule.presentation",
+        "pk": 46,
+        "fields": {
+            "slot": null,
+            "title": "Building AI powered Twitter Bot that guesses locations of pictures from pixels",
+            "description": "Learn how we designed, built, and deployed the @WhereML Twitter bot that can identify where in the world a picture was taken using only the pixels in the image. We'll dive deep on artificial intelligence and deep learning with the MXNet framework and also talk about working with the Twitter Account Activity API.",
+            "description_html": "<p>Learn how we designed, built, and deployed the @WhereML Twitter bot that can identify where in the world a picture was taken using only the pixels in the image. We'll dive deep on artificial intelligence and deep learning with the MXNet framework and also talk about working with the Twitter Account Activity API.</p>",
+            "abstract": "The WhereML twitter bot is built on the LocationNet model which is trained with the Berkley Multimedia Commons public dataset of 33.9 million geotagged images from Flickr. The model is based on a ResNet-101 architecture and adds a classification layer that splits the earth into ~15000 cells created with Google's S2 spherical geometry library. This model is based on prior work at Berkley and Google.\r\n\r\nIn this session we'll start by describing AI in general terms then diving into deep learning and the MXNet framework. We'll describe the LocationNet model in detail and show how it is trained and created in Amazon SageMaker. Finally we'll talk about the Twitter Account Activity webhooks API and how to interact with it using an API Gateway and AWS Lambda function.\r\n\r\nAttendees are encouraged to interact with the bot in real-time at whereml.bot or on twitter at @WhereML\r\n\r\nAll code used in this project is open source and attendees are encouraged to experiment with it.",
+            "abstract_html": "<p>The WhereML twitter bot is built on the LocationNet model which is trained with the Berkley Multimedia Commons public dataset of 33.9 million geotagged images from Flickr. The model is based on a ResNet-101 architecture and adds a classification layer that splits the earth into ~15000 cells created with Google's S2 spherical geometry library. This model is based on prior work at Berkley and Google.</p>\n<p>In this session we'll start by describing AI in general terms then diving into deep learning and the MXNet framework. We'll describe the LocationNet model in detail and show how it is trained and created in Amazon SageMaker. Finally we'll talk about the Twitter Account Activity webhooks API and how to interact with it using an API Gateway and AWS Lambda function.</p>\n<p>Attendees are encouraged to interact with the bot in real-time at whereml.bot or on twitter at @WhereML</p>\n<p>All code used in this project is open source and attendees are encouraged to experiment with it.</p>",
+            "speaker": 93,
+            "cancelled": false,
+            "proposal_base": 113,
+            "section": 2,
+            "additional_speakers": []
+        }
+    }
+]

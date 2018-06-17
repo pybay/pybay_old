@@ -1,0 +1,116 @@
+[
+    {
+        "model": "menu.menuitem",
+        "pk": 1,
+        "fields": {
+            "order": 0,
+            "text": "Home",
+            "url": "/",
+            "target": false
+        }
+    },
+    {
+        "model": "menu.menuitem",
+        "pk": 5,
+        "fields": {
+            "order": 2,
+            "text": "Sponsoring",
+            "url": "/sponsors-prospectus/",
+            "target": false
+        }
+    },
+    {
+        "model": "menu.menuitem",
+        "pk": 6,
+        "fields": {
+            "order": 5,
+            "text": "About",
+            "url": "#",
+            "target": false
+        }
+    },
+    {
+        "model": "menu.menuitem",
+        "pk": 7,
+        "fields": {
+            "order": 6,
+            "text": "Blog",
+            "url": "https://medium.com/pybay",
+            "target": true
+        }
+    },
+    {
+        "model": "menu.menuitem",
+        "pk": 8,
+        "fields": {
+            "order": 1,
+            "text": "Speaking",
+            "url": "#",
+            "target": false
+        }
+    },
+    {
+        "model": "menu.menuitem",
+        "pk": 9,
+        "fields": {
+            "order": 4,
+            "text": "Registering",
+            "url": "https://ti.to/sf-python/pybay2018",
+            "target": false
+        }
+    },
+    {
+        "model": "menu.menuitem",
+        "pk": 10,
+        "fields": {
+            "order": 3,
+            "text": "Venues",
+            "url": "/venues/",
+            "target": false
+        }
+    },
+    {
+        "model": "menu.submenuitem",
+        "pk": 9,
+        "fields": {
+            "order": 8,
+            "parent": 6,
+            "text": "Frequently Asked Questions",
+            "url": "/faq",
+            "target": false
+        }
+    },
+    {
+        "model": "menu.submenuitem",
+        "pk": 10,
+        "fields": {
+            "order": 7,
+            "parent": 6,
+            "text": "Code of Conduct",
+            "url": "/code-of-conduct",
+            "target": false
+        }
+    },
+    {
+        "model": "menu.submenuitem",
+        "pk": 12,
+        "fields": {
+            "order": 9,
+            "parent": 8,
+            "text": "Submit workshops",
+            "url": "https://pybay.com/speaking-at-pybay/",
+            "target": true
+        }
+    },
+    {
+        "model": "menu.submenuitem",
+        "pk": 13,
+        "fields": {
+            "order": 6,
+            "parent": 6,
+            "text": "Diversity and Inclusion",
+            "url": "/diversity-and-inclusion/",
+            "target": true
+        }
+    }
+]

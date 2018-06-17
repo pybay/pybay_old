@@ -1,0 +1,2482 @@
+[
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 1,
+        "fields": {
+            "proposal": 4,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "accepted"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 2,
+        "fields": {
+            "proposal": 7,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "accepted"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 3,
+        "fields": {
+            "proposal": 8,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "accepted"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 4,
+        "fields": {
+            "proposal": 9,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "accepted"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 5,
+        "fields": {
+            "proposal": 10,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 6,
+        "fields": {
+            "proposal": 11,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 7,
+        "fields": {
+            "proposal": 12,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 8,
+        "fields": {
+            "proposal": 13,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 9,
+        "fields": {
+            "proposal": 14,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 10,
+        "fields": {
+            "proposal": 15,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 11,
+        "fields": {
+            "proposal": 16,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "accepted"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 12,
+        "fields": {
+            "proposal": 17,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 13,
+        "fields": {
+            "proposal": 18,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "accepted"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 14,
+        "fields": {
+            "proposal": 19,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 15,
+        "fields": {
+            "proposal": 20,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 16,
+        "fields": {
+            "proposal": 21,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 17,
+        "fields": {
+            "proposal": 22,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "accepted"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 18,
+        "fields": {
+            "proposal": 23,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "accepted"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 19,
+        "fields": {
+            "proposal": 24,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 20,
+        "fields": {
+            "proposal": 25,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 21,
+        "fields": {
+            "proposal": 26,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 22,
+        "fields": {
+            "proposal": 27,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 23,
+        "fields": {
+            "proposal": 28,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "accepted"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 24,
+        "fields": {
+            "proposal": 30,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 25,
+        "fields": {
+            "proposal": 31,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 26,
+        "fields": {
+            "proposal": 32,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 27,
+        "fields": {
+            "proposal": 33,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 28,
+        "fields": {
+            "proposal": 34,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 29,
+        "fields": {
+            "proposal": 35,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "accepted"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 30,
+        "fields": {
+            "proposal": 36,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "accepted"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 31,
+        "fields": {
+            "proposal": 37,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 32,
+        "fields": {
+            "proposal": 38,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "accepted"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 33,
+        "fields": {
+            "proposal": 39,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 34,
+        "fields": {
+            "proposal": 40,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 35,
+        "fields": {
+            "proposal": 42,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "accepted"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 36,
+        "fields": {
+            "proposal": 43,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 37,
+        "fields": {
+            "proposal": 44,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 38,
+        "fields": {
+            "proposal": 46,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 39,
+        "fields": {
+            "proposal": 47,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 40,
+        "fields": {
+            "proposal": 48,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 41,
+        "fields": {
+            "proposal": 49,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 42,
+        "fields": {
+            "proposal": 50,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 43,
+        "fields": {
+            "proposal": 53,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 44,
+        "fields": {
+            "proposal": 54,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 45,
+        "fields": {
+            "proposal": 55,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 46,
+        "fields": {
+            "proposal": 56,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 47,
+        "fields": {
+            "proposal": 57,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 48,
+        "fields": {
+            "proposal": 58,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 49,
+        "fields": {
+            "proposal": 59,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 50,
+        "fields": {
+            "proposal": 60,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 51,
+        "fields": {
+            "proposal": 61,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "accepted"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 52,
+        "fields": {
+            "proposal": 62,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "accepted"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 53,
+        "fields": {
+            "proposal": 63,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 54,
+        "fields": {
+            "proposal": 64,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 55,
+        "fields": {
+            "proposal": 65,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "accepted"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 56,
+        "fields": {
+            "proposal": 66,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "accepted"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 57,
+        "fields": {
+            "proposal": 67,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 58,
+        "fields": {
+            "proposal": 69,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "accepted"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 59,
+        "fields": {
+            "proposal": 70,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 60,
+        "fields": {
+            "proposal": 72,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 61,
+        "fields": {
+            "proposal": 73,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 62,
+        "fields": {
+            "proposal": 74,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 63,
+        "fields": {
+            "proposal": 75,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 64,
+        "fields": {
+            "proposal": 76,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "accepted"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 65,
+        "fields": {
+            "proposal": 77,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "accepted"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 66,
+        "fields": {
+            "proposal": 78,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "accepted"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 67,
+        "fields": {
+            "proposal": 79,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 68,
+        "fields": {
+            "proposal": 80,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 69,
+        "fields": {
+            "proposal": 81,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 70,
+        "fields": {
+            "proposal": 82,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "accepted"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 71,
+        "fields": {
+            "proposal": 83,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 72,
+        "fields": {
+            "proposal": 84,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 73,
+        "fields": {
+            "proposal": 85,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 74,
+        "fields": {
+            "proposal": 86,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 75,
+        "fields": {
+            "proposal": 87,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 76,
+        "fields": {
+            "proposal": 88,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "accepted"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 77,
+        "fields": {
+            "proposal": 89,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 78,
+        "fields": {
+            "proposal": 90,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 79,
+        "fields": {
+            "proposal": 91,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 80,
+        "fields": {
+            "proposal": 92,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "accepted"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 81,
+        "fields": {
+            "proposal": 93,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 82,
+        "fields": {
+            "proposal": 94,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 83,
+        "fields": {
+            "proposal": 95,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 84,
+        "fields": {
+            "proposal": 96,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "accepted"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 85,
+        "fields": {
+            "proposal": 97,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 86,
+        "fields": {
+            "proposal": 98,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 87,
+        "fields": {
+            "proposal": 99,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 88,
+        "fields": {
+            "proposal": 100,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "accepted"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 89,
+        "fields": {
+            "proposal": 101,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 90,
+        "fields": {
+            "proposal": 102,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 91,
+        "fields": {
+            "proposal": 103,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "accepted"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 92,
+        "fields": {
+            "proposal": 104,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 93,
+        "fields": {
+            "proposal": 105,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "accepted"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 94,
+        "fields": {
+            "proposal": 106,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 95,
+        "fields": {
+            "proposal": 107,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "accepted"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 96,
+        "fields": {
+            "proposal": 108,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 97,
+        "fields": {
+            "proposal": 109,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 98,
+        "fields": {
+            "proposal": 110,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 99,
+        "fields": {
+            "proposal": 111,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 100,
+        "fields": {
+            "proposal": 112,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 101,
+        "fields": {
+            "proposal": 113,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "accepted"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 102,
+        "fields": {
+            "proposal": 114,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 103,
+        "fields": {
+            "proposal": 116,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "accepted"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 104,
+        "fields": {
+            "proposal": 117,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 105,
+        "fields": {
+            "proposal": 118,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 106,
+        "fields": {
+            "proposal": 119,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 107,
+        "fields": {
+            "proposal": 120,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 108,
+        "fields": {
+            "proposal": 121,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 109,
+        "fields": {
+            "proposal": 122,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "accepted"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 110,
+        "fields": {
+            "proposal": 123,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "accepted"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 111,
+        "fields": {
+            "proposal": 124,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 112,
+        "fields": {
+            "proposal": 125,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 113,
+        "fields": {
+            "proposal": 126,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 114,
+        "fields": {
+            "proposal": 127,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 115,
+        "fields": {
+            "proposal": 128,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "accepted"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 116,
+        "fields": {
+            "proposal": 129,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 117,
+        "fields": {
+            "proposal": 130,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "accepted"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 118,
+        "fields": {
+            "proposal": 131,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "accepted"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 119,
+        "fields": {
+            "proposal": 132,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 120,
+        "fields": {
+            "proposal": 133,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "accepted"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 121,
+        "fields": {
+            "proposal": 134,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 122,
+        "fields": {
+            "proposal": 135,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "accepted"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 123,
+        "fields": {
+            "proposal": 136,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 124,
+        "fields": {
+            "proposal": 137,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 125,
+        "fields": {
+            "proposal": 138,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 126,
+        "fields": {
+            "proposal": 139,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 127,
+        "fields": {
+            "proposal": 140,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 128,
+        "fields": {
+            "proposal": 141,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 129,
+        "fields": {
+            "proposal": 142,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 130,
+        "fields": {
+            "proposal": 143,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 131,
+        "fields": {
+            "proposal": 144,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "accepted"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 132,
+        "fields": {
+            "proposal": 145,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 133,
+        "fields": {
+            "proposal": 146,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 134,
+        "fields": {
+            "proposal": 147,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 135,
+        "fields": {
+            "proposal": 148,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "accepted"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 136,
+        "fields": {
+            "proposal": 149,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "accepted"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 137,
+        "fields": {
+            "proposal": 150,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 138,
+        "fields": {
+            "proposal": 151,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "accepted"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 139,
+        "fields": {
+            "proposal": 152,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 140,
+        "fields": {
+            "proposal": 153,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 141,
+        "fields": {
+            "proposal": 154,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 142,
+        "fields": {
+            "proposal": 155,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 143,
+        "fields": {
+            "proposal": 156,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "accepted"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 144,
+        "fields": {
+            "proposal": 157,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 145,
+        "fields": {
+            "proposal": 158,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 146,
+        "fields": {
+            "proposal": 159,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 147,
+        "fields": {
+            "proposal": 160,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 148,
+        "fields": {
+            "proposal": 161,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 149,
+        "fields": {
+            "proposal": 162,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 150,
+        "fields": {
+            "proposal": 163,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "accepted"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 151,
+        "fields": {
+            "proposal": 164,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 152,
+        "fields": {
+            "proposal": 165,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 153,
+        "fields": {
+            "proposal": 166,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 154,
+        "fields": {
+            "proposal": 167,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "undecided"
+        }
+    },
+    {
+        "model": "symposion_reviews.proposalresult",
+        "pk": 155,
+        "fields": {
+            "proposal": 168,
+            "score": "0.00",
+            "comment_count": 0,
+            "vote_count": 0,
+            "plus_one": 0,
+            "plus_zero": 0,
+            "minus_zero": 0,
+            "minus_one": 0,
+            "accepted": null,
+            "status": "accepted"
+        }
+    }
+]

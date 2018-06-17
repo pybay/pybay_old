@@ -1,0 +1,2637 @@
+[
+    {
+        "model": "proposals.talkproposal",
+        "pk": 4,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "Machine Learning, AI, and All things Data",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "How to save the world",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "n",
+            "speaker_website": "https://www.meadows.net/tag/terms/",
+            "location_override": "",
+            "phone": "(398)908-6775"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 7,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "Machine Learning, AI, and All things Data",
+            "talk_length": 25,
+            "talk_links": "http://www.beard.com/",
+            "what_attendees_will_learn": "Why SQLite is an incredibly powerful tool for publishing data online.\r\n\r\nHow and why to use Datasette to publish data.\r\n\r\nHow to quickly build fun tools on top of Datasette - like https://sf-tree-search.now.sh/\r\n\r\nHow to use csvs-to-sqlite to convert CSV files into SQLite databases.\r\n\r\nThe philosophy and design behind Datasette - immutable data, far-future cache headers, Python  async and more.",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": "s",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "383-093-2420"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 8,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "Dealing with Speed, Scale, and Performance",
+            "talk_length": 25,
+            "talk_links": "https://www.beltran.info/",
+            "what_attendees_will_learn": "- An introduction to mypy\r\n- How to use mypy to prevent invalid data from propagating through a system\r\n- How to use less obvious features in mypy, like Optional, Union, and TypeVar\r\n- Practical examples of product/sum types",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": "m",
+            "speaker_website": "http://www.carr.com/category/faq.html",
+            "location_override": "",
+            "phone": "(270)842-6594x542"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 9,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "Machine Learning, AI, and All things Data",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "Attendees will learn what kind of problems qualify as \"nitpicks\", and what are the best tools to address them at an automated levels, as well as how to explain to upper management why putting in that effort is time well spent.",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": "n",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "(994)379-9269"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 10,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "Python Fundamentals & Popular Libraries",
+            "talk_length": 25,
+            "talk_links": "http://holt-schaefer.com/about.php",
+            "what_attendees_will_learn": "They will learn how to evaluate Python DSLs, and how to implement it well in their own projects -- be it an application, a library or a framework.",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": "D",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "749-231-9648x479"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 11,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "Python Fundamentals & Popular Libraries",
+            "talk_length": 25,
+            "talk_links": "https://www.reyes.com/main/tag/category/post.php",
+            "what_attendees_will_learn": "When, and how, to use dependency injection in their code.",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": "a",
+            "speaker_website": "http://howe.com/register/",
+            "location_override": "",
+            "phone": "637-878-1371"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 12,
+        "fields": {
+            "audience_level": 2,
+            "recording_release": true,
+            "themes": "Dealing with Speed, Scale, and Performance",
+            "talk_length": 25,
+            "talk_links": "https://www.gomez-wright.biz/categories/main/search.jsp",
+            "what_attendees_will_learn": "What is rust and why it is unique among other new languages. And how to use get benefits of it for python projects.",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "l",
+            "speaker_website": "http://www.reyes.com/tags/categories/tag/privacy/",
+            "location_override": "",
+            "phone": "(737)100-9165x41468"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 13,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "DevOps, Automation, and Testing",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "A cornerstone of devops is continuous monitoring. While good tools exist for server & application performance monitoring. There is no good open source tool that provides continuous package security updates as your server and codebase change. Until now.\r\n\r\nTalk goes over design decisions and implementation of the tool including hangups and pitfalls encountered along the way.",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "a",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "(809)540-8855x50084"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 14,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "Python Fundamentals & Popular Libraries",
+            "talk_length": 25,
+            "talk_links": "http://bowen.com/main/",
+            "what_attendees_will_learn": "Attendees will learn what SQL Alchemy CORE, ORM, and Flask are.",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "s",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "637.779.5906"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 15,
+        "fields": {
+            "audience_level": 2,
+            "recording_release": true,
+            "themes": "Python Fundamentals & Popular Libraries",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "Simple example how to build a rest API for python3 application using aiohttp.",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "y",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "(605)534-7576"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 16,
+        "fields": {
+            "audience_level": 2,
+            "recording_release": true,
+            "themes": "DevOps, Automation, and Testing",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "This was a basic intro on how to setup and build sample microservices on Kubernetes. How powerful  Envoy is and what are use cases.",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": ".",
+            "speaker_website": "https://rodriguez-weaver.net/wp-content/explore/faq.jsp",
+            "location_override": "",
+            "phone": "+88(2)3515703719"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 17,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "Dealing with Speed, Scale, and Performance",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "1) Use existing python knowledge to learn a new powerful language\r\n2) Benefits of statically typed compiled language\r\n3) A new tool to solve real-world problems  where python might not be a good fit\r\n4) Metaprogramming",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "i",
+            "speaker_website": "http://sanchez.com/posts/search/category/register/",
+            "location_override": "",
+            "phone": "211-798-5265x4219"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 18,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "Python Fundamentals & Popular Libraries, Hacking Hardware",
+            "talk_length": 25,
+            "talk_links": "http://gardner.info/list/category.htm",
+            "what_attendees_will_learn": "How to build a Google Action with a Python backend.",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "o",
+            "speaker_website": "http://brown.com/homepage/",
+            "location_override": "",
+            "phone": "035-391-8656x7904"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 19,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "Engineering a Community",
+            "talk_length": 25,
+            "talk_links": "https://www.petty.com/home.html",
+            "what_attendees_will_learn": "How to laugh at their problems and use inspiration from outside the development world to fix them.",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "c",
+            "speaker_website": "https://www.rivas-walls.com/index/",
+            "location_override": "",
+            "phone": "+82(2)1695713257"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 20,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "Python Fundamentals & Popular Libraries, Dealing with Speed, Scale, and Performance",
+            "talk_length": 25,
+            "talk_links": "https://edwards.com/privacy.php",
+            "what_attendees_will_learn": "Attendees will learn about:\r\n* using a Python interpreter from multiple non-Python threads\r\n* handling errors when calling Python from C\r\n* considerations for managing Python reference counts from a garbage collected language\r\n* designing (and redesigning) a Pythonic API",
+            "meetup_talk": "No",
+            "speaker_and_talk_history": "i",
+            "speaker_website": "https://crosby-brown.info/homepage/",
+            "location_override": "",
+            "phone": "00103470664"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 21,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "Machine Learning, AI, and All things Data",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "You will leave with a strong non-mathematical intuition for how Bayesian inference allows us to quantify the strength of conclusions drawn from real-world data and a mental model of the relationship between the prior and the posterior distributions (two of the big ideas in statistics). You'll hopefully be excited to solve other toy problems with the tool we put together during the talk, and keen to check out PyMC3.\r\n\r\nMy goal is that everyone who can write a for loop should understand every line of code. I attempt to ensure this by implementing things from scratch, and choosing a Bayesian inference algorithm that is particularly transparent and non-mathematical. This means that this talk is accessible to anyone, including beginner Python programmers. No mathematics is required!",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "p",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "469.320.8163x8891"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 22,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "Machine Learning, AI, and All things Data",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "The principal audience for this talk is current and aspiring data scientists. If you're one of those, you will leave understanding what serverless is, and why it's so exciting to your friends in engineering and operations. More importantly, you'll learn that it's something you can use too. In particular, you'll leave keen to try PyWren, a Spark-like distributed analytics tool. This talk will also be interesting to people working on distributed systems in data engineering or operations. Much recent interest in serverless have been focused on deployment of web applications. If you're in that engineering audience you'll learn that serverless is a perfect fit for a completely different use case: analytics.",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "i",
+            "speaker_website": "http://www.sutton-cunningham.com/index/",
+            "location_override": "",
+            "phone": "293.606.3959"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 23,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "Machine Learning, AI, and All things Data",
+            "talk_length": 25,
+            "talk_links": "http://jones-jackson.net/",
+            "what_attendees_will_learn": "State of the art methods for tuning parameters for unsupervised outlier detection models and the challenges and solutions to end-to-end deployment.",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": "e",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "1-250-306-4694"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 24,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "Dealing with Speed, Scale, and Performance",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "The attendees will take away with them a set of best practices to effectively scale webservices written in django/Python.",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": "A",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "848.488.2655"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 25,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "Dealing with Speed, Scale, and Performance",
+            "talk_length": 25,
+            "talk_links": "https://www.smith-walters.biz/list/search/search/search.html",
+            "what_attendees_will_learn": "Machine Learning in incredibly hot in the Python universe, but few developers know how to successfully host and scale in a production environment, and chaining/using others' ML models presents a challenge when heterogenous frameworks are present. Attendees will about ways to overcome these challenges, and gain an awareness of where the field of production-hosting for AI is headed.",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "i",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "184.648.7226x63994"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 26,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "Python Fundamentals & Popular Libraries",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "Attendees will learn about how to identify common cases where representing object states such as: is_active, is_running, expired, etc; by using boolean is not ideal. Additionally, they will take away how and why state machines can be a better approach for this problem, and get to know about a few libraries that can help you develop state machines to represent object status as well as the transition between them.",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "C",
+            "speaker_website": "http://www.christian.com/privacy/",
+            "location_override": "",
+            "phone": "069-954-1320"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 27,
+        "fields": {
+            "audience_level": 2,
+            "recording_release": true,
+            "themes": "Dealing with Speed, Scale, and Performance",
+            "talk_length": 25,
+            "talk_links": "http://www.ford.com/wp-content/categories/post/",
+            "what_attendees_will_learn": "Attendees will learn the benefits as well as the usage of PyPy and Grumpy.",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": " ",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "+61(8)3471892386"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 28,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "DevOps, Automation, and Testing",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "In 2016, Susan Fowler released the 'Production Ready Microservices' book. This book sets an industry benchmark on explaining how microservices should be conceived, all the way through to documentation. So how does this translate for Python applications? This session will explore how to expertly deploy your Python microservice to production.",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "d",
+            "speaker_website": "https://moss.org/app/posts/tags/terms/",
+            "location_override": "",
+            "phone": "811-763-8924x0178"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 30,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "Python Fundamentals & Popular Libraries",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "- we'll learn about functions: that they are objects and can be passed around and returned like regular object instances; *args, **kwargs syntax.\r\n- we'll learn about scoping\r\n- we'll learn what is a decorator; what is decoration; and what is a decorator factory (i.e. a configurable decorator)\r\n- we'll learn why you would want to use decoration over other strategies of DRY.\r\n- we'll learn about the @syntax.\r\n- we'll learn about how to use functools to help us write decorators\r\n- we'll learn a few good resources for more on decorators (the decorators third-party module, etc.)\r\n\r\nAt the end of this, we'll not only be able to write our own decorators but also have an understanding of why/how they work.",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": ".",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "856-377-7599x32178"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 31,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "DevOps, Automation, and Testing",
+            "talk_length": 40,
+            "talk_links": "https://goodwin.com/author.htm",
+            "what_attendees_will_learn": "- unittest principles (what is; why; rules)\r\n- mocking strategies (what is; why; techniques how to and comparison)\r\n- testing in python using unitest, doctest and pytest (how to and comparison)\r\n- common patterns in writing test code \r\n- how to write your own mocking library (Listener, ExceptionRaiser, MockClass, etc.)",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "t",
+            "speaker_website": "https://www.noble.org/posts/list/main/post/",
+            "location_override": "",
+            "phone": "715-939-8941"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 32,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "DevOps, Automation, and Testing",
+            "talk_length": 25,
+            "talk_links": "http://www.frye.com/blog/blog/blog/faq.jsp",
+            "what_attendees_will_learn": "Attendees will learn about the chaps utility, how it's designed/built, how to download/use, and a taste of making their own github repository based on twitter.common's pants repo.",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": "r",
+            "speaker_website": "http://www.solis.com/main.php",
+            "location_override": "",
+            "phone": "640-241-5509"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 33,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "devops, automation, & testing, engineering a community",
+            "talk_length": 40,
+            "talk_links": "http://www.green.info/",
+            "what_attendees_will_learn": "- Docs as code philosophy.\r\n- How to apply testing and linting processes to prose text.\r\n- Sphinx\r\n- Proselint\r\n- CircleCI\r\n- How to teach non-coding contributors (writers) to use dev tools.",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "t",
+            "speaker_website": "http://www.ruiz.org/search/",
+            "location_override": "",
+            "phone": "(951)865-9466x945"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 34,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "Python Fundamentals & Popular Libraries, engineering a community",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "This talk is intended for intermediate level developers. People with some experience building applications but maybe not much experience in code architecture. Design Patterns are generic concepts that can be applied into all kinds of projects, they allow greater code organization, clearer and recognizable architecture, flexibility and separation of concerns. This means that people from all backgrounds, be it frontend web development, backend, scientific or desktop applications can benefit from this talk. The examples will be centered around easy to understand problems, Most of the libraries I'll show will be not be tied to a specific framework. The design patterns itself are applicable to any software program regardless of language. \r\n\r\nAttendees are expected to leave with a more practical understanding of the mentioned design patterns and a broad perspective on what is gained from using design patterns in general. They will also get an Idea on where and how to apply patterns and a map of some of the libraries where it's possible to study applied design patterns in the real world.",
+            "meetup_talk": "No",
+            "speaker_and_talk_history": "e",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "009-096-7959x888"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 35,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "Python Fundamentals & Popular Libraries",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "How to set up a Flask application; use different Openpyxl functions like loading an Excel spreadsheet, how to loop through rows and columns, or how to access different values; how to use ngrok, and more!",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "o",
+            "speaker_website": "http://hubbard.com/about/",
+            "location_override": "",
+            "phone": "+78(0)6367985466"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 36,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "Python Fundamentals & Popular Libraries",
+            "talk_length": 40,
+            "talk_links": "",
+            "what_attendees_will_learn": "We will cover the following topics:\r\n1)\tDiscuss lists and tuples. (10 mins)\r\n2)\tHow does CPython create lists and tuples? (15 mins)\r\n3)\tComplexity of list and tuple methods. (10 mins)\r\n4)\tAppropriate usage. (5 mins)",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": " ",
+            "speaker_website": "http://lynch.com/blog/home/",
+            "location_override": "",
+            "phone": "963-421-0539"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 37,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "Engineering a Community",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "there is a lot to making production-ready software",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": "e",
+            "speaker_website": "http://jackson.com/",
+            "location_override": "",
+            "phone": "1-779-670-7419"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 38,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "Machine Learning, AI, and All things Data",
+            "talk_length": 40,
+            "talk_links": "https://griffith.com/terms.htm",
+            "what_attendees_will_learn": "This talk is for intermediate Python programmers interested in deduping records from datasets. Sometimes, developers don't even know that a number of techniques, tools, and libraries exist to help with data deduplication, which is an important practice for businesses and governments. This talk aims to remediate that by giving a hands-on overview of record deduplication. Attendees will learn with Python examples the main concepts of record deduplication, what kinds of problems can be solved, what's the most common workflow for the process, what algorithms are involved, and which tools and libraries they can use. Although some of the discussed concepts are related to data mining, any intermediate-level Python developer will be able to learn the basics of how to dedupe data using Python.\r\n\r\nHere's a tentative outline for the talk:\r\n\r\n1. Why data duplication is a problem\r\n- Real world data is inputted by people and usually not reviewed, so it's often duplicated, inconsistent, badly formatted, and problematic in other ways that affect the ability to properly count, group, and join records.\r\n- Examples:\r\n  * Deduplicating records in a single dataset: You have a dataset of people, but no identifiers in records. To find duplicates, you have to compare attributes like name, date of birth, and address in a smart/fuzzy way to find which records refer to the same person. But that's difficult: how to be sure about Bill Smith and Bill W. Smith? Maybe they are a single person if both records have the same address. But what about Bill Smith and Bill Smith Jr.? Same person or a father and son?\r\n  * Linking/joining records in different datasets: similar to the previous example, but when there are no common identifiers for records in different datasets. \r\n\r\n2. Why Python?\r\n(This is an important section to help developers \"sell\" Python and Python libraries in their organizations)\r\n- Heavily used in Data Science since it has lots of tools, and libraries to deal with data. Examples include pandas, numpy, scipy, matplotlib, seaborn, etc.\r\n- Easy to explore and make experiments with data using Jupyter Notebooks.\r\n- Mature open-source tools for record linkage and deduplication: dedupe, Python Record Linkage Toolkit, FEBRL.\r\n- Lots of libraries that implement useful fuzzy matching algorithms.\r\n\r\n3. Example, Workflow, and related useful Libraries\r\n(The idea here is to show the record deduplication workflow with an example dataset. Possibly using a Jupyter Notebook in slides format. The notebook and the example dataset will be open-source)\r\n\r\n3.1. Example data details\r\n- Attributes (data columns).\r\n- Example cases of matches.\r\n- Example cases of tricky non-matches, which might lead to false positives (e.g. Bill Smith and Bill Smith Jr.).\r\n\r\n3.2. Workflow step 1 - Profiling data\r\n- Use pandas to understand record attributes: types, units, nullability, value choices, outliers, etc.\r\n\r\n3.3. Workflow step 2 - Cleaning/preprocessing data\r\n- String transformations: lowercase, punctuation, unidecode, phonetic representation, stopwords, stemming, etc.\r\n- Format parsing and standardization: human names, company names, phone numbers, addresses, geocoding, datetime, units, currency, etc.\r\n\r\n3.4. Workflow step 3 - Indexing/blocking/clustering data\r\n- For large datasets, it's too costly to compare all records against all records, so it's important to index/block/cluster data.\r\n- Blocking by attribute.\r\n- Sorted neighborhood.\r\n- n-grams indexes.\r\n\r\n3.5. Workflow step 4 - Comparing/matching data\r\n- To match attributes and find duplicates, it's generally necessary to do fuzzy comparisons like string edit distance.\r\n- String similarity functions.\r\n- Other distance functions for addresses, datetimes, etc.\r\n\r\n3.6. Workflow step 5 - Classification of matches\r\n- After comparing records, evaluate what is a good match.\r\n- Score threshold.\r\n- Score rules.\r\n- Machine Learning models.\r\n- Human review for possible matches.\r\n\r\n4. References and additional resources",
+            "meetup_talk": "No",
+            "speaker_and_talk_history": "n",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "02958322667"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 39,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "Engineering a Community",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "After the talk, attendees should have a more profound knowledge of agile practices, they'll know how to map ideas and concepts into actions to start right away and feel confident to alter their development process on their own and stop trying to find a \u2018one-package fits all\u2019 software process.",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": "t",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "+11(9)1650824042"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 40,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "Engineering a Community",
+            "talk_length": 40,
+            "talk_links": "https://www.allen-thomas.biz/terms/",
+            "what_attendees_will_learn": "After the talk, attendees should have a more profound knowledge of agile practices, they'll know how to map ideas and concepts into actions to start right away and feel confident to alter their development process on their own and stop trying to find a \u2018one-package fits all\u2019 software process.",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": "d",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "093.600.1096x3725"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 42,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "Engineering a Community",
+            "talk_length": 25,
+            "talk_links": "http://taylor.com/index.php",
+            "what_attendees_will_learn": "This talk aims mostly at people who\u2019ve had some experience with writing and reviewing code and want to go further into the topic, learning how tools, tips and best practices can be done/used to improve this process, as well as what to avoid. This talk doesn\u2019t intend to say everything presented in it is a \u2018must have\u2019, but instead it\u2019s a compilation of possibilities for attendees to pick what best fits their needs. They\u2019ll also be presented to a checklist that they can use freely in their projects in order to ensure code reviewing is being done in the best way possible.\r\nComplete newcomers to code reviewing/pull requests are also welcome, but it\u2019s advisable that the basic concepts of how the overall process works are already known, in order to get a better grasp of how the ideas presented in this talk can be beneficial. In any case, PR reviews can be a great tool for newcomers to learn best practices, both on commercial and open-source projects, so it might also be useful for those with little experience to understand how they can learn while reading other people\u2019s code.\r\n\r\nHere's the proposed outline for the talk:\r\n\r\n1. Intro (time: 2min)\r\n    1. Who am I\r\n    2. Talk\u2019s agenda\r\n    3. Basics: What\u2019s a Pull Request\r\n2. Why Review Code (time: 3min)\r\n    1. [\u201cThe Ultimate Guide to Code Reviews\u201d][1] survey\r\n        1. Almost 700 developers surveyed\r\n        2. Data gathered\r\n        3. Conclusion\r\n            1. Time spent on bug fixing vs. new features\r\n            2. Reviewing code makes any difference?\r\n3. Most Common Errors (time: 5min)\r\n    1. Thinking of code review as a chore\r\n    2. Getting paid to learn\r\n    3. Not reviewing code at all\r\n    4. Skipping it for the sake of the deadline\r\n    5. Code review is not just for finding bugs\r\n4. Best Practices (time: 7min)\r\n    1. Pull Request Templates\r\n    2. Repository Settings\r\n        1. Merge locks\r\n        2. Guideline files (CONTRIBUTING.md, CODEOWNERS.md)\r\n    3. [GitFlow][2] and separate branches (one branch per issue)\r\n    4. PR size\r\n    5. Review deadlines\r\n    6. Clear commit messages (no \u2018fix issues\u2019)\r\n        1. Not too long\r\n        2. Think about Developer Experience - DX\r\n    7. Positive vs. Negative feedback\r\n        1. Positive environment allows for more willingness to collaborate and expose ideas\r\n        2. Inspire confidence and perpetuates positive feedback attitude\r\n        3. Real life situation: poorly written constructive feedback generated lots of anger\r\n    8. Different roles\r\n        1. Author\r\n            1. Briefly describe the issue being solved\r\n        2. Reviewer\r\n            1. Ask instead of making demands\r\n    9. Minimum of 2 approvals per PR\r\n        1. At least 3 people know the code\r\n        2. Depends on team size\r\n    10. Use `git blame` to find out who to assign\r\n    11. Add screenshots for UI/UX changes\r\n    12. [5 good practices][3]\r\n        1. Before the review, talk\r\n        2. Let the automated tools do the nit-picky observations\r\n        3. Be nice on your phrasing\r\n        4. Teach, don\u2019t just tell\r\n        5. When something breaks, share the fault\r\n5. Tips (time: 5min)\r\n    1. Simple ideas that help\r\n        1. Keywords + Issue Number (Github)\r\n        2. Permalinks to code snippets (Github)\r\n    2. Tools\r\n        1. [Octohint][4]\r\n        2. [Crucible][5]\r\n        3. [Review Apps][6] (Heroku)\r\n        4. [Deploy Previews][7] (Netlify)\r\n        5. [Linters][8]\r\n6. Real World Examples (time: 7min)\r\n    1. How big projects review PRs\r\n        1. Examples\r\n            1. Django\r\n            2. Mozilla\r\n            3. Facebook\r\n            4. Instagram\r\n    2. Vinta\u2019s insights\r\n        1. Warn on Slack when PR is created, reviewed and updated\r\n        2. Test the feature first, then review the code (fail fast)\r\n        3. Examples:\r\n            1. Auto-delete branch on merge caused headache\r\n            2. GitHub\u2019s \u201cResolve conflicts\u201d button automatically merged the branch into master\r\n7. One more thing: Checklist (time: 1min)",
+            "meetup_talk": "No",
+            "speaker_and_talk_history": " ",
+            "speaker_website": "https://simpson.com/faq.php",
+            "location_override": "",
+            "phone": "00103535104"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 43,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "Machine Learning, AI, and All things Data",
+            "talk_length": 25,
+            "talk_links": "https://richard.info/",
+            "what_attendees_will_learn": "Attendees will get an introduction to natural language processing concepts, see simple techniques for text processing, and learn what Python libraries are out there & how to use them. Libraries I plan to cover include: gensim, nltk, pattern, spacy, whoosh, and maybe scitkit-learn. Concepts I will introduce include: tokenization, clustering, classification, parsing, and search.",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "h",
+            "speaker_website": "https://www.wilson-murray.com/search/",
+            "location_override": "",
+            "phone": "596-258-1597x64183"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 44,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "Machine Learning, AI, and All things Data",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "Attendees will be exposed to a quick break down of how I use python in a research setting. \r\n\r\nHow I have used Jupyter Notebooks and matplotlib (maybe even seaborn) to make publication ready figures, and increase buy in from clinicians and fellow researchers.\r\n\r\nThey should also take away an interesting use case for python in science that isn't exactly data science, but isn't exactly not data science.",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "r",
+            "speaker_website": "http://stewart-maxwell.org/tags/app/home/",
+            "location_override": "",
+            "phone": "(855)594-6995x885"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 46,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "machine learning, ai, & all things data",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "Attendees will take away various ways  machine learning is being applied in the hospitality industry.",
+            "meetup_talk": "No",
+            "speaker_and_talk_history": "p",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "1-780-340-6066"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 47,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "devops, automation, & testing,dealing with speed, scale, & performance,engineering a community",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "This is meant to be sharing of the lessons learned from building an enterprise startup on Python. There were choices that we made that were good, and then there are things I wish we did differently from the start.",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "a",
+            "speaker_website": "http://www.obrien-smith.org/app/posts/categories/main.htm",
+            "location_override": "",
+            "phone": "563.115.7128"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 48,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "machine learning, ai, & all things data",
+            "talk_length": 40,
+            "talk_links": "",
+            "what_attendees_will_learn": "Attendees will learn about hyperparameters in Deep Neural Networks, the structure of Convolutional Neural Networks, and some key concepts of TensorFlow.",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "e",
+            "speaker_website": "https://www.gates-scott.org/",
+            "location_override": "",
+            "phone": "716.815.4463x60218"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 49,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "machine learning, ai, & all things data,devops, automation, & testing",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "* A powerful framework for thinking about technical debt in data pipelines\r\n* Practical workflow ideas for managing pipeline debt\r\n* Essentials of pipeline testing using Great Expectations",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "o",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "(239)987-6119x10099"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 50,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "This talk is for beginner and intermediate Django developers that don't know about or don't know how to apply database normalization concepts on Django. This talk will benefit especially developers without formal Computer Science education since tutorials and books about Django often overlook database normalization. In times of tons of frameworks and rapid prototyping, even experienced developers tend to ignore normalization in their database schemas. It's not a problem to \"move fast and break things\" on DB-level early on, but, when maintaining a database, it's important to know where the database design falls short and leads to data redundancy, inconsistency, and anomalies. Attendees of this talk will learn to identify those cases of denormalized databases schemas, along with the problems they have, and how database normalization can fix them.\r\n\r\nHere is a tentative outline for the talk:\r\n\r\n- Django DRY Philosophy: \"Every (...) piece of data should live in one, and only one, place. Redundancy is bad. Normalization is good.\"\r\n- Normal forms explained in a friendly language with Django examples\r\n- Database migrations to keep data while normalizing\r\n- When you shouldn't normalize\r\n  * Unnecessary complexity, e.g., user address\r\n  * Performance pitfalls\r\n- Alternatives to denormalizing\r\n  * Annotations and aggregations\r\n  * Caching\r\n  * \"The denormalized query engine design pattern\" (introduction to Simon Willison's talk)\r\n- When denormalizing, patterns and tools to avoid inconsistencies\r\n  * django-denorm\r\n  * django-model-utils FieldTracker\r\n  * save and signals",
+            "meetup_talk": "No",
+            "speaker_and_talk_history": "w",
+            "speaker_website": "http://obrien-parker.com/login.php",
+            "location_override": "",
+            "phone": "03418270834"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 53,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries, dealing with speed, scale, & performance",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "In this talk, you will learn about how to handle async tasks. Celery will be used for the examples but concepts should apply to any async task queue tool. You will understand the architecture behind and some of the good practices when developing async tasks as well as how to handle errors, monitor and test tasks.",
+            "meetup_talk": "No",
+            "speaker_and_talk_history": "e",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "748-176-0732x81468"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 54,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "Attendees will feel more confident in their abilities to web-scrape websites for information with the Beautiful Soup Python library.",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "n",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "105.690.2884"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 55,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "devops, automation, & testing,dealing with speed, scale, & performance",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "Attendees will learn how CFFI can be used to wrap C libraries into Python modules. We will learn how to deal with C APIs that use advanced data structures or require dynamic memory allocation. We will also learn how to translate between C-style APIs and Pythonic APIs.",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "e",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "(693)562-5184x7687"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 56,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries,machine learning, ai, & all things data",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "The primary learning goal is to improve attendees' understanding of the gradient descent algorithm, with secondary learning objectives around (1) the algorithms theoretical backing, and (2) practical numpy and scikit-learn application",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "e",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "1-601-935-6487x28950"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 57,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "devops, automation, & testing",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "In this talk, you\u2019ll learn how feature flags can improve the development flow, and which are the good practices and cautions every developer must take to achieve the best results using them.",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": "i",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "201.461.2993x582"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 58,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries",
+            "talk_length": 40,
+            "talk_links": "",
+            "what_attendees_will_learn": "You will know what happens under the hood of Python, and thus understand subtleties in your code, how it behaves on different platforms, or why things are the way they are.",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "d",
+            "speaker_website": "http://stokes-weeks.info/tag/tags/categories/homepage.jsp",
+            "location_override": "",
+            "phone": "507.314.1797"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 59,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries",
+            "talk_length": 25,
+            "talk_links": "https://sharp-smith.info/terms.htm",
+            "what_attendees_will_learn": "You'll know what opportunities exist to help improve Python for everyone.",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "b",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "1-272-824-9707"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 60,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries,devops, automation, & testing,dealing with speed, scale, & performance",
+            "talk_length": 40,
+            "talk_links": "https://www.may-ramirez.com/author/",
+            "what_attendees_will_learn": "You will know what git is asking of you in its error messages, how to get out of tricky situations and how to create clean commits that are easy to read and review.",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": "s",
+            "speaker_website": "https://johnson.net/tags/app/posts/faq/",
+            "location_override": "",
+            "phone": "1-627-160-6805"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 61,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "machine learning, ai, & all things data",
+            "talk_length": 40,
+            "talk_links": "http://www.moreno.com/login.asp",
+            "what_attendees_will_learn": "- deep dive into the Rasa NLU and Rasa Core open source libraries\r\n- fundamentals of natural language understanding and dialogue management for building intelligent assistants\r\n- overview of widely used algorithms\r\n- good ways to manage training data",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": "c",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "170-845-1980x01141"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 62,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "devops, automation, & testing",
+            "talk_length": 25,
+            "talk_links": "http://garcia.net/explore/about/",
+            "what_attendees_will_learn": "I expect the audience to learn in-depth about the specific approach that PyT takes. Turning code into an Abstract Syntax Tree, traversing the syntax tree, and analyzing it with a modification of reaching definitions. I will make sure to define and explain what all of those things are before talking about them in depth.\r\nI'll also talk about more than just going source-to-sink, with examples of false-negatives and false-positives and how I fixed them, along with a high-level comparison of the approach a couple of other tools take.",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "a",
+            "speaker_website": "https://wise.com/post/",
+            "location_override": "",
+            "phone": "09571113253"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 63,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "machine learning, ai, & all things data",
+            "talk_length": 40,
+            "talk_links": "http://contreras-diaz.com/app/privacy.html",
+            "what_attendees_will_learn": "Attendees with learn:\r\n\r\n- How DL can be applied to computational chemistry for the purposes of molecule design.\r\n- Which models tend to work well and how do they work.\r\n- Which datasets are available for training and evaluation of said models.\r\n- How does one work with a molecule for the purposes of feature creation.\r\n- How to start doing molecule design in Python.",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": "r",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "202-112-7705x2917"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 64,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "engineering a community",
+            "talk_length": 25,
+            "talk_links": "http://hill-lee.com/homepage/",
+            "what_attendees_will_learn": "Attendees will come away with a better understanding of the software culture we all share, and an understanding of some of the threats it is facing as investment in open source wanes.",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": " ",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "(684)844-6174x890"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 65,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "machine learning, ai, & all things data,devops, automation, & testing",
+            "talk_length": 25,
+            "talk_links": "https://scott.com/category/category/tag/homepage.jsp",
+            "what_attendees_will_learn": "This talk is based on my experiences supporting a team of data scientists, providing them with data engineering and automation services. Attendees should learn enough to be productive, without having to take a lot of time away from their primary jobs. By learning best practices, they can avoid common problems that can stump developers who are not familiar with low level systems infrastructure.\r\n\r\nMy goal is to provide high level concepts along with enough detail to give people a taste of the actual command line incantations. Rather than go through all details in the talk (e.g. the meaning of each command line option), I will also provide a more complete online tutorial/reference via my blog.",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "n",
+            "speaker_website": "https://www.williams-perkins.com/tag/search.php",
+            "location_override": "",
+            "phone": "811.209.6733x49868"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 66,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "hacking hardware",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "The target audience of this talk are developers who work on pure software projects (web development, data science, etc) and are curious about software that interfaces with the physical world. No prior knowledge of such applications is required, this talk is for people who might not even know that their software skills also apply to factory automation, logistics, etc. While this might seem like a niche topic for the Python community, the reception of my talk about factory automation and Eric Evenchick\u2019s talk about \u201cCar Hacking\u201d at PyCon 2017 suggest that there is a good amount of interest in using Python for automation and control.\r\n\r\nThis talk is suitable for beginners to advanced Pythonistas. Someone without any knowledge of Python could follow the entire talk and still learn something about barcodes. However, the examples and demos assume basic familiarity with the language and ecosystem:  For example, there will be list comprehensions and references to \u201cpip-installing\u201d packages.\r\n\r\nAfter attending or watching this talk, a developer will understand the fundamentals of barcodes and have awareness of a few common (and a few esoteric) applications. In the best case, an attendee might:\r\n- Recognize that adding barcodes to a workflow they write software for might improve usability or productivity.\r\n- Have ideas for hacks and hobby projects involving barcodes on products or shipping labels.\r\n- Learn that their computer vision project also has applications in domains like logistics and automation.\r\n- Realize that their software skills are applicable in fields like factory automation and logistics and expand their next job search into these fields.\r\n\r\nFor those who have no interest in barcodes, the talk is an entertaining half hour of \u201cHow Stuff Works\u201d, enriched with a large dose of trivia on problems solved with software from logistics to pre-GPS navigation to next-generation sequencing.",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": "s",
+            "speaker_website": "http://www.jones.biz/privacy/",
+            "location_override": "",
+            "phone": "(279)477-6357"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 67,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "machine learning, ai, & all things data",
+            "talk_length": 40,
+            "talk_links": "http://pena.com/",
+            "what_attendees_will_learn": "This talk aims to demonstrate that we can apply complex machine-learning knowledge to our daily routine. Not just to forecast Bitcoin, but anything else that looks too complicated or out of reach. It also demonstrates how to use techniques of machine learning and python libraries to build a prediction model.\r\n\r\nAttendees are expected to leave this talk with a more practical understanding of the mentioned time series analysis and should feel comfortable to use the python libraries mentioned in the talk to build their own models. They will also get an idea of where and how to apply the many available techniques.",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "e",
+            "speaker_website": "http://www.byrd-moss.biz/categories/blog/faq/",
+            "location_override": "",
+            "phone": "(666)621-3394x48421"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 69,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "devops, automation, & testing,dealing with speed, scale, & performance",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "- Techniques for troubleshooting runtime systems\r\n- Techniques for operating in a linux environment\r\n- Tips for inspecting python stacktraces\r\n- Hopefully, a bit of a mindset around the mentality of operations work\r\n\r\nNote that this talk may end up being a bit brief for a full 25 minute speech, but could have a lot of Q&A. I'm open to reducing to a lightning talk as well.",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": ".",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "214.218.8515x9537"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 70,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "machine learning, ai, & all things data",
+            "talk_length": 40,
+            "talk_links": "https://scott-thomas.info/",
+            "what_attendees_will_learn": "The attendees will learn how to use Python library calls to create/load/query the MapD core database and use Python GPU Data Frame library in a typical machine learning workflow.  They will also learn about Microsoft Cognitive Toolkit (CNTK) library and apply it to solve supervised learning problems. The example code is written and will be shared using Jupyter Notebook, a popular development tool among data scientists.",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": " ",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "114.587.2923x953"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 72,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "I expect most attendees to have a surface level understanding of Django Admin. I will be giving a deeper dive into some of the more advanced features. For example, it is possible to change a field on an object and dispatch an email---all from DA. But I don't think most people know how to perform that (actions). I also will go into advanced filtering techniques and cover some of the essential plugins produced by the DA community including django-fsm-admin and django-autocomplete-light. \r\n\r\nI will take a learn-by-doing approach. The example I'll be building up to will be a simple CRM where you can track leads, perform a summary report, and do basic task management.",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": "o",
+            "speaker_website": "http://miller.net/",
+            "location_override": "",
+            "phone": "1-431-431-6209x8623"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 73,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "engineering a community",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "How to establish a relationship of trust with your manager, as well as your reports. \r\nHow to build a team under a framework of trust and alignment.\r\nHow to better plan your career as an individual based on goals and a vision.",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "i",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "1-122-925-0550x604"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 74,
+        "fields": {
+            "audience_level": 2,
+            "recording_release": true,
+            "themes": "devops, automation, & testing,dealing with speed, scale, & performance",
+            "talk_length": 40,
+            "talk_links": "https://clark.com/",
+            "what_attendees_will_learn": "You'll learn the basic concepts behind SRE, what changes must be in place in your team and organization to drive improvements, and further resources to fully drive the cultural transformation that most companies are already experiencing with SRE.",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "i",
+            "speaker_website": "https://allen.com/login/",
+            "location_override": "",
+            "phone": "06965080189"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 75,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "machine learning, ai, & all things data",
+            "talk_length": 40,
+            "talk_links": "https://mason-brennan.org/author/",
+            "what_attendees_will_learn": "Outline:\r\n\r\n1. Developer Experience/Existing Pain Points\r\n1a. What do our users expect from tools solving this type of problem?\r\n- Everyone comes to the table with different expectations. (Slide showcasing varied responses from one of the most popular Reddit thread types on machine learning and AI subreddits)\r\n- Ultimately, there are many segments of users, each of which will have different levels of experience that need to be catered towards\r\n- Build the protocol in a way that is usable by all but extensible for the use-cases of power users.\r\n\r\n1b. Git is a tough workflow for developers of all types, can we improve on that?\r\n- Git branch switching is hard, how can we improve the checkout flow with snapshots, since different model versions are frequently juggled simultaneously?\r\n1c. How prescriptive (opinionated) should the protocol be?\r\n- How do the different use-cases determine the balance of use-of-ease with generalizability/impact of product\r\n\r\n2. How it works \r\n2a. Code\r\n- Git and other source control protocols are tried and true. In addition to the core competencies of git, platforms have already built functionality atop the technology (code diffs, issues, collaboration, etc)\r\n- Important to not reinvent the wheel where not necessary. Leverage the strength of the existing tool here.\r\n- Since people already have existing code management pipelines, we use their existing git rev as a pointer to the unique code state at time of snapshot creation\r\n2b. Configuration (hyperparameters, train/test split)\r\n- Figuring out the base level abstraction was important to ensure cross-framework and cross-language consistency. \r\n- Current methods involve passing either a list or hashmap of hyperparameter configurations directly into a function or object, so we decided to abstract this to a language-agnostic hashmap that lives in its own file outside the training code (config.json), making the same configuration easily usable with another algorithm\r\n2c. Metrics\r\n- Similar to configuration in that everyone has their own ideas on which metrics are valuable and how to display them\r\n- We take a completely hands-off approach here, only requiring the user to write stats out to a stats.json file for tracking purposes, listing any statistics they find relevant for their model/project\r\n2d. Environment\r\n- Many strides in recent years with containers, figured we need to leverage this as much as possible\r\n- Often times people think environment in code projects involves \u201cjust having the proper runtime\u201d and then installing the proper packages using pip or conda, but the reality is that GPU setup and complicated system level utilities can get dicey\r\n- Our solution: docker containers with environments stored in Dockerfiles to ensure complete environment reproducibility\r\n2e. Data\r\n- Likely the hardest problem to get right nowadays because of the fundamental differences in underlying use-cases\r\n- Avoid brute force solution. Not possible to build an adapter for every datastore solution under the sun \r\n- Is the data even saved (in the case of a stream?)\r\n- Our workaround: use a pointer\r\n- Data pipelines are already mature and existent across many organizations, no need to force them into conforming to a new standard of data storage for AI, but rather the protocol should fit into their existing ecosystem\r\nHands off, laissez faire approach: engineers at a company can use whatever sorts of internal references make sense in order to properly recall or identify the data used to perform training or inference.",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": " ",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "09683696579"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 76,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries,machine learning, ai, & all things data",
+            "talk_length": 25,
+            "talk_links": "http://www.harris.com/",
+            "what_attendees_will_learn": "This talk is for Python programmers who want to learn how to use Keras, a deep learning library for Python, to get started with deep learning. The audience should expect to learn what deep learning is, develop an intuitive understanding of how it works, and learn how to avoid some common mistakes. All of this is done via a recurring example, using utterance data to determine whether a medical patient might have a voice disorder called vocal hyperfunction\r\n\r\nOutline\r\nIntroduction [2 min]\r\n-----------------\r\nWho are we? What are we going to talk about? How to get started with deep learning using NumPy and Keras, using an example from the healthcare domain -- detecting vocal hyperfunction using an LSTM (a neural network with long short term memory). \r\n \r\nAn estimated 14 million working-aged Americans are affected by voice disorders like vocal hyperfunction. Vocal hyperfunction is an impairment of voice quality caused by damage to vocal structures. In this project, we used an LSTM to predict whether a patient has vocal hyperfunction.  Our input data included a signal representing vibrations from the voice over time. We segment out the utterances from the data. Utterances are sections of speech without more than 0.5 seconds of silence. After segmenting the utterances from the signals, we trained a supervised model using an LSTM, a type of neural network. In this talk, I will discuss data processing, memory management, and the lessons I learned when managing my first project using Keras.\r\n\r\n\r\nWhat is deep learning? [3 mins] \r\n------------------------------\r\nPictures and visualization can give researchers intuition about their problem and how a neural network works. We will start with an example of a simple feedforward neural network, and emphasize how changing input types and the operations performed between each layer will result in differing outputs. To show how information might change at each layer, we will use a methodology similar to that discussed in this [blog post](https://distill.pub/2017/feature-visualization/). \r\n\r\nWhat are NumPy and Keras?  [3 mins] \r\n--------------------------------------\r\n        - NumPy is a Python library made up of data structures to make working with numbers fast and easy \r\n        - Keras is a Python library with a relatively simple syntax that makes it possible to write stable deep learning algorithms relatively easily. Keras actually wraps around other deep learning libraries like TensorFlow and Theano, which give you more control over your parameters and architecture. So if you need to do something complicated, you may end up having to do a little bit with one of those other languages. But if you are new to deep learning and you want to write something that works quickly, Keras is a great way to do it.\r\n         - How can they help us represent a neural network?\r\n    \r\nIntroduce an example: using NumPy to process utterance data & Keras LSTM to predict whether unlabeled patient has vocal trauma [15 mins]\r\n--------------------------------------------------------------------------------------\r\n    - Using NumPy to process data & prepare inputs  [3 mins] \r\n    - Selecting the right neural network architecture [3 mins]\r\n    - Discuss good memory management & how to fix other common mistakes [5 mins]\r\n    - Show & interpret results [2 mins]\r\n\r\nConclusions [2 mins] \r\n-----------------\r\nConclude with a review of resources and other example projects to help people get started with their own deep learning projects using Python.",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": "d",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "982-973-1602"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 77,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries,devops, automation, & testing",
+            "talk_length": 25,
+            "talk_links": "https://www.garza-reyes.com/",
+            "what_attendees_will_learn": "From our experience of managing a large Python/Django codebase at Tesorio, we've come to utilize a variety of open source tools that help us easily manage & scale our codebase while maintaining code quality and reducing bugs.\r\n\r\nI will be doing a very practical talk about the tools we use and how to set them up & use them in new/existing Python codebases.",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": "c",
+            "speaker_website": "http://www.gonzalez.com/home/",
+            "location_override": "",
+            "phone": "778.814.7268"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 78,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "machine learning, ai, & all things data",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "Attendees will learn how to develop a simple visual search engine using open-source packages. Scripts for training visual similarity models will be provided to train a model with custom data. Brief instructions on running Tensorflow Serving to host the trained model will be provided. An example Flask service will be shown throughout slides to integrate all elements together. The Flask service code will be available online so attendees can quickly test their models.",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": "o",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "(499)481-5191x08039"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 79,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "machine learning, ai, & all things data",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "1) Python-heavy architecture to quickly switch AI models in and out, upgrade algorithms, etc\r\n2) Use of NLP packages like NLTK, spaCy\r\n3) Use of AI/NN packages like gensim, keras\r\n4) Performance vs Google Patents, and traditional patent tool vendors",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": "p",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "(540)078-6770x542"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 80,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "hacking hardware",
+            "talk_length": 25,
+            "talk_links": "https://www.mcdonald.com/tags/app/app/faq.html",
+            "what_attendees_will_learn": "This talk assumes familiarity with the Python language and ecosystem. You\u2019ll have to know what Django and the serial port are to follow this talk, but hands-on experience with neither is required. The target audience of this talk is the developer who has worked with Python in any domain (web development, data science, etc) for at least a year but might not even be aware of factory automation as an application.\r\n\r\nAfter attending or watching this talk a developer will understand how the tools they already know can be used to solve problems in industrial automation. They\u2019ll also have an understanding of what types of projects one might work on in the context of an automated factory. In the best case, an attendee might\r\n- expand their job search to include factory automation roles\r\n- recognize that their existing open source project has applications in factories\r\n- buy a used industrial sensor on Ebay and interface with it using Python as a hobby project",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "e",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "(789)377-4837x47625"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 81,
+        "fields": {
+            "audience_level": 2,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries,machine learning, ai, & all things data",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "Learn about different deep learning models in computer vision and how they can be applied to different problems such as classification, detection and segmentation.",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": "r",
+            "speaker_website": "http://sanders-keller.info/main/",
+            "location_override": "",
+            "phone": "1-347-294-1421"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 82,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "machine learning, ai, & all things data",
+            "talk_length": 25,
+            "talk_links": "http://boyd-mccoy.com/explore/categories/tags/faq.html",
+            "what_attendees_will_learn": "Get an overview of different aspects of machine learning and deep learning. Get a grasp on the latest and greatest in the field ranging from healthcare to developer tools such as Tensorflow.",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": " ",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "383.252.6414x11796"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 83,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "machine learning, ai, & all things data",
+            "talk_length": 25,
+            "talk_links": "http://www.thomas.com/faq.jsp",
+            "what_attendees_will_learn": "Get an overview of different aspects of machine learning and deep learning. Get a grasp on the latest and greatest in the field ranging from healthcare to developer tools such as Tensorflow.",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": "r",
+            "speaker_website": "https://www.reynolds.org/",
+            "location_override": "",
+            "phone": "1-823-024-9459"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 84,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "Outline:\r\n-----------\r\n- Intro slide [30s]\r\n- The problem to solve [ 1m30s, T: 2m ]\r\n    - Introduce examples (45s)\r\n        > Some common examples where the behavior implicitly\r\n        > differs based on some argument or another\r\n    - The problem for type checking (45s)\r\n        > Show how confusion can occur when the dispatch\r\n        > happens *inside* the function.\r\n- Alternate constructors [ 4m, T: 6m ]\r\n    - The Coordinate class (1m)\r\n        > Represents coordinates in a latitude/longitude system\r\n    - Constructor taking two floats or a string [1m30s]\r\n        - Explaining the concept (30s)\r\n        - Desired API vs. Actual API, type hinted (20s)\r\n        - Errors not caught by type checker (25s)\r\n    - Using an alternate constructor [1m30s]\r\n        - Implementing ``from_str`` with the @classmethod decorator (45s)\r\n        - Actual type-hinted API (15s)\r\n        - Clearness of error messages (30s)\r\n- classmethod vs. staticmethod [ 3m30s; T: 9m 30s ]\r\n    - Alternate constructors (1m)\r\n        > Show that static methods and class methods can both be\r\n        > used to implement alternate constructors, but static\r\n        > methods will *always* construct the base class or need\r\n        > to be re-implemented in subclasses, while class methods\r\n        > are heritable.\r\n    - Abstract interfaces [1m 30s]\r\n        - Static methods (30s)\r\n            > Static methods can be used as an abstract interface on\r\n            > the type when the implementation has no customizable\r\n            > details\r\n        - Class methods (1m)\r\n            > Class methods can delegate some of the implementation\r\n            > details to the class, allowing customization in subclasses\r\n    - Static methods for namespacing (1m)\r\n        > Show that methods can be placed on a class to namespace them\r\n        > and indicate with syntax that they are related to the class,\r\n        > even if they would work as free standing functions\r\n- Functions [ 3m30s, T: 13m ] \r\n    - Introduction (30s)\r\n        > Demonstrate a simple problem where multiple forms of a *function*\r\n        > would be useful (e.g. printing text from a string, stream or file),\r\n        > and show a na\u00efve approach (print_text, print_text_from_stream).\r\n    - variants solution (1m)\r\n        > Implement ``print_text`` as a primary and two variant functions,\r\n        > showing that they work differently, can have different function\r\n        > signatures, and that they can call one another.\r\n    - singledispatch solution (1m)\r\n        > Implement ``print_text`` with ``functools.singledispatch``,\r\n        > dispatching explicitly on type\r\n    - variants + singledispatch (1m)\r\n        > Show that both can be used together for explicit dispatch, and that\r\n        > variants can allow duck typing on singledispatch-ed functions\r\n- Example uses for function or method variants [ 6m; T: 19m ]\r\n    - Variation in return type (1m)\r\n        > Example of a function that returns a generator, but with an\r\n        > eagerly calculated variant\r\n    - Introducing a backwards-incompatible change (3m)\r\n        > Demonstrate how changing the default behavior of a function or\r\n        > method can be made easier by providing alternative explicit variants,\r\n        > using Python's dict.items as an example\r\n    - Caching and non-caching variants (1m)\r\n    - Blocking and non-blocking variants (1m)\r\n        > Show an async and a blocking variant of the same function\r\n- General principles [ 5m; T: 24m ]\r\n    - Utilize language semantics to mark relatedness (45s)\r\n    - Clean top level APIs (1m)\r\n        > Show that this works well from a tab completion and documentation\r\n        > generation perspective.\r\n    - Think about your type hints (1m15s)\r\n        > Even if you aren't using type hints, you may want to rethink\r\n        > your approach if you find it difficult to write down a typed\r\n        > version of your signature.\r\n    - Provide explicit versions of \"magical\" interfaces (2m)\r\n        > Interfaces that \"just work\" are great in 90% of cases, but can\r\n        > be very frustrating when you need a very specific behavior out\r\n        > of them. The primary variant should do the right thing by default,\r\n        > but specific functionality should be accessible.",
+            "meetup_talk": "No",
+            "speaker_and_talk_history": " ",
+            "speaker_website": "http://www.rios.org/home.jsp",
+            "location_override": "",
+            "phone": "170-329-6286"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 85,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries,engineering a community",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "- Why Open Source? [ 2m, T: 2m]\r\n    - Satisfaction\r\n    - Agency\r\n    - Reputation\r\n- Types of contribution [ 3m30s, T: 5m30s ]\r\n    - Issues (1m)\r\n    - Bug fixes (1m)\r\n    - Features (1m)\r\n    - Documentation fixes (30s)\r\n- Basic GitHub workflow [ 6m 30s, T: 12m ]\r\n    - Basic git workflow (1m)\r\n        > Clone a remote repository, make a branch, push to the remote\r\n    - Making a pull request [4m]:\r\n        - Three repository workflow (1m)\r\n            > \"local\", \"origin\" and \"upstream\"\r\n        - Forking the repo (15s)\r\n            > Creates \"origin\" from \"upstream\"\r\n        - Cloning the fork (15s)\r\n            > Creates \"local\" from \"origin\"\r\n        - Set the upstream (30s)\r\n            > Connects \"local\" to \"upstream\"\r\n        - Make a branch (1m)\r\n            > Keeps your \"master\" clean\r\n            > Makes it easier for maintainers to fix or clean up changes\r\n        - Push the branch to origin (15s)\r\n        - Make the pull request against upstream (45s)\r\n    - Continuous integration (1m 30s)\r\n        - How CI works (45s)\r\n            > Most projects have continuous integration set up, which tests against all supported environments. Let it run and then check it\r\n        - Reading the CI failures (45s)\r\n            > See what failed, see what the error was, try to fix it\r\n- Raising a good issue [ 2m30s, T: 14m30s ]\r\n    - Search for existing issues and PRs (15s)\r\n    - Provide all your versions (update if possible) (15s)\r\n    - Prepare a *minimal* working example (1m)\r\n    - Provide a traceback if applicable (15s)\r\n    - Clearly explain what the answer *is* and what it *should be* (15s)\r\n    - Bonus: Do a little digging (30s)\r\n- Elements of an accepted pull request [ 3m 30s, T: 18m00s ]\r\n    - Introduction to the \"maintainer psychology\" (1m 30s)\r\n        > Many or most projects are limited by maintainer time - anything that requires extensive review will be put off. Maintainers need enough context to work with but probably won't read a novel. Strike a balance there.\r\n    - Easy to verify - Tests, tests, tests! (45s)\r\n    - Clear reasoning (30s)\r\n    - Minimal support burden (30s)\r\n    - Only make one change at a time (15s)\r\n- Choosing a first contribution [ 5m 45s, T: 23m 45s ]\r\n    - Pick a project (1m30s)\r\n        > - Choose something that interests you.\r\n        > - Look at how recently PRs have been *closed*\r\n        > - Check if it has tests - even better, check if it has CI!\r\n        > - Look at the license\r\n        > - Read CONTRIBUTING.md\r\n    - Find an issue and read the history (45s)\r\n        > - Look for \"good first issue\" type labels\r\n        > - Look for \"help wanted\"\r\n        > - Avoid issues blocked by uncertainty about implementation \r\n    - Look for related issues (30s)\r\n        > - May provide additional context\r\n        > - May be able to close more than one issue at once\r\n    - Dive into the code (1m)\r\n        > - Find an entry point and follow the code\r\n        > - Create a minimal working example and set a breakpoint\r\n        > - Try to understand the larger context\r\n        > - Create a failing test\r\n    - Set up your build environment (1m 30s)\r\n        - Check the documentation for build instructions (15s)\r\n        - Work in a virtualenv (30s)\r\n        - Make sure you can run the local test suite (45s)\r\n    - Make a PR, and pay attention to the CI (15s)\r\n    - Stick around! (15s)\r\n        > Hit-and-run contributions are great, but there's a lot of fixed cost. Fixing two issues is NOT twice as hard as fixing one!\r\n- Other ways to get involved [ 1m, T: 24m 45s ]\r\n    - Sprints (30s)\r\n        > Stay after conferences for sprint events where everyone will work together on open source programming. Often, the project maintainers will be there and give real-time feedback.\r\n    - Translate talks or uncertainty into documentation (15s)\r\n        > Watch good talks about a project and try to use the library, keeping track of anything not in the documentation. Then see if you can add that information to the docs!\r\n    - Help out in IRC or on Stack Overflow (15s)\r\n        > Tracking down issues for others is often a good way to get a deeper understanding of a project. Once you understand a project, you are in a great position to contribute!\r\n\r\nAs I have not given this talk before, the timings above are more likely to be too short than too long. A 40-minute talk would definitely include all these topics, but a 25-30 minute talk will likely need to cut some.",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": "t",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "580.723.6215x1778"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 86,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries,machine learning, ai, & all things data",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "The atendee will learn how to:\r\n\t1. Transform raw datasets (make them readable)\r\n\t2. clean up raw data (drop nulls or fill them in, create features from others)\r\n\t3. Perform basic descriptive statistics of data set\r\n\t4. Create basic data visualizations for better understanding (seaborn, plotly, altair)\r\n\r\nThe goal is for the atendee to leave with a range of resources: a template for their own data analysis workflow/pipeline, tips on what to do with not-so-great data, links/resources for further exploring and learning python tools and libraries.",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "a",
+            "speaker_website": "https://collins.com/home/",
+            "location_override": "",
+            "phone": "(874)678-7401x5827"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 87,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries",
+            "talk_length": 25,
+            "talk_links": "https://phillips.org/terms.html",
+            "what_attendees_will_learn": "Actionable skills:\r\n- How to use brew to have Python 2 and Python 3 installed in parallel on a Mac\r\n- How to change the versions of Python installed by default on Ubuntu/Debian with apt (and why not to)\r\n- How to use pyenv to install as many versions of Python as you want\r\n- How to compile Python from source\r\n- One weird trick to make Python go 25% faster by setting one flag during the Python build process\r\n- Which format of the hashbang line is best and why\r\n- How to use virtualenv with multiple Python version\r\n- How to use pipenv with multiple Python versions\r\n- How to use Docker to never have to deal with any of the above again\r\n- How to find the right Python Docker image for your purpose on Dockerhub\r\n\r\n\r\nBackground knowledge attendees will learn:\r\n- Rules and regulations around Unix folder structure and where to put your Python install\r\n- How Python knows where to find installed packages (and how to mess up your development environment if you don't)\r\n- What the difference between brew and Macports is\r\n- What the package maintainer of a Unix package does\r\n- Various tips and tricks around the compilation process\r\n- Docker 101 in a nutshell",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": "e",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "(223)969-3419x4658"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 88,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries,devops, automation, & testing",
+            "talk_length": 25,
+            "talk_links": "https://anderson-quinn.net/register.php",
+            "what_attendees_will_learn": "- A very brief overview of websockets and where Django Channels came from.\r\n\r\n- As a new user of Django Channels, where should I start with my implementation?\r\n\r\n- Pitfalls I should watch out for with my first Django Channels implementation\r\n\r\n- The context of a real application using Django Channels + Websockets that is not your standard chat room client example\r\n\r\n- Strategy for deploying infrastructure that supports Django and websockets\r\n\r\n- Pointers to resources for continued learning",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": " ",
+            "speaker_website": "http://wood.info/main.html",
+            "location_override": "",
+            "phone": "1-631-463-7403x2100"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 89,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries,machine learning, ai, & all things data",
+            "talk_length": 25,
+            "talk_links": "https://hamilton-myers.org/register/",
+            "what_attendees_will_learn": "The atendee will learn:\r\n\t1. to scrape data from websites and PDFs\r\n\t2. some of the most common scientific python libraries and their uses (NumPy, SciPy, Statsmodels) and how to replicate whatever they were doing in STATA in Python\r\n\t3. how to visualize their results and best practices for engaging (short mention on how to create palettes for those in institutions with rigorous style guidelines) (libraries of interest: Altair, Plotly, Seaborn)\r\n\t4. about resources available (for data, inspiration, ideas, practice).",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "t",
+            "speaker_website": "http://smith.com/home.php",
+            "location_override": "",
+            "phone": "105-483-4873x27421"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 90,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries,dealing with speed, scale, & performance",
+            "talk_length": 40,
+            "talk_links": "https://www.chapman.com/",
+            "what_attendees_will_learn": "Attendees will learn about how Asyncio was used in order to implement the NATS protocol and general performance tips for when developing networking libraries using it.  They will also learn familiarity with the NATS project and its APIs, which would greatly help when evaluating different solutions in case of considering messaging based architectures.",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": " ",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "157.402.0415x0011"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 91,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "benefits and foot cannons of\r\n\r\nlist comprehension\r\ndictionaries comprehension\r\nlambda functions\r\nreduce\r\ntail recursion (and why run time doesn't optimize)",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": "u",
+            "speaker_website": "http://alvarez-park.net/posts/wp-content/tags/about.htm",
+            "location_override": "",
+            "phone": "(045)873-2865"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 92,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries,machine learning, ai, & all things data",
+            "talk_length": 40,
+            "talk_links": "https://joseph.com/author/",
+            "what_attendees_will_learn": "Attendees will gain an overview of the ways of data munging and SQL plus pandas solutions, such as using the Jupyter extension, connecting to a database through Python or performing a number of operations in pandas. In particular, they will learn how to perform the most commonly used SQL functions in pandas, such as joins and unions, aggregations as well as more complicated calculations such as rolling averages or window functions.",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": "d",
+            "speaker_website": "http://dillon-hess.com/search/tags/search/",
+            "location_override": "",
+            "phone": "661-678-6641x494"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 93,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "machine learning, ai, & all things data",
+            "talk_length": 25,
+            "talk_links": "http://www.perez.biz/category/categories/faq.htm",
+            "what_attendees_will_learn": "Blockchain is the hot buzz word for tech communities now, given the popularity of Bitcoin. Its future as currency is not certain, however, the distributed nature of blockchain itself has tons of potential to build various solutions upon. I want to share the audience what the core concepts are, and show them examples of smart contracts can be built upon NEO chain (which is competitor of ETH,  but it has direct Python support).",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "n",
+            "speaker_website": "http://www.mcmahon.info/posts/main/",
+            "location_override": "",
+            "phone": "(300)405-4434x1910"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 94,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "devops, automation, & testing",
+            "talk_length": 25,
+            "talk_links": "https://www.perry.org/",
+            "what_attendees_will_learn": "This talk is aimed a tech leads and developers who work in production software and don't have an established process or recovery plan for critical incidents, regardless of their experience. They will get an in-depth view of how other companies are navigating these situations.\r\n\r\nMy goal is to inspire people to reflect on what they would do if a critical incident developed in their projects today. How would they handle the situation? I expect this question to be answered for at least some people by the end of the talk. I want to provide a clear guidance on crisis management and hope they share the learned knowledge with their teams and apply it to their projects.",
+            "meetup_talk": "No",
+            "speaker_and_talk_history": "o",
+            "speaker_website": "https://www.sullivan.biz/explore/homepage.jsp",
+            "location_override": "",
+            "phone": "1-657-864-7296x65230"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 95,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "The history and structure of the DAT protocol, current infrastructure, available applications, possibilities to use its advances within python applications.",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "g",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "694-842-2440"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 96,
+        "fields": {
+            "audience_level": 2,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries,dealing with speed, scale, & performance",
+            "talk_length": 25,
+            "talk_links": "http://www.newman.com/posts/categories/blog/main.html",
+            "what_attendees_will_learn": "Attendees will learn about tools such as cibuild wheel (https://github.com/joerick/cibuildwheel) and common Python extension issues and how best to resolve them.",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "o",
+            "speaker_website": "https://www.matthews-tyler.com/search/privacy/",
+            "location_override": "",
+            "phone": "03513667746"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 97,
+        "fields": {
+            "audience_level": 2,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries,dealing with speed, scale, & performance",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "In this talk I will:\r\n- review the fundamentals of how Python executes code\r\n- explain why a register based VM is better than the current stack based VM.\r\n- explain how Halibut is being implemented\r\n- give a status update on how Halibut is doing",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "e",
+            "speaker_website": "http://www.torres.com/",
+            "location_override": "",
+            "phone": "(628)482-1291x6629"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 98,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries,devops, automation, & testing,dealing with speed, scale, & performance",
+            "talk_length": 25,
+            "talk_links": "https://levy-brown.com/post.html",
+            "what_attendees_will_learn": "The audience will learn a brief history of the command line, mostly around the POSIX shell's practical, but vague, definition of the \"command line\". We'll analyze large-scale, high-impact commands for useful design conventions. The audience will leave with a good understanding of the pros and cons of several Python CLI libraries, both built-in and 3rd party, to better inform their future command-line application building.",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": " ",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "+76(6)3895310148"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 99,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries,hacking hardware",
+            "talk_length": 40,
+            "talk_links": "https://wilson-castillo.com/home/",
+            "what_attendees_will_learn": "This is a practical talk to introduce the audience to the world of microcontrollers, their Python technologies and what they can accomplish with minimum effort and lack of previous knowledge. The talk shows how to build from scratch a light intensity reader and a fully operational light dimmer as practical examples, using the standard micropython library, and the intuitive IoT MQTT pub/sub messaging system. Finally, mobile developers will appreciate how everything neatly wraps-up with a beautiful Kivy interface using QPython.\r\n\r\nI can also shorten this talk to fit in 25 minutes by dropping the light intensity reader, and shortening the GPIO, and Qpython/Kivy sections",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "r",
+            "speaker_website": "https://salinas-booker.com/main/register.htm",
+            "location_override": "",
+            "phone": "1-879-998-0550"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 100,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "Attendees will learn my framework for exploring unfamiliar code. I call it \"The 6 Ds of Becoming Familiar With A Codebase\".\r\n\r\nDescription - Let the file tree \u201cdescribe\u201d the hierarchy\r\nDiagrams - Draw out the main parts of the hierarchy\r\nDebugger - Inspect files, classes and methods\r\nDialogue - Say aloud how the files interact or what the code is doing\r\nDocstrings - Codify what specific methods, classes and functions do\r\nDocumentation - Write your notes down for your future self and colleagues\r\n\r\nI'll show how to implement each of these 6 strategies while doing a mock \"first-look\" of a Django app.",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "g",
+            "speaker_website": "http://www.hernandez.net/post/",
+            "location_override": "",
+            "phone": "439.531.1007x279"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 101,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries,devops, automation, & testing",
+            "talk_length": 25,
+            "talk_links": "https://www.wright.org/about.jsp",
+            "what_attendees_will_learn": "Using Python to manage their AWS Infrastructure.",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "e",
+            "speaker_website": "https://www.walters.net/home.html",
+            "location_override": "",
+            "phone": "620-370-9263x9489"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 102,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries,machine learning, ai, & all things data",
+            "talk_length": 25,
+            "talk_links": "http://poole-harris.com/tag/register/",
+            "what_attendees_will_learn": "This talk is meant for new and intermediate Python developers who want to understand the concepts behind MongoDB and how to use it with Python. The focus of the talk is to go through the core concepts of the technology, showing how to use them in Python. This will be detailed enough so that new developers can understand the concepts and how to use them, but at the same time, make it interesting for more experienced developers.\r\n\r\nIn this talk I mean to answer the following questions:\r\n- What is MongoDB?\r\n- How does it work?\r\n- When should I use MongoDB?\r\n- How to connect it to a Python project?\r\n- How to work with it in Python?\r\n- How to deploy it?",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": "c",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "325.059.0419"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 103,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "Dealing with Speed, Scale, and Performance",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "Attendees should leave this talk knowing the trade-offs between using traditional REST and RPC for microservice communication. They will see best practices for building their own microservice communcation layer using RPC and REST.",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": "n",
+            "speaker_website": "http://www.murphy-green.info/privacy/",
+            "location_override": "",
+            "phone": "1-719-893-5357x09560"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 104,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "machine learning, ai, & all things data",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "How Python both integrates formerly disparate parts of the AEC workflow and supports new capabilities as an embedded scripting language in CAD applications, scripting filesystem tasks, and as a data science/ML platform. The talk will also include examples of how ML techniques might be applied to building design.",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": "d",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "(755)564-4588x1013"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 105,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "machine learning, ai, & all things data",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "Attendees will learn:\r\n- The basics of Machine Learning\r\n- How machine learning is done at Twitter's scale\r\n- How our ML framework is structured\r\n- The reasons from transitioning from Lua Torch to Tensorflow (Python)",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": " ",
+            "speaker_website": "http://brown-wright.com/",
+            "location_override": "",
+            "phone": "927-453-7188x76599"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 106,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "engineering a community",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "Attendees will learn about habits and mindsets they can use to keep growing. Attendees will take away practical knowledge they can implement to start improving their skills in the absence of a direct mentor. I'll discuss how to manage motivations, burnout, and interest.",
+            "meetup_talk": "No",
+            "speaker_and_talk_history": "u",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "+41(0)7636091256"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 107,
+        "fields": {
+            "audience_level": 2,
+            "recording_release": true,
+            "themes": "Dealing with Speed, Scale, and Performance",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "The talk with cover context switching, co-routines, gevent, flask, microservice communication, and the architecture of cloud apis that are in production and successfully serving customers.",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "l",
+            "speaker_website": "http://lambert.com/tags/list/main/search/",
+            "location_override": "",
+            "phone": "1-391-912-0098"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 108,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries,devops, automation, & testing",
+            "talk_length": 25,
+            "talk_links": "http://roberts.com/terms/",
+            "what_attendees_will_learn": "Intended for beginners to learn the basics of Python, building a library from scratch, some Docker, neo4j, and google cloud platform for deployment. Also how to utilize relationships with co-workers to understand a problem and lessons learned along the way",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "G",
+            "speaker_website": "http://robbins.net/list/privacy/",
+            "location_override": "",
+            "phone": "05008458040"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 109,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries,dealing with speed, scale, & performance",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "Some internals of the Django Object Relational Model, why the Managed Key Cache library is something they should consider for their production Django deployments, how to integrate it with their project, and details about how it works.\r\nA working knowledge of Django and its object relational model is expected.",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "o",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "(670)804-6036x149"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 110,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "machine learning, ai, & all things data,dealing with speed, scale, & performance",
+            "talk_length": 25,
+            "talk_links": "https://www.peck-brewer.org/faq.php",
+            "what_attendees_will_learn": "This talk focuses on :\r\n\r\n- The shortcomings / common pitfalls of current approaches in terms of:\r\n  - Functionality\r\n  - Scalibility\r\n- Handling the ambiguities in defining offensive content\r\n- Using a Deep Learning based approach to detect offensive content\r\n- Production-izing the solution",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": "a",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "(212)181-6332x48485"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 111,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries,devops, automation, & testing,dealing with speed, scale, & performance,engineering a community",
+            "talk_length": 40,
+            "talk_links": "",
+            "what_attendees_will_learn": "The audience for this talk are developers in corporate environments who need to adapt the open source tools to their requirements. There are no special prerequisites for the talk, although a basic understanding of Python packaging tools and build process will help. After this talk, the audience should be able to recognize, debug, and fix issues with standard Python tooling and open-source packages. The talk should provide them with the confidence to handle similar problems on their own and contribute back to the open-source community. \r\n\r\nOutline:\r\n\r\n1. Introduction\r\n(2 minutes)\r\n* speaker\r\n* motivation\r\n\r\n2. Distinct features of corporate continuous integration environment\r\n(3 minutes)\r\n* continuous integration\r\n* isolation\r\n* platform differences\r\n* publishing\r\n* deployment\r\n* other details \r\n\r\n3. What can go wrong with open-source packages in such an environment?\r\n(5 minutes)\r\n* taxonomy of issues by type\r\n* incompatible updates\r\n* assumptions about external access\r\n* assumptions about the build system\r\n* incorrect/incomplete package metadata\r\n* conflicting requirements\r\n* bugs\r\n* idiosyncrasies of internal build tooling\r\n\r\n4. Specific examples\r\n(15 minutes)\r\n* look at some of the issues and solutions from our own experience\r\n* review specific code and configuration examples * pip\r\n* pex\r\n* flake8\r\n* Sphinx\r\n* setuptools/distutils/virtualenv\r\n* numpy/scipy\r\n* pyOpenSSL/cryptography\r\n* other packages\r\n\r\n5. Debugging process\r\n(5 minutes)\r\n* advice for debugging and diagnostics of the issues of similar type in the future\r\n\r\n6. Contributing back to the open-source packages\r\n(5 minutes)\r\n* improving the ecosystem for everyone\r\n* being respectful\r\n* providing the tests, comments, and documentation\r\n* making the contribution easy to be accepted\r\n* review specific open-source patches we contributed back\r\n\r\n7. Conclusion\r\n(1 minute)\r\n\r\n8. Q & A\r\n(4 minutes)",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": "a",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "+39(6)5964518871"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 112,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries,hacking hardware",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "Ideally, after watching the talk the audience member would be motivated to try out Android or iOS Mobile or some other 'exotic' development with Python or to program an embedded device with MicroPython.",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": "n",
+            "speaker_website": "http://ramos-hahn.com/",
+            "location_override": "",
+            "phone": "575.832.2023"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 113,
+        "fields": {
+            "audience_level": 2,
+            "recording_release": true,
+            "themes": "machine learning, ai, & all things data",
+            "talk_length": 25,
+            "talk_links": "https://www.walters.com/faq.html",
+            "what_attendees_will_learn": "Attendees should leave this session with a deeper understanding of deep learning (pun intended) and some idea of when to use it over traditional machine learning approaches. Hopefully attendees will also leave with a good idea of how to design and scale serverless applications driven by webhooks. Attendees will also leave with an appreciation of security concerns around webhooks and how Twitter attempts to solve them in their Account Activity API.",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": " ",
+            "speaker_website": "https://hall-smith.com/app/author/",
+            "location_override": "",
+            "phone": "+53(1)4813769618"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 114,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries,devops, automation, & testing",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "I will likely filter this list down (or if you'd prefer me to give a 40min session I'm happy to), but the top issues I'd like to cover are:\r\n* differences in paths (especially using pathlib/os.path to automatically handle them)\r\n* file system encoding, and PEP 528/529\r\n* packaging (brief history of wheels, what they are and how they solve the compiler problem - probably also conda, depending on time)\r\n* configuration files/locations (where to put them, use of appdirs and similar packages)\r\n* use of AppVeyor and Visual Studio Team Services to get build and test on Windows (AppVeyor) and all platforms (VSTS) for free\r\n* writing installation and use instructions to include Windows (including how Python's installer works and the py.exe launcher, the fact that there's no bin folder on PATH and how to deal with that)\r\n* typical user permissions on Windows and how they differ from POSIX\r\n* anti-patterns that break platform compatibility (some listed above, but also which core modules are platform-specific, which functions are known to have platform-specific behaviour - this will be plenty of examples aiming to teach how to identify potentially problematic code, rather than an exhaustive list)",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": "u",
+            "speaker_website": "http://www.hill-garcia.net/main/blog/search.html",
+            "location_override": "",
+            "phone": "06680256839"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 116,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries,machine learning, ai, & all things data,devops, automation, & testing,dealing with speed, scale, & performance,engineering a community",
+            "talk_length": 40,
+            "talk_links": "",
+            "what_attendees_will_learn": "Attendees who have never seen Apache Airflow will gain a basic understanding of how to use python code to deploy complex workflows using Airflow.\r\n\r\nAttendees with Airflow experience who have never used Kubernetes will learn how the Kubernetes Executor can significantly reduce the costs and time associated with running Airflow clusters through dynamic resource allocation, as well as seeing a straightforward example of building native applications for Kubernetes.\r\n\r\nAttendees with Kubernetes and Airflow experience will learn how to productionize their Airflow on Kubernetes instances through Seth's experience using the system in production at PubNub",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": " ",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "746-137-0320"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 117,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "* Practical problem-solving in a step-by-step manner.\r\n* Using Python to do effective prototyping.\r\n* Learn about prompt-toolkit library. \r\n* Learn about fuzzy matching.\r\n* List comprehension.\r\n* Sorting of tuples.\r\n* Simpl Regex",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": "i",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "418.638.2500x061"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 118,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries,hacking hardware",
+            "talk_length": 25,
+            "talk_links": "http://terry-cannon.com/",
+            "what_attendees_will_learn": "ads",
+            "meetup_talk": "No",
+            "speaker_and_talk_history": "p",
+            "speaker_website": "http://anderson.com/search/",
+            "location_override": "",
+            "phone": "1-526-461-1742x5317"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 119,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "engineering a community",
+            "talk_length": 40,
+            "talk_links": "https://www.morales.com/posts/blog/author/",
+            "what_attendees_will_learn": "During this talk, you'll learn the roles, meetings, and artifacts that comprise Agile development, and how to make agile work for you. Further, we'll learn how to communicate what you've learned to your fellow engineers, and keep everyone rollin'.",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": "r",
+            "speaker_website": "https://www.mccullough.com/blog/wp-content/categories/register/",
+            "location_override": "",
+            "phone": "174-735-8626x22063"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 120,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "machine learning, ai, & all things data",
+            "talk_length": 40,
+            "talk_links": "",
+            "what_attendees_will_learn": "We'll cover how to approach use different data types in Deep Learning, and how to scope and build deep learning projects",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": "t",
+            "speaker_website": "http://www.hill-wright.com/search/tags/categories/about/",
+            "location_override": "",
+            "phone": "(728)427-4180"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 121,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries,machine learning, ai, & all things data",
+            "talk_length": 40,
+            "talk_links": "",
+            "what_attendees_will_learn": "* How to get started with Spark\r\n* Benefits of using the Python API for Spark\r\n* Data exploration tricks in PySpark\r\n* Trends in breached password data",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": "l",
+            "speaker_website": "http://logan-brown.com/wp-content/homepage/",
+            "location_override": "",
+            "phone": "1-201-158-1715"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 122,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries",
+            "talk_length": 25,
+            "talk_links": "http://jones-williams.biz/",
+            "what_attendees_will_learn": "* Goals of 2FA\r\n* Different types of 2FA\r\n* How to use the PyOTP library\r\n* Basics of encryption for TOTP (Time-based One Time Passwords)",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": "o",
+            "speaker_website": "https://singleton-jenkins.info/register.asp",
+            "location_override": "",
+            "phone": "805-384-7200"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 123,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries",
+            "talk_length": 40,
+            "talk_links": "",
+            "what_attendees_will_learn": "How to use new asyncio features that were added in Python 3.7 and what to expect from Python 3.8.",
+            "meetup_talk": "No",
+            "speaker_and_talk_history": "b",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "1-579-592-8642x2792"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 124,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "Dealing with Speed, Scale, and Performance",
+            "talk_length": 40,
+            "talk_links": "",
+            "what_attendees_will_learn": "What EdgeDB is and why they should start using it.",
+            "meetup_talk": "No",
+            "speaker_and_talk_history": "o",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "(599)313-3609x21190"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 125,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "machine learning, ai, & all things data,devops, automation, & testing,dealing with speed, scale, & performance",
+            "talk_length": 40,
+            "talk_links": "",
+            "what_attendees_will_learn": "We will first go through the basics of entity embeddings, demonstrating why they are so important and powerful for other machine learning tasks. We will use the popular word2vec example for this.\r\nWe will then show how a typical machine learning task looks, highlighting the specificity of the Twitter case, specifically\r\nScala (via the Scalding library) is the main driver for data collection jobs\r\nConversation (and even vocabulary) changes often, therefore everything needs to be retrained regularly\r\nWe will walk through a couple of use cases (word and user embeddings), to show such tools in action.",
+            "meetup_talk": "No",
+            "speaker_and_talk_history": "s",
+            "speaker_website": "https://www.jefferson.com/login/",
+            "location_override": "",
+            "phone": "955.082.4443x95181"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 126,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "devops, automation, & testing",
+            "talk_length": 40,
+            "talk_links": "http://perry.com/about/",
+            "what_attendees_will_learn": "How to secure your system by having: private /tmp for your process, read-only paths so that your process can not write to them, inaccessible paths, protect users home, network access, bin directories, etc.\r\nHow to limit the resources you app can consume.\r\nHow to interact directly with systemd, so it can start transient units, start/stop services, mount disks, resolve addresses.\r\nhow to replace subprocess.call with pystemd.run\r\nHow to isolate your service without containers.\r\nHow to isolate your service using systemd-containers",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "i",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "191.755.4000x7483"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 127,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "machine learning, ai, & all things data",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "Learn to do apply deep learning to sequence tasks using PyTorch",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "l",
+            "speaker_website": "http://www.hopkins.com/blog/blog/explore/faq/",
+            "location_override": "",
+            "phone": "731-937-4624x12061"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 128,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries,machine learning, ai, & all things data",
+            "talk_length": 25,
+            "talk_links": "https://www.johnson.com/post/",
+            "what_attendees_will_learn": "How to write and simulate different algorithms. How to apply algorithms IRL. How to leverage Jupyter to cut through things that look complex.",
+            "meetup_talk": "No",
+            "speaker_and_talk_history": "m",
+            "speaker_website": "https://bennett.biz/register.html",
+            "location_override": "",
+            "phone": "218.972.8643x83047"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 129,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries",
+            "talk_length": 25,
+            "talk_links": "https://bridges.com/terms/",
+            "what_attendees_will_learn": "Attendees will come away with a clarified understanding of how python handles variables internally from a pragmatic perspective. They will learn the difference between passing a scalar and an object to a function, accessing variables through the global and local functions, the difference between mutable and immutable variables and more.",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": "n",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "+72(0)3818378251"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 130,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "machine learning, ai, & all things data",
+            "talk_length": 40,
+            "talk_links": "http://www.rush.com/homepage/",
+            "what_attendees_will_learn": "The attendees will learn about the Keras library. Starting with a general overview of its design principles. Then a detailed walkthrough of building a deep learning model in the Keras library. For each library function, I'll explain what it conceptually means and how different choices will change the end result. It will be loosely based on the documentation - https://keras.io/getting-started/sequential-model-guide/.",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "g",
+            "speaker_website": "https://www.brown.com/",
+            "location_override": "",
+            "phone": "1-273-596-3247"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 131,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries,devops, automation, & testing",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "This talk is for everyone who\u2019s interested in making their Python codebases easier to understand. Anyone who\u2019s worked with other people on a Python codebase (and therefore had to read other people\u2019s code), or who\u2019s worked with other people in any programming language and can read Python code at a basic level, has all the background needed for the talk.\r\n\r\nAfter the talk, the audience will 1. know what Python\u2019s static typing (PEP 484) does and how it makes Python programs more fun and productive to work in; 2. know how large companies like Dropbox and open-source projects like Zulip have adopted static typing, and best practices for adopting it in an existing codebase; 3. hopefully, be excited to go try static types out in their own Python programs! :-)",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "e",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "1-784-352-5602x4152"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 132,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries,machine learning, ai, & all things data",
+            "talk_length": 25,
+            "talk_links": "https://hernandez.com/tags/category/post.htm",
+            "what_attendees_will_learn": "By the end of this talk, you will learn:\r\nWhat a data warehouse is and its importance for a business\r\nThe role of ETLs in data warehousing\r\nThe difficulty of building scalable ETLs without Airflow\r\nWhat Apache Airflow is\r\nHow to write a simple workflow with Airflow\r\nThe simplicity that Airflow brings to ETLs",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": "e",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "+99(1)9077904712"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 133,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries,machine learning, ai, & all things data,devops, automation, & testing,dealing with speed, scale, & performance",
+            "talk_length": 40,
+            "talk_links": "https://murphy.info/list/post.htm",
+            "what_attendees_will_learn": "- How to integrate Spark into your existing Python application, how to get your dependencies ready for AWS, and when Spark might be a good framework for your application\r\n- How we decoupled and abstracted the filesystem so we could run end-to-end stateless Spark integration tests locally with pytest.\r\n- Compatibility issues in running Python in the Spark paradigm",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "e",
+            "speaker_website": "https://white-crawford.net/tag/list/explore/index/",
+            "location_override": "",
+            "phone": "+66(1)0797997458"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 134,
+        "fields": {
+            "audience_level": 2,
+            "recording_release": true,
+            "themes": "machine learning, ai, & all things data",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "Attendees will learn the type system and architecture of Xnd, together with Python examples how to use xnd.\r\n\r\nExamples on how to extend gumath with new types and kernels will be given.",
+            "meetup_talk": "No",
+            "speaker_and_talk_history": "n",
+            "speaker_website": "https://www.shea-smith.com/",
+            "location_override": "",
+            "phone": "683-116-9735x57528"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 135,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "devops, automation, & testing",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "- professional lessons that I learned as a newcomer to a company:\r\n  - ask about utilities provisioned on your servers\r\n  - ask about the versions of particular utilities you\u2019re scripting with\r\n  - python makes your scripts much, much more readable to others\r\n- overall lessons:\r\n  - Do you remember how you felt when you first joined your company? I was able to succeed at this task because I felt no inordinate pressure to succeed at first try and felt comfortable making mistakes, taking risks and asking for help. What can you do to help new team members at your feel the same?\r\n  - Imposter syndrome grows more powerful if it goes ignored\r\n    - If you\u2019re a mentee/junior:\r\n      - familiarize yourself with imposter syndrome (if you\u2019re not already)\r\n      - acknowledge that the feelings are there but don\u2019t let it stop you from contributing (https://twitter.com/egsy/status/975990575995367424)\r\n      - develop a strong support system both in and out of work\r\n(https://twitter.com/egsy/status/970557975193468929)\r\n\r\n    - If you\u2019re a mentor/manager/senior:\r\n      - actively check in with juniors - make yourself available for questions or for help (you might have to ask more than once!) examples:\r\n        - I requested 1:1 time with my manager twice a week and he has been overall super supportive: https://twitter.com/egsy/status/971231918493548544 (thread)\r\n        - I reached out to a teammate who had previously offered to help me with python scripting two weeks after they initially offered and they made time to meet with me that afternoon \r\n      - remind your mentees/direct reports that they\u2019re not there by mistake. every week if you have to.",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": "w",
+            "speaker_website": "http://clark.com/post/",
+            "location_override": "",
+            "phone": "1-268-190-2051"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 136,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "machine learning, ai, & all things data",
+            "talk_length": 25,
+            "talk_links": "https://www.moore.info/tag/posts/wp-content/main.html",
+            "what_attendees_will_learn": "1) Tradeoffs of methods of feature importance\r\n2) Wide view of available libraries and papers \r\n3) Techniques to communicate model results to laymen",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "i",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "885-154-0025x18173"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 137,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "dealing with speed, scale, & performance",
+            "talk_length": 40,
+            "talk_links": "http://miller.org/",
+            "what_attendees_will_learn": "The attendees will get a close look at a modern Django-based web application to see how it\u2019s architected, and come away with a better understanding of design decisions when building a web application that needs to serve 14M users from every country in the world. Attendees will also be equipped with the knowledge to run Open edX on their laptop or in the cloud, if they want to explore the software further.",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": " ",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "(445)201-2541x9595"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 138,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "dealing with speed, scale, & performance,engineering a community",
+            "talk_length": 40,
+            "talk_links": "",
+            "what_attendees_will_learn": "The goal of this talk is to make energy and climate change not such an opaque subject for the python community. We have such incredible talent and brainpower, and I want to make sure we are all aware of the opportunities in the energy transition. The fight against climate change needs all the help it can get.",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "u",
+            "speaker_website": "http://www.mendez.net/post/",
+            "location_override": "",
+            "phone": "117.338.3467x80287"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 139,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "machine learning, ai, & all things data",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "Will learn about PLOS content, different ways to install and use allofplos library. \r\nHow to access article sections using allofplos (without parsing the XML), how to deal with the included sample data and how to download the whole corpus.  \r\nHow to generate an SQLite database with the included tools and how to query it.",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": "e",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "923-938-0578x27578"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 140,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries,machine learning, ai, & all things data,devops, automation, & testing,dealing with speed, scale, & performance,engineering a community",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "How to build a monitoring & alerting platform for anything & everything using python & grafana.",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": " ",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "113.482.9225"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 141,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "engineering a community",
+            "talk_length": 25,
+            "talk_links": "http://www.braun.com/search/tags/register/",
+            "what_attendees_will_learn": "Attendees will walk away with the tools to participate in conversations that can move workplace culture forward, and be more cognizant of the impediments we all share in building a workplace with cultural diversity. Attendees will also learns some of the basics of improv comedy, which can provide a joyful framework to effective communication in building better tech culture.",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": "e",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "03906305657"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 142,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "machine learning, ai, & all things data,dealing with speed, scale, & performance",
+            "talk_length": 40,
+            "talk_links": "http://charles.biz/category/search/category/",
+            "what_attendees_will_learn": "Model design properties: Introspection, rationales, modeling power, normalization and overfitting.\r\nProduct Design: nudges, input methodologies, keeping the problem easy\r\nServer Design: State management, pre-processing\r\nFast Deployment: Testing (Unit, Manual, Functional), AB Testing, Metrics\r\nMetrics: Offline Metrics (Model Metrics, Product Metrics), Online Metrics\r\nReporting: The reporting trap\r\nAnalytics: Outlier Detection, Insights",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": "c",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "1-488-627-1668x698"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 143,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "engineering a community",
+            "talk_length": 40,
+            "talk_links": "",
+            "what_attendees_will_learn": "The fundamental affective brain structures which drive our interactions (Jaak Panksepp's work).\r\nThe reality of the very private nature of experience and thought, and how to leverage that effectively for team openness.\r\nI'll briefly talk about research which shows competence and openness as the primary factors impacting software team performance, and tie that back to the evolutionary brain structures we have, and to the concept of cognitive encapsulation.\r\nThe primary data structures of inter-person I/O (\"Awareness Wheel\").\r\nThe fundamental aspects of active listening, and where to get more information.",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": "y",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "1-898-323-3640"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 144,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "devops, automation, & testing,dealing with speed, scale, & performance",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "- An overview of the existing Python profilers.\r\n- How statistical profiling works, and why it\u2019s unreasonably effective.\r\n- How to read performance flamegraphs.\r\n- The common pitfalls of performance measurement.\r\n- How this was (eventually) successfully deployed in production at Sourceress where I work, how this changed our life, and some amusing related war stories.\r\n- The most important take-away: being able to integrate VMProf with their code so that they\u2019ll always be able to make informed decisions about performance.\r\n- The most important skill: knowing when to stop. ;)\r\n- If there's interest, we can go over VMProf internals, and walk the audience through the nuts and bolts of how this profiler works, and how it interacts with the Python and C stacks.",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": "o",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "933-227-6197x3963"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 145,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries,dealing with speed, scale, & performance",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "The goal of the talk is that developers will learn to appreciate all the parsing that happens around them, understand how it works, and start to see their code as a continuation of that flow. To enable this, I'll be introducing a few concepts and Python libraries I've found to be edifying:\r\n\r\n    Libraries\r\n        attrs\r\n        schema\r\n        marshmallow\r\n        parsley\r\n    RPC formats\r\n        Protobuf/Thrift\r\n        Cap'n Proto\r\n    Concepts\r\n        Regular expressions\r\n        State machines\r\n        Parser Expression Generators (PEGs)\r\n        Grammar",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": "r",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "1-065-753-3676x91632"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 146,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "machine learning, ai, & all things data",
+            "talk_length": 25,
+            "talk_links": "http://gates.com/",
+            "what_attendees_will_learn": "Attendees will learn:\r\n* A basic CNN architecture for analog scene interpretation\r\n* How to use Open CV to generate virtual scenes and appropriate labels for network training.\r\n* How to augment virtual training data to improve generalization of learning to real world scenes",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "s",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "1-862-041-3807"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 147,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries",
+            "talk_length": 25,
+            "talk_links": "http://hoffman-bartlett.com/login/",
+            "what_attendees_will_learn": "Attendees will learn about Flask Blueprints and how they can be used to build scalable Flask apps. I will briefly cover Blueprints as a concept and move into best practices in structuring and configuring scalable Flask apps with Blueprints, as well as common pitfalls that can occur in configuration.",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": "s",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "(140)221-5640x8256"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 148,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "devops, automation, & testing",
+            "talk_length": 25,
+            "talk_links": "http://melton.net/wp-content/wp-content/category/main/",
+            "what_attendees_will_learn": "By the end of this talk, you\u2019ll learn:\r\nTesting theory and why E2E tests are important\r\nApache Airflow\r\nA simple end-to-end test is written as a DAG using Airflow\r\nA design pattern to reuse test DAGs across teams for flexible testing across teams",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": " ",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "223-487-8389"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 149,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "machine learning, ai, & all things data",
+            "talk_length": 40,
+            "talk_links": "https://www.taylor.net/login/",
+            "what_attendees_will_learn": "Attendees will get an overview of what chatbots are and what are some of their potential applications. They will see demonstrations of simple bots written for Slack as well as Hangouts Chat, mainly in Python but also JavaScript.",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "h",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "(889)141-8286"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 150,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries",
+            "talk_length": 40,
+            "talk_links": "https://www.reed.com/terms/",
+            "what_attendees_will_learn": "After this session, attendees will have a better understanding of the evolution of Python, the biggest differences between both major Python versions, the migration tools out there, and most importantly, it's not too late so don't panic. The first steps and topics discussed in this talk will allow you to take action immediately.",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "n",
+            "speaker_website": "https://www.norman-scott.com/blog/tags/search/",
+            "location_override": "",
+            "phone": "01609460798"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 151,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries,machine learning, ai, & all things data,dealing with speed, scale, & performance",
+            "talk_length": 25,
+            "talk_links": "http://hardin-campbell.info/login.html",
+            "what_attendees_will_learn": "Practically, attendees will learn:\r\n- How to bootstrap an automated question answering system \r\n- Open-source resources on how play with the code and data\r\n- Some ways of building your own ontology\r\n\r\nAbstractly, attendees will learn:\r\n- Challenges bootstrapping AI projects in healthcare and why IA (Intelligence Augmentation is the way to go \r\n- The benefits of using an ontology in your natural language project\r\n\r\nI plan to do a brief live demo of asking a question of the system to the audience towards the end of the talk. As backup to any technical issues that might arise, I will have a appendix slide of answers to some common questions online.",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "F",
+            "speaker_website": "http://sosa.com/category.html",
+            "location_override": "",
+            "phone": "(889)379-7126"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 152,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "This talk is going to walk through how to write great documentation for your project using Sphinx and publish it (via the many ways available)!",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": ".",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "1-298-120-2585x48160"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 153,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries,machine learning, ai, & all things data,dealing with speed, scale, & performance",
+            "talk_length": 40,
+            "talk_links": "http://fowler-russell.info/category.jsp",
+            "what_attendees_will_learn": "Practically, attendees will learn:\r\n- How to bootstrap an automated question answering system \r\n- Open-source resources on how play with the code and data\r\n- Some ways of building your own ontology\r\n\r\nAbstractly, attendees will learn:\r\n- Challenges bootstrapping AI projects in healthcare and why IA (Intelligence Augmentation is the way to go \r\n- The benefits of using an ontology in your natural language project\r\n\r\nI plan to do a brief live demo of asking a question of the system to the audience towards the end of the talk. As backup to any technical issues that might arise, I will have a appendix slide of answers to some common questions online.",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "w",
+            "speaker_website": "https://www.scott.com/tag/search/blog/about.php",
+            "location_override": "",
+            "phone": "1-127-001-0290x61017"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 154,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "machine learning, ai, & all things data",
+            "talk_length": 25,
+            "talk_links": "https://www.rodriguez-turner.biz/register.php",
+            "what_attendees_will_learn": "Learn to iterate on the ML Modeling process.",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": "c",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "825-935-5979x111"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 155,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "Attendees will learn how to easily add a complete logging solution to their Python applications.",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": " ",
+            "speaker_website": "https://drake.com/",
+            "location_override": "",
+            "phone": "767.334.8475"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 156,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries,devops, automation, & testing,hacking hardware",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "How to create, test, and publish a basic Alexa skill.",
+            "meetup_talk": "No",
+            "speaker_and_talk_history": "n",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "(889)713-1903x3848"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 157,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "devops, automation, & testing",
+            "talk_length": 25,
+            "talk_links": "http://www.fisher.com/home/",
+            "what_attendees_will_learn": "- How to use Sentry for debugging issues after they've been logged.\r\n  - How to use the PyCharm debugger during development.\r\n  - Crucially, how to safely fork your entire process when an exception happens, so that you can wait for a developer to connect with a debugger later, even though the original process is going to go down in flames in the usual manner.\r\n  - How fork() works on Linux / OSX, and what the precise implications are for (debugging) Python programs. Knowing what's safe, and when you're entering dragon territory.\r\n  - How to use Python's stack introspection facilities to know if you've seen a particular bug / stack trace before.\r\n  - Optional: how to use SysV semaphores to claim resources in a robust manner. Even if your process gets blasted with a kill -9, and you've had no chance to do a proper cleanup.",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": "r",
+            "speaker_website": "http://www.lee.com/search.asp",
+            "location_override": "",
+            "phone": "1-517-196-2895"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 158,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "devops, automation, & testing",
+            "talk_length": 40,
+            "talk_links": "",
+            "what_attendees_will_learn": "Attendees will learn how to observe their Python application using black-box and white-box techniques. Attendees also see how to include instrumentation code and make the most of projects like OpenTrace and PyFormance.",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "f",
+            "speaker_website": "http://www.cooper-schmidt.com/faq.php",
+            "location_override": "",
+            "phone": "990-881-2656"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 159,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "dealing with speed, scale, & performance",
+            "talk_length": 25,
+            "talk_links": "https://brown-aguilar.org/author/",
+            "what_attendees_will_learn": "1. Handle design meetings effectively\r\n2. Improve existing processes of building systems 3. Be better in spotting an an over-engineered system then navigate back to building something simple.",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": "c",
+            "speaker_website": "https://www.price.com/terms.htm",
+            "location_override": "",
+            "phone": "00078999154"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 160,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries,dealing with speed, scale, & performance",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "Functions are first-order objects in python.\r\nPartial Functions.\r\nFunction Memoization.\r\nTail Recursion in python.\r\nBorrowing the pipeline design pattern which is popular in Elixir.",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "i",
+            "speaker_website": "https://www.white-mcguire.com/category.php",
+            "location_override": "",
+            "phone": "1-509-457-3126"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 161,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries,machine learning, ai, & all things data,devops, automation, & testing",
+            "talk_length": 40,
+            "talk_links": "http://brooks.com/",
+            "what_attendees_will_learn": "Once you've completed this session, you should know about the Google APIs Client Library, the steps necessary to create projects using Google APIs, gain familiarity with simple vs. authorized API access, as well as how to use the Client Library to access Google APIs, whether it be from Python or another supported language.\r\n\r\nOUTLINE\r\n* Introducion\r\n* Setting up API projects\r\n* Python boilerplate code\r\n* Accessing Google APIs\r\n* Summary\r\n\r\nTAGS\r\nGoogle, API, APIs, G Suite, Google APIs, Google APIs Client Library, authorization, authentication, OAuth2, Python, client, library, SDK, cloud, architecture, open source, API keys, developers, Python2, Python 3, Gmail, Google Drive, Google Calendar, Google Sheets, Google Slides\r\n\r\nLIVE CODING\r\nIf you wish to live-code the demos with me, perform the following pre-work:\r\n* Install client library with: $ pip install -U google-api-python-client (or 'pip3' for 3.x)\r\n* Login to your Google account & create a project at console.developers.google.com\r\n    (slightly dated video for inspiration: goo.gl/RbyTFD)",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "i",
+            "speaker_website": "https://snyder-ramos.net/list/list/main/",
+            "location_override": "",
+            "phone": "486.173.0155x3492"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 162,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries,machine learning, ai, & all things data",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "Attendees will learn how to create their own facial recognition feature created in open cv and how they can implement this to their own ideas of projects.",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": " ",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "024-463-2565"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 163,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries",
+            "talk_length": 40,
+            "talk_links": "",
+            "what_attendees_will_learn": "They will receive a quick introduction to NumPy and the scientific\r\ncomputing stack in Python; see how satellite passes are predicted, using\r\nhands-on NumPy array operations; how they can be graphed and displayed\r\nusing Python plotting libraries; and then taken on a tour of how method\r\ncalls can power an API, but how the approach can generate import loops\r\nwhen used in Python.",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": " ",
+            "speaker_website": "https://www.flores.com/list/index/",
+            "location_override": "",
+            "phone": "490-437-7518"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 164,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries",
+            "talk_length": 25,
+            "talk_links": "https://farley.com/",
+            "what_attendees_will_learn": "foo",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": "a",
+            "speaker_website": "https://solis.org/category/home/",
+            "location_override": "",
+            "phone": "832-208-4185"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 165,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "python fundamentals & popular libraries",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "Attendees will learn when state machines may be helpful i.e. when they have classes that have a `status` attribute that they must keep track of; when they begin to have a block of code with lots of if/elif statements that begins being hard-to-understand; or when implementing protocols -- for example.\r\n\r\nThey'll also have some knowledge as to what tools exist in the Python ecosystem to help them implement their state machines and will have a good understanding of the transitions library, in particular.",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": ".",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "114.100.0013x620"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 166,
+        "fields": {
+            "audience_level": 1,
+            "recording_release": true,
+            "themes": "engineering a community",
+            "talk_length": 25,
+            "talk_links": "",
+            "what_attendees_will_learn": "Most importantly, the audience will learn HOW to learn, to further their understanding via self-study.\r\n\r\nIn addition, they will gain insight into language implementation, including memory management, classes, and function scoping.",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": "s",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "1-387-127-7844x797"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 167,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "dealing with speed, scale, & performance",
+            "talk_length": 25,
+            "talk_links": "http://williams-ramirez.org/about/",
+            "what_attendees_will_learn": "- The basic building blocks of writing C and C++ extensions for the Python interpreter, and tools that make this even easier (like boost for C++);\r\n- Tools that don\u2019t require writing a line of C, but can give you a performance boost when you need it (like Cython).\r\n\r\nThis is a short talk that won\u2019t go much deeper than some basic code examples. But we\u2019ll look at different tools, how much they can pay off and how easy it really is to integrate them in Python applications.",
+            "meetup_talk": "Maybe",
+            "speaker_and_talk_history": "n",
+            "speaker_website": "http://www.maldonado.com/homepage.asp",
+            "location_override": "",
+            "phone": "(587)899-6338"
+        }
+    },
+    {
+        "model": "proposals.talkproposal",
+        "pk": 168,
+        "fields": {
+            "audience_level": 3,
+            "recording_release": true,
+            "themes": "dealing with speed, scale, & performance,engineering a community",
+            "talk_length": 40,
+            "talk_links": "http://www.kennedy-pineda.com/login/",
+            "what_attendees_will_learn": "Attendees will get an insight into the decision-making process behind large infrastructure investments - what works well, and what doesn't. The talk aims to equip attendees with stories and data points that will help them take the right decisions when confronted with similar data infrastructure challenges.",
+            "meetup_talk": "Yes",
+            "speaker_and_talk_history": ".",
+            "speaker_website": "",
+            "location_override": "",
+            "phone": "975-239-4261x51882"
+        }
+    }
+]
