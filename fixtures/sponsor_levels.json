@@ -31,5 +31,16 @@
             "name": "Bronze", 
             "order": 2
         }
+    },
+    {
+        "pk": 4, 
+        "model": "symposion_sponsorship.sponsorlevel", 
+        "fields": {
+            "conference": 1,
+            "description": "", 
+            "cost": 2000, 
+            "name": "Diversity", 
+            "order": 3
+        }
     }
 ]
