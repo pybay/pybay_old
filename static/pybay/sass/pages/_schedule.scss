@@ -21,11 +21,11 @@
     flex-wrap: wrap;
   }
 
-  .sch-timeslot-kind-talk:hover {
+  .sch-timeslot-slot:hover {
     border-color: hsl(0, 0%, 75%);
   }
 
-  .sch-timeslot-kind-talk .sch-description {
+  .sch-timeslot-slot .sch-description {
     text-align: left;
     position: absolute;
     top: calc(100% - 6px);
@@ -43,7 +43,7 @@
     z-index: 50;
   }
 
-  .sch-timeslot-kind-talk:not(:hover) .sch-description {
+  .sch-timeslot-slot:not(:hover) .sch-description {
     opacity: 0;
   }
 
@@ -127,14 +127,14 @@
     }
   }
 
-  .sch-timeslot-kind-talk {
+  .sch-timeslot-slot {
     position: relative;
     padding-top: 4px;
     padding-bottom: 4px;
     transition: all 0.2s ease-out;
   }
 
-  .sch-timeslot-kind-talk .sch-slot-inner {
+  .sch-timeslot-slot .sch-slot-inner {
     display: flex;
     flex-flow: row wrap;
     align-content: flex-start;
@@ -142,11 +142,11 @@
     overflow: hidden;
   }
 
-  .sch-timeslot-kind-talk .sch-slot-inner > * {
+  .sch-timeslot-slot .sch-slot-inner > * {
     flex-basis: 100%;
   }
 
-  .sch-timeslot-kind-talk .sch-room, .sch-timeslot-kind-talk .sch-duration {
+  .sch-timeslot-slot .sch-room, .sch-timeslot-slot .sch-duration {
     flex: 1 0 auto;
     white-space: nowrap;
     font-size: 11px;
@@ -167,16 +167,16 @@
     margin: 0 .5em;
   }
 
-  .sch-timeslot-kind-talk .sch-slot-inner > h4 {
+  .sch-timeslot-slot .sch-slot-inner > h4 {
     font-weight: bold;
   }
 
-  .sch-timeslot-kind-talk .sch-speaker {
+  .sch-timeslot-slot .sch-speaker {
     margin-right: 1.4em;
     margin-bottom: 0;
   }
 
-  .sch-timeslot-kind-talk .sch-speaker, .sch-timeslot-kind-talk .sch-category {
+  .sch-timeslot-slot .sch-speaker, .sch-timeslot-slot .sch-category {
     font-weight: bold;
     margin-top: 4px;
     white-space: nowrap;
@@ -184,19 +184,19 @@
     align-self: baseline;
   }
 
-  .sch-timeslot-kind-talk .sch-category {
+  .sch-timeslot-slot .sch-category {
     position: relative;
     line-height: 1;
   }
 
-  .sch-timeslot-kind-talk .sch-category::before {
+  .sch-timeslot-slot .sch-category::before {
     position: absolute;
     right: 100%;
     content: "\2022";
     padding: 0 .5em;
   }
 
-  .sch-timeslot-kind-talk .sch-speaker-photo {
+  .sch-speaker-photo {
     width: 40px;
     height: 40px;
     overflow: hidden;
@@ -205,11 +205,11 @@
     right: 15px;
     border-radius: 50%;
   }
-  .sch-timeslot-kind-talk .sch-speaker-photo img {
+  .sch-speaker-photo img {
     height: 100%;
   }
 
-  .sch-timeslot-kind-talk .sch-speaker-photo ~ h4 {
+  .sch-speaker-photo ~ h4 {
     padding-right: 50px;
   }
 
@@ -256,11 +256,11 @@
       border-radius: 0;
     }
 
-    .sch-timeslot-kind-talk {
+    .sch-timeslot-slot {
       margin: 0;
     }
 
-    .sch-timeslot-kind-talk .sch-slot-inner > h4 {
+    .sch-timeslot-slot .sch-slot-inner > h4 {
       flex: 1 0;
       flex-basis: 100%;
     }
@@ -269,17 +269,17 @@
       line-height: 1;
     }
 
-    .sch-timeslot-kind-talk .sch-room {
+    .sch-timeslot-slot .sch-room {
       flex: 0 1;
     }
 
-    .sch-timeslot-kind-talk .sch-speaker-photo {
+    .sch-timeslot-slot .sch-speaker-photo {
       right: 10px;
       top: 33px;
     }
 
-    .sch-timeslot-kind-talk .sch-speaker-photo + h4,
-    .sch-timeslot-kind-talk .sch-speaker-photo + h4 ~ .sch-category {
+    .sch-timeslot-slot .sch-speaker-photo + h4,
+    .sch-timeslot-slot .sch-speaker-photo + h4 ~ .sch-category {
       padding: 0 46px 0 0;
     }
 
@@ -300,7 +300,7 @@
       display: block;
     }
 
-    .sch-timeslot-kind-talk .sch-description {
+    .sch-timeslot-slot .sch-description {
       position: relative;
       border: 0;
       padding: 0;
@@ -311,7 +311,7 @@
       opacity: 1;
     }
 
-    .sch-timeslot-kind-talk:not(:hover) .sch-description {
+    .sch-timeslot-slot:not(:hover) .sch-description {
       transform: scaleY(0);
       max-height: 0;
       opacity: 0;
