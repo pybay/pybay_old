@@ -15,7 +15,7 @@
       schedule.removeClass();
       schedule.addClass(parentClass);
       if (filter) {
-        schedule.addClass(filterEnabledClass + ' ' + prefix + filter.replace(/ /g, '-'));
+        schedule.addClass(filterEnabledClass + ' ' + prefix + filter);
       }
   });
 }(jQuery);
