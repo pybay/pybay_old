@@ -66,6 +66,11 @@ class Proposal(ProposalBase):
     def theme_slugs(self):
         return self.themes.split(',')
 
+    @property
+    def theme_descriptions(self):
+        for theme in self.theme_slugs:
+            yield THEMES[theme]
+
 
 class TalkProposal(Proposal):
     class Meta:
