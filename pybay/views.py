@@ -1,7 +1,6 @@
 import datetime
 import json
 import itertools
-import time
 
 from django.shortcuts import render
 from django.http import (HttpResponse, HttpResponseForbidden,
