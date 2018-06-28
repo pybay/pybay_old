@@ -10,8 +10,7 @@ THEME_CHOICES = {
     'ai': ['Machine Learning, AI, & All things Data'],
     'automation': ['DevOps, Automation, & Testing'],
     'speed': ['Dealing with Speed, Scale, & Performance'],
-    'community': ['Engineering a Community'],
-    'hardware': ['Hacking Hardware'],
+    'community': ['Hacking Hardware', 'Engineering a Community'],
 }
 for slug, descriptions in THEME_CHOICES.items():
     for description in descriptions[:]:

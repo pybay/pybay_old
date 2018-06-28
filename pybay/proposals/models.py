@@ -30,8 +30,7 @@ class Proposal(ProposalBase):
         ('ai', 'Machine Learning, AI, & All things Data'),
         ('automation', 'DevOps, Automation, & Testing'),
         ('speed', 'Dealing with Speed, Scale, & Performance'),
-        ('community', 'Engineering a Community'),
-        ('hardware', 'Hacking Hardware'),
+        ('community', 'Hardware Fun & People side of Engineering'),
     ]
 
     TALK_SHORT = 25
