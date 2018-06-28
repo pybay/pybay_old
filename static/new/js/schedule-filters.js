@@ -7,12 +7,14 @@
       var filter = target.closest('li').data('filter');
       if (filter === undefined) return;
       var schedule = target.closest('.' + parentClass);
-      schedule.data('filter');
-      var alreadySelected = filter === '' || schedule.data('filter') === filter;
+      var alreadySelected = schedule.data('filter') === filter;
+      if (alreadySelected) {
+        filter = '';
+      }
       schedule.data('filter', filter);
-      schedule.removeClass(function(i, cls) { return cls; });
+      schedule.removeClass();
       schedule.addClass(parentClass);
-      if (!alreadySelected) {
+      if (filter) {
         schedule.addClass(filterEnabledClass + ' ' + prefix + filter.replace(/ /g, '-'));
       }
   });
