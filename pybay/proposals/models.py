@@ -26,15 +26,12 @@ class Proposal(ProposalBase):
     ]
 
     THEME_CHOICES = [
-        "Python Fundamentals & Popular Libraries",
-        "Machine Learning, AI, & All things Data",
-        "DevOps, Automation, & Testing",
-        "Dealing with Speed, Scale, & Performance",
-        "Engineering a Community",
-        "Hacking Hardware"
-    ]
-    THEME_CHOICES = [
-        (c.lower().replace('/', ''), c) for c in THEME_CHOICES
+        ('python', 'Python Fundamentals & Popular Libraries'),
+        ('ai', 'Machine Learning, AI, & All things Data'),
+        ('automation', 'DevOps, Automation, & Testing'),
+        ('speed', 'Dealing with Speed, Scale, & Performance'),
+        ('community', 'Engineering a Community'),
+        ('hardware', 'Hacking Hardware'),
     ]
 
     TALK_SHORT = 25

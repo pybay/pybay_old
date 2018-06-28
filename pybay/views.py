@@ -225,10 +225,8 @@ def _day_slots(day):
 
 
 FILTER_CATEGORIES = [
-    ("Fundamentals", ['fundamentals']),
-    ("Data", ['dealingwithdata']),
-    ("Python at Scale", ['performantpython', 'scalablepython', 'devops']),
-]
+    (description, [slug])
+    for slug, description in Proposal.THEME_CHOICES]
 
 ALLOWED_CATEGORIES = [
     slug
@@ -236,7 +234,6 @@ ALLOWED_CATEGORIES = [
     for slug in slugs
 ]
 
-FILTER_CATEGORIES.append(('Misc', ['other']))
 FILTER_CATEGORIES.append(('Beginner-friendly', ['level-1']))
 
 
