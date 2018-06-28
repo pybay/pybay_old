@@ -3,7 +3,6 @@ from django.contrib import admin
 
 from .models import TalkProposal, TutorialProposal
 
-THEME_CHOICES = ["Fundamentals", "Data", "DevOps", "Speed", "Community", "Hardware"]
 
 class ThemeFilter(admin.SimpleListFilter):
     """Provide sane list of themes from ad-hoc data.
@@ -18,7 +17,7 @@ class ThemeFilter(admin.SimpleListFilter):
     parameter_name = 'themes'
 
     def lookups(self, request, model_admin):
-        return zip(THEME_CHOICES, THEME_CHOICES)
+        return TutorialProposal.THEME_CHOICES
 
     def queryset(self, request, queryset):
         theme = self.value()
