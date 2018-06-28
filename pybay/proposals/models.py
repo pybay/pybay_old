@@ -3,6 +3,15 @@ from django.db import models
 from symposion.proposals.models import ProposalBase
 
 
+THEMES = {
+    'python': 'Python Fundamentals & Popular Libraries',
+    'ai': 'Machine Learning, AI, & All things Data',
+    'automation': 'DevOps, Automation, & Testing',
+    'speed': 'Dealing with Speed, Scale, & Performance',
+    'community': 'Hardware Fun & People side of Engineering',
+}
+
+
 class Proposal(ProposalBase):
 
     AUDIENCE_LEVEL_NOVICE = 1
@@ -25,13 +34,7 @@ class Proposal(ProposalBase):
          (MEETUP_CHOICE_NO, "No")
     ]
 
-    THEME_CHOICES = [
-        ('python', 'Python Fundamentals & Popular Libraries'),
-        ('ai', 'Machine Learning, AI, & All things Data'),
-        ('automation', 'DevOps, Automation, & Testing'),
-        ('speed', 'Dealing with Speed, Scale, & Performance'),
-        ('community', 'Hardware Fun & People side of Engineering'),
-    ]
+    THEME_CHOICES = list(THEMES.items())
 
     TALK_SHORT = 25
     TALK_LONG = 40
