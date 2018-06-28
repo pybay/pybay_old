@@ -1,3 +1,4 @@
+import datetime
 import json
 import itertools
 import time
@@ -26,6 +27,29 @@ from logging import getLogger
 log = getLogger(__file__)
 
 cfp_close_date = settings.PROJECT_DATA['cfp_close_date']
+
+
+SOME_TIME_IN_THE_FAR_FUTURE = (datetime.date(3018, 6, 27), datetime.time(23, 59))
+
+
+def _make_proposal_sort_key(proposal):
+    """Returns a key that can be used to sort proposals based on date
+
+    If proposal is not slotted or is a presentation. It will be bumped
+    to the end (sorted with lowest propority, at the end of everything else)
+
+    :param propoal: a proposal instance
+    :return: a sortable key
+    """
+    try:
+        proposal_slot = proposal.presentation.slot
+    except AttributeError:
+        return SOME_TIME_IN_THE_FAR_FUTURE
+
+    if not proposal_slot:
+        return SOME_TIME_IN_THE_FAR_FUTURE
+
+    return (proposal_slot.day.date, proposal_slot.start)
 
 
 def pybay_sponsors_list(request):
@@ -115,6 +139,9 @@ def pybay_speakers_detail(request, speaker_slug):
         .filter(result__status='accepted')
         .prefetch_related('talkproposal', 'tutorialproposal')
     ]
+
+    # Sort talks by date first, and then by time
+    speaker_approved_talks.sort(key=_make_proposal_sort_key)
 
     return render(request, 'frontend/speakers_detail.html',
                   {'speaker': speaker, 'talks': speaker_approved_talks,
