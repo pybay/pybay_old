@@ -59,6 +59,10 @@ class Proposal(ProposalBase):
     class Meta:
         abstract = True
 
+    @property
+    def theme_slugs(self):
+        return self.themes.split(',')
+
 
 class TalkProposal(Proposal):
     class Meta:
