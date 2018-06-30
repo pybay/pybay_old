@@ -172,7 +172,6 @@
   }
 
   .sch-timeslot-slot .sch-speaker {
-    margin-right: 1.4em;
     margin-bottom: 0;
   }
 
@@ -190,8 +189,6 @@
   }
 
   .sch-timeslot-slot .sch-category::before {
-    position: absolute;
-    right: 100%;
     content: "\2022";
     padding: 0 .5em;
   }
