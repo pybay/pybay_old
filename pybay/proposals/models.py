@@ -8,7 +8,7 @@ THEMES = {
     'ai': 'AI & Data',
     'automation': 'DevOps & Automation',
     'speed': 'Scale & Performance',
-    'community': 'Hardware & People',
+    'community': 'Fun & People',
 }
 
 
