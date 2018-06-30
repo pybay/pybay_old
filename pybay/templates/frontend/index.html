@@ -66,35 +66,8 @@
             <img class="background-image" alt="About Image" src="{% static 'new/img/cdbg.jpg' %}">
         </div>
         <div class="container">
-            <div class="row counters-wrapper">
-                <div class="col-md-3" >
-                    <div class="counter-box" align="center">
-				        <span class="count" data-from="0" data-to="136">8</span>
-                        <p class="title">PRE-CONFERENCE WORKSHOPS</p>
-                    </div>
-                </div>
-                <div class="col-md-3" >
-                    <div class="counter-box" align="center">
-				        <span class="count" data-from="0" data-to="136">40</span>
-                        <p class="title">RESPECTED SPEAKERS</p>
-                    </div>
-
-                </div>
-                <div class="col-md-3" >
-                    <div class="counter-box" align="center">
-				        <span class="count" data-from="0" data-to="136">4</span>
-                        <p class="title">WELL CRAFTED TRACKS</p>
-                    </div>
-
-                </div>
-                <div class="col-md-3" >
-                    <div class="counter-box" align="center">
-				        <span class="count" data-from="0" data-to="136">500</span>
-                        <p class="title">BAY AREA DEVELOPERS</p>
-                    </div>
-				</div>
-            </div><!--end of row-->
-         </div>><!--end of container-->
+          {% gblock "conference_counters" for "gblocks.Text" %}
+        </div>
     </section>
     <section>
         <div class="container">
