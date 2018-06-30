@@ -1,12 +1,11 @@
 {% extends 'frontend/base.html' %}
 {% load staticfiles %}
 {% load thumbnail %}
+{% block body_class %}speaker-page{% endblock %}
 {% block content %}
 {% load get_speaker_url_with_fallback %}
 {% load slot_desc %}
 {% load markup_tags %}
-
-{% block body_class %}speaker-page{% endblock %}
 
 <section>
    <div class="container" style="padding-top: 150px;">
