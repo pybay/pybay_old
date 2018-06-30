@@ -51,7 +51,7 @@
                                 </div>
                                 <div class="lead">
                                     <h3>Abstract</h3>
-                                    {{ talk.abstract|apply_markup:"markdown" }}
+                                    {{ talk.abstract_html|safe }}
                                 </div>
                                 {% if talk.ticket_price %}
                                 <div class="lead">
