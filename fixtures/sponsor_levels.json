@@ -42,5 +42,16 @@
             "name": "Diversity", 
             "order": 3
         }
+    },
+    {
+        "pk": 5, 
+        "model": "symposion_sponsorship.sponsorlevel", 
+        "fields": {
+            "conference": 1,
+            "description": "", 
+            "cost": 1000, 
+            "name": "Media", 
+            "order": 4
+        }
     }
 ]

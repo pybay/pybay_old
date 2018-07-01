@@ -63,10 +63,12 @@ def pybay_sponsors_list(request):
         "silver_sponsors": sponsor_map['Silver'],
         "bronze_sponsors": sponsor_map['Bronze'],
         "diversity_sponsors": sponsor_map['Diversity'],
+        "media_sponsors": sponsor_map['Media'],
         "bronze_logo": "",
         "gold_logo": "",
         "silver_logo": "",
         "diversity_logo": "",
+        "media_logo": "",
     })
 
 
