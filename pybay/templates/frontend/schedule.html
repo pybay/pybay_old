@@ -16,8 +16,7 @@
 
     {% gblock "all_speakers_top_block" for "gblocks.Text" %}
 
-    {% for schedule_days in schedules %}
-      <div class="sch-schedule">
+    <div class="sch-schedule">
         <div class="sch-filters substicky">
             <ul class="sch-filter-list">
                 <li data-filter="">All Talks</li>
@@ -27,6 +26,7 @@
             </ul>
         </div>
 
+    {% for schedule_days in schedules %}
         {% for day, slot_groups in schedule_days %}
           <div class="sch-day">
             <h2 class="sch-day-title">{{ day.date }}</h2>
