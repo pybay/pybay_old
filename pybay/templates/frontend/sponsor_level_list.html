@@ -1,3 +1,4 @@
+{% load sponsors_list %}
 {% if sponsors %}
   <div class="sl-group {{ color }}-sponsors">
 
@@ -17,7 +18,9 @@
             <div class="sl-sponsor">
               <div class="sl-blurb">
                 <a class="sl-logo" href="{{ sponsor.external_url }}" target="_blank" rel="noopener noreferrer">
-                  <img alt="{{ sponsor.name }}" src="{{ sponsor.website_logo.url }}" width="200px" />
+                  {% if sponsor|get_logo %}
+                  <img alt="{{ sponsor.name }}" src="{{ sponsor|get_logo }}" width="200px" />
+                  {% endif %}
                 </a>
                 <p class="sl-intro">{{ sponsor.listing_text|urlize|linebreaks }}</p>
               </div>
