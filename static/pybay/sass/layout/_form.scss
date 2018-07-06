@@ -15,4 +15,22 @@
     height: 100%;
 }
 
+#register-interest-form input{
+    line-height: 1.5;
+    margin-bottom: 2px;
+    padding: 2px;
+    border: 1.8px solid #bfbfbf;
+    border-radius: 5px;
+    font-size: 12px;
+    max-width: 90%;
+    color: black;
+    padding-left: 10px;
+}
+#register-interest-form .btn-xs{
+    padding: 1px 5px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+    min-width: 100px;
 
+}

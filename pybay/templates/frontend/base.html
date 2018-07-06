@@ -121,6 +121,7 @@
                                 <li><a href="mailto:info@pybay.com" target="_blank" rel="noopener noreferrer">Contact Us</a></li>
                                 <li><a class="inner-link back-to-top" href="#top">Back To Top</a></li>
                             </ul>
+                            {% include "frontend/subscribe_form.html" %}
                         </div>
                         <div class="col-sm-8">
                             <span class="lead color-heading">About SF Python</span>
@@ -154,6 +155,7 @@
         <script src="{% static 'new/js/twitterfetcher.min.js' %}"></script>
         <script src="{% static 'new/js/placeholders.min.js'%}"></script>
         <script src="{% static 'new/js/scripts.js'%}"></script>
+        <script src="{% static 'new/js/tito-subscribe.js'%}"></script>
 
         <!-- These should probably just be on the sponsors page -->
         {% block scripts %}
