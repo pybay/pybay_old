@@ -52,6 +52,8 @@
               ga('create', 'UA-103696318-1', 'auto');
               ga('send', 'pageview');
         </script>
+
+        {% gblock "base_header_extra_block" for "gblocks.Text" %}
     </head>
 
     {% block header %}
