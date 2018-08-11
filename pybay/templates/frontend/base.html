@@ -58,6 +58,7 @@
 
     {% block header %}
     <body class="{% block body_class %}{% endblock %}">
+        {% gblock "base_body_extra_block" for "gblocks.Text" %}
 
         <a id="top"></a>
 
