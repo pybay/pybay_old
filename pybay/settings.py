@@ -157,7 +157,7 @@ INSTALLED_APPS = [
     "columns",
     'django_generic_flatblocks',
     'django_generic_flatblocks.contrib.gblocks',
-
+    'reversion',
 
     # symposion
     "symposion.sponsorship",
