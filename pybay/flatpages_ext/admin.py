@@ -8,10 +8,10 @@ admin.site.unregister(FlatPage)
 
 
 @admin.register(FlatPage)
-class YourModelAdmin(VersionAdmin, FlatPageAdmin):
+class FlatPageVersionedAdmin(VersionAdmin, FlatPageAdmin):
     pass
 
 
-@admin.site.register(HostedPicture)
+@admin.register(HostedPicture)
 class HostedPictureAdmin(admin.ModelAdmin):
     list_display = ['title', 'url', 'html']
