@@ -4,7 +4,7 @@ python:
 - 3.6
 install:
 - pip install pipenv
-- pipenv install
+- pipenv sync  # Install only what is specified in Pipfile.lock
 script:
 - pipenv run ./manage.py migrate
 - pipenv run ./manage.py compilescss
