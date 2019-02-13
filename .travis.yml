@@ -6,6 +6,7 @@ install:
 - pip install pipenv
 - pipenv sync  # Install only what is specified in Pipfile.lock
 script:
+- pipenv run  python -c 'import django;print(django.get_version())'
 - pipenv run ./manage.py migrate
 - pipenv run ./manage.py compilescss
 - pipenv run ./manage.py collectstatic --no-input
