@@ -12,5 +12,4 @@ script:
 - pipenv run ./manage.py collectstatic --no-input
 - pipenv run ./manage.py test
 env:
-- TRAVIS=true
-- PIPENV_IGNORE_VIRTUALENVS=1  # Pipenv running in a virtualenv causes problems because it also creates a virtualenv
+- TRAVIS=true PIPENV_IGNORE_VIRTUALENVS=1  # Pipenv running in a virtualenv causes problems because it also creates a virtualenv
