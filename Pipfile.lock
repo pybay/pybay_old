@@ -383,9 +383,6 @@
         }
     },
     "develop": {
-        "2eaf2af": {
-            "path": "./../symposion"
-        },
         "django": {
             "hashes": [
                 "sha256:7a233322eeb35da5fd8315f9e5dd48f2171de43ca2cfb11b138607daa4bf8a2f",

@@ -41,5 +41,4 @@ sqlparse = "==0.2.4"
 
 [dev-packages]
 mysqlclient = "==1.3.10"
-"2eaf2af" = {path = "./../symposion"}
 django-debug-toolbar = "*"
