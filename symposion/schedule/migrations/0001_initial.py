@@ -40,7 +40,7 @@ class Migration(migrations.Migration):
                 ('cancelled', models.BooleanField(default=False, verbose_name='Cancelled')),
                 ('additional_speakers', models.ManyToManyField(related_name='copresentations', to='symposion_speakers.Speaker', verbose_name='Additional speakers', blank=True)),
                 ('proposal_base', models.OneToOneField(to='symposion_proposals.ProposalBase', related_name='presentation', verbose_name='Proposal base')),
-                ('section', models.ForeignKey(to='symposion_conference.Section', related_name='presentations', verbose_name='Section')),
+                ('section', models.ForeignKey(on_delete=models.CASCADE, to='symposion_conference.Section', related_name='presentations', verbose_name='Section')),
             ],
             options={
                 'ordering': ['slot'],
@@ -78,7 +78,7 @@ class Migration(migrations.Migration):
             name='Session',
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
-                ('day', models.ForeignKey(to='symposion_schedule.Day', related_name='sessions', verbose_name='Day')),
+                ('day', models.ForeignKey(on_delete=models.CASCADE, to='symposion_schedule.Day', related_name='sessions', verbose_name='Day')),
             ],
             options={
                 'verbose_name': 'Session',
@@ -92,8 +92,8 @@ class Migration(migrations.Migration):
                 ('role', models.IntegerField(verbose_name='Role', choices=[(1, 'Session Chair'), (2, 'Session Runner')])),
                 ('status', models.NullBooleanField(verbose_name='Status')),
                 ('submitted', models.DateTimeField(default=datetime.datetime.now)),
-                ('session', models.ForeignKey(to='symposion_schedule.Session', verbose_name='Session')),
-                ('user', models.ForeignKey(to=settings.AUTH_USER_MODEL, verbose_name='User')),
+                ('session', models.ForeignKey(on_delete=models.CASCADE, to='symposion_schedule.Session', verbose_name='Session')),
+                ('user', models.ForeignKey(on_delete=models.CASCADE, to=settings.AUTH_USER_MODEL, verbose_name='User')),
             ],
             options={
                 'verbose_name': 'Session role',
@@ -108,7 +108,7 @@ class Migration(migrations.Migration):
                 ('end', models.TimeField(verbose_name='End')),
                 ('content_override', models.TextField(verbose_name='Content override', blank=True)),
                 ('content_override_html', models.TextField(blank=True)),
-                ('day', models.ForeignKey(to='symposion_schedule.Day', verbose_name='Day')),
+                ('day', models.ForeignKey(on_delete=models.CASCADE, to='symposion_schedule.Day', verbose_name='Day')),
             ],
             options={
                 'ordering': ['day', 'start', 'end'],
@@ -121,7 +121,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
                 ('label', models.CharField(max_length=50, verbose_name='Label')),
-                ('schedule', models.ForeignKey(to='symposion_schedule.Schedule', verbose_name='schedule')),
+                ('schedule', models.ForeignKey(on_delete=models.CASCADE, to='symposion_schedule.Schedule', verbose_name='schedule')),
             ],
             options={
                 'verbose_name': 'Slot kind',
@@ -132,8 +132,8 @@ class Migration(migrations.Migration):
             name='SlotRoom',
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
-                ('room', models.ForeignKey(to='symposion_schedule.Room', verbose_name='Room')),
-                ('slot', models.ForeignKey(to='symposion_schedule.Slot', verbose_name='Slot')),
+                ('room', models.ForeignKey(on_delete=models.CASCADE, to='symposion_schedule.Room', verbose_name='Room')),
+                ('slot', models.ForeignKey(on_delete=models.CASCADE, to='symposion_schedule.Slot', verbose_name='Slot')),
             ],
             options={
                 'ordering': ['slot', 'room__order'],
@@ -144,7 +144,7 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='slot',
             name='kind',
-            field=models.ForeignKey(to='symposion_schedule.SlotKind', verbose_name='Kind'),
+            field=models.ForeignKey(on_delete=models.CASCADE, to='symposion_schedule.SlotKind', verbose_name='Kind'),
         ),
         migrations.AddField(
             model_name='session',
@@ -154,7 +154,7 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='room',
             name='schedule',
-            field=models.ForeignKey(to='symposion_schedule.Schedule', verbose_name='Schedule'),
+            field=models.ForeignKey(on_delete=models.CASCADE, to='symposion_schedule.Schedule', verbose_name='Schedule'),
         ),
         migrations.AddField(
             model_name='presentation',
@@ -164,12 +164,12 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='presentation',
             name='speaker',
-            field=models.ForeignKey(to='symposion_speakers.Speaker', related_name='presentations', verbose_name='Speaker'),
+            field=models.ForeignKey(on_delete=models.CASCADE, to='symposion_speakers.Speaker', related_name='presentations', verbose_name='Speaker'),
         ),
         migrations.AddField(
             model_name='day',
             name='schedule',
-            field=models.ForeignKey(to='symposion_schedule.Schedule', verbose_name='Schedule'),
+            field=models.ForeignKey(on_delete=models.CASCADE, to='symposion_schedule.Schedule', verbose_name='Schedule'),
         ),
         migrations.AlterUniqueTogether(
             name='slotroom',

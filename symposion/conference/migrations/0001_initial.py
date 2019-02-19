@@ -33,7 +33,7 @@ class Migration(migrations.Migration):
                 ('slug', models.SlugField(verbose_name='Slug')),
                 ('start_date', models.DateField(null=True, blank=True, verbose_name='Start date')),
                 ('end_date', models.DateField(null=True, blank=True, verbose_name='End date')),
-                ('conference', models.ForeignKey(to='symposion_conference.Conference', verbose_name='Conference')),
+                ('conference', models.ForeignKey(on_delete=models.CASCADE, to='symposion_conference.Conference', verbose_name='Conference')),
             ],
             options={
                 'ordering': ['start_date'],

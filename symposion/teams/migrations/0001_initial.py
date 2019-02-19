@@ -46,11 +46,11 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='membership',
             name='team',
-            field=models.ForeignKey(verbose_name='Team', to='teams.Team', related_name='memberships'),
+            field=models.ForeignKey(on_delete=models.CASCADE, verbose_name='Team', to='teams.Team', related_name='memberships'),
         ),
         migrations.AddField(
             model_name='membership',
             name='user',
-            field=models.ForeignKey(verbose_name='User', to=settings.AUTH_USER_MODEL, related_name='memberships'),
+            field=models.ForeignKey(on_delete=models.CASCADE, verbose_name='User', to=settings.AUTH_USER_MODEL, related_name='memberships'),
         ),
     ]

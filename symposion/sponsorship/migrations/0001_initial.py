@@ -30,7 +30,7 @@ class Migration(migrations.Migration):
                 ('id', models.AutoField(serialize=False, auto_created=True, primary_key=True, verbose_name='ID')),
                 ('max_words', models.PositiveIntegerField(blank=True, verbose_name='Max words', null=True)),
                 ('other_limits', models.CharField(blank=True, verbose_name='Other limits', max_length=200)),
-                ('benefit', models.ForeignKey(to='symposion_sponsorship.Benefit', related_name='benefit_levels', verbose_name='Benefit')),
+                ('benefit', models.ForeignKey(on_delete=models.CASCADE, to='symposion_sponsorship.Benefit', related_name='benefit_levels', verbose_name='Benefit')),
             ],
             options={
                 'verbose_name_plural': 'Benefit levels',
@@ -54,7 +54,7 @@ class Migration(migrations.Migration):
                 ('print_logo_benefit', models.NullBooleanField(verbose_name='Print logo benefit', help_text='Print logo benefit is complete')),
                 ('print_description_benefit', models.NullBooleanField(verbose_name='Print description benefit', help_text='Print description benefit is complete')),
                 ('company_description_benefit', models.NullBooleanField(verbose_name='Company description benefit', help_text='Company description benefit is complete')),
-                ('applicant', models.ForeignKey(to=settings.AUTH_USER_MODEL, null=True, related_name='sponsorships', verbose_name='Applicant')),
+                ('applicant', models.ForeignKey(on_delete=models.CASCADE, to=settings.AUTH_USER_MODEL, null=True, related_name='sponsorships', verbose_name='Applicant')),
             ],
             options={
                 'verbose_name_plural': 'Sponsors',
@@ -72,8 +72,8 @@ class Migration(migrations.Migration):
                 ('text', models.TextField(blank=True, verbose_name='Text')),
                 ('upload', models.FileField(blank=True, verbose_name='File', upload_to='sponsor_files')),
                 ('is_complete', models.NullBooleanField(verbose_name='Complete?', help_text='True - benefit complete; False - benefit incomplete; Null - n/a')),
-                ('benefit', models.ForeignKey(to='symposion_sponsorship.Benefit', related_name='sponsor_benefits', verbose_name='Benefit')),
-                ('sponsor', models.ForeignKey(to='symposion_sponsorship.Sponsor', related_name='sponsor_benefits', verbose_name='Sponsor')),
+                ('benefit', models.ForeignKey(on_delete=models.CASCADE, to='symposion_sponsorship.Benefit', related_name='sponsor_benefits', verbose_name='Benefit')),
+                ('sponsor', models.ForeignKey(on_delete=models.CASCADE, to='symposion_sponsorship.Sponsor', related_name='sponsor_benefits', verbose_name='Sponsor')),
             ],
             options={
                 'verbose_name_plural': 'Sponsor benefits',
@@ -89,7 +89,7 @@ class Migration(migrations.Migration):
                 ('order', models.IntegerField(default=0, verbose_name='Order')),
                 ('cost', models.PositiveIntegerField(verbose_name='Cost')),
                 ('description', models.TextField(blank=True, verbose_name='Description', help_text='This is private.')),
-                ('conference', models.ForeignKey(to='symposion_conference.Conference', verbose_name='Conference')),
+                ('conference', models.ForeignKey(on_delete=models.CASCADE, to='symposion_conference.Conference', verbose_name='Conference')),
             ],
             options={
                 'verbose_name_plural': 'Sponsor levels',
@@ -100,16 +100,16 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='sponsor',
             name='level',
-            field=models.ForeignKey(to='symposion_sponsorship.SponsorLevel', verbose_name='level'),
+            field=models.ForeignKey(on_delete=models.CASCADE, to='symposion_sponsorship.SponsorLevel', verbose_name='level'),
         ),
         migrations.AddField(
             model_name='sponsor',
             name='sponsor_logo',
-            field=models.ForeignKey(blank=True, to='symposion_sponsorship.SponsorBenefit', null=True, related_name='+', verbose_name='Sponsor logo', editable=False),
+            field=models.ForeignKey(on_delete=models.CASCADE, blank=True, to='symposion_sponsorship.SponsorBenefit', null=True, related_name='+', verbose_name='Sponsor logo', editable=False),
         ),
         migrations.AddField(
             model_name='benefitlevel',
             name='level',
-            field=models.ForeignKey(to='symposion_sponsorship.SponsorLevel', related_name='benefit_levels', verbose_name='Level'),
+            field=models.ForeignKey(on_delete=models.CASCADE, to='symposion_sponsorship.SponsorLevel', related_name='benefit_levels', verbose_name='Level'),
         ),
     ]
