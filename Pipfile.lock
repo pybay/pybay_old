@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "5f95f4e129b2e8b43a952608af20137e456445c9d53b4ca32a4ae5cbffae004a"
+            "sha256": "6ad6dbe37c0b77dbe323927c8cf1f4a5b8db7e00b91dfc167a0a6fe49f664296"
         },
         "pipfile-spec": 6,
         "requires": {},
@@ -286,10 +286,10 @@
         },
         "pinax-boxes": {
             "hashes": [
-                "sha256:1fadc9615bde0765cbe932a4a6e8a1a6282f360da20c2466300988eab00916c0"
+                "sha256:ec03a156f0672273dc335b79e5f3fbaaf2897bd3971a3456d69c7475464c91f4"
             ],
             "index": "pypi",
-            "version": "==2.1.2"
+            "version": "==3.0.1"
         },
         "pinax-theme-bootstrap": {
             "hashes": [
