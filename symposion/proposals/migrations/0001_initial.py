@@ -59,7 +59,7 @@ class Migration(migrations.Migration):
                 ('end', models.DateTimeField(blank=True, verbose_name='End', null=True)),
                 ('closed', models.NullBooleanField(verbose_name='Closed')),
                 ('published', models.NullBooleanField(verbose_name='Published')),
-                ('section', models.OneToOneField(to='symposion_conference.Section', verbose_name='Section')),
+                ('section', models.OneToOneField(on_delete=models.CASCADE, to='symposion_conference.Section', verbose_name='Section')),
             ],
         ),
         migrations.CreateModel(

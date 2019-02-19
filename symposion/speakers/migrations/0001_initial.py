@@ -25,7 +25,7 @@ class Migration(migrations.Migration):
                 ('invite_email', models.CharField(verbose_name='Invite_email', unique=True, db_index=True, max_length=200, null=True)),
                 ('invite_token', models.CharField(verbose_name='Invite token', db_index=True, max_length=40)),
                 ('created', models.DateTimeField(editable=False, verbose_name='Created', default=datetime.datetime.now)),
-                ('user', models.OneToOneField(null=True, related_name='speaker_profile', verbose_name='User', to=settings.AUTH_USER_MODEL)),
+                ('user', models.OneToOneField(on_delete=models.CASCADE, null=True, related_name='speaker_profile', verbose_name='User', to=settings.AUTH_USER_MODEL)),
             ],
             options={
                 'verbose_name': 'Speaker',

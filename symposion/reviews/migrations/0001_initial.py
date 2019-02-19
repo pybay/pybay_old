@@ -89,7 +89,7 @@ class Migration(migrations.Migration):
                 ('minus_one', models.PositiveIntegerField(verbose_name='Minus one', default=0)),
                 ('accepted', models.NullBooleanField(verbose_name='Accepted', default=None, choices=[(True, 'accepted'), (False, 'rejected'), (None, 'undecided')])),
                 ('status', models.CharField(choices=[('accepted', 'accepted'), ('rejected', 'rejected'), ('undecided', 'undecided'), ('standby', 'standby')], verbose_name='Status', max_length=20, default='undecided')),
-                ('proposal', models.OneToOneField(to='symposion_proposals.ProposalBase', verbose_name='Proposal', related_name='result')),
+                ('proposal', models.OneToOneField(on_delete=models.CASCADE, to='symposion_proposals.ProposalBase', verbose_name='Proposal', related_name='result')),
             ],
             options={
                 'verbose_name_plural': 'proposal_results',

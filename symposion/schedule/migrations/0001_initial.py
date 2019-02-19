@@ -39,7 +39,7 @@ class Migration(migrations.Migration):
                 ('abstract_html', models.TextField(blank=True)),
                 ('cancelled', models.BooleanField(default=False, verbose_name='Cancelled')),
                 ('additional_speakers', models.ManyToManyField(related_name='copresentations', to='symposion_speakers.Speaker', verbose_name='Additional speakers', blank=True)),
-                ('proposal_base', models.OneToOneField(to='symposion_proposals.ProposalBase', related_name='presentation', verbose_name='Proposal base')),
+                ('proposal_base', models.OneToOneField(on_delete=models.CASCADE, to='symposion_proposals.ProposalBase', related_name='presentation', verbose_name='Proposal base')),
                 ('section', models.ForeignKey(on_delete=models.CASCADE, to='symposion_conference.Section', related_name='presentations', verbose_name='Section')),
             ],
             options={
@@ -66,7 +66,7 @@ class Migration(migrations.Migration):
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
                 ('published', models.BooleanField(default=True, verbose_name='Published')),
                 ('hidden', models.BooleanField(default=False, verbose_name='Hide schedule from overall conference view')),
-                ('section', models.OneToOneField(to='symposion_conference.Section', verbose_name='Section')),
+                ('section', models.OneToOneField(on_delete=models.CASCADE, to='symposion_conference.Section', verbose_name='Section')),
             ],
             options={
                 'ordering': ['section'],
@@ -159,7 +159,7 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='presentation',
             name='slot',
-            field=models.OneToOneField(to='symposion_schedule.Slot', related_name='content_ptr', blank=True, null=True, verbose_name='Slot'),
+            field=models.OneToOneField(on_delete=models.CASCADE, to='symposion_schedule.Slot', related_name='content_ptr', blank=True, null=True, verbose_name='Slot'),
         ),
         migrations.AddField(
             model_name='presentation',
