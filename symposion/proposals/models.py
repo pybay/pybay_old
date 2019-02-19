@@ -31,7 +31,8 @@ class ProposalSection(models.Model):
       * closed is NULL or False
     """
 
-    section = models.OneToOneField(Section, verbose_name=_("Section"))
+    section = models.OneToOneField(Section, on_delete=models.CASCADE,
+                                   verbose_name=_("Section"))
 
     start = models.DateTimeField(null=True, blank=True, verbose_name=_("Start"))
     end = models.DateTimeField(null=True, blank=True, verbose_name=_("End"))

@@ -21,7 +21,9 @@ class Speaker(models.Model):
         (2, "Two")
     ]
 
-    user = models.OneToOneField(User, null=True, related_name="speaker_profile", verbose_name=_("User"))
+    user = models.OneToOneField(User, on_delete=models.CASCADE, null=True,
+                                related_name="speaker_profile",
+                                verbose_name=_("User"))
     name = models.CharField(verbose_name=_("Name"), max_length=100,
                             help_text=_("As you would like it to appear in the"
                                         " conference program."))

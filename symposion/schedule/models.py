@@ -17,7 +17,8 @@ from symposion.speakers.models import Speaker
 @python_2_unicode_compatible
 class Schedule(models.Model):
 
-    section = models.OneToOneField(Section, verbose_name=_("Section"))
+    section = models.OneToOneField(Section, on_delete=models.CASCADE,
+                                   verbose_name=_("Section"))
     published = models.BooleanField(default=True, verbose_name=_("Published"))
     hidden = models.BooleanField(_("Hide schedule from overall conference view"), default=False)
 
@@ -190,7 +191,9 @@ class SlotRoom(models.Model):
 @python_2_unicode_compatible
 class Presentation(models.Model):
 
-    slot = models.OneToOneField(Slot, null=True, blank=True, related_name="content_ptr", verbose_name=_("Slot"))
+    slot = models.OneToOneField(Slot, on_delete=models.CASCADE, null=True,
+                                blank=True, related_name="content_ptr",
+                                verbose_name=_("Slot"))
     title = models.CharField(max_length=100, verbose_name=_("Title"))
     description = models.TextField(verbose_name=_("Description"))
     description_html = models.TextField(blank=True)
@@ -202,7 +205,9 @@ class Presentation(models.Model):
     additional_speakers = models.ManyToManyField(Speaker, related_name="copresentations",
                                                  blank=True, verbose_name=_("Additional speakers"))
     cancelled = models.BooleanField(default=False, verbose_name=_("Cancelled"))
-    proposal_base = models.OneToOneField(ProposalBase, related_name="presentation", verbose_name=_("Proposal base"))
+    proposal_base = models.OneToOneField(ProposalBase, on_delete=models.CASCADE,
+                                         related_name="presentation",
+                                         verbose_name=_("Proposal base"))
     section = models.ForeignKey(Section, on_delete=models.CASCADE,
                                 related_name="presentations",
                                 verbose_name=_("Section"))
