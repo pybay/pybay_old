@@ -23,7 +23,6 @@ django-user-accounts = "==2.0"
 django = "==1.9.2"
 easy-thumbnails = "==2.3"
 eventlog = "==0.8.0"
-symposion = {git = "https://github.com/pybay/symposion.git"}
 "html5lib" = "==0.9999999"
 markdown = "==2.6.5"
 metron = "==1.3.5"

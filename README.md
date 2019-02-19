@@ -7,7 +7,6 @@ The website for PyBay - the Bay Area Python Conference.
 To work on this you'll need Python 3.6. Then:
 
 1. Fork the repo to your own personal github.
-    - also clone the symposion repository, take note of the path to symposion/
 2. Clone the repo to your local environment.
 3. Use `pipenv install` to install all required packages locally (using a virtualenv)
 4. Use `pipenv shell` to use the local packages
@@ -16,7 +15,6 @@ To work on this you'll need Python 3.6. Then:
 Try:
 
     $ python3.6 -m pip install --user pipenv
-    $ git clone git@github.com:pybay/symposion
     $ git clone git@github.com:YOURUSERNAME/pybay
     $ cd pybay
     $ python3.6 -m pipenv install --dev
@@ -26,8 +24,6 @@ Try:
     (ENV)$ python ./manage.py runserver
 
 The default admin user is test and password is test
-
-You may need to update your copy of symposion from time to time.
 
 ### Windows Instructions
 
