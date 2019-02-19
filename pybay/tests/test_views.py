@@ -1,5 +1,5 @@
 from django.test import TestCase
-from django.core.urlresolvers import reverse
+from django.urls import reverse
 from pybay.proposals.models import TalkProposal
 from pybay.utils import get_accepted_speaker_by_slug
 from symposion.proposals.models import ProposalKind

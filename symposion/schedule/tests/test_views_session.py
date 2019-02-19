@@ -2,8 +2,8 @@ from datetime import date
 
 from django.conf import settings
 from django.contrib.auth.models import User
-from django.core.urlresolvers import reverse
 from django.test import TestCase
+from django.urls import reverse
 
 from symposion.conference.models import Section, current_conference, Conference
 from symposion.schedule.models import Day, Schedule, Session
