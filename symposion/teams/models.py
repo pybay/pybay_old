@@ -5,6 +5,7 @@ import datetime
 from django.db import models
 from django.utils.encoding import python_2_unicode_compatible
 from django.utils.translation import ugettext_lazy as _
+from django.urls import reverse
 
 from django.contrib.auth.models import Permission, User
 
@@ -38,9 +39,8 @@ class Team(models.Model):
     created = models.DateTimeField(default=datetime.datetime.now,
                                    editable=False, verbose_name=_("Created"))
 
-    @models.permalink
     def get_absolute_url(self):
-        return ("team_detail", [self.slug])
+        return reverse("team_detail", args=(self.slug,))
 
     def __str__(self):
         return self.name
