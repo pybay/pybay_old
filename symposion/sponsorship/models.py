@@ -48,7 +48,8 @@ BENEFITS = [
 @python_2_unicode_compatible
 class SponsorLevel(models.Model):
 
-    conference = models.ForeignKey(Conference, verbose_name=_("Conference"))
+    conference = models.ForeignKey(Conference, on_delete=models.CASCADE,
+                                   verbose_name=_("Conference"))
     name = models.CharField(_("Name"), max_length=100)
     order = models.IntegerField(_("Order"), default=0)
     cost = models.PositiveIntegerField(_("Cost"))
@@ -69,8 +70,9 @@ class SponsorLevel(models.Model):
 @python_2_unicode_compatible
 class Sponsor(models.Model):
 
-    applicant = models.ForeignKey(User, related_name="sponsorships", verbose_name=_("Applicant"),
-                                  null=True)
+    applicant = models.ForeignKey(User, on_delete=models.CASCADE,
+                                  related_name="sponsorships",
+                                  verbose_name=_("Applicant"), null=True)
 
     name = models.CharField(_("Sponsor Name"), max_length=100)
     display_url = models.URLField(_("display URL"), blank=True)
@@ -78,13 +80,16 @@ class Sponsor(models.Model):
     annotation = models.TextField(_("Annotation"), blank=True)
     contact_name = models.CharField(_("Contact Name"), max_length=100)
     contact_email = models.EmailField(_("Contact Email"))
-    level = models.ForeignKey(SponsorLevel, verbose_name=_("level"))
+    level = models.ForeignKey(SponsorLevel, on_delete=models.CASCADE,
+                              verbose_name=_("level"))
     added = models.DateTimeField(_("added"), default=datetime.datetime.now)
     active = models.BooleanField(_("active"), default=False)
 
     # Denormalization (this assumes only one logo)
-    sponsor_logo = models.ForeignKey("SponsorBenefit", related_name="+", null=True, blank=True,
-                                     editable=False, verbose_name=_("Sponsor logo"))
+    sponsor_logo = models.ForeignKey("SponsorBenefit", on_delete=models.CASCADE,
+                                     related_name="+", null=True, blank=True,
+                                     editable=False,
+                                     verbose_name=_("Sponsor logo"))
 
     # Whether things are complete
     # True = complete, False = incomplate, Null = n/a for this sponsor level
@@ -245,8 +250,12 @@ class Benefit(models.Model):
 @python_2_unicode_compatible
 class BenefitLevel(models.Model):
 
-    benefit = models.ForeignKey(Benefit, related_name="benefit_levels", verbose_name=_("Benefit"))
-    level = models.ForeignKey(SponsorLevel, related_name="benefit_levels", verbose_name=_("Level"))
+    benefit = models.ForeignKey(Benefit, on_delete=models.CASCADE,
+                                related_name="benefit_levels",
+                                verbose_name=_("Benefit"))
+    level = models.ForeignKey(SponsorLevel, on_delete=models.CASCADE,
+                              related_name="benefit_levels",
+                              verbose_name=_("Level"))
 
     # default limits for this benefit at given level
     max_words = models.PositiveIntegerField(_("Max words"), blank=True, null=True)
@@ -264,8 +273,12 @@ class BenefitLevel(models.Model):
 @python_2_unicode_compatible
 class SponsorBenefit(models.Model):
 
-    sponsor = models.ForeignKey(Sponsor, related_name="sponsor_benefits", verbose_name=_("Sponsor"))
-    benefit = models.ForeignKey(Benefit, related_name="sponsor_benefits", verbose_name=_("Benefit"))
+    sponsor = models.ForeignKey(Sponsor, on_delete=models.CASCADE,
+                                related_name="sponsor_benefits",
+                                verbose_name=_("Sponsor"))
+    benefit = models.ForeignKey(Benefit, on_delete=models.CASCADE,
+                                related_name="sponsor_benefits",
+                                verbose_name=_("Benefit"))
     active = models.BooleanField(default=True, verbose_name=_("Active"))
 
     # Limits: will initially be set to defaults from corresponding BenefitLevel

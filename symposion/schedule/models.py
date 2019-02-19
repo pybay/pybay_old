@@ -33,7 +33,8 @@ class Schedule(models.Model):
 @python_2_unicode_compatible
 class Day(models.Model):
 
-    schedule = models.ForeignKey(Schedule, verbose_name=_("Schedule"))
+    schedule = models.ForeignKey(Schedule, on_delete=models.CASCADE,
+                                 verbose_name=_("Schedule"))
     date = models.DateField(verbose_name=_("Date"))
 
     def __str__(self):
@@ -49,7 +50,8 @@ class Day(models.Model):
 @python_2_unicode_compatible
 class Room(models.Model):
 
-    schedule = models.ForeignKey(Schedule, verbose_name=_("Schedule"))
+    schedule = models.ForeignKey(Schedule, on_delete=models.CASCADE,
+                                 verbose_name=_("Schedule"))
     name = models.CharField(max_length=65, verbose_name=_("Name"))
     order = models.PositiveIntegerField(verbose_name=_("Order"))
 
@@ -68,7 +70,8 @@ class SlotKind(models.Model):
     break, lunch, or X-minute talk.
     """
 
-    schedule = models.ForeignKey(Schedule, verbose_name=_("schedule"))
+    schedule = models.ForeignKey(Schedule, on_delete=models.CASCADE,
+                                 verbose_name=_("schedule"))
     label = models.CharField(max_length=50, verbose_name=_("Label"))
 
     def __str__(self):
@@ -83,8 +86,10 @@ class SlotKind(models.Model):
 class Slot(models.Model):
 
     name = models.CharField(max_length=100, editable=False)
-    day = models.ForeignKey(Day, verbose_name=_("Day"))
-    kind = models.ForeignKey(SlotKind, verbose_name=_("Kind"))
+    day = models.ForeignKey(Day, on_delete=models.CASCADE,
+                            verbose_name=_("Day"))
+    kind = models.ForeignKey(SlotKind, on_delete=models.CASCADE,
+                             verbose_name=_("Kind"))
     start = models.TimeField(verbose_name=_("Start"))
     end = models.TimeField(verbose_name=_("End"))
     content_override = models.TextField(blank=True, verbose_name=_("Content override"))
@@ -167,8 +172,10 @@ class SlotRoom(models.Model):
     Links a slot with a room.
     """
 
-    slot = models.ForeignKey(Slot, verbose_name=_("Slot"))
-    room = models.ForeignKey(Room, verbose_name=_("Room"))
+    slot = models.ForeignKey(Slot, on_delete=models.CASCADE,
+                             verbose_name=_("Slot"))
+    room = models.ForeignKey(Room, on_delete=models.CASCADE,
+                             verbose_name=_("Room"))
 
     def __str__(self):
         return "%s %s" % (self.room, self.slot)
@@ -189,12 +196,16 @@ class Presentation(models.Model):
     description_html = models.TextField(blank=True)
     abstract = models.TextField(verbose_name=_("Abstract"))
     abstract_html = models.TextField(blank=True)
-    speaker = models.ForeignKey(Speaker, related_name="presentations", verbose_name=_("Speaker"))
+    speaker = models.ForeignKey(Speaker, on_delete=models.CASCADE,
+                                related_name="presentations",
+                                verbose_name=_("Speaker"))
     additional_speakers = models.ManyToManyField(Speaker, related_name="copresentations",
                                                  blank=True, verbose_name=_("Additional speakers"))
     cancelled = models.BooleanField(default=False, verbose_name=_("Cancelled"))
     proposal_base = models.OneToOneField(ProposalBase, related_name="presentation", verbose_name=_("Proposal base"))
-    section = models.ForeignKey(Section, related_name="presentations", verbose_name=_("Section"))
+    section = models.ForeignKey(Section, on_delete=models.CASCADE,
+                                related_name="presentations",
+                                verbose_name=_("Section"))
 
     def save(self, *args, **kwargs):
         self.description_html = parse(self.description)
@@ -229,8 +240,10 @@ class Presentation(models.Model):
 @python_2_unicode_compatible
 class Session(models.Model):
 
-    day = models.ForeignKey(Day, related_name="sessions", verbose_name=_("Day"))
-    slots = models.ManyToManyField(Slot, related_name="sessions", verbose_name=_("Slots"))
+    day = models.ForeignKey(Day, on_delete=models.CASCADE,
+                            related_name="sessions", verbose_name=_("Day"))
+    slots = models.ManyToManyField(Slot, related_name="sessions",
+                                   verbose_name=_("Slots"))
 
     def sorted_slots(self):
         return self.slots.order_by("start")
@@ -276,9 +289,12 @@ class SessionRole(models.Model):
         (SESSION_ROLE_RUNNER, _("Session Runner")),
     ]
 
-    session = models.ForeignKey(Session, verbose_name=_("Session"))
-    user = models.ForeignKey(User, verbose_name=_("User"))
-    role = models.IntegerField(choices=SESSION_ROLE_TYPES, verbose_name=_("Role"))
+    session = models.ForeignKey(Session, on_delete=models.CASCADE,
+                                verbose_name=_("Session"))
+    user = models.ForeignKey(User, on_delete=models.CASCADE,
+                             verbose_name=_("User"))
+    role = models.IntegerField(choices=SESSION_ROLE_TYPES,
+                               verbose_name=_("Role"))
     status = models.NullBooleanField(verbose_name=_("Status"))
 
     submitted = models.DateTimeField(default=datetime.datetime.now)

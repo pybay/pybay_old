@@ -50,8 +50,10 @@ class ReviewAssignment(models.Model):
         (AUTO_ASSIGNED_LATER, _("auto-assigned, later")),
     ]
 
-    proposal = models.ForeignKey(ProposalBase, verbose_name=_("Proposal"))
-    user = models.ForeignKey(User, verbose_name=_("User"))
+    proposal = models.ForeignKey(ProposalBase, on_delete=models.CASCADE,
+                                 verbose_name=_("Proposal"))
+    user = models.ForeignKey(User, on_delete=models.CASCADE,
+                             verbose_name=_("User"))
 
     origin = models.IntegerField(choices=ORIGIN_CHOICES, verbose_name=_("Origin"))
 
@@ -90,8 +92,11 @@ class ReviewAssignment(models.Model):
 
 
 class ProposalMessage(models.Model):
-    proposal = models.ForeignKey(ProposalBase, related_name="messages", verbose_name=_("Proposal"))
-    user = models.ForeignKey(User, verbose_name=_("User"))
+    proposal = models.ForeignKey(ProposalBase, on_delete=models.CASCADE,
+                                 related_name="messages",
+                                 verbose_name=_("Proposal"))
+    user = models.ForeignKey(User, on_delete=models.CASCADE,
+                             verbose_name=_("User"))
 
     message = models.TextField(verbose_name=_("Message"))
     message_html = models.TextField(blank=True)
@@ -110,8 +115,11 @@ class ProposalMessage(models.Model):
 class Review(models.Model):
     VOTES = VOTES
 
-    proposal = models.ForeignKey(ProposalBase, related_name="reviews", verbose_name=_("Proposal"))
-    user = models.ForeignKey(User, verbose_name=_("User"))
+    proposal = models.ForeignKey(ProposalBase, on_delete=models.CASCADE,
+                                 related_name="reviews",
+                                 verbose_name=_("Proposal"))
+    user = models.ForeignKey(User, on_delete=models.CASCADE,
+                             verbose_name=_("User"))
 
     # No way to encode "-0" vs. "+0" into an IntegerField, and I don't feel
     # like some complicated encoding system.
@@ -195,8 +203,11 @@ class Review(models.Model):
 class LatestVote(models.Model):
     VOTES = VOTES
 
-    proposal = models.ForeignKey(ProposalBase, related_name="votes", verbose_name=_("Proposal"))
-    user = models.ForeignKey(User, verbose_name=_("User"))
+    proposal = models.ForeignKey(ProposalBase, on_delete=models.CASCADE,
+                                 related_name="votes",
+                                 verbose_name=_("Proposal"))
+    user = models.ForeignKey(User, on_delete=models.CASCADE,
+                             verbose_name=_("User"))
 
     # No way to encode "-0" vs. "+0" into an IntegerField, and I don't feel
     # like some complicated encoding system.
@@ -298,8 +309,11 @@ class ProposalResult(models.Model):
 
 
 class Comment(models.Model):
-    proposal = models.ForeignKey(ProposalBase, related_name="comments", verbose_name=_("Proposal"))
-    commenter = models.ForeignKey(User, verbose_name=_("Commenter"))
+    proposal = models.ForeignKey(ProposalBase, on_delete=models.CASCADE,
+                                 related_name="comments",
+                                 verbose_name=_("Proposal"))
+    commenter = models.ForeignKey(User, on_delete=models.CASCADE,
+                                  verbose_name=_("Commenter"))
     text = models.TextField(verbose_name=_("Text"))
     text_html = models.TextField(blank=True)
 
@@ -330,9 +344,12 @@ class NotificationTemplate(models.Model):
 
 class ResultNotification(models.Model):
 
-    proposal = models.ForeignKey(ProposalBase, related_name="notifications", verbose_name=_("Proposal"))
+    proposal = models.ForeignKey(ProposalBase, on_delete=models.CASCADE,
+                                 related_name="notifications",
+                                 verbose_name=_("Proposal"))
     template = models.ForeignKey(NotificationTemplate, null=True, blank=True,
-                                 on_delete=models.SET_NULL, verbose_name=_("Template"))
+                                 on_delete=models.SET_NULL,
+                                 verbose_name=_("Template"))
     timestamp = models.DateTimeField(default=datetime.now, verbose_name=_("Timestamp"))
     to_address = models.EmailField(verbose_name=_("To address"))
     from_address = models.EmailField(verbose_name=_("From address"))

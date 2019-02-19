@@ -20,11 +20,12 @@ class SubMenuItem(OrderedModel):
     class Meta(OrderedModel.Meta):
         verbose_name_plural = "SubMenu Items"
 
-    parent = models.ForeignKey(MenuItem, related_name='menuitems')
+    parent = models.ForeignKey(MenuItem, on_delete=models.CASCADE,
+                               related_name='menuitems')
     text = models.CharField(max_length=255, help_text="Display text for link")
     url = models.CharField(max_length=255, help_text="URL (/relative or http://domain.com)")
     target = models.BooleanField(default=False,
-                              help_text="Check to open in new window")
+                                 help_text="Check to open in new window")
 
     def __str__(self):
         return self.text
