@@ -104,7 +104,7 @@ TEMPLATES = [{
     ]}
 }]
 
-MIDDLEWARE_CLASSES = [
+MIDDLEWARE = [
     "rollbar.contrib.django.middleware.RollbarNotifierMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
