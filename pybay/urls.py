@@ -32,7 +32,7 @@ urlpatterns = [
     url(r"^registration$", RedirectView.as_view(url='https://ti.to/sf-python/pybay2018')),
     url(r"^faq$", views.pybay_faq_index, name="pybay_faq"),
 
-    url(r"^admin/", include(admin.site.urls)),
+    url(r"^admin/", admin.site.urls),
     url(r"^admin/blockstuff/docs", TemplateView.as_view(template_name="blockstuff/docs.html")),
     url(r"^dashboard/", symposion.views.dashboard, name="dashboard"),
 
