@@ -1,5 +1,15 @@
 .jobs {
 
+    h1, h2, h3, h4, h5, h6 {
+
+        color: #32648e !important;
+        font-weight:600 !important;
+        a{
+            color: #32648e !important;
+        }
+    }
+
+    ul { list-style: disc inside; }
     .page-header{
         font-size: 24px;
         border-bottom: 0px;
