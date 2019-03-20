@@ -1,4 +1,5 @@
 {% extends "frontend/base.html" %}
+{% load markup_tags %}
 
 {% block content %}
 <section class="jobs">
@@ -16,14 +17,16 @@
     <div class="row">
       <div class="col-md-8">
         <h1>{{ job.title|safe }}</h1>
+
         <div class="well">
-          {% if "<p>" in job.details %}
-            {{ job.details|safe }}
-            {% else %}
-          <p>{{ job.details|safe }}</p>
+          <p>
+            {{ job.details }}
+          </p>
           <br>
-          {% endif %}
-          {% if job.link %}<p><a class="btn btn-primary" href="{{ job.link }}" role="button">Apply</a></p>{% endif %}
+          <p>
+          {% if job.link %}<p><a class="btn btn-sm btn-primary" href="{{ job.link }}" role="button">Apply</a>{% endif %}
+          <a class="btn btn-sm btn-secondary" href=".." role="button">Back to Job Listings</a>
+          </p>
         </div>
       </div>
       <div class="col-md-4">
@@ -32,11 +35,7 @@
     </div>
     <div class="row">
       <div class="col-md-12">
-        {% if "<p>" in job.details %}
-          {{ job.lengthy_details|safe }}
-        {% else %}
-          <p>{{ job.lengthy_details|safe }}</p>
-        {% endif %}
+          {{ job.lengthy_details|apply_markup:"markdown" }}
       </div>
     </div>
     <hr class="featurette-divider">
