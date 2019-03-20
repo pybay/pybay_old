@@ -24,9 +24,9 @@ class Job(OrderedModel):
     contact_phone = models.CharField(max_length=20, help_text="Not shared publicly.", default="")
     display = models.BooleanField(help_text="Show this job posting on the site.", default=False)
     logo = models.ImageField(upload_to="logos", blank=True)
-    url = models.SlugField()
-    details = models.TextField("Summary", help_text="Short and punchy text - 140 chars or less.")
-    lengthy_details = models.TextField("Details", blank=True, help_text="The rest of the details.")
+    url = models.SlugField(help_text="Give the posting a short slug to be used in the url")
+    details = models.TextField("Summary", help_text="Short and punchy text")
+    lengthy_details = models.TextField("Details", blank=True, help_text="The rest of the details. Use markdown for bulleted lists, *italics*, etc.")
     link = models.CharField(max_length=255, default="", help_text="Add a link to apply for this job.")
     level = models.IntegerField(choices=ORDERING_CHOICES, default=0)
     location = models.CharField(max_length=100, default="")
@@ -36,6 +36,8 @@ class Job(OrderedModel):
 
     def __unicode__(self):
         return self.title
+
+
 
     objects = models.Manager()
     visible = VisibleJobManager()

@@ -1,0 +1,24 @@
+{% extends 'frontend/base.html' %}
+{% load crispy_forms_tags %}
+{% load generic_flatblocks %}
+
+{% block content %}
+    <section class="topics duplicatable-content home-page">
+      <div class="container">
+<style type="text/css">
+#id_details { height:40px;}
+.help-block {margin-top:0px;}
+input[type=text]{ margin-bottom: 10px !important}
+</style>
+<div class="row">
+<h2>Submit your Job Posting</h2>
+
+<div class="well">
+  {% gblock "job-create-text" for "gblocks.Text" %}
+</div>
+{% crispy form %}
+</div>
+
+</div>
+</section>
+{% endblock %}
