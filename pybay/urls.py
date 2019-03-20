@@ -56,7 +56,7 @@ urlpatterns = [
     url(r"^api/undecided_proposals$", views.undecided_proposals, name="pybay_undecided_proposals"),
     url(r"^api/proposals/(?P<proposal_id>\d+)/$", views.proposal_detail, name="pybay_detail_proposal"),
     url(r"^404$", TemplateView.as_view(template_name="404.html")),  # Adding explicitly for template dev purposes
-    url(r"^jobs", include("jobs.urls")),
+    url(r"^jobs/", include("jobs.urls")),
     # url(r"^", include("symposion.cms.urls")),
 ]
 
