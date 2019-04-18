@@ -1,0 +1,18 @@
+version = 1
+
+# mark tests files as such
+test_patterns = [
+  'pybay/tests/*',
+  '*/tests.py'
+]
+
+# do not track issues in auto-generated files and settings
+exclude_patterns = [
+  '*/migrations/*',
+  'pybay/*_settings.py'
+]
+
+[[analyzers]]
+name = 'python'
+enabled = true
+runtime_version = '3.x.x'
