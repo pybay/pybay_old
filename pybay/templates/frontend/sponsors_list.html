@@ -2,17 +2,9 @@
 {% load staticfiles %}
 
 {% block content %}
-<!-- Chart 3 ENDS -->
 <div class="sponsor-list-page">
-  {% include "frontend/sponsor_level_list.html" with sponsors=gold_sponsors color="gold" title="Gold Sponsors" icon="" %}
-
-  {% include "frontend/sponsor_level_list.html" with sponsors=silver_sponsors color="silver" title="Silver Sponsors" icon="" %}
-
-  {% include "frontend/sponsor_level_list.html" with sponsors=bronze_sponsors color="bronze" title="Bronze Sponsors" icon="" %}
-
-  {% include "frontend/sponsor_level_list.html" with sponsors=diversity_sponsors color="diversity" title="Diversity Sponsors" icon="" %}
-
-  {% include "frontend/sponsor_level_list.html" with sponsors=media_sponsors color="media" title="Media Sponsors" icon="" %}
-
+  {% for level in levels %}
+    {% include "frontend/sponsor_level_list.html" with sponsors=level.sponsors level=level %}
+  {% endfor %}
 </div>
 {% endblock content %}

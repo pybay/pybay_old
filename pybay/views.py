@@ -11,7 +11,7 @@ from django.utils import timezone
 
 from .forms import CallForProposalForm
 from pybay.faqs.models import Faq, Category
-from symposion.sponsorship.models import Sponsor
+from symposion.sponsorship.models import SponsorLevel
 from pybay.proposals.models import TalkProposal, Proposal
 from pybay.countdowns.models import Countdown
 from pybay.utils import get_accepted_speaker_by_slug
@@ -52,24 +52,8 @@ def _make_proposal_sort_key(proposal):
 
 
 def pybay_sponsors_list(request):
-    active_sponsors = Sponsor.objects.filter(active=True).order_by('name')
-    sponsor_map = defaultdict(list)
-
-    for sponsor in active_sponsors:
-        sponsor_map[sponsor.level.name].append(sponsor)
-
-    return render(request, 'frontend/sponsors_list.html', {
-        "gold_sponsors": sponsor_map['Gold'],
-        "silver_sponsors": sponsor_map['Silver'],
-        "bronze_sponsors": sponsor_map['Bronze'],
-        "diversity_sponsors": sponsor_map['Diversity'],
-        "media_sponsors": sponsor_map['Media'],
-        "bronze_logo": "",
-        "gold_logo": "",
-        "silver_logo": "",
-        "diversity_logo": "",
-        "media_logo": "",
-    })
+    levels = SponsorLevel.objects.all().order_by('order')
+    return render(request, 'frontend/sponsors_list.html', {'levels': levels})
 
 
 def pybay_faq_index(request):

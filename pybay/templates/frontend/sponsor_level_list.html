@@ -1,12 +1,11 @@
 {% load sponsors_list %}
 {% if sponsors %}
-  <div class="sl-group {{ color }}-sponsors">
+  <div class="sl-group {{ level.name|lower }}-sponsors">
 
     <div class="container">
       <div class="row">
         <div class="col-sm-12 text-center sl-group-heading" >
-          {% if image %}<p>{{ image }}</p>{% endif %}
-          <h1 class="large-h1">{{ title }}</h1>
+          <h1 class="large-h1">{{ level.name }}</h1>
         </div>
       </div>
     </div>
