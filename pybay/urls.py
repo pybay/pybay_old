@@ -23,8 +23,8 @@ faq_view = views.FaqTemplateView.as_view
 
 urlpatterns = [
     url(r"^$", views.FrontpageView.as_view(faq_filter="show_on_home"), name="home"),
-    url(r"^cfp$", views.pybay_cfp_create, name="pybay_cfp"),
-    url(r'^call-for-proposals/$', RedirectView.as_view(pattern_name='pybay_cfp', permanent=False)),
+    # url(r"^cfp$", views.pybay_cfp_create, name="pybay_cfp"),
+    # url(r'^call-for-proposals/$', RedirectView.as_view(pattern_name='pybay_cfp', permanent=False)),
     url(r"^sponsors-prospectus/$", faq_view(template_name="frontend/sponsors_prospectus.html", faq_filter="show_on_sponsors"), name="pybay_sponsors"),
     url(r'^sponsors/$', RedirectView.as_view(pattern_name='pybay_sponsors', permanent=False)),
     url(r"^code-of-conduct$", TemplateView.as_view(template_name="frontend/code_of_conduct.html"), name="pybay_coc"),
