@@ -1,6 +1,6 @@
 from django.db import models
 
-from symposion.proposals.models import ProposalBase
+from symposion.proposals.models import ProposalBase, ProposalKind
 
 
 THEMES = {
@@ -76,6 +76,10 @@ class TalkProposal(Proposal):
     class Meta:
         verbose_name = "talk proposal"
 
+    @classmethod
+    def with_kind(cls):
+      talk_kind = ProposalKind.objects.get(name="talk")
+      return cls(kind=talk_kind)
 
 class TutorialProposal(Proposal):
     class Meta:
