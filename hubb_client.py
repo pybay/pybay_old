@@ -14,126 +14,143 @@ import sys
 
 
 def endpoint(path):
-  def decorator(f):
-    f._endpoint = True
-    @functools.wraps(f)
-    def wrapper(self, **kwargs):
-      url = self._server + path.format(**kwargs)
-      logging.debug(url)
-      headers = self._headers()
-      logging.debug(headers)
-      r = requests.get(url, headers=headers)
-      if r.status_code == 200:
-        return f(self, r, **kwargs)
-      else:
-        msg = "Error accessing {}. Status code {}. {}".format(url, r.status_code, r.text)
-        raise self.ApiException(msg)
-    return wrapper
-  return decorator
+    def decorator(f):
+        f._endpoint = True
+
+        @functools.wraps(f)
+        def wrapper(self, **kwargs):
+            url = self._server + path.format(**kwargs)
+            logging.debug(url)
+            headers = self._headers()
+            logging.debug(headers)
+            r = requests.get(url, headers=headers)
+            if r.status_code == 200:
+                return f(self, r, **kwargs)
+            else:
+                msg = "Error accessing {}. Status code {}. {}".format(
+                    url, r.status_code, r.text
+                )
+                raise self.ApiException(msg)
+
+        return wrapper
+
+    return decorator
+
 
 def mark_endpoints(klass):
-  klass.ENDPOINTS = {}
-  for (name, attr) in vars(klass).items():
-    if callable(attr) and getattr(attr, '_endpoint', False):
-      klass.ENDPOINTS[name] = attr
-  return klass
+    klass.ENDPOINTS = {}
+    for (name, attr) in vars(klass).items():
+        if callable(attr) and getattr(attr, "_endpoint", False):
+            klass.ENDPOINTS[name] = attr
+    return klass
+
 
 @mark_endpoints
 class HubbClient:
+    class ApiException(Exception):
+        pass
 
-  class ApiException(Exception): pass
+    ENDPOINTS = {}
 
-  ENDPOINTS = {}
+    def __init__(self, client_id, client_secret, scope):
+        self._client_id = client_id
+        self._client_secret = client_secret
+        self._scope = scope
+        self._server = "https://ngapi.hubb.me"
+        self._access_token = None
+        self._authorize()
 
-  def __init__(self, client_id, client_secret, scope):
-    self._client_id = client_id
-    self._client_secret = client_secret
-    self._scope = scope
-    self._server = "https://ngapi.hubb.me"
-    self._access_token = None
-    self._authorize()
+    def _authorization_params(self):
+        return dict(
+            client_id=self._client_id,
+            client_secret=self._client_secret,
+            scope=self._scope,
+        )
 
+    def _authorize(self):
+        endpoint = "/auth/token"
+        headers = {"Content-Type": "application/x-www-form-urlencode"}
+        body = (
+            "client_id={client_id}&client_secret={client_secret}"
+            "&scope={scope}&grant_type=client_credentials"
+        )
+        body = body.format(**self._authorization_params())
+        r = requests.post(self._server + endpoint, headers=headers, data=body)
+        json = r.json()
+        self._access_token = json["access_token"]
 
-  def _authorization_params(self):
-    return dict(client_id=self._client_id, client_secret=self._client_secret, scope=self._scope)
+    def _headers(self):
+        return {
+            "Authorization": "bearer {}".format(self._access_token),
+            "Content-Type": "application/json",
+        }
 
-  def _authorize(self):
-    endpoint = "/auth/token"
-    headers = {'Content-Type': 'application/x-www-form-urlencode'}
-    body = ("client_id={client_id}&client_secret={client_secret}"
-            "&scope={scope}&grant_type=client_credentials")
-    body = body.format(**self._authorization_params())
-    r = requests.post(self._server + endpoint, headers=headers, data=body)
-    json = r.json()
-    self._access_token = json['access_token']
+    @endpoint("/api/v1/{event_id}/Sessions")
+    def sessions(self, r, event_id=None):
+        """Sessions for the given event_id"""
+        return r.json()
 
-  def _headers(self):
-    return {'Authorization': "bearer {}".format(self._access_token),
-            'Content-Type': 'application/json'}
+    @endpoint("/api/v1/{event_id}/SessionTypes")
+    def sessiontypes(self, r, event_id=None):
+        """Session types for the given event_id"""
+        return r.json()
 
-  @endpoint('/api/v1/{event_id}/Sessions')
-  def sessions(self, r, event_id=None):
-    """Sessions for the given event_id"""
-    return r.json()
+    @endpoint("/api/v1/{event_id}/Users")
+    def users(self, r, event_id=None):
+        """Users for the given event_id"""
+        return r.json()
 
-  @endpoint('/api/v1/{event_id}/SessionTypes')
-  def sessiontypes(self, r, event_id=None):
-    """Session types for the given event_id"""
-    return r.json()
-
-
-  @endpoint('/api/v1/{event_id}/Users')
-  def users(self, r, event_id=None):
-    """Users for the given event_id"""
-    return r.json()
-
-
-
-  @endpoint('/api/v1/Events')
-  def events(self, r):
-    """Events available for these login credentials"""
-    return r.json()
+    @endpoint("/api/v1/Events")
+    def events(self, r):
+        """Events available for these login credentials"""
+        return r.json()
 
 
 def config_logging():
-  root = logging.getLogger()
-  root.setLevel(logging.DEBUG)
-  handler = logging.StreamHandler(sys.stderr)
-  handler.setLevel(logging.DEBUG)
-  root.addHandler(handler)
+    root = logging.getLogger()
+    root.setLevel(logging.DEBUG)
+    handler = logging.StreamHandler(sys.stderr)
+    handler.setLevel(logging.DEBUG)
+    root.addHandler(handler)
 
 
-if __name__ == '__main__':
-  config_logging()
-  # Setup CLI options
-  parser = argparse.ArgumentParser()
-  # Gotta have a secrets file to read API creds
-  parser.add_argument("--config",
-                      help="Required. Json configuration file containing client_id, client_secret, and scope",
-                      type=argparse.FileType('r'))
-  init_args, unparsed = parser.parse_known_args()
-  if not init_args.config:
-    parser.exit("Must supply secrets config file")
-  secrets = json.load(init_args.config)
+if __name__ == "__main__":
+    config_logging()
+    # Setup CLI options
+    parser = argparse.ArgumentParser()
+    # Gotta have a secrets file to read API creds
+    parser.add_argument(
+        "--config",
+        help="Required. Json configuration file containing client_id, client_secret, and scope",
+        type=argparse.FileType("r"),
+    )
+    init_args, unparsed = parser.parse_known_args()
+    if not init_args.config:
+        parser.exit("Must supply secrets config file")
+    secrets = json.load(init_args.config)
 
-  # Add a subcommand for every Hubb endpoint we've implemented
-  subparsers = parser.add_subparsers(title="Endpoints", help='The following endpoints are supported:', dest="subcommand")
-  for (name, func) in HubbClient.ENDPOINTS.items():
-    sub = subparsers.add_parser(name, help=func.__doc__)
-    sig = inspect.signature(func)
-    params = set(sig.parameters) - {'self', 'r'}  # Ignore self and "r" params.
-    for param in params:
-      sub.add_argument("--{}".format(param))      # Any other params get added as flags to subcommand
+    # Add a subcommand for every Hubb endpoint we've implemented
+    subparsers = parser.add_subparsers(
+        title="Endpoints",
+        help="The following endpoints are supported:",
+        dest="subcommand",
+    )
+    for (name, func) in HubbClient.ENDPOINTS.items():
+        sub = subparsers.add_parser(name, help=func.__doc__)
+        sig = inspect.signature(func)
+        params = set(sig.parameters) - {"self", "r"}  # Ignore self and "r" params.
+        for param in params:  # Any other params get added as flags to the subcommand
+            sub.add_argument("--{}".format(param))
 
-  # Pick a subcommand to run
-  args = parser.parse_args()
-  if not args.subcommand:
-    parser.exit("Please specify a subcommand")
-  # Make a client, call the endpoint, and dump the resulting json to stdout
-  hc = HubbClient(**secrets)
-  f = hc.ENDPOINTS[args.subcommand]
-  call_args = vars(args)
-  for known_arg in ['subcommand', 'config']:
-    call_args.pop(known_arg, None)
-  result = f(hc, **call_args)
-  print(json.dumps(result))
+    # Pick a subcommand to run
+    args = parser.parse_args()
+    if not args.subcommand:
+        parser.exit("Please specify a subcommand")
+    # Make a client, call the endpoint, and dump the resulting json to stdout
+    hc = HubbClient(**secrets)
+    f = hc.ENDPOINTS[args.subcommand]
+    call_args = vars(args)
+    for known_arg in ["subcommand", "config"]:
+        call_args.pop(known_arg, None)
+    result = f(hc, **call_args)
+    print(json.dumps(result))
