@@ -3,6 +3,7 @@ from django.core.management.base import BaseCommand, CommandError
 from pybay.proposals.models import TalkProposal
 from django.contrib.auth.models import User
 from symposion.speakers.models import Speaker
+from symposion.schedule.models import Slot
 
 
 class Command(BaseCommand):
@@ -16,3 +17,4 @@ class Command(BaseCommand):
       TalkProposal.objects.all().delete()
       map(lambda speaker: speaker.delete, speakers)
       map(lambda user: user.delete, users)
+      Slot.objects.all().delete()
