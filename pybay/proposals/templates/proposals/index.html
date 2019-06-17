@@ -7,7 +7,9 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
+        <div class="heavy-header blue-header">
         <h1>Pybay 2019 Talks</h1>
+        </div>
         {% gblock "job-create-text" for "gblocks.Text" %}
         <hr>
       </div>
@@ -16,7 +18,9 @@
     {% for proposal in proposals %}
     <div class="row">
       <div class="col-md-12">
+        <div class="heavy-header blue-header">
         <h2 class="blue-title">{{ proposal.title }}</h2>
+        </div>
         <h3>{% for speaker in proposal.speakers %}{{ speaker }} {% endfor %}</h3>
         <p>{{ proposal.description|apply_markup:"markdown" }}</p>
       </div>
