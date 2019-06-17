@@ -13,6 +13,7 @@ from symposion.sponsorship import urls as sponsor_urls
 from symposion.speakers import urls as speaker_urls
 
 from pybay import views
+from pybay.proposals import views as preview_views
 
 
 WIKI_SLUG = r"(([\w-]{2,})(/[\w-]{2,})*)"
@@ -40,6 +41,7 @@ urlpatterns = [
     url(r"^speaker/", include(speaker_urls)),
     url(r"^sponsors/", include("symposion.sponsorship.urls")),
     url(r"^proposals/", include(proposals_urls)),
+    url(r"^talks/", preview_views.index, name="pybay_preview"),
     url(r"^reviews/", include("symposion.reviews.urls")),
     url(r"^boxes/", include("pinax.boxes.urls")),
 

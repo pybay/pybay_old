@@ -1,0 +1,27 @@
+{% extends "frontend/base.html" %}
+{% load markup_tags %}
+{% load generic_flatblocks %}
+
+{% block content %}
+<section class="proposals">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Pybay 2019 Talks</h1>
+        {% gblock "job-create-text" for "gblocks.Text" %}
+        <hr>
+      </div>
+    </div>
+
+    {% for proposal in proposals %}
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="blue-title">{{ proposal.title }}</h2>
+        <h3>{% for speaker in proposal.speakers %}{{ speaker }} {% endfor %}</h3>
+        <p>{{ proposal.description|apply_markup:"markdown" }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}
