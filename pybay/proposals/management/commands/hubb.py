@@ -1,15 +1,17 @@
 import argparse
 import json
+import logging
+import re
 import sys
-from django.core.management.base import BaseCommand, CommandError
 
-from pybay.proposals.models import TalkProposal
+from django.core.management.base import BaseCommand, CommandError
+from pybay.proposals.models import TalkProposal, THEMES
 from django.contrib.auth.models import User
 from symposion.speakers.models import Speaker
 from symposion.proposals.models import AdditionalSpeaker
 
 
-proposal_keys = ["audience_level", "theme", "length", "what_attendees_will_learn",
+proposal_keys = ["audience_level", "themes", "talk_length", "what_attendees_will_learn",
         "title", "description", "abstract", "additional_notes"]
 
 speaker_keys = ['first_name', 'last_name', 'biography']
@@ -30,16 +32,12 @@ class AttrDict(dict):
     def __init__(self, dct):
         super(AttrDict, self).__init__(**dct)
         self.__dict__ = self
-        self.audience_level = 1
-        self.theme = 'ai'
-        self.length=25
-        self.what_attendees_will_learn = "asdf"
-        self.abstract = ''
+
 
 PIPELINE = [{
-  "audience_level": 1,
-  "theme": 'ai',
-  "length": 25,
+  "audience_level": "Advanced",
+  "themes": 'ai',
+  "talk_length": "25 mins",
   "what_attendees_will_learn": "asdf",
   "title": "My talk",
   "description": "It's got some stuff!",
@@ -60,11 +58,29 @@ PIPELINE = [{
 
 
 def copyattr(frm, to, key):
-  setattr(to, key, getattr(frm, key))
+  try:
+    setattr(to, key, getattr(frm, key))
+  except AttributeError:
+    #print("Couldn't get key %s from data %s" % (key, frm))
+    setattr(to, key, "")
+
+COMMA_PAT = re.compile(r",(?=[\w&])")
+reverse_themes = {v: k for k,v in THEMES.items()}
+
 
 def create_talk_proposal(data):
   tp = TalkProposal.with_kind()
   data = AttrDict(data)
+  # Special cases
+  data.audience_level = TalkProposal.audience_text(data.audience_level)
+  data.talk_length = int(data.talk_length.split()[0])
+  themes = COMMA_PAT.split(data.theme)
+  real_themes = [reverse_themes[desc] for desc in themes if desc in reverse_themes]
+  if len(themes) > len(real_themes):
+    print("Can't find all themes in %s" % themes)
+  data.themes = ", ".join(real_themes)
+
+  # Speakers
   speakers = []
   for record in data.speakers:
     record = AttrDict(record)
@@ -81,6 +97,7 @@ def create_talk_proposal(data):
 
   for key in proposal_keys:
     copyattr(data, tp, key)
+
   first_speaker, *rest = speakers
   tp.speaker = first_speaker
   tp.save()
