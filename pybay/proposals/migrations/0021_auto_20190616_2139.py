@@ -7,6 +7,12 @@ from django.db import connection
 
 db_name = connection.settings_dict['NAME']
 
+def forwards(apps, schema_editor):
+    if schema_editor.connection.vendor != 'mysql':
+        return
+    migrations.RunSQL("ALTER DATABASE {} CHARACTER SET = utf8mb4 COLLATE utf8mb4_unicode_ci;".format(db_name))
+
+
 class Migration(migrations.Migration):
 
     dependencies = [
@@ -14,5 +20,5 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
-      migrations.RunSQL("ALTER DATABASE {} CHARACTER SET = utf8mb4 COLLATE utf8mb4_unicode_ci;".format(db_name))
+        migrations.RunPython(forwards),
     ]

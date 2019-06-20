@@ -4,6 +4,11 @@ from __future__ import unicode_literals
 
 from django.db import migrations
 
+def forwards(apps, schema_editor):
+    if schema_editor.connection.vendor != 'mysql':
+        return
+    migrations.RunSQL("ALTER TABLE symposion_proposals_proposalbase CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"),
+
 
 class Migration(migrations.Migration):
 
@@ -12,5 +17,5 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
-      migrations.RunSQL("ALTER TABLE symposion_proposals_proposalbase CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"),
+        migrations.RunPython(forwards),
     ]
