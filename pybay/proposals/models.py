@@ -4,25 +4,32 @@ from symposion.proposals.models import ProposalBase, ProposalKind
 
 
 THEMES = {
-    'python': 'Python & Libraries',
-    'ai': 'AI & Data',
-    'automation': 'DevOps & Automation',
-    'speed': 'Scale & Performance',
-    'community': 'Fun & People',
+  'devops': 'DevOps‚ Testing‚ & Automation',
+  'python': 'Python & Libraries',
+  'speed': 'Scale & Performance',
+  'web': 'Web‚ IoT‚ & Hardware',
+  'ai': 'ML‚ AI‚ & Data',
+  'community': 'People & Project Management'
 }
 
 
 class Proposal(ProposalBase):
 
     AUDIENCE_LEVEL_NOVICE = 1
-    AUDIENCE_LEVEL_EXPERIENCED = 2
-    AUDIENCE_LEVEL_INTERMEDIATE = 3
+    AUDIENCE_LEVEL_INTERMEDIATE = 2
+    AUDIENCE_LEVEL_EXPERIENCED = 3
+
 
     AUDIENCE_LEVELS = [
-        (AUDIENCE_LEVEL_NOVICE, "Novice"),
+        (AUDIENCE_LEVEL_NOVICE, "Beginner"),
         (AUDIENCE_LEVEL_INTERMEDIATE, "Intermediate"),
         (AUDIENCE_LEVEL_EXPERIENCED, "Advanced"),
     ]
+
+    @classmethod
+    def audience_text(klass, text):
+        lookup = {val[:3]: key for key, val in dict(klass.AUDIENCE_LEVELS).items()}
+        return lookup[text[:3]]
 
     MEETUP_CHOICE_YES =  "Yes"
     MEETUP_CHOICE_MAYBE = "Maybe"
