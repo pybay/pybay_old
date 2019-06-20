@@ -19,6 +19,9 @@ def endpoint(path):
 
         @functools.wraps(f)
         def wrapper(self, **kwargs):
+            for k, v in kwargs.items():
+              if v is None:
+                raise self.ApiException("Argument {} cannot be empty!".format(k))
             url = self._server + path.format(**kwargs)
             logging.debug(url)
             headers = self._headers()
@@ -90,6 +93,11 @@ class HubbClient:
         """Sessions for the given event_id"""
         return r.json()
 
+    @endpoint("/api/v1/{event_id}/Sessions/{session_id}")
+    def session(self, r, event_id=None, session_id=None):
+        """Session details for the given event_id and session_id"""
+        return r.json()
+
     @endpoint("/api/v1/{event_id}/SessionTypes")
     def sessiontypes(self, r, event_id=None):
         """Session types for the given event_id"""
@@ -105,6 +113,15 @@ class HubbClient:
         """Events available for these login credentials"""
         return r.json()
 
+    @endpoint("/api/v1/{event_id}/PropertyMetadata")
+    def properties(self, r, event_id=None):
+        """Custom fields and their values"""
+        return r.json()
+
+    @endpoint("/api/v1/{event_id}/PropertyValues")
+    def propertyvalues(self, r, event_id=None):
+        """Custom fields and their values"""
+        return r.json()
 
 def config_logging():
     root = logging.getLogger()
@@ -113,21 +130,14 @@ def config_logging():
     handler.setLevel(logging.DEBUG)
     root.addHandler(handler)
 
-
 if __name__ == "__main__":
     config_logging()
     # Setup CLI options
     parser = argparse.ArgumentParser()
     # Gotta have a secrets file to read API creds
-    parser.add_argument(
-        "--config",
-        help="Required. Json configuration file containing client_id, client_secret, and scope",
-        type=argparse.FileType("r"),
-    )
-    init_args, unparsed = parser.parse_known_args()
-    if not init_args.config:
-        parser.exit("Must supply secrets config file")
-    secrets = json.load(init_args.config)
+    txt = "Required. Json configuration file containing client_id, client_secret, and scope"
+    parser.add_argument( "--config", help=txt, type=argparse.FileType("r"))
+
 
     # Add a subcommand for every Hubb endpoint we've implemented
     subparsers = parser.add_subparsers(
@@ -146,7 +156,10 @@ if __name__ == "__main__":
     args = parser.parse_args()
     if not args.subcommand:
         parser.exit("Please specify a subcommand")
-    # Make a client, call the endpoint, and dump the resulting json to stdout
+    if not args.config:
+        parser.exit("Must supply secrets config file")
+    secrets = json.load(args.config)
+    # Make a client
     hc = HubbClient(**secrets)
     f = hc.ENDPOINTS[args.subcommand]
     call_args = vars(args)
