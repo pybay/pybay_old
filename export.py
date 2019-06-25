@@ -38,13 +38,20 @@ def reducer(x, y):
     x.append({'SessionId': y['SessionId'], y['PropertyMetadataId']: y['Value']})
   return x
 
+  # "TrackId": 16161,
+  # "TimeSlotId": 92748,
+  # "RoomId": 45414,
+
+EVENT_ID = 2717
+
 def export_all_talks(hc):
   session_fields = {'additional_notes': 'Id',
                     'title': 'Title',
                     'description': 'Description',
-                    'start_time': None,
-                    'end_time': None,
-                    'room': None
+                    'start_time': 'StartTime',
+                    'end_time': 'EndTime',
+                    'room': 'room',
+                    'slot': 'SlotDescription',
   }
   property_fields = {47953: 'talk_length',
                      47941: 'type',
@@ -60,12 +67,12 @@ def export_all_talks(hc):
                      'photo': 'PhotoLink'}
 
   # First get the users which is a list of objects [{"Id", ...},]
-  users = hc.users(event_id=2717)
+  users = hc.users(event_id=EVENT_ID)
   # And convert to dict of Ids {Id: {}, }
   users = {user['Id']: user for user in users}
 
   # Next get "property values"  [{"PropertyMetadataId", "SessionId", "Value" ...},]
-  properties = hc.propertyvalues(event_id=2717)
+  properties = hc.propertyvalues(event_id=EVENT_ID)
   # Filter down to the properties we're interested in
   properties = [p for p in properties if p['SessionId'] and p["PropertyMetadataId"] in property_fields]
   # Convert to dict of sessionids: {pid: value, ...}
@@ -73,10 +80,24 @@ def export_all_talks(hc):
   properties = functools.reduce(reducer, properties, None)
   properties = {p['SessionId']: p for p in properties}
 
+  # Get the rooms and convert to {Id: Name} map
+  rooms = hc.rooms(event_id=EVENT_ID)
+  rooms = {int(r['Id']): r['Name'] for r in rooms}
+
+  # Get the timeslots and convert to {Id: {Start: t, End: t} map
+  slots = hc.timeslots(event_id=EVENT_ID)
+  slots = {s['Id']: s for s in slots}
+  # Get the time slots
+
+
   export_data = []
-  data = hc.sessions(event_id=2717)
+  data = hc.sessions(event_id=EVENT_ID)
   for record in data:
     new_record = {}
+    record['room'] = rooms[record['RoomId']]
+    record['StartTime'] = slots[record['TimeSlotId']]['StartTime']['EventTime']
+    record['EndTime'] = slots[record['TimeSlotId']]['EndTime']['EventTime']
+    record['SlotDescription'] = slots[record['TimeSlotId']]['Label']
     translate(new_record, record, session_fields)
     new_record['additional_notes'] = str(new_record['additional_notes'])
     new_record['speakers'] = []
