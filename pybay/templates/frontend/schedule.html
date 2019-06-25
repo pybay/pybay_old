@@ -17,68 +17,66 @@
     {% gblock "all_speakers_top_block" for "gblocks.Text" %}
 
     <div class="sch-schedule">
-        <div class="sch-filters substicky">
-            <ul class="sch-filter-list">
-                <li data-filter="">All Talks</li>
-              {% for name, filter in filters %}
-                <li data-filter="{{ filter|join:" " }}">{{ name }}</li>
-              {% endfor %}
-            </ul>
-        </div>
+      <div class="sch-filters substicky">
+        <ul class="sch-filter-list">
+          <li data-filter="">All Talks</li>
+          {% for name, filter in filters %}
+          <li data-filter="{{ filter|join:" " }}">{{ name }}</li>
+          {% endfor %}
+        </ul>
+      </div>
 
-    {% for schedule_days in schedules %}
-        {% for day, slot_groups in schedule_days %}
-          <div class="sch-day">
-            <h2 class="sch-day-title">{{ day.date }}</h2>
-            <div class="sch-timeslots">
-              {% for time, slots, kind in slot_groups %}
-                <div class="sch-timeslot {% if kind %}sch-timeslot-special sch-timeslot-special-{{ kind }}{% endif %}">
-                  <h3 class="sch-timeslot-time">{{ time }}</h3>
-                  <div class="sch-timeslot-slots">
-                    {% for slot in slots %}
-                      {% if slot.content_override %}
-                        <div class="sch-timeslot-slot sch-timeslot-kind-{{ slot.kind.label }} sch-timeslot-custom">
-                          {{ slot.content_override_html|safe }}
-                        </div>
-                      {% elif slot.content_ptr %}
-                        {% with talk=slot.content_ptr %}
-                          <div class="sch-timeslot-slot
-                                      sch-timeslot-kind-{{ slot.kind.label }}
-                                      sch-talk-level-{{ talk.proposal.audience_level }}
-                                      {% for slug in talk.proposal.theme_slugs %}
-                                        sch-talk-{{ slug }}
-                                      {% endfor %}">
-                            <div class="sch-slot-inner">
-                              {% if talk.speaker.photo %}<p class="sch-speaker-photo"><img src="{% thumbnail talk.speaker.photo '50x50' %}" alt="{{ talk.speaker.name }}" /></p>{% endif %}
-                              <h4><a href="{% url 'pybay_speakers_detail' talk.speaker.name_slug %}">{{ talk.title }}</a></h4>
-                              <p class="sch-speaker">{{ talk.speaker.name }}</p>
-                              {% for theme in talk.proposal.theme_descriptions %}
-                                <p class="sch-category">
-                                  {{ theme }}
-                                </p>
-                              {% endfor %}
-                              <p class="sch-room">{{ slot.rooms|join:', ' }}</p>
-                              <p class="sch-duration">{{ slot.length_in_minutes }} mins</p>
-                            </div>
-                            <div class="sch-description">{{ talk.description|apply_markup:"markdown" }}</div>
-                          </div>
-                        {% endwith %}
-                      {% else %}
-                        <div class="sch-timeslot-slot sch-timeslot-kind-{{ slot.kind.label }}">
-                          <p>{{ slot.kind.label.title }}</p>
-                        </div>
-                      {% endif %}
-                    {% endfor %}
-                  </div>
+      {% for schedule_days in schedules %}
+      {% for day, slot_groups in schedule_days %}
+      <div class="sch-day">
+        <h2 class="sch-day-title">{{ day.date }}</h2>
+        <div class="sch-timeslots">
+          {% for time, slots, kind in slot_groups %}
+          <div class="sch-timeslot {% if kind %}sch-timeslot-special sch-timeslot-special-{{ kind }}{% endif %}">
+            <h3 class="sch-timeslot-time">{{ time }}</h3>
+            <div class="sch-timeslot-slots">
+              {% for slot in slots %}
+              {% if slot.content_override %}
+              <div class="sch-timeslot-slot sch-timeslot-kind-{{ slot.kind.label }} sch-timeslot-custom">
+                {{ slot.content_override_html|safe }}
+              </div>
+              {% elif slot.content_ptr %}
+              {% with talk=slot.content_ptr %}
+              <div class="sch-timeslot-slot
+                          sch-timeslot-kind-{{ slot.kind.label }}
+                          sch-talks-level-{{ talk.proposal.audience_level }}
+                          {% for slug in talk.proposal.theme_slugs %}
+                          sch-talks-{{ slug }}
+                          {% endfor %}">
+                <div class="sch-slot-inner">
+                  {% if talk.speaker.photo %}<p class="sch-speaker-photo"><img src="{% thumbnail talk.speaker.photo '50x50' %}" alt="{{ talk.speaker.name }}" /></p>{% endif %}
+                  <h4><a href="{% url 'pybay_speakers_detail' talk.speaker.name_slug %}">{{ talk.title }}</a></h4>
+                  <p class="sch-speaker">{{ talk.speaker.name }}</p>
+                  {% for theme in talk.proposal.theme_descriptions %}
+                  <p class="sch-category">
+                    {{ theme }}
+                  </p>
+                  {% endfor %}
+                  <p class="sch-room">{{ slot.rooms|join:', ' }}</p>
+                  <p class="sch-duration">{{ slot.length_in_minutes }} mins</p>
                 </div>
+                <div class="sch-description">{{ talk.description|apply_markup:"markdown" }}</div>
+              </div>
+              {% endwith %}
+              {% else %}
+              <div class="sch-timeslot-slot sch-timeslot-kind-{{ slot.kind.label }}">
+                <p>{{ slot.kind.label.title }}</p>
+              </div>
+              {% endif %}
               {% endfor %}
             </div>
           </div>
-        {% endfor %}
+          {% endfor %}
+        </div>
       </div>
-
-    {% endfor %}
-  </div><!--container -->
+      {% endfor %}
+      {% endfor %}
+    </div><!--container -->
 </section>
 {% endblock content %}
 
@@ -93,13 +91,13 @@
       }
 
       {% for _, slugs in filters %}
-      .sch-schedule-filter-{{ slugs|join:'-' }} .sch-timeslot-kind-talk{% for slug in slugs %}:not(.sch-talk-{{ slug }}){% endfor %}{% if not forloop.last %},{% endif %}{% endfor %}{
+      .sch-schedule-filter-{{ slugs|join:'-' }} .sch-timeslot-kind-talks{% for slug in slugs %}:not(.sch-talks-{{ slug }}){% endfor %}{% if not forloop.last %},{% endif %}{% endfor %}{
         opacity: .3;
       }
 
       @media(max-width: 450px) {
         {% for _, slugs in filters %}
-        .sch-schedule-filter-{{ slugs|join:'-' }} .sch-timeslot-kind-talk{% for slug in slugs %}:not(.sch-talk-{{ slug }}){% endfor %}{% if not forloop.last %},{% endif %}{% endfor %}{
+        .sch-schedule-filter-{{ slugs|join:'-' }} .sch-timeslot-kind-talks{% for slug in slugs %}:not(.sch-talks-{{ slug }}){% endfor %}{% if not forloop.last %},{% endif %}{% endfor %}{
           display: none;
         }
       }
