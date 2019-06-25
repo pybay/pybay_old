@@ -38,7 +38,7 @@ urlpatterns = [
     url(r"^dashboard/", symposion.views.dashboard, name="dashboard"),
 
     url(r"^account/", include("account.urls")),
-    url(r"^speaker/", include(speaker_urls)),
+    #url(r"^speaker/", include(speaker_urls)),
     url(r"^sponsors/", include("symposion.sponsorship.urls")),
     url(r"^proposals/", include(proposals_urls)),
     url(r"^talks/", preview_views.index, name="pybay_preview"),
