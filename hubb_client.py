@@ -93,6 +93,16 @@ class HubbClient:
         """Sessions for the given event_id"""
         return r.json()
 
+    @endpoint("/api/v1/{event_id}/TimeSlots")
+    def timeslots(self, r, event_id=None):
+        """Sessions for the given event_id"""
+        return r.json()
+
+    @endpoint("/api/v1/{event_id}/Rooms")
+    def rooms(self, r, event_id=None):
+        """Rooms for the given event_id"""
+        return r.json()
+
     @endpoint("/api/v1/{event_id}/Sessions/{session_id}")
     def session(self, r, event_id=None, session_id=None):
         """Session details for the given event_id and session_id"""
