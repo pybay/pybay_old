@@ -76,7 +76,10 @@ class Proposal(ProposalBase):
     @property
     def theme_descriptions(self):
         for theme in self.theme_slugs:
-            yield THEMES[theme]
+            desc = THEMES.get(theme)
+            if desc:
+                yield THEMES[theme]
+
 
 
 class TalkProposal(Proposal):
