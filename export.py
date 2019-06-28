@@ -94,7 +94,11 @@ def export_all_talks(hc):
   data = hc.sessions(event_id=EVENT_ID)
   for record in data:
     new_record = {}
-    record['room'] = rooms[record['RoomId']]
+    try:
+      record['room'] = rooms[record['RoomId']]
+    except KeyError:
+      logging.error("No room found for {}".format(record))
+      continue
     record['StartTime'] = slots[record['TimeSlotId']]['StartTime']['EventTime']
     record['EndTime'] = slots[record['TimeSlotId']]['EndTime']['EventTime']
     record['SlotDescription'] = slots[record['TimeSlotId']]['Label']
