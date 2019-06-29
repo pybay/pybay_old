@@ -17,7 +17,7 @@ from symposion.reviews.models import ProposalResult
 proposal_keys = ["audience_level", "themes", "talk_length", "what_attendees_will_learn",
         "title", "description", "abstract", "additional_notes"]
 
-speaker_keys = ['first_name', 'last_name', 'biography']
+speaker_keys = ['first_name', 'last_name', 'speaker_biography']
 
 user_keys = ['email']
 
@@ -91,11 +91,13 @@ def create_talk_proposal(data):
       user.email = record.speaker_email
       user.save()
     speaker, created = Speaker.objects.get_or_create(user=user)
-    if created:
-      speaker.name = " ".join([record.first_name, record.last_name])
-      speaker.user = user
-      speaker.invite_email = record.speaker_email
-      speaker.save()
+    speaker.name = " ".join([record.first_name, record.last_name])
+    speaker.user = user
+    speaker.invite_email = record.speaker_email
+    speaker.biography = record.speaker_biography or ""
+    speaker.twitter_username = record.twitter_username or ""
+    speaker.annotation = json.dumps(record) # JSON all the speaker data since we don't have fields for it all
+    speaker.save()
     speakers.append(speaker)
 
   for key in proposal_keys:
