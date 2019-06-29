@@ -10,6 +10,7 @@ DATABASES = {
         "ENGINE": "django.db.backends.mysql",
         'OPTIONS': {
             'read_default_file': '/home/pybay/pybay_staging.cnf',
+            'charset': 'utf8mb4',
         },
     }
 }
