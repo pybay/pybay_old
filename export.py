@@ -64,7 +64,13 @@ def export_all_talks(hc):
                      'first_name': "FirstName",
                      'last_name': "LastName",
                      'speaker_biography': 'Biography',
-                     'photo': 'PhotoLink'}
+                     'photo': 'PhotoLink',
+                     'twitter_username': 'Twitter',
+                     'website': 'Website',
+                     'linkedin': "LinkedIn",
+                     'facebook': "Facebook",
+                     'blog': 'Blog',
+  }
 
   # First get the users which is a list of objects [{"Id", ...},]
   users = hc.users(event_id=EVENT_ID)
