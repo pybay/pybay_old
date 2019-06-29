@@ -143,9 +143,13 @@ def pybay_speakers_detail(request, speaker_slug):
 
     # Sort talks by date first, and then by time
     speaker_approved_talks.sort(key=_make_proposal_sort_key)
-
+    try:
+      links = json.loads(speaker.annotation)
+    except Exception:
+      links = {}
     return render(request, 'frontend/speakers_detail.html',
                   {'speaker': speaker, 'talks': speaker_approved_talks,
+                   'links': links,
                    'speaker_website': speaker_approved_talks[0].speaker_website})
 
 

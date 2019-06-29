@@ -16,11 +16,24 @@
                   <img class="img-responsive" height=360 alt="{{ speaker.name }}" src="{% speaker_url_with_fallback speaker 360 %}">
               </div>
            </a>
+           {% if links.twitter_username %}
+           <br>
+           <a href="https://twitter.com/{{ links.twitter_username }}" target="_blank" class="btn" data-show-count="false" rel="noopener noreferrer">
+             <i class="fa fa-twitter-square"></i> Follow {{ links.twitter_username }}</a>
+           {% endif %}
+          {% if links.linkedin %}
+          <br>
+          <a style="" href="{% links.linkedin }}" class="btn" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
+          {% endif %}
+
+
        </div>
        <div class="col-sm-6 col-md-7">
            <h1><strong>{{ speaker.name }}</strong></h1>
           <div class="lead">{{ speaker.biography_html|safe }}</div>
-          <a style="margin-top: 20px;" href="{{ speaker_website }}" class="btn" target="_blank" rel="noopener noreferrer">Speaker home page</a>
+          {% if links.website or links.blog %}
+          <a style="margin-top: 20px;" href="{% firstof links.website links.blog %}" class="btn" target="_blank" rel="noopener noreferrer">Speaker home page</a>
+          {% endif %}
        </div>
      </div>
    </div>
