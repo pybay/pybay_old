@@ -4,11 +4,11 @@ from symposion.proposals.models import ProposalBase, ProposalKind
 
 
 THEMES = {
-  'devops': 'DevOps‚ Testing‚ & Automation',
+  'devops': 'DevOps, Testing, & Automation',
   'python': 'Python & Libraries',
   'speed': 'Scale & Performance',
-  'web': 'Web‚ IoT‚ & Hardware',
-  'ai': 'ML‚ AI‚ & Data',
+  'web': 'Web, IoT, & Hardware',
+  'ai': 'ML, AI, & Data',
   'community': 'People & Project Management'
 }
 
@@ -59,9 +59,9 @@ class Proposal(ProposalBase):
     themes = models.CharField(max_length=250)
     talk_length = models.IntegerField(choices=TALK_LENGTHS, default=25)
     talk_links = models.CharField(max_length=200)
-    what_attendees_will_learn = models.TextField()
+    what_attendees_will_learn = models.TextField(default="")
     meetup_talk = models.CharField(choices=MEETUP_CHOICES, max_length=100, default="No")
-    speaker_and_talk_history = models.TextField()
+    speaker_and_talk_history = models.TextField(default="")
     speaker_website = models.TextField(null=True, blank=True)
     location_override = models.CharField(max_length=200, blank=True)
     phone = models.CharField(blank=False,max_length=15, null=True)
@@ -97,3 +97,8 @@ class TutorialProposal(Proposal):
 
     ticket_price = models.CharField(max_length=50, blank=True)
     sold_out = models.BooleanField(default=False)
+
+    @classmethod
+    def with_kind(cls):
+      talk_kind = ProposalKind.objects.get(name="tutorial")
+      return cls(kind=talk_kind)
