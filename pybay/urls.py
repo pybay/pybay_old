@@ -59,6 +59,7 @@ urlpatterns = [
     url(r"^api/proposals/(?P<proposal_id>\d+)/$", views.proposal_detail, name="pybay_detail_proposal"),
     url(r"^404$", TemplateView.as_view(template_name="404.html")),  # Adding explicitly for template dev purposes
     url(r"^jobs/", include("jobs.urls")),
+    url(r"^registration$", RedirectView.as_view(url='https://ti.to/sf-python/pybay2019'), name='pybay_tickets'),
     # url(r"^", include("symposion.cms.urls")),
 ]
 
