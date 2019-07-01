@@ -8,6 +8,10 @@ def forwards(apps, schema_editor):
     if schema_editor.connection.vendor != 'mysql':
         return
     schema_editor.execute("ALTER TABLE symposion_speakers_speaker CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;")
+    try:
+        schema_editor.execute("ALTER TABLE proposals_tutorialproposal drop column what_will_attendees_learn")
+    except Exception:
+        pass
 
 
 class Migration(migrations.Migration):
