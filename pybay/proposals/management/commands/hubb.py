@@ -6,7 +6,7 @@ import re
 import sys
 
 from django.core.management.base import BaseCommand, CommandError
-from pybay.proposals.models import TalkProposal, THEMES
+from pybay.proposals.models import Proposal, TalkProposal, TutorialProposal, THEMES
 from django.contrib.auth.models import User
 from symposion.speakers.models import Speaker
 from symposion.proposals.models import AdditionalSpeaker
@@ -70,18 +70,7 @@ def copyattr(frm, to, key):
 COMMA_PAT = re.compile(r",(?=[\w&])")
 reverse_themes = {v: k for k,v in THEMES.items()}
 
-
-def create_talk_proposal(data):
-  tp = TalkProposal.with_kind()
-  # Special cases
-  data.audience_level = TalkProposal.audience_text(data.audience_level)
-  data.talk_length = int(data.talk_length.split()[0])
-  themes = COMMA_PAT.split(getattr(data, 'theme', ""))
-  real_themes = [reverse_themes[desc] for desc in themes if desc in reverse_themes]
-  if len(themes) > len(real_themes):
-    print("Can't find all themes in %s" % themes)
-  data.themes = ",".join(real_themes)
-
+def create_speakers(data):
   # Speakers
   speakers = []
   for record in data.speakers:
@@ -99,6 +88,30 @@ def create_talk_proposal(data):
     speaker.annotation = json.dumps(record) # JSON all the speaker data since we don't have fields for it all
     speaker.save()
     speakers.append(speaker)
+  return speakers
+
+def fix_themes(themes):
+  themes = COMMA_PAT.split(themes)
+  real_themes = [reverse_themes[desc] for desc in themes if desc in reverse_themes]
+  if len(themes) > len(real_themes):
+    print("Can't find all themes in %s" % themes)
+  return ",".join(real_themes)
+
+def create_proposal(data):
+  if "tutorial" in data.type:
+    tp = TutorialProposal.with_kind()
+    tp.ticket_price = '150.00'
+    data.talk_length = 0
+  else:
+    tp = TalkProposal.with_kind()
+    data.talk_length = int(data.talk_length.split()[0])
+    data.themes = fix_themes(getattr(data, 'theme', ""))
+
+  # Special cases
+  data.audience_level = Proposal.audience_text(data.audience_level)
+  tp.what_attendees_will_learn = ''
+
+  speakers = create_speakers(data)
 
   for key in proposal_keys:
     copyattr(data, tp, key)
@@ -113,12 +126,15 @@ def create_talk_proposal(data):
     a.save()
   return tp
 
+
 def dt(s):
   return datetime.strptime(s, "%Y-%m-%dT%H:%M:%S-07:00")
 
 
 def create_slot(record, tp, slotkind):
   room = Room.objects.filter(name=record.room).first()
+  if not room:
+    raise Room.DoesNotExist("No room called {}".format(record.room))
   section = Section.objects.filter(slug='talks').first()
   start = dt(record.start_time)
   end = dt(record.end_time)
@@ -146,6 +162,7 @@ class Command(BaseCommand):
 
     def add_arguments(self, parser):
         parser.add_argument('--data', help="json data file to import", type=argparse.FileType('r'), default=None)
+        parser.add_argument('--tutorials', help="Import tutorials?", action='store_true', default=False)
 
     def handle(self, *args, **options):
       if options['data']:
@@ -154,10 +171,18 @@ class Command(BaseCommand):
         data = PIPELINE
       slotkind = SlotKind.objects.filter(label='talks').first()
       for record in data:
-        record = AttrDict(record)
-        tp = create_talk_proposal(record)
-        self.stdout.write(self.style.SUCCESS('Successfully created proposal "%s"' % tp))
-        p = create_slot(record, tp, slotkind)
-        self.stdout.write(self.style.SUCCESS('Successfully created presentation "%s"' % p))
-        # Finally set status to accepted
-        ProposalResult(proposal=tp, accepted=True, status="accepted").save()
+        try:
+            record = AttrDict(record)
+            if options['tutorials']:
+                if "tutorial" not in record.type:
+                    continue
+            elif 'talk' not in record.type:
+                continue
+            tp = create_proposal(record)
+            self.stdout.write(self.style.SUCCESS('Successfully created proposal "%s"' % tp))
+            p = create_slot(record, tp, slotkind)
+            self.stdout.write(self.style.SUCCESS('Successfully created presentation "%s"' % p))
+            # Finally set status to accepted
+            ProposalResult(proposal=tp, accepted=True, status="accepted").save()
+        except Exception as e:
+            self.stdout.write(self.style.ERROR(e))
