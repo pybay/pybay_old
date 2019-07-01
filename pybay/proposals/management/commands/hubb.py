@@ -25,6 +25,7 @@ proposal_keys = [
     "additional_notes",
 ]
 
+FANCY_COMMA = b'\xe2\x80\x9a'.decode('utf8')
 
 # Create conference and section in the admin and use a hard coded value to import talks
 # Create schedule which has a section, dates, and talk kinds and publish/not publish. All this in the admin
@@ -73,7 +74,8 @@ def create_speakers(data):
 
 
 def fix_themes(themes):
-    themes = COMMA_PAT.split(themes)
+    themes = themes.replace(FANCY_COMMA, ',')
+    themes = list(filter(None, COMMA_PAT.split(themes)))
     real_themes = [reverse_themes[desc] for desc in themes if desc in reverse_themes]
     if len(themes) > len(real_themes):
         print("Can't find all themes in %s" % themes)
