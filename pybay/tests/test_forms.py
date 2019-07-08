@@ -5,6 +5,7 @@ from pybay.forms import CallForProposalForm
 class CfpFormTestCase(TestCase):
     fixtures = [
         "conference",
+        "schedule_slots",
         "proposal_base",
     ]
 
