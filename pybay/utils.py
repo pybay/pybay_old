@@ -13,7 +13,8 @@ def get_accepted_speaker_by_slug(speaker_slug):
         result__status='accepted'
     ).prefetch_related('speaker')
     for approved_talk in approved_talks:
-        if approved_talk.speaker.name_slug == speaker_slug:
-            return approved_talk.speaker
+        speakers = {speaker.name_slug: speaker for speaker in approved_talk.speakers()}
+        if speaker_slug in speakers:
+            return speakers[speaker_slug]
 
     raise Speaker.DoesNotExist()

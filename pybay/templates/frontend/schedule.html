@@ -4,6 +4,7 @@
 {% load value_from_list_or_default %}
 {% load markup_tags %}
 {% load generic_flatblocks %}
+{% load get_speaker_url_with_fallback %}
 
 {% block body_class %}schedule-page{% endblock %}
 
@@ -51,12 +52,12 @@
                 <div class="sch-slot-inner">
                   {% if talk.speaker.photo %}<p class="sch-speaker-photo"><img src="{% thumbnail talk.speaker.photo '50x50' %}" alt="{{ talk.speaker.name }}" /></p>{% endif %}
                   <h4><a href="{% url 'pybay_speakers_detail' talk.speaker.name_slug %}">{{ talk.title }}</a></h4>
-                  <p class="sch-speaker">{{ talk.speaker.name }}</p>
-                  {% for theme in talk.proposal.theme_descriptions %}
-                  <p class="sch-category">
-                    {{ theme }}
-                  </p>
-                  {% endfor %}
+                    <p class="sch-speaker">{{ talk.proposal.speakers|join:"<br>" }}</p>
+                    <p class="sch-category">
+                      {% for theme in talk.proposal.theme_descriptions %}
+                      <span class="label label-warning">{{ theme }}</span></br>
+                      {% endfor %}
+                    </p>
                   <p class="sch-room">{{ slot.rooms|join:', ' }}</p>
                   <p class="sch-duration">{{ slot.length_in_minutes }} mins</p>
                 </div>

@@ -6,7 +6,7 @@ from django.shortcuts import render
 from django.http import (HttpResponse, HttpResponseForbidden,
                          HttpResponseNotFound)
 from django.views.generic import TemplateView
-from django.db.models import Prefetch
+from django.db.models import Prefetch, Q
 from django.utils import timezone
 
 from .forms import CallForProposalForm
@@ -120,7 +120,7 @@ def pybay_speakers_detail(request, speaker_slug):
     # NOTE: Cannot perform reverse lookup (speaker.talk_proposals) for some reason.
     speaker_approved_talks = [
         prop.talkproposal if hasattr(prop, 'talkproposal') else prop.tutorialproposal
-        for prop in Proposal.objects.filter(speaker=speaker)
+        for prop in Proposal.objects.filter(Q(speaker=speaker) | Q(additional_speakers__id__in=[speaker.id]))
         .filter(result__status='accepted')
         .prefetch_related('talkproposal', 'tutorialproposal')
     ]

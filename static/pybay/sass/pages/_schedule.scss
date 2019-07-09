@@ -173,6 +173,7 @@
 
   .sch-timeslot-slot .sch-speaker {
     margin-bottom: 0;
+    margin-right: 5px;
   }
 
   .sch-timeslot-slot .sch-speaker, .sch-timeslot-slot .sch-category {
@@ -181,16 +182,6 @@
     white-space: nowrap;
     flex: 0 1 auto;
     align-self: baseline;
-  }
-
-  .sch-timeslot-slot .sch-category {
-    position: relative;
-    line-height: 1;
-  }
-
-  .sch-timeslot-slot .sch-category::before {
-    content: "\2022";
-    padding: 0 .5em;
   }
 
   .sch-speaker-photo {

@@ -41,6 +41,17 @@
                     <div class="row">
                             <div class="col-sm-12">
                                 <h2><strong>{{ talk.title }}</strong></h2>
+                                {% with talk.additional_speakers.all as speakers %}
+                                {% if speakers %}
+                                <h3>With:
+                                  {% if speaker != talk.speaker %} <a href="{% url 'pybay_speakers_detail' talk.speaker.name_slug %}">{{ talk.speaker }}</a>, {% endif %}
+                                  {% for add_speaker in talk.additional_speakers.all %}
+                                  {% if add_speaker != speaker %}
+                                  <a href="{% url 'pybay_speakers_detail' add_speaker.name_slug %}">{{ add_speaker }}</a>{% if not forloop.last %}, {% endif %}
+                                  {% endif %}
+                                  {% endfor %}</h3>
+                                {% endif %}
+                                {% endwith %}
                                 {% if talk.theme_descriptions %}{{ talk.theme_descriptions | join:", " }}, {% endif %}{{ talk.get_audience_level_display | capfirst }}
                             </div>
                             {% slot_desc talk as talk_slot %}
