@@ -183,3 +183,4 @@ class Command(BaseCommand):
                 ProposalResult(proposal=tp, accepted=True, status="accepted").save()
             except Exception as e:
                 print(self.style.ERROR(e))
+                print(self.style.ERROR(record))
