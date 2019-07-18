@@ -53,11 +53,11 @@
                   {% if talk.speaker.photo %}<p class="sch-speaker-photo"><img src="{% thumbnail talk.speaker.photo '50x50' %}" alt="{{ talk.speaker.name }}" /></p>{% endif %}
                   <h4><a href="{% url 'pybay_speakers_detail' talk.speaker.name_slug %}">{{ talk.title }}</a></h4>
                     <p class="sch-speaker">{{ talk.proposal.speakers|join:"<br>" }}</p>
-                    <p class="sch-category">
-                      {% for theme in talk.proposal.theme_descriptions %}
-                      <span class="label label-warning">{{ theme }}</span></br>
-                      {% endfor %}
-                    </p>
+                  <p class="sch-category">
+                    {% if talk.proposal.theme_descriptions %}
+                      <span class="small">({{ talk.proposal.theme_descriptions|join:", <br>" }})</span>
+                    {% endif %}
+                  </p>
                   <p class="sch-room">{{ slot.rooms|join:', ' }}</p>
                   <p class="sch-duration">{{ slot.length_in_minutes }} mins</p>
                 </div>
