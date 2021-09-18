@@ -16,7 +16,7 @@
         <link href="{% static 'new/css/lightbox.min.css' %}" rel="stylesheet" type="text/css" media="all" />
         <link href="{% static 'new/css/theme-hot.css' %}" rel="stylesheet" type="text/css" media="all"/>
         <link href="{% sass_src 'pybay/sass/style.scss' %}" rel="stylesheet" type="text/css" media="all"/>
-        <link href="{% static "font-awesome/css/font-awesome.css" %}" rel="stylesheet">
+        <link href="{% static 'font-awesome/css/font-awesome.css' %}" rel="stylesheet">
         <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
         <!--[if gte IE 9]>
             <link rel="stylesheet" type="text/css" href="new/css/ie9.css" />
@@ -93,30 +93,30 @@
         {% endblock header %}
         {% block headeroption %}
 
-     {% endblock headeroption %}
+        {% endblock headeroption %}
 
-    {% block content %}
-    {% endblock content %}
+        {% block content %}
+        {% endblock content %}
 
-{% block subscribe %}
-{% endblock subscribe %}
+        {% block subscribe %}
+        {% endblock subscribe %}
 
-     {% block pythonfans %}
-     {% endblock pythonfans %}
-     {% block footer %}
-     <!--Footer Starts-->
+        {% block pythonfans %}
+        {% endblock pythonfans %}
+        {% block footer %}
+        <!--Footer Starts-->
         <div class="footer-container">
             <footer class="classic">
                 <div class="container">
                     <div style="margin-bottom: 100px;">
                         <div class="row text-center">
-                                                    <h1 class="text-center" style="color: black;">{% gblock "index_produdly_sponsored_by" for "gblocks.Text" %}</h1>
+                            <h1 class="text-center" style="color: black;">{% gblock "index_produdly_sponsored_by" for "gblocks.Text" %}</h1>
                         </div>
                         {% sponsors_footer %}
                         <div class="row text-center">
-                                                    <p>Interested in becoming a sponsor? <a href={% url 'pybay_sponsors' %}>Check out our options</a></p>
+                            <p>Interested in becoming a sponsor? <a href={% url 'pybay_sponsors' %}>Check out our options</a></p>
                         </div>
-                                        </div>
+                    </div>
 
                     <div class="row">
                         <div class="col-sm-3">
