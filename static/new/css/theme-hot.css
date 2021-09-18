@@ -464,8 +464,8 @@ p a,
 // 7. Navigation
 // --------------------------------------------------*/
 nav .logo {
-  max-height: 45px;
-  max-width: 110px;
+  max-height: 40px;
+  max-width: 140px;
   position: absolute;
   top: -6px;
   opacity: 1;
