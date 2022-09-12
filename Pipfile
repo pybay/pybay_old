@@ -1,5 +1,5 @@
 [[source]]
-url = "https://pypi.python.org/simple"
+url = "https://pypi.org/simple"
 verify_ssl = true
 name = "pypi"
 
@@ -20,26 +20,27 @@ django-taggit = "==0.18.0"
 django-timezone-field = "==2.0"
 django-timezones = "==0.2"
 django-user-accounts = "==2.0"
-django = "==1.9.2"
 easy-thumbnails = "==2.3"
 eventlog = "==0.8.0"
 symposion = {git = "https://github.com/pybay/symposion.git"}
-"html5lib" = "==0.9999999"
-markdown = "==2.6.5"
+html5lib = "==0.9999999"
 metron = "==1.3.5"
 olefile = "==0.44"
-pillow = "*"
 pinax-boxes = "==2.1.2"
-pinax-theme-bootstrap = "==5.7.2"
+pinax-theme-bootstrap = "==5.6.0"
 pytz = "==2015.7"
 rollbar = "==0.13.2"
+six = "==1.10.0"
 model-mommy = "==1.3.2"
-django-sass-processor = "*"
-django-compressor = "*"
-libsass = "*"
 sqlparse = "==0.2.4"
-mysqlclient = "*"
+django-compressor = "==2.2"
+django-sass-processor = "==0.6"
+libsass = "==0.14.2"
+Django = "==1.9.2"
+# Markdown = "==2.6.5"
+Pillow = "*"
 
 [dev-packages]
-mysqlclient = "==1.3.10"
-django-debug-toolbar = "*"
+
+[requires]
+python_version = "3.6"
